@@ -1,52 +1,76 @@
 "use client";
 
-import Link from 'next/link';
-import { use, useState } from 'react';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react"; // iconos modernos
+import Switch from './Switch'; // Importa el nuevo Switch
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado del menú
+  const [isDarkMode, setIsDarkMode] = useState(false); // Estado del modo oscuro
 
+
+ // Cargar el modo oscuro desde localStorage si está almacenado
+ useEffect(() => {
+  const savedMode = localStorage.getItem('darkMode');
+  if (savedMode === 'true') {
+    setIsDarkMode(true);
+    document.body.classList.add('dark');
+  }
+}, []);
+
+  // Cambiar entre el modo claro y oscuro
+  const toggleDarkMode = (isChecked: boolean) => {
+    setIsDarkMode(isChecked);
+    if (isChecked) {
+      document.body.classList.add('dark');
+      localStorage.setItem('darkMode', 'true');
+    } else {
+      document.body.classList.remove('dark');
+      localStorage.setItem('darkMode', 'false');
+    }
+  };
+
+  // Alternar el menú móvil
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="bg-red-800 rounded-xl shadow-md backdrop-blur-md bg-opacity-90 px-6 py-5 mx-4 mt-4">
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-        <h1 className="text-white text-2xl font-bold tracking-tight">Cafedex</h1>
+    <header className="bg-white dark:bg-gray-900 p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Logo */}
+        <h1 className="text-black dark:text-white text-2xl font-semibold">Cafedex</h1>
 
-        {/* Menú para pantallas grandes */}
-        <nav className="hidden md:flex space-x-6">
-          <Link href="/" className="text-white hover:text-rose-200 transition-colors duration-300">Inicio</Link>
-          <Link href="/about" className="text-white hover:text-rose-200 transition-colors duration-300">Sobre Nosotros</Link>
-          <Link href="/contact" className="text-white hover:text-rose-200 transition-colors duration-300">Contacto</Link>
-        </nav>
+        {/* Botón para cambiar el modo */}
+        <Switch isDarkMode={isDarkMode} onToggle={toggleDarkMode} />
+      </div>
 
-        {/* Botón de menú para pantallas móviles */}
-        <button
-          className="md:hidden text-white focus:outline-none"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+      {/* Icono hamburguesa para móviles */}
+      <div className="md:hidden">
+        <button onClick={toggleMenu} aria-label="Toggle menu">
+          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Menú desplegable para pantallas pequeñas */}
+      {/* Menú de escritorio (para pantallas grandes) */}
+     <header className="header">
+  <nav className="nav">
+    <ul className="menu-list">
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/contacto">Contacto</a></li>
+      <li><a href="/acerca">Acerca de</a></li>
+    </ul>
+  </nav>
+</header>
+
+      {/* Menú móvil (desplegable) */}
       {isMenuOpen && (
-        <nav className="md:hidden bg-red-800 rounded-md mt-3 px-4 py-3 transition-all ease-in-out duration-300">
-          <ul className="space-y-3">
-            <li>
-              <Link href="/" className="text-white block hover:text-rose-200 transition-colors">Inicio</Link>
-            </li>
-            <li>
-              <Link href="/about" className="text-white block hover:text-rose-200 transition-colors">Sobre Nosotros</Link>
-            </li>
-            <li>
-              <Link href="/contact" className="text-white block hover:text-rose-200 transition-colors">Contacto</Link>
-            </li>
+        <div className="md:hidden absolute top-20 left-0 w-full bg-black/80 text-white px-6 py-4 space-y-4 z-40 rounded-b-2xl backdrop-blur">
+          <ul className="flex flex-col gap-4 text-lg font-medium">
+            <li><Link href="/" onClick={toggleMenu}>Inicio</Link></li>
+            <li><Link href="/about" onClick={toggleMenu}>Sobre Nosotros</Link></li>
+            <li><Link href="/contact" onClick={toggleMenu}>Contacto</Link></li>
           </ul>
-        </nav>
+        </div>
       )}
     </header>
   );
