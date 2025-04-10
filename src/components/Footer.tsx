@@ -1,6 +1,5 @@
 // src/components/Footer.tsx
 "use client"; // Mark the component as client-side only
-import Link from "next/link"; // For navigation links
 
 const Footer = () => {
   return (
@@ -18,7 +17,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400"
-            aria-label="Visit GitHub profile"
+            aria-label="Visitar perfil de GitHub"
           >
             <i className="fab fa-github"></i> {/* GitHub Icon */}
           </a>
@@ -27,7 +26,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400"
-            aria-label="Visit Twitter profile"
+            aria-label="Visitar perfil de Twitter"
           >
             <i className="fab fa-twitter"></i> {/* Twitter Icon */}
           </a>
@@ -36,7 +35,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="text-center mt-4 text-sm">
-        <p>© 2025 Cafedex. All rights reserved.</p>
+        <p>© 2025 Cafedex. Todos los derechos reservados.</p>
       </div>
     </footer>
   );

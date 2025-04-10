@@ -1,10 +1,14 @@
 // src/app/layout.tsx
 
 import { ReactNode } from 'react';
-import Header from '../components/Header';  // Asegúrate de que la ruta es correcta
-import Footer from "../components/Footer"; // Import the Footer component
+import Header from '../components/Header';
+import Footer from "../components/Footer";
 import './globals.css';
 
+export const metadata = {
+  title: 'Cafedex - Descubre las Mejores Cafeterías',
+  description: 'Explora las mejores cafeterías independientes en España',
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -13,7 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <Header />
         {children}
-        <Footer /> {/* The footer at the bottom */}
+        <Footer />
       </body>
     </html>
   );

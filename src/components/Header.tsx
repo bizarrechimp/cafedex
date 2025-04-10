@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // iconos modernos
-import Switch from './Switch'; // Importa el nuevo Switch
+import Switch from './switch'; // Importa el nuevo Switch
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado del menú
@@ -46,7 +46,7 @@ const Header = () => {
 
       {/* Icono hamburguesa para móviles */}
       <div className="md:hidden">
-        <button onClick={toggleMenu} aria-label="Toggle menu">
+        <button onClick={toggleMenu} aria-label="Alternar menú">
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
@@ -55,9 +55,9 @@ const Header = () => {
      <header className="header">
   <nav className="nav">
     <ul className="menu-list">
-      <li><a href="/">Inicio</a></li>
-      <li><a href="/contacto">Contacto</a></li>
-      <li><a href="/acerca">Acerca de</a></li>
+      <li><Link href="/">Inicio</Link></li>
+      <li><Link href="/about">Nosotros</Link></li>
+      <li><Link href="/contact">Contacto</Link></li>
     </ul>
   </nav>
 </header>
@@ -67,7 +67,7 @@ const Header = () => {
         <div className="md:hidden absolute top-20 left-0 w-full bg-black/80 text-white px-6 py-4 space-y-4 z-40 rounded-b-2xl backdrop-blur">
           <ul className="flex flex-col gap-4 text-lg font-medium">
             <li><Link href="/" onClick={toggleMenu}>Inicio</Link></li>
-            <li><Link href="/about" onClick={toggleMenu}>Sobre Nosotros</Link></li>
+            <li><Link href="/about" onClick={toggleMenu}>Nosotros</Link></li>
             <li><Link href="/contact" onClick={toggleMenu}>Contacto</Link></li>
           </ul>
         </div>
