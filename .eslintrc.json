@@ -1,6 +1,10 @@
 {
   "extends": ["next/core-web-vitals"],
   "rules": {
-    "react/jsx-key": "off"
+    "react/jsx-key": ["warn", {
+      "checkFragmentShorthand": true,
+      "checkKeyMustBeforeSpread": true,
+      "warnOnDuplicates": true
+    }]
   }
 }
