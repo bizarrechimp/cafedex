@@ -1,14 +1,14 @@
 import { Cafe } from '@/data/types';
 import { getAllCafes } from '@/data/cafes/index';
 
-export function getRandomCafes(count: number = 6): Cafe[] {
+export function getRandomCafes(count: number = 4): Cafe[] {
   const allCafes = getAllCafes();
   const shuffled = [...allCafes].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, Math.min(count, allCafes.length));
 }
 
 export function getFeaturedCafes(): Cafe[] {
-  return getRandomCafes(6);
+  return getRandomCafes(4);
 }
 
 export function searchCafes(query: string): Cafe[] {
@@ -24,4 +24,4 @@ export function searchCafes(query: string): Cafe[] {
 }
 
 // Re-export utility functions
-export { getCafesByCity, getCafesByFeature } from '@/data/cafes/index';
+export { getCafesByCity, getCafesByFeature, getAllCafes } from '@/data/cafes/index';

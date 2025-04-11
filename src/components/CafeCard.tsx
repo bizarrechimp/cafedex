@@ -12,6 +12,7 @@ interface CafeCardProps {
   googleMapsUrl?: string;
   instagramUrl?: string;
   websiteUrl?: string;
+  number?: number;
 }
 
 export default function CafeCard({
@@ -22,7 +23,8 @@ export default function CafeCard({
   slug,
   googleMapsUrl,
   instagramUrl,
-  websiteUrl
+  websiteUrl,
+  number
 }: CafeCardProps) {
   return (
     <div className="w-[320px] h-[427px] flex-shrink-0">
@@ -36,6 +38,12 @@ export default function CafeCard({
               className="object-cover"
               sizes="320px"
             />
+            {number !== undefined && (
+              <div className="absolute top-4 -left-2 bg-white dark:bg-gray-800 px-4 py-1 flex items-center shadow-lg rounded-r-lg">
+                <div className="absolute -left-2 -top-2 w-2 h-2 bg-gray-600 dark:bg-gray-950"></div>
+                <span className="text-sm font-bold text-gray-900 dark:text-white">#{number}</span>
+              </div>
+            )}
             {rating && (
               <div className="absolute top-3 right-3 bg-white dark:bg-gray-800 rounded-full px-2 py-1 flex items-center shadow-md">
                 <span className="text-yellow-400 mr-1">★</span>
@@ -80,7 +88,7 @@ export default function CafeCard({
                   onClick={(e) => e.stopPropagation()}
                   title="Visitar sitio web"
                 >
-                
+
                   <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm7.931 9h-2.764a14.67 14.67 0 0 0-1.792-6.243A8.013 8.013 0 0 1 19.931 11zM12.53 4.027c1.035 1.364 2.427 3.78 2.627 6.973H12.53V4.027zm-1.06 0v6.973H8.803c.2-3.193 1.592-5.61 2.627-6.973zM8.625 4.757A14.67 14.67 0 0 0 6.833 11H4.069a8.013 8.013 0 0 1 4.556-6.243zM4.069 13h2.764a14.67 14.67 0 0 0 1.792 6.243A8.013 8.013 0 0 1 4.069 13zm7.401 6.973V13h2.697c-.2 3.193-1.592 5.61-2.627 6.973zm1.06-6.973v6.973c-1.035-1.364-2.427-3.78-2.627-6.973h2.627zm3.855 6.243A14.67 14.67 0 0 0 17.167 13h2.764a8.013 8.013 0 0 1-4.556 6.243z"/>
                   </svg>

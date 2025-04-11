@@ -56,7 +56,8 @@ const Header = () => {
   <nav className="nav">
     <ul className="menu-list">
       <li><Link href="/">Inicio</Link></li>
-      <li><Link href="/about">Nosotros</Link></li>
+      <li><Link href="/cafeterias">Cafeterías</Link></li>
+      <li><Link href="/blog">Blog</Link></li>
       <li><Link href="/contact">Contacto</Link></li>
     </ul>
   </nav>
@@ -67,7 +68,8 @@ const Header = () => {
         <div className="md:hidden absolute top-20 left-0 w-full bg-black/80 text-white px-6 py-4 space-y-4 z-40 rounded-b-2xl backdrop-blur">
           <ul className="flex flex-col gap-4 text-lg font-medium">
             <li><Link href="/" onClick={toggleMenu}>Inicio</Link></li>
-            <li><Link href="/about" onClick={toggleMenu}>Nosotros</Link></li>
+            <li><Link href="/cafeterias" onClick={toggleMenu}>Cafeterías</Link></li>
+            <li><Link href="/blog" onClick={toggleMenu}>Blog</Link></li>
             <li><Link href="/contact" onClick={toggleMenu}>Contacto</Link></li>
           </ul>
         </div>

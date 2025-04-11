@@ -1,8 +1,18 @@
 import CafeCard from '@/components/CafeCard';
-import { getFeaturedCafes } from '@/utils/cafeUtils';
+import BlogCard from '@/components/BlogCard';
+import { getFeaturedCafes, getAllCafes } from '@/utils/cafeUtils';
+import { getAllPosts } from '@/utils/blogUtils';
 
-export default function Home() {
+export default async function Home() {
   const cafes = getFeaturedCafes();
+  const allCafes = getAllCafes().sort((a, b) => a.slug.localeCompare(b.slug));
+  const posts = getAllPosts();
+  const recentPosts = posts.slice(0, 3);
+
+  // Create a mapping of cafe slugs to their original index
+  const cafeNumbers = Object.fromEntries(
+    allCafes.map((cafe, index) => [cafe.slug, index + 1])
+  );
 
   return (
     <div className="min-h-screen">
@@ -22,6 +32,7 @@ export default function Home() {
                 googleMapsUrl={cafe.googleMapsUrl}
                 instagramUrl={cafe.instagramUrl}
                 websiteUrl={cafe.websiteUrl}
+                number={cafeNumbers[cafe.slug]}
               />
             ))}
           </div>
@@ -31,7 +42,29 @@ export default function Home() {
         <section>
           <h2 className="text-3xl font-bold mb-8">Últimas Publicaciones</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Add blog post components here once created */}
+            {recentPosts.map((post, index) => (
+              <div
+                key={post.slug}
+                className={`${
+                  index === 0 ? 'block' : // Always show first post
+                  index === 1 ? 'hidden md:block' : // Show on md and up
+                  'hidden lg:block' // Show only on lg and up
+                }`}
+              >
+                <BlogCard
+                  title={post.title}
+                  excerpt={post.excerpt}
+                  image={post.coverImage}
+                  date={new Date(post.date).toLocaleDateString('es-ES', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                  slug={post.slug}
+                  author={post.author}
+                />
+              </div>
+            ))}
           </div>
         </section>
       </main>
