@@ -23,7 +23,7 @@ export default async function Home() {
           <div className="flex flex-wrap justify-center gap-6">
             {cafes.map((cafe) => (
               <CafeCard
-                key={cafe.slug}
+                key={`featured-${cafe.slug}`}
                 name={cafe.name}
                 image={cafe.image}
                 location={cafe.city}
@@ -44,7 +44,7 @@ export default async function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recentPosts.map((post, index) => (
               <div
-                key={post.slug}
+                key={`home-post-${post.slug}`}
                 className={`${
                   index === 0 ? 'block' : // Always show first post
                   index === 1 ? 'hidden md:block' : // Show on md and up
