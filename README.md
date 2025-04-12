@@ -106,3 +106,12 @@ Este repositorio es estrictamente personal. Si llegas aquí por curiosidad, ¡gr
    - Set up /content/blog directory for Markdown posts
    - Added blog images and assets
    - Implemented blog utilities for fetching and sorting posts
+
+### Latest Updates (April 12, 2025)
+
+5. UI/UX Refinements
+
+   - Enhanced CafeCard hover effects with improved scale animation
+   - Fixed shadow clipping issues in card containers
+   - Optimized padding in cafe sections for better visual presentation
+   - Improved responsive layout spacing in both homepage and cafeterias page

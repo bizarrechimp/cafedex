@@ -46,21 +46,23 @@ export default function CafeteriasPage() {
       </div>
 
       {/* Cafes Section */}
-      <div className="flex flex-wrap justify-center gap-6">
-        {filteredCafes.map((cafe: Cafe) => (
-          <CafeCard
-            key={`cafe-${cafe.slug}`}
-            name={cafe.name}
-            image={cafe.image}
-            location={cafe.city}
-            rating={cafe.rating}
-            slug={cafe.slug}
-            googleMapsUrl={cafe.googleMapsUrl}
-            instagramUrl={cafe.instagramUrl}
-            websiteUrl={cafe.websiteUrl}
-            number={cafeNumbers[cafe.slug]}
-          />
-        ))}
+      <div className="py-8 pb-12 px-4 overflow-hidden">
+        <div className="flex flex-wrap justify-center gap-6">
+          {filteredCafes.map((cafe: Cafe) => (
+            <CafeCard
+              key={`cafe-${cafe.slug}`}
+              name={cafe.name}
+              image={cafe.image}
+              location={cafe.city}
+              rating={cafe.rating}
+              slug={cafe.slug}
+              googleMapsUrl={cafe.googleMapsUrl}
+              instagramUrl={cafe.instagramUrl}
+              websiteUrl={cafe.websiteUrl}
+              number={cafeNumbers[cafe.slug]}
+            />
+          ))}
+        </div>
       </div>
     </main>
   );

@@ -19,22 +19,33 @@ export default async function Home() {
       <main className="container mx-auto px-4 py-8">
         {/* Cafés Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Cafés Destacados</h2>
-          <div className="flex flex-wrap justify-center gap-6">
-            {cafes.map((cafe) => (
-              <CafeCard
-                key={`featured-${cafe.slug}`}
-                name={cafe.name}
-                image={cafe.image}
-                location={cafe.city}
-                rating={cafe.rating}
-                slug={cafe.slug}
-                googleMapsUrl={cafe.googleMapsUrl}
-                instagramUrl={cafe.instagramUrl}
-                websiteUrl={cafe.websiteUrl}
-                number={cafeNumbers[cafe.slug]}
-              />
-            ))}
+          <h2 className="text-3xl font-bold mb-8">Cafeterías Destacadas</h2>
+          <div className="overflow-hidden py-8 pb-12 px-4">
+            <div className="flex justify-center lg:justify-evenly gap-6 max-w-full lg:max-w-5xl mx-auto">
+              {cafes.map((cafe, index) => (
+                <div
+                  key={`featured-${cafe.slug}`}
+                  className={`${
+                    index === 0 ? 'block' : // Always show first cafe
+                    index === 1 ? 'hidden md:block' : // Show on md and up
+                    index === 2 ? 'hidden lg:block' : // Show on lg and up
+                    'hidden' // Hide fourth cafe and any additional ones
+                  }`}
+                >
+                  <CafeCard
+                    name={cafe.name}
+                    image={cafe.image}
+                    location={cafe.city}
+                    rating={cafe.rating}
+                    slug={cafe.slug}
+                    googleMapsUrl={cafe.googleMapsUrl}
+                    instagramUrl={cafe.instagramUrl}
+                    websiteUrl={cafe.websiteUrl}
+                    number={cafeNumbers[cafe.slug]}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
