@@ -6,6 +6,7 @@ Un proyecto construido con:
 
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [MongoDB](https://www.mongodb.com/) para la base de datos
 - 💻 Desarrollado en [VS Code](https://code.visualstudio.com/)
 - 🚀 Preparado para producción con Vercel
 
@@ -115,3 +116,32 @@ Este repositorio es estrictamente personal. Si llegas aquí por curiosidad, ¡gr
    - Fixed shadow clipping issues in card containers
    - Optimized padding in cafe sections for better visual presentation
    - Improved responsive layout spacing in both homepage and cafeterias page
+
+### Latest Updates (April 26, 2025)
+
+1. MongoDB Integration
+
+   - Successfully integrated MongoDB Atlas as the database backend
+   - Implemented robust error handling and connection management
+   - Created health check endpoint for monitoring database status
+   - Set up proper environment configuration for database access
+
+2. Data Architecture Improvements
+
+   - Migrated from static data to dynamic MongoDB collections
+   - Implemented caching for database queries using React cache
+   - Enhanced getFeaturedCafes to intelligently fall back to top-rated cafes
+   - Optimized database queries with proper sorting and limiting
+
+3. UI Enhancements
+
+   - Removed placeholder "coming soon" banner in favor of real cafe data
+   - Ensured smooth transition from static to dynamic data display
+   - Maintained responsive design across all viewport sizes
+   - Improved error handling and loading states
+
+4. Performance Optimizations
+   - Added connection pooling for MongoDB
+   - Implemented proper error boundaries for database operations
+   - Optimized database queries with appropriate indexes
+   - Enhanced error reporting for better debugging

@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import getConfig from 'next/config';
 
 interface BlogCardProps {
   title: string;
@@ -20,13 +21,16 @@ export default function BlogCard({
   slug,
   author
 }: BlogCardProps) {
+  // Get basePath from next.config.js (works in client and server)
+  const basePath = (typeof window !== 'undefined' && window.__NEXT_DATA__?.runtimeConfig?.basePath) || '/cafedex';
+  const imageUrl = image.startsWith('http') ? image : `${basePath}${image}`;
   return (
     <div className="w-full max-w-[400px] h-[500px] flex-shrink-0">
       <Link href={`/blog/${slug}`} className="block h-full group">
         <div className="relative h-full bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
           <div className="relative w-full h-[250px]">
             <Image
-              src={image}
+              src={imageUrl}
               alt={`Imagen para ${title}`}
               fill
               className="object-cover"

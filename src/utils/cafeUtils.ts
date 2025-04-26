@@ -1,27 +1,57 @@
 import { Cafe } from '@/data/types';
-import { getAllCafes } from '@/data/cafes/index';
+import clientPromise from '@/lib/mongodb';
+import { cache } from 'react';
 
-export function getRandomCafes(count: number = 4): Cafe[] {
-  const allCafes = getAllCafes();
-  const shuffled = [...allCafes].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, Math.min(count, allCafes.length));
-}
+export const getAllCafes = cache(async (): Promise<Cafe[]> => {
+  const client = await clientPromise;
+  const db = client.db('cafedex');
+  const cafes = await db.collection('cafes')
+    .find({})
+    .sort({ slug: 1 })
+    .toArray();
+  return cafes as Cafe[];
+});
 
-export function getFeaturedCafes(): Cafe[] {
-  return getRandomCafes(4);
-}
+export const getFeaturedCafes = cache(async (): Promise<Cafe[]> => {
+  const client = await clientPromise;
+  const db = client.db('cafedex');
 
-export function searchCafes(query: string): Cafe[] {
-  const allCafes = getAllCafes();
-  const searchTerm = query.toLowerCase();
+  // First try to get featured cafes
+  const featuredCafes = await db.collection('cafes')
+    .find({ featured: true })
+    .sort({ rating: -1 })
+    .limit(3)
+    .toArray();
 
-  return allCafes.filter((cafe: Cafe) =>
-    cafe.name.toLowerCase().includes(searchTerm) ||
-    cafe.city.toLowerCase().includes(searchTerm) ||
-    cafe.description?.toLowerCase().includes(searchTerm) ||
-    cafe.features?.some((feature: string) => feature.toLowerCase().includes(searchTerm))
-  );
-}
+  // If no featured cafes, get top rated ones instead
+  if (featuredCafes.length === 0) {
+    const topRatedCafes = await db.collection('cafes')
+      .find({})
+      .sort({ rating: -1 })
+      .limit(3)
+      .toArray();
+    return topRatedCafes as Cafe[];
+  }
 
-// Re-export utility functions
-export { getCafesByCity, getCafesByFeature, getAllCafes } from '@/data/cafes/index';
+  return featuredCafes as Cafe[];
+});
+
+export const getCafesByCity = cache(async (city: string): Promise<Cafe[]> => {
+  const client = await clientPromise;
+  const db = client.db('cafedex');
+  const cafes = await db.collection('cafes')
+    .find({ city })
+    .sort({ rating: -1 })
+    .toArray();
+  return cafes as Cafe[];
+});
+
+export const getCafesByFeature = cache(async (feature: string): Promise<Cafe[]> => {
+  const client = await clientPromise;
+  const db = client.db('cafedex');
+  const cafes = await db.collection('cafes')
+    .find({ features: feature })
+    .sort({ rating: -1 })
+    .toArray();
+  return cafes as Cafe[];
+});

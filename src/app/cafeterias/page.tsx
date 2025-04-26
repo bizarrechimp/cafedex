@@ -1,26 +1,23 @@
-"use client";
-
 import CafeCard from '@/components/CafeCard';
+import CityFilter from '@/components/CityFilter';
 import { getAllCafes } from '@/utils/cafeUtils';
-import { useState, useEffect } from 'react';
 import { Cafe } from '@/data/types';
 
-export default function CafeteriasPage() {
-  const allCafes = getAllCafes().sort((a, b) => a.slug.localeCompare(b.slug));
-  const [filteredCafes, setFilteredCafes] = useState<Cafe[]>(allCafes);
+export const dynamic = 'force-dynamic';
+export const revalidate = false;
+
+export default async function CafeteriasPage({
+  searchParams,
+}: {
+  searchParams?: { city?: string };
+}) {
+  const allCafes = await getAllCafes();
   const cities = Array.from(new Set(allCafes.map((cafe: Cafe) => cafe.city))).sort();
 
-  useEffect(() => {
-    setFilteredCafes(allCafes);
-  }, [allCafes]);
-
-  const handleFilter = (city: string) => {
-    if (city === 'all') {
-      setFilteredCafes(allCafes);
-    } else {
-      setFilteredCafes(allCafes.filter((cafe: Cafe) => cafe.city === city));
-    }
-  };
+  const selectedCity = searchParams?.city || 'all';
+  const filteredCafes = selectedCity === 'all'
+    ? allCafes
+    : allCafes.filter((cafe: Cafe) => cafe.city === selectedCity);
 
   const cafeNumbers = Object.fromEntries(
     allCafes.map((cafe, index) => [cafe.slug, index + 1])
@@ -30,44 +27,40 @@ export default function CafeteriasPage() {
     <main className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-8">Cafeterías</h1>
 
-      {/* Filter Section */}
-      <div className="mb-8">
-        <label htmlFor="city-filter" className="block text-lg font-medium mb-2">Filtrar por ciudad:</label>
-        <select
-          id="city-filter"
-          className="border border-gray-300 rounded px-4 py-2"
-          onChange={(e) => handleFilter(e.target.value)}
-        >
-          <option value="all">Todas</option>
-          {cities.map(city => (
-            <option key={`city-${city}`} value={city}>{city}</option>
-          ))}
-        </select>
-      </div>
+      {allCafes.length > 0 ? (
+        <>
+          <CityFilter cities={cities} selectedCity={selectedCity} />
 
-      {/* Cafes Section */}
-      <div className="py-8 pb-12 px-4 overflow-hidden">
-        <div className="flex flex-wrap justify-center gap-6">
-          {filteredCafes.map((cafe: Cafe) => {
-            console.log('Cafe data:', cafe);
-            return (
-              <CafeCard
-                key={`cafe-${cafe.slug}`}
-                name={cafe.name}
-                image={cafe.image}
-                location={cafe.city}
-                address={cafe.address}
-                rating={cafe.rating}
-                slug={cafe.slug}
-                googleMapsUrl={cafe.googleMapsUrl}
-                instagramUrl={cafe.instagramUrl}
-                websiteUrl={cafe.websiteUrl}
-                number={cafeNumbers[cafe.slug]}
-              />
-            );
-          })}
+          <div className="py-8 pb-12 px-4 overflow-hidden">
+            <div className="flex flex-wrap justify-center gap-6">
+              {filteredCafes.map((cafe: Cafe) => (
+                <CafeCard
+                  key={`cafe-${cafe.slug}`}
+                  name={cafe.name}
+                  image={cafe.image}
+                  location={cafe.city}
+                  address={cafe.address}
+                  rating={cafe.rating}
+                  slug={cafe.slug}
+                  googleMapsUrl={cafe.googleMapsUrl}
+                  instagramUrl={cafe.instagramUrl}
+                  websiteUrl={cafe.websiteUrl}
+                  number={cafeNumbers[cafe.slug]}
+                />
+              ))}
+            </div>
+          </div>
+        </>
+      ) : (
+        <div className="text-center py-16">
+          <h2 className="text-xl text-gray-600 dark:text-gray-400">
+            No hay cafeterías disponibles en este momento.
+          </h2>
+          <p className="mt-2 text-gray-500 dark:text-gray-500">
+            Pronto agregaremos nuevas cafeterías a nuestra base de datos.
+          </p>
         </div>
-      </div>
+      )}
     </main>
   );
 }

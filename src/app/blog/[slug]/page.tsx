@@ -1,15 +1,19 @@
-import { getPostBySlug } from '@/utils/blogUtils';
-import Image from 'next/image';
+import { getAllPosts, getPostBySlug } from '@/utils/blogUtils';
 import { notFound } from 'next/navigation';
-import { MDXRemote } from 'next-mdx-remote/rsc';
+import Image from 'next/image';
 
-type Props = {
-  params: {
-    slug: string
-  }
+export const dynamic = 'force-static';
+export const revalidate = 3600; // Revalidate every hour
+
+// Generate static paths for all blog posts
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
-export default async function BlogPostPage({ params }: Props) {
+export default function BlogPost({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
@@ -17,32 +21,31 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   return (
-    <article className="container mx-auto px-4 py-8 max-w-3xl">
-      <div className="relative w-full h-[400px] mb-8 rounded-xl overflow-hidden">
-        <Image
-          src={post.coverImage}
-          alt={`Imagen para ${post.title}`}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 768px"
-        />
+    <article className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+      <div className="mb-8 text-gray-600">
+        <time dateTime={post.date}>
+          {new Date(post.date).toLocaleDateString('es-ES', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          })}
+        </time>
+        {post.author && (
+          <span className="ml-4">por {post.author}</span>
+        )}
       </div>
-
-      <div className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-        {new Date(post.date).toLocaleDateString('es-ES', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        })} • {post.author}
-      </div>
-
-      <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">
-        {post.title}
-      </h1>
-
-      <div className="prose prose-lg dark:prose-invert max-w-none">
-        <MDXRemote source={post.content} />
-      </div>
+      {post.coverImage && (
+        <div className="mb-8 relative w-full h-[400px]">
+          <Image
+            src={post.coverImage}
+            alt={post.title}
+            fill
+            className="object-cover rounded-lg"
+          />
+        </div>
+      )}
+      <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: post.content }} />
     </article>
   );
 }

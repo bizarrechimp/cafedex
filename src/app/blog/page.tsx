@@ -1,6 +1,9 @@
 import BlogCard from '@/components/BlogCard';
 import { getAllPosts } from '@/utils/blogUtils';
 
+export const dynamic = 'force-static';
+export const revalidate = 3600; // Revalidate every hour
+
 function BlogPosts() {
   const posts = getAllPosts();
   return posts.map((post) => (

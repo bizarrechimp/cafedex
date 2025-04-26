@@ -3,10 +3,17 @@ import BlogCard from '@/components/BlogCard';
 import { getFeaturedCafes, getAllCafes } from '@/utils/cafeUtils';
 import { getAllPosts } from '@/utils/blogUtils';
 
+// Keep it static but with revalidation since blog posts and featured cafes don't change often
+export const dynamic = 'force-static';
+export const revalidate = 3600; // Revalidate every hour
+
 export default async function Home() {
-  const cafes = getFeaturedCafes();
-  const allCafes = getAllCafes().sort((a, b) => a.slug.localeCompare(b.slug));
-  const posts = getAllPosts();
+  const [cafes, allCafes, posts] = await Promise.all([
+    getFeaturedCafes(),
+    getAllCafes(),
+    getAllPosts()
+  ]);
+
   const recentPosts = posts.slice(0, 3);
 
   // Create a mapping of cafe slugs to their original index
@@ -20,34 +27,45 @@ export default async function Home() {
         {/* Cafés Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8">Cafeterías Destacadas</h2>
-          <div className="overflow-hidden py-8 pb-12 px-4">
-            <div className="flex justify-center lg:justify-evenly gap-6 max-w-full lg:max-w-5xl mx-auto">
-              {cafes.map((cafe, index) => (
-                <div
-                  key={`featured-${cafe.slug}`}
-                  className={`${
-                    index === 0 ? 'block' : // Always show first cafe
-                    index === 1 ? 'hidden md:block' : // Show on md and up
-                    index === 2 ? 'hidden lg:block' : // Show on lg and up
-                    'hidden' // Hide fourth cafe and any additional ones
-                  }`}
-                >
-                  <CafeCard
-                    name={cafe.name}
-                    image={cafe.image}
-                    location={cafe.city}
-                    address={cafe.address}
-                    rating={cafe.rating}
-                    slug={cafe.slug}
-                    googleMapsUrl={cafe.googleMapsUrl}
-                    instagramUrl={cafe.instagramUrl}
-                    websiteUrl={cafe.websiteUrl}
-                    number={cafeNumbers[cafe.slug]}
-                  />
-                </div>
-              ))}
+          {cafes.length > 0 ? (
+            <div className="overflow-hidden py-8 pb-12 px-4">
+              <div className="flex justify-center lg:justify-evenly gap-6 max-w-full lg:max-w-5xl mx-auto">
+                {cafes.map((cafe, index) => (
+                  <div
+                    key={`featured-${cafe.slug}`}
+                    className={`${
+                      index === 0 ? 'block' : // Always show first cafe
+                      index === 1 ? 'hidden md:block' : // Show on md and up
+                      index === 2 ? 'hidden lg:block' : // Show on lg and up
+                      'hidden' // Hide fourth cafe and any additional ones
+                    }`}
+                  >
+                    <CafeCard
+                      name={cafe.name}
+                      image={cafe.image}
+                      location={cafe.city}
+                      address={cafe.address}
+                      rating={cafe.rating}
+                      slug={cafe.slug}
+                      googleMapsUrl={cafe.googleMapsUrl}
+                      instagramUrl={cafe.instagramUrl}
+                      websiteUrl={cafe.websiteUrl}
+                      number={cafeNumbers[cafe.slug]}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="text-center py-16 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+              <h3 className="text-xl text-gray-600 dark:text-gray-400">
+                Próximamente nuevas cafeterías
+              </h3>
+              <p className="mt-2 text-gray-500 dark:text-gray-500">
+                Estamos trabajando en traerte las mejores cafeterías de España.
+              </p>
+            </div>
+          )}
         </section>
 
         {/* Blog Posts Section */}
