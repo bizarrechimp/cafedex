@@ -48,20 +48,24 @@ export default function CafeteriasPage() {
       {/* Cafes Section */}
       <div className="py-8 pb-12 px-4 overflow-hidden">
         <div className="flex flex-wrap justify-center gap-6">
-          {filteredCafes.map((cafe: Cafe) => (
-            <CafeCard
-              key={`cafe-${cafe.slug}`}
-              name={cafe.name}
-              image={cafe.image}
-              location={cafe.city}
-              rating={cafe.rating}
-              slug={cafe.slug}
-              googleMapsUrl={cafe.googleMapsUrl}
-              instagramUrl={cafe.instagramUrl}
-              websiteUrl={cafe.websiteUrl}
-              number={cafeNumbers[cafe.slug]}
-            />
-          ))}
+          {filteredCafes.map((cafe: Cafe) => {
+            console.log('Cafe data:', cafe);
+            return (
+              <CafeCard
+                key={`cafe-${cafe.slug}`}
+                name={cafe.name}
+                image={cafe.image}
+                location={cafe.city}
+                address={cafe.address}
+                rating={cafe.rating}
+                slug={cafe.slug}
+                googleMapsUrl={cafe.googleMapsUrl}
+                instagramUrl={cafe.instagramUrl}
+                websiteUrl={cafe.websiteUrl}
+                number={cafeNumbers[cafe.slug]}
+              />
+            );
+          })}
         </div>
       </div>
     </main>

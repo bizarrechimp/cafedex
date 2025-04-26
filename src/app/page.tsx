@@ -36,6 +36,7 @@ export default async function Home() {
                     name={cafe.name}
                     image={cafe.image}
                     location={cafe.city}
+                    address={cafe.address}
                     rating={cafe.rating}
                     slug={cafe.slug}
                     googleMapsUrl={cafe.googleMapsUrl}

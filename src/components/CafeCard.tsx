@@ -7,6 +7,7 @@ interface CafeCardProps {
   name: string;
   image: string;
   location: string;
+  address: string;
   rating?: number;
   slug: string;
   googleMapsUrl?: string;
@@ -19,6 +20,7 @@ export default function CafeCard({
   name,
   image,
   location,
+  address,
   rating,
   slug,
   googleMapsUrl,
@@ -28,7 +30,7 @@ export default function CafeCard({
 }: CafeCardProps) {
   return (
     <div className="w-[320px] h-[427px]">
-      <div className="relative h-full bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+      <div className="relative h-full bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
         <div className="relative w-full h-[280px]">
           <Image
             src={image}
@@ -49,7 +51,7 @@ export default function CafeCard({
               <span className="text-sm font-medium text-gray-900 dark:text-white">{rating.toFixed(1)}</span>
             </div>
           )}
-          <div className="absolute bottom-3 right-3 flex gap-2">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             {googleMapsUrl && (
               <a
                 href={googleMapsUrl}
@@ -91,15 +93,18 @@ export default function CafeCard({
             )}
           </div>
         </div>
-        <Link href={`/cafe/${slug}`} className="block p-6">
+        <Link href={`/cafe/${slug}`} className="block p-6 relative z-0">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{name}</h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            {location}
-          </p>
+          <div className="space-y-1">
+            <p className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              {location}
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">{address}</p>
+          </div>
         </Link>
       </div>
     </div>

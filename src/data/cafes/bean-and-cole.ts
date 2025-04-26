@@ -10,6 +10,7 @@ export const cafe: Cafe = {
   websiteUrl: "https://beanandcole.co.uk",
   slug: "bean-and-cole-chester",
   description: "Una acogedora cafetería en el corazón de Chester que sirve café de especialidad y delicias caseras.",
+  rating: 3,
   features: ["Café de Especialidad", "Comida", "Wifi", "Asientos Interiores"],
   openingHours: {
     Lunes: "8:00 - 17:00",
