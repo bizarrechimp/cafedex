@@ -3,11 +3,13 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 
-export default async function BlogPostPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+type Props = {
+  params: {
+    slug: string
+  }
+}
+
+export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
