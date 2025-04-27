@@ -57,3 +57,4 @@ export default async function BlogPost({ params }: BlogPostProps) {
     </article>
   );
 }
+
