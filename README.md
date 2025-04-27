@@ -149,6 +149,7 @@ Este repositorio es estrictamente personal. Si llegas aquí por curiosidad, ¡gr
 ### Latest Updates (April 27, 2025)
 
 1. Cafe Location Refactor
+
    - Refactored cafe data model to use separate `city` and `country` fields instead of a combined `location` field.
    - Updated all components, pages, and TypeScript types to support the new structure.
    - Adjusted MongoDB data to match the new schema for all cafes.
