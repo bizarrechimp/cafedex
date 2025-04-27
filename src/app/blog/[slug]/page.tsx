@@ -1,11 +1,16 @@
 import { getAllPosts, getPostBySlug } from '@/utils/blogUtils';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import { Metadata } from 'next';
 
 export const dynamic = 'force-static';
 export const revalidate = 3600; // Revalidate every hour
 
-// Generate static paths for all blog posts
+type Props = {
+  params: { slug: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
 export async function generateStaticParams() {
   const posts = await getAllPosts();
   return posts.map((post) => ({
@@ -13,11 +18,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function BlogPost({ params }: Props) {
   const post = await getPostBySlug(params.slug);
 
   if (!post) {
