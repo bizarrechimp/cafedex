@@ -12,9 +12,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params;
-  const post = await getPostBySlug(slug);
+// Updated metadata generation for async request
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const post = await getPostBySlug(params.slug);
   if (!post) {
     notFound();
   }
@@ -22,7 +22,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: post.excerpt,
-    // You can add other metadata here as needed
   };
 }
 
