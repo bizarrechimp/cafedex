@@ -1,4 +1,3 @@
-import type { PageProps } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllPosts, getPostBySlug } from '@/utils/blogUtils';
 import Image from 'next/image';
@@ -11,6 +10,20 @@ export async function generateStaticParams() {
   return posts.map((post) => ({
     slug: post.slug,
   }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
+  if (!post) {
+    notFound();
+  }
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+    // You can add other metadata here as needed
+  };
 }
 
 interface BlogPostProps {
