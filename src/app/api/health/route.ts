@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import clientPromise from '@/lib/mongodb';
-import { MongoClient, MongoServerError } from 'mongodb';
+import connectMongo from '@/lib/mongodb';
+import mongoose from 'mongoose';
 
 export async function GET() {
   try {
@@ -10,18 +10,18 @@ export async function GET() {
     }
 
     console.log('Health check: Attempting to connect to MongoDB...');
-    const client = await clientPromise;
+    const connection = await connectMongo();
 
-    // Test the connection explicitly
-    const adminDb = client.db('admin');
-    const pingResult = await adminDb.command({ ping: 1 });
+    // Test the connection using Mongoose
+    const adminDb = connection.connection.db.admin();
+    const pingResult = await adminDb.ping();
 
     if (pingResult?.ok !== 1) {
       throw new Error('MongoDB ping failed');
     }
 
-    // If we get here, basic connectivity is working. Now try to access our specific database
-    const db = client.db('cafedex');
+    // Get database stats using Mongoose connection
+    const db = connection.connection.db;
     const stats = await db.command({ dbStats: 1 });
 
     return NextResponse.json({
@@ -39,31 +39,32 @@ export async function GET() {
       },
       timestamp: new Date().toISOString()
     });
-  } catch (error) {
+  } catch (err: unknown) {
+    const error = err as Error;
     console.error('Health check failed:', {
-      name: error.name,
-      message: error.message,
-      code: error instanceof MongoServerError ? error.code : undefined,
-      codeName: error instanceof MongoServerError ? error.codeName : undefined,
-      stack: error.stack
+      name: error?.name || 'Unknown Error',
+      message: error?.message || 'An unknown error occurred',
+      code: err instanceof mongoose.Error ? (err as any).code : undefined,
+      codeName: err instanceof mongoose.Error ? (err as any).codeName : undefined,
+      stack: error?.stack
     });
 
     // Determine appropriate status code based on error type
     let statusCode = 500;
-    let errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
+    let errorMessage = error?.message || 'Unknown error occurred';
 
-    if (error instanceof MongoServerError) {
+    if (err instanceof mongoose.Error) {
       statusCode = 503; // Service Unavailable for MongoDB connection issues
-      errorMessage = `MongoDB Error (${error.code}): ${error.message}`;
+      errorMessage = `MongoDB Error: ${error.message}`;
     }
 
     return NextResponse.json(
       {
         status: 'error',
         message: errorMessage,
-        details: error instanceof MongoServerError ? {
-          code: error.code,
-          codeName: error.codeName
+        details: err instanceof mongoose.Error ? {
+          code: (err as any).code,
+          codeName: (err as any).codeName
         } : undefined,
         timestamp: new Date().toISOString()
       },

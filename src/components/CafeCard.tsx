@@ -7,7 +7,8 @@ import getConfig from 'next/config';
 interface CafeCardProps {
   name: string;
   image: string;
-  location: string;
+  city: string;
+  country: string;
   address: string;
   rating?: number;
   slug: string;
@@ -20,7 +21,8 @@ interface CafeCardProps {
 export default function CafeCard({
   name,
   image,
-  location,
+  city,
+  country,
   address,
   rating,
   slug,
@@ -31,19 +33,28 @@ export default function CafeCard({
 }: CafeCardProps) {
   // Get basePath from next.config.js (works in client and server)
   const basePath = (typeof window !== 'undefined' && window.__NEXT_DATA__?.runtimeConfig?.basePath) || '';
-  const imageUrl = image.startsWith('http') ? image : `${basePath}${image}`;
+  let imageUrl: string | undefined = undefined;
+  if (image && typeof image === 'string' && image.trim() !== '') {
+    imageUrl = image.startsWith('http') ? image : `${basePath}${image}`;
+  }
 
   return (
     <div className="w-[320px] h-[427px]">
       <div className="relative h-full bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
         <div className="relative w-full h-[280px]">
-          <Image
-            src={imageUrl}
-            alt={`Foto de ${name}`}
-            fill
-            className="object-cover"
-            sizes="320px"
-          />
+          {imageUrl ? (
+            <Image
+              src={imageUrl}
+              alt={`Foto de ${name}`}
+              fill
+              className="object-cover"
+              sizes="320px"
+            />
+          ) : (
+            <div className="flex items-center justify-center w-full h-full bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
+              {`Foto de ${name}`}
+            </div>
+          )}
           {number !== undefined && (
             <div className="absolute top-4 -left-2 bg-white dark:bg-gray-800 px-4 py-1 flex items-center shadow-lg rounded-r-lg">
               <div className="absolute -left-2 -top-2 w-2 h-2 bg-gray-600 dark:bg-gray-950"></div>
@@ -106,7 +117,7 @@ export default function CafeCard({
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              {location}
+              {city}, {country}
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400 ml-5">{address}</p>
           </div>

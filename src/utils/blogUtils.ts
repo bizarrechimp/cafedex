@@ -1,10 +1,8 @@
-import fs from 'fs/promises';
-import path from 'path';
-import matter from 'gray-matter';
+import { BlogPost } from '@/lib/models/blogpost';
+import connectMongo from '@/lib/mongodb';
+import { cache } from 'react';
 
-const postsDirectory = path.join(process.cwd(), 'content/blog');
-
-export interface BlogPost {
+export interface BlogPostType {
   slug: string;
   title: string;
   date: string;
@@ -14,30 +12,44 @@ export interface BlogPost {
   coverImage: string;
 }
 
-export async function getAllPosts(): Promise<BlogPost[]> {
-  const fileNames = await fs.readdir(postsDirectory);
-  const allPosts = await Promise.all(
-    fileNames.map((fileName) => {
-      const slug = fileName.replace(/\.md$/, '');
-      return getPostBySlug(slug);
-    })
-  );
+export const getAllPosts = cache(async (): Promise<BlogPostType[]> => {
+  console.log('Fetching all blog posts...');
+  await connectMongo();
+  const posts = await BlogPost.find()
+    .sort({ date: -1 })
+    .lean<BlogPostType[]>();
 
-  return allPosts.sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-}
+  console.log('Blog posts found:', posts.length);
+  console.log('Blog data:', JSON.stringify(posts, null, 2));
 
-export async function getPostBySlug(slug: string): Promise<BlogPost> {
-  const fullPath = path.join(postsDirectory, `${slug}.md`);
-  const fileContents = await fs.readFile(fullPath, 'utf8');
-  const { data, content } = matter(fileContents);
+  return posts.map(post => ({
+    slug: post.slug,
+    title: post.title,
+    date: new Date(post.date).toISOString(),
+    author: post.author,
+    excerpt: post.excerpt,
+    content: post.content,
+    coverImage: post.coverImage,
+  }));
+});
+
+export const getPostBySlug = cache(async (slug: string): Promise<BlogPostType | null> => {
+  console.log('Fetching blog post by slug:', slug);
+  await connectMongo();
+  const post = await BlogPost.findOne({ slug }).lean<BlogPostType>();
+
+  console.log('Blog post found:', post ? 'yes' : 'no');
+  if (post) console.log('Blog post data:', JSON.stringify(post, null, 2));
+
+  if (!post) return null;
 
   return {
-    slug,
-    title: data.title,
-    date: data.date,
-    author: data.author,
-    excerpt: data.excerpt,
-    content,
-    coverImage: data.coverImage,
+    slug: post.slug,
+    title: post.title,
+    date: post.date,
+    author: post.author,
+    excerpt: post.excerpt,
+    content: post.content,
+    coverImage: post.coverImage,
   };
-}
+});

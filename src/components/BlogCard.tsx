@@ -23,19 +23,28 @@ export default function BlogCard({
 }: BlogCardProps) {
   // Get basePath from next.config.js (works in client and server)
   const basePath = (typeof window !== 'undefined' && window.__NEXT_DATA__?.runtimeConfig?.basePath) || '/cafedex';
-  const imageUrl = image.startsWith('http') ? image : `${basePath}${image}`;
+  let imageUrl: string | undefined = undefined;
+  if (image && typeof image === 'string' && image.trim() !== '') {
+    imageUrl = image.startsWith('http') ? image : `${basePath}${image}`;
+  }
   return (
     <div className="w-full max-w-[400px] h-[500px] flex-shrink-0">
       <Link href={`/blog/${slug}`} className="block h-full group">
         <div className="relative h-full bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
           <div className="relative w-full h-[250px]">
-            <Image
-              src={imageUrl}
-              alt={`Imagen para ${title}`}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            />
+            {imageUrl ? (
+              <Image
+                src={imageUrl}
+                alt={`Imagen para ${title}`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+            ) : (
+              <div className="flex items-center justify-center w-full h-full bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
+                {`Imagen para ${title}`}
+              </div>
+            )}
           </div>
           <div className="p-6">
             <div className="text-sm text-gray-600 dark:text-gray-400 mb-3">

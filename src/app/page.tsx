@@ -33,17 +33,18 @@ export default async function Home() {
                 {cafes.map((cafe, index) => (
                   <div
                     key={`featured-${cafe.slug}`}
-                    className={`${
-                      index === 0 ? 'block' : // Always show first cafe
-                      index === 1 ? 'hidden md:block' : // Show on md and up
-                      index === 2 ? 'hidden lg:block' : // Show on lg and up
-                      'hidden' // Hide fourth cafe and any additional ones
+                    className={`$ {
+                      index === 0 ? 'block' :
+                      index === 1 ? 'hidden md:block' :
+                      index === 2 ? 'hidden lg:block' :
+                      'hidden'
                     }`}
                   >
                     <CafeCard
                       name={cafe.name}
                       image={cafe.image}
-                      location={cafe.city}
+                      city={cafe.city}
+                      country={cafe.country}
                       address={cafe.address}
                       rating={cafe.rating}
                       slug={cafe.slug}

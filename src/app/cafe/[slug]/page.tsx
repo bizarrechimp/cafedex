@@ -36,7 +36,7 @@ export default async function CafePage({ params }: { params: { slug: string } })
                 <span className="text-sm font-medium">{cafe.rating.toFixed(1)}</span>
               </div>
             )}
-            <p className="text-gray-600 dark:text-gray-400">{cafe.city}</p>
+            <p className="text-gray-600 dark:text-gray-400">{cafe.city}, {cafe.country}</p>
           </div>
 
           {cafe.description && (

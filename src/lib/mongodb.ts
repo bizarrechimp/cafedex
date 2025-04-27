@@ -1,41 +1,27 @@
-import { MongoClient, MongoClientOptions } from 'mongodb';
+// src/lib/mongodb.ts
+import mongoose from 'mongoose';
 
-if (!process.env.MONGODB_URI) {
-  throw new Error('Please add your MongoDB URI to .env.local');
+const MONGODB_URI = process.env.MONGODB_URI!;
+
+if (!MONGODB_URI) {
+  throw new Error('Please define the MONGODB_URI environment variable.');
 }
 
-const uri = process.env.MONGODB_URI;
+let cached = (global as any).mongoose;
 
-const options: MongoClientOptions = {
-  retryWrites: true,
-  w: 'majority',
-  serverSelectionTimeoutMS: 5000
-};
-
-declare global {
-  var _mongoClientPromise: Promise<MongoClient> | undefined;
+if (!cached) {
+  cached = (global as any).mongoose = { conn: null, promise: null };
 }
 
-if (!global._mongoClientPromise) {
-  const client = new MongoClient(uri, options);
-  global._mongoClientPromise = client.connect()
-    .then(async (client) => {
-      // Test the connection
-      await client.db('admin').command({ ping: 1 });
-      console.log('MongoDB connection successful');
-      return client;
-    })
-    .catch(error => {
-      console.error('MongoDB connection error:', {
-        name: error.name,
-        message: error.message,
-        code: error.code,
-        codeName: error.codeName,
-      });
-      throw error;
-    });
+async function connectMongo() {
+  if (cached.conn) return cached.conn;
+
+  if (!cached.promise) {
+    cached.promise = mongoose.connect(MONGODB_URI).then((mongoose) => mongoose);
+  }
+
+  cached.conn = await cached.promise;
+  return cached.conn;
 }
 
-const clientPromise = global._mongoClientPromise;
-
-export default clientPromise;
+export default connectMongo;

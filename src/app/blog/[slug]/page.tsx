@@ -1,15 +1,10 @@
 import { getAllPosts, getPostBySlug } from '@/utils/blogUtils';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { Metadata } from 'next';
 
-export const dynamic = 'force-static';
-export const revalidate = 3600; // Revalidate every hour
-
-type Props = {
-  params: { slug: string }
-  searchParams: { [key: string]: string | string[] | undefined }
-}
+// Make it dynamic since we're using MongoDB now
+export const dynamic = 'force-dynamic';
+export const revalidate = false;
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
@@ -18,7 +13,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({ params }: Props) {
+export default async function BlogPost({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const post = await getPostBySlug(params.slug);
 
   if (!post) {
@@ -47,10 +46,12 @@ export default async function BlogPost({ params }: Props) {
             alt={post.title}
             fill
             className="object-cover rounded-lg"
+            priority
           />
         </div>
       )}
-      <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: post.content }} />
+      <div className="prose prose-lg max-w-none dark:prose-invert"
+        dangerouslySetInnerHTML={{ __html: post.content }} />
     </article>
   );
 }

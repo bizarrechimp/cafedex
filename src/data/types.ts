@@ -1,10 +1,11 @@
-import { ObjectId } from 'mongodb';
+import { Types } from 'mongoose';
 
 export interface Cafe {
-  _id?: ObjectId;        // MongoDB ID
+  _id?: Types.ObjectId;  // Mongoose ObjectId
   name: string;
   image: string;
   city: string;
+  country: string;
   address: string;
   googleMapsUrl?: string;
   instagramUrl?: string;
@@ -18,8 +19,8 @@ export interface Cafe {
   description?: string;
   lastUpdated?: string;
   featured?: boolean;    // For featured cafes on homepage
-  createdAt?: Date;      // MongoDB timestamp
-  updatedAt?: Date;      // MongoDB timestamp
+  createdAt?: Date;      // Mongoose timestamp
+  updatedAt?: Date;      // Mongoose timestamp
 }
 
 export interface MongoDBError extends Error {

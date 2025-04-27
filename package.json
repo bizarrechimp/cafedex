@@ -7,13 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "migrate": "ts-node src/scripts/migrate-cafes.ts"
+    "seed": "node --experimental-modules --loader ts-node/esm src/scripts/seed-db.ts"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@googlemaps/js-api-loader": "^1.16.8",
     "@tailwindcss/typography": "^0.5.16",
     "date-fns": "^4.1.0",
+    "dotenv": "^16.5.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.487.0",
     "mongodb": "^6.16.0",
@@ -23,7 +24,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-markdown": "^10.1.0",
-    "styled-components": "^6.1.17"
+    "styled-components": "^6.1.17",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

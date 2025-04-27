@@ -2,25 +2,31 @@ import mongoose from 'mongoose';
 
 const cafeSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  slug: { type: String, required: true, unique: true },
-  city: { type: String, required: true },
-  address: { type: String, required: true },
   image: { type: String, required: true },
-  rating: { type: Number },
-  description: { type: String },
+  city: { type: String, required: true },
+  country: { type: String, required: true },
+  address: { type: String, required: true },
   googleMapsUrl: { type: String },
   instagramUrl: { type: String },
   websiteUrl: { type: String },
+  slug: { type: String, required: true, unique: true },
+  rating: { type: Number },
   features: [String],
-  hours: {
-    monday: String,
-    tuesday: String,
-    wednesday: String,
-    thursday: String,
-    friday: String,
-    saturday: String,
-    sunday: String
-  }
+  openingHours: {
+    type: Map,
+    of: String
+  },
+  description: { type: String },
+  lastUpdated: { type: String },
+  featured: { type: Boolean, default: false }
+}, {
+  timestamps: true
 });
 
-export default mongoose.models.Cafe || mongoose.model('Cafe', cafeSchema);
+// Add indexes for common queries (slug already has an index due to unique: true)
+cafeSchema.index({ city: 1 });
+cafeSchema.index({ featured: 1 });
+cafeSchema.index({ rating: -1 });
+
+const Cafe = mongoose.models.Cafe || mongoose.model('Cafe', cafeSchema, 'cafes');
+export default Cafe;
