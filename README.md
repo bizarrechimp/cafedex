@@ -145,3 +145,15 @@ Este repositorio es estrictamente personal. Si llegas aquí por curiosidad, ¡gr
    - Implemented proper error boundaries for database operations
    - Optimized database queries with appropriate indexes
    - Enhanced error reporting for better debugging
+
+### Latest Updates (April 27, 2025)
+
+1. Cafe Location Refactor
+   - Refactored cafe data model to use separate `city` and `country` fields instead of a combined `location` field.
+   - Updated all components, pages, and TypeScript types to support the new structure.
+   - Adjusted MongoDB data to match the new schema for all cafes.
+   - Improved display of city and country throughout the UI for clarity and future internationalization.
+
+2. Codebase Consistency
+   - Ensured all usages of cafe location are now using the new `city` and `country` fields.
+   - Committed and pushed all changes to the main branch.
