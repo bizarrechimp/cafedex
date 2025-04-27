@@ -1,8 +1,8 @@
-import { getAllPosts, getPostBySlug } from '@/utils/blogUtils';
+import type { PageProps } from 'next';
 import { notFound } from 'next/navigation';
+import { getAllPosts, getPostBySlug } from '@/utils/blogUtils';
 import Image from 'next/image';
 
-// Make it dynamic since we're using MongoDB now
 export const dynamic = 'force-dynamic';
 export const revalidate = false;
 
@@ -34,12 +34,10 @@ export default async function BlogPost({ params }: BlogPostProps) {
           {new Date(post.date).toLocaleDateString('es-ES', {
             year: 'numeric',
             month: 'long',
-            day: 'numeric'
+            day: 'numeric',
           })}
         </time>
-        {post.author && (
-          <span className="ml-4">por {post.author}</span>
-        )}
+        {post.author && <span className="ml-4">por {post.author}</span>}
       </div>
       {post.coverImage && (
         <div className="mb-8 relative w-full h-[400px]">
@@ -52,9 +50,10 @@ export default async function BlogPost({ params }: BlogPostProps) {
           />
         </div>
       )}
-      <div className="prose prose-lg max-w-none dark:prose-invert"
-        dangerouslySetInnerHTML={{ __html: post.content }} />
+      <div
+        className="prose prose-lg max-w-none dark:prose-invert"
+        dangerouslySetInnerHTML={{ __html: post.content }}
+      />
     </article>
   );
 }
-
