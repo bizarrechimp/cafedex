@@ -1,3 +1,4 @@
+import type { PageProps } from 'next';
 import { getAllPosts, getPostBySlug } from '@/utils/blogUtils';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -13,11 +14,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function BlogPost({ params }: PageProps<{ slug: string }>) {
   const post = await getPostBySlug(params.slug);
 
   if (!post) {
