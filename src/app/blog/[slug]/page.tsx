@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getAllPosts, getPostBySlug } from '@/utils/blogUtils';
 import Image from 'next/image';
+import type { Metadata } from 'next';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = false;
@@ -25,13 +26,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-interface BlogPostProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default async function BlogPost({ params }: BlogPostProps) {
+export default async function BlogPost({ params }: { params: { slug: string } }) {
   const post = await getPostBySlug(params.slug);
 
   if (!post) {
