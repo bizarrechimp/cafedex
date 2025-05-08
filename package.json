@@ -9,15 +9,16 @@
     "lint": "next lint",
     "seed": "node --experimental-modules --loader ts-node/esm src/scripts/seed-db.ts",
     "clean": "rm -rf .next"
-
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@googlemaps/js-api-loader": "^1.16.8",
     "@tailwindcss/typography": "^0.5.16",
     "date-fns": "^4.1.0",
+    "dompurify": "^3.2.5",
     "dotenv": "^16.5.0",
     "gray-matter": "^4.0.3",
+    "jsdom": "^26.1.0",
     "lucide-react": "^0.487.0",
     "mongodb": "^6.16.0",
     "mongoose": "^8.14.0",
@@ -32,6 +33,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/google.maps": "^3.58.1",
+    "@types/jsdom": "^21.1.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
