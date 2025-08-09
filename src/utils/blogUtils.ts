@@ -1,6 +1,7 @@
-import { BlogPost } from '@/lib/models/blogpost';
-import connectMongo from '@/lib/mongodb';
+// src/utils/blogUtils.ts
 import { cache } from 'react';
+import connectMongo from '@/lib/mongodb';
+import { BlogPost } from '@/lib/models/blogpost';
 
 export interface BlogPostType {
   slug: string;
@@ -12,44 +13,58 @@ export interface BlogPostType {
   coverImage: string;
 }
 
+/**
+ * Devuelve todos los posts ordenados por fecha desc.
+ * No recibe parámetros.
+ */
 export const getAllPosts = cache(async (): Promise<BlogPostType[]> => {
-  console.log('Fetching all blog posts...');
   await connectMongo();
-  const posts = await BlogPost.find()
+
+  const docs = await BlogPost.find(
+    {},
+    'slug title date author excerpt content coverImage'
+  )
     .sort({ date: -1 })
-    .lean<BlogPostType[]>();
+    .lean()
+    .exec();
 
-  console.log('Blog posts found:', posts.length);
-  console.log('Blog data:', JSON.stringify(posts, null, 2));
-
-  return posts.map(post => ({
-    slug: post.slug,
-    title: post.title,
-    date: new Date(post.date).toISOString(),
-    author: post.author,
-    excerpt: post.excerpt,
-    content: post.content,
-    coverImage: post.coverImage,
+  return (docs ?? []).map((d: any) => ({
+    slug: String(d.slug),
+    title: String(d.title),
+    date: String(d.date),
+    author: String(d.author ?? ''),
+    excerpt: String(d.excerpt ?? ''),
+    content: String(d.content ?? ''),
+    coverImage: String(d.coverImage ?? ''),
   }));
 });
 
+/**
+ * Busca un post por slug (string) y lo devuelve o null si no existe.
+ */
 export const getPostBySlug = cache(async (slug: string): Promise<BlogPostType | null> => {
-  console.log('Fetching blog post by slug:', slug);
+  if (!slug || typeof slug !== 'string') {
+    return null;
+  }
+
   await connectMongo();
-  const post = await BlogPost.findOne({ slug }).lean<BlogPostType>();
 
-  console.log('Blog post found:', post ? 'yes' : 'no');
-  if (post) console.log('Blog post data:', JSON.stringify(post, null, 2));
+  const d = await BlogPost.findOne(
+    { slug },
+    'slug title date author excerpt content coverImage'
+  )
+    .lean()
+    .exec();
 
-  if (!post) return null;
+  if (!d) return null;
 
   return {
-    slug: post.slug,
-    title: post.title,
-    date: post.date,
-    author: post.author,
-    excerpt: post.excerpt,
-    content: post.content,
-    coverImage: post.coverImage,
+    slug: String(d.slug),
+    title: String(d.title),
+    date: String(d.date),
+    author: String(d.author ?? ''),
+    excerpt: String(d.excerpt ?? ''),
+    content: String(d.content ?? ''),
+    coverImage: String(d.coverImage ?? ''),
   };
 });
