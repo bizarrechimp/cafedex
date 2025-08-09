@@ -70,13 +70,14 @@ export default async function Home() {
         </section>
 
         {/* Blog Posts Section */}
+        {/*
         <section>
           <h2 className="text-3xl font-bold mb-8">Últimas Publicaciones</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recentPosts.map((post, index) => (
               <div
                 key={`home-post-${post.slug}`}
-                className={`${
+                className={`$${
                   index === 0 ? 'block' : // Always show first post
                   index === 1 ? 'hidden md:block' : // Show on md and up
                   'hidden lg:block' // Show only on lg and up
@@ -98,6 +99,7 @@ export default async function Home() {
             ))}
           </div>
         </section>
+        */}
       </main>
     </div>
   );

@@ -57,7 +57,7 @@ const Header = () => {
     <ul className="menu-list">
       <li><Link href="/">Inicio</Link></li>
       <li><Link href="/cafeterias">Cafeterías</Link></li>
-      <li><Link href="/blog">Blog</Link></li>
+      {/* <li><Link href="/blog">Blog</Link></li> */}
       <li><Link href="/contact">Contacto</Link></li>
     </ul>
   </nav>
@@ -69,7 +69,7 @@ const Header = () => {
           <ul className="flex flex-col gap-4 text-lg font-medium">
             <li><Link href="/" onClick={toggleMenu}>Inicio</Link></li>
             <li><Link href="/cafeterias" onClick={toggleMenu}>Cafeterías</Link></li>
-            <li><Link href="/blog" onClick={toggleMenu}>Blog</Link></li>
+            {/* <li><Link href="/blog" onClick={toggleMenu}>Blog</Link></li> */}
             <li><Link href="/contact" onClick={toggleMenu}>Contacto</Link></li>
           </ul>
         </div>

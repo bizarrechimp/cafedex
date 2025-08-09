@@ -6,8 +6,9 @@ import { Cafe } from '@/data/types';
 export const dynamic = 'force-dynamic';
 export const revalidate = false;
 
-export default async function CafeteriasPage({ searchParams }: { searchParams?: { city?: string } }) {
-  const selectedCity = searchParams?.city || 'all';
+export default async function CafeteriasPage(props: { searchParams?: { [key: string]: string | undefined } }) {
+  const selectedCity = props.searchParams?.city || 'all';
+
   const allCafes = await getAllCafes();
   const cities = Array.from(new Set(allCafes.map((cafe: Cafe) => cafe.city))).sort();
 
