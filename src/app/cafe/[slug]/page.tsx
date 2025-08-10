@@ -6,9 +6,10 @@ import { notFound } from 'next/navigation';
 // Make this page dynamic
 export const dynamic = 'force-dynamic';
 
-export default async function CafePage({ params }: { params: { slug: string } }) {
+export default async function CafePage({ params }: { params: Promise<{ slug: string }> }) {
   try {
-    const cafe = await getCafe(params.slug);
+    const { slug } = await params;
+    const cafe = await getCafe(slug);
 
     if (!cafe) {
       notFound();

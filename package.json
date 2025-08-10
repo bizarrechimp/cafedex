@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "node --experimental-modules --loader ts-node/esm src/scripts/seed-db.ts",
+    "seed": "ts-node --project tsconfig.node.json src/scripts/seed-db.ts",
     "clean": "rm -rf .next"
   },
   "dependencies": {

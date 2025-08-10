@@ -13,6 +13,17 @@ export interface BlogPostType {
   coverImage: string;
 }
 
+// Tipo para los documentos de MongoDB
+interface MongoBlogPost {
+  slug?: string;
+  title?: string;
+  date?: Date | string;
+  author?: string;
+  excerpt?: string;
+  content?: string;
+  coverImage?: string;
+}
+
 /**
  * Devuelve todos los posts ordenados por fecha desc.
  * No recibe parámetros.
@@ -29,13 +40,13 @@ export const getAllPosts = cache(async (): Promise<BlogPostType[]> => {
     .exec();
 
   return (docs ?? []).map((d: any) => ({
-    slug: String(d.slug),
-    title: String(d.title),
-    date: String(d.date),
-    author: String(d.author ?? ''),
-    excerpt: String(d.excerpt ?? ''),
-    content: String(d.content ?? ''),
-    coverImage: String(d.coverImage ?? ''),
+    slug: String((d as any).slug || ''),
+    title: String((d as any).title || ''),
+    date: String((d as any).date || ''),
+    author: String((d as any).author || ''),
+    excerpt: String((d as any).excerpt || ''),
+    content: String((d as any).content || ''),
+    coverImage: String((d as any).coverImage || ''),
   }));
 });
 
@@ -59,12 +70,12 @@ export const getPostBySlug = cache(async (slug: string): Promise<BlogPostType | 
   if (!d) return null;
 
   return {
-    slug: String(d.slug),
-    title: String(d.title),
-    date: String(d.date),
-    author: String(d.author ?? ''),
-    excerpt: String(d.excerpt ?? ''),
-    content: String(d.content ?? ''),
-    coverImage: String(d.coverImage ?? ''),
+    slug: String((d as any).slug || ''),
+    title: String((d as any).title || ''),
+    date: String((d as any).date || ''),
+    author: String((d as any).author || ''),
+    excerpt: String((d as any).excerpt || ''),
+    content: String((d as any).content || ''),
+    coverImage: String((d as any).coverImage || ''),
   };
 });
