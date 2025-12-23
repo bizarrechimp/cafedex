@@ -20,10 +20,10 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  { params }: { params: Promise<{ slug: string }> }
+  { params }: any
 ): Promise<Metadata> {
   try {
-    const { slug } = await params;
+    const { slug } = params;
     const post = await getPostBySlug(slug);
     if (!post) {
       return { title: 'Post Not Found', description: 'The requested post could not be found' };
@@ -36,10 +36,10 @@ export async function generateMetadata(
 }
 
 export default async function BlogPost(
-  { params }: { params: Promise<{ slug: string }> }
+  { params }: any
 ) {
   try {
-    const { slug } = await params;
+    const { slug } = params;
     const post = await getPostBySlug(slug);
 
     if (!post) notFound();
