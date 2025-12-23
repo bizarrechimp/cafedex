@@ -2,12 +2,20 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react"; // iconos modernos
-import Switch from './switch'; // Importa el nuevo Switch
+import { Menu, X } from "lucide-react";
+import { useSession, signIn, signOut } from "next-auth/react";
+import Switch from './switch';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado del menú
-  const [isDarkMode, setIsDarkMode] = useState(false); // Estado del modo oscuro
+  const { data: session, status } = useSession();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Debug session state
+  useEffect(() => {
+    console.log('Auth Status:', status);
+    console.log('Session:', session);
+  }, [status, session]);
 
 
  // Cargar el modo oscuro desde localStorage si está almacenado
@@ -40,8 +48,27 @@ const Header = () => {
         {/* Logo */}
         <h1 className="text-black dark:text-white text-2xl font-semibold">Cafedex</h1>
 
-        {/* Botón para cambiar el modo */}
-        <Switch isDarkMode={isDarkMode} onToggle={toggleDarkMode} />
+        <div className="flex items-center gap-4">
+          {/* Auth Button */}
+          {session ? (
+            <button
+              onClick={() => signOut()}
+              className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+            >
+              Cerrar sesión
+            </button>
+          ) : (
+            <button
+              onClick={() => signIn('google')}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+            >
+              Iniciar sesión
+            </button>
+          )}
+
+          {/* Botón para cambiar el modo */}
+          <Switch isDarkMode={isDarkMode} onToggle={toggleDarkMode} />
+        </div>
       </div>
 
       {/* Icono hamburguesa para móviles */}
@@ -71,6 +98,29 @@ const Header = () => {
             <li><Link href="/cafeterias" onClick={toggleMenu}>Cafeterías</Link></li>
             {/* <li><Link href="/blog" onClick={toggleMenu}>Blog</Link></li> */}
             <li><Link href="/contact" onClick={toggleMenu}>Contacto</Link></li>
+            <li>
+              {session ? (
+                <button
+                  onClick={() => {
+                    signOut();
+                    toggleMenu();
+                  }}
+                  className="text-red-400 hover:text-red-300"
+                >
+                  Cerrar sesión
+                </button>
+              ) : (
+                <button
+                  onClick={() => {
+                    signIn('google');
+                    toggleMenu();
+                  }}
+                  className="text-blue-400 hover:text-blue-300"
+                >
+                  Iniciar sesión
+                </button>
+              )}
+            </li>
           </ul>
         </div>
       )}

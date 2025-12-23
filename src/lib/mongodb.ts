@@ -13,14 +13,39 @@ if (!cached) {
   cached = (global as any).mongoose = { conn: null, promise: null };
 }
 
-async function connectMongo() {
-  if (cached.conn) return cached.conn;
-
-  if (!cached.promise) {
-    cached.promise = mongoose.connect(MONGODB_URI).then((mongoose) => mongoose);
+export async function connectMongo() {
+  if (cached.conn) {
+    const db = cached.conn.connection.db;
+    if (db) {
+      console.log('Using cached connection to database:', db.databaseName);
+    }
+    return cached.conn;
   }
 
-  cached.conn = await cached.promise;
+  if (!cached.promise) {
+    const opts = {
+      dbName: 'cafedex', // Explicitly set the database name
+      serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
+    };
+
+    console.log('Connecting to MongoDB with options:', JSON.stringify(opts, null, 2));
+    cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
+      const db = mongoose.connection.db;
+      if (db) {
+        console.log('New connection established to database:', db.databaseName);
+        console.log('Available collections:', db.listCollections());
+      }
+      return mongoose;
+    });
+  }
+
+  try {
+    cached.conn = await cached.promise;
+  } catch (e) {
+    cached.promise = null;
+    throw e;
+  }
+
   return cached.conn;
 }
 

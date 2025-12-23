@@ -20,7 +20,8 @@ const cafeSchema = new mongoose.Schema({
   lastUpdated: { type: String },
   featured: { type: Boolean, default: false }
 }, {
-  timestamps: true
+  timestamps: true,
+  collection: 'cafes', // Explicitly set collection name
 });
 
 // Add indexes for common queries (slug already has an index due to unique: true)
@@ -28,5 +29,7 @@ cafeSchema.index({ city: 1 });
 cafeSchema.index({ featured: 1 });
 cafeSchema.index({ rating: -1 });
 
+// Force model to use cafedex.cafes collection
 const Cafe = mongoose.models.Cafe || mongoose.model('Cafe', cafeSchema, 'cafes');
+
 export default Cafe;
