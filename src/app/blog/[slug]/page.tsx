@@ -20,10 +20,11 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  { params }: { params: { slug: string } }
+  { params }: any
 ): Promise<Metadata> {
   try {
-    const post = await getPostBySlug(params.slug);
+    const { slug } = params;
+    const post = await getPostBySlug(slug);
     if (!post) {
       return { title: 'Post Not Found', description: 'The requested post could not be found' };
     }
@@ -35,10 +36,10 @@ export async function generateMetadata(
 }
 
 export default async function BlogPost(
-  { params }: { params: { slug: string } }
+  { params }: any
 ) {
   try {
-    const slug = params.slug;
+    const { slug } = params;
     const post = await getPostBySlug(slug);
 
     if (!post) notFound();
