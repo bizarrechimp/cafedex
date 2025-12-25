@@ -1,26 +1,42 @@
 import { Types } from 'mongoose';
 
 export interface Cafe {
-  _id?: Types.ObjectId;  // Mongoose ObjectId
+  _id?: string;
+  id: string; // The deterministic hash
   name: string;
-  image: string;
+  description: string;
+  slug: string;
   city: string;
   country: string;
-  address: string;
-  googleMapsUrl?: string;
-  instagramUrl?: string;
-  websiteUrl?: string;
-  slug: string;
-  rating?: number;
-  features?: string[];
-  openingHours?: {
-    [key: string]: string;
+  location: {
+    lat: number;
+    lng: number;
+    address: string;
   };
-  description?: string;
-  lastUpdated?: string;
-  featured?: boolean;    // For featured cafes on homepage
-  createdAt?: Date;      // Mongoose timestamp
-  updatedAt?: Date;      // Mongoose timestamp
+  specialty_features: {
+    brew_methods: string[];
+    roastery: boolean;
+    beans_origin: string[];
+    opening_Hours: { [key: string]: string };
+    services: string[];
+    serving: string[];
+  };
+  source: {
+    origin: string;
+    curated: boolean;
+  };
+  published: boolean;
+  featured: boolean;
+  rrss: {
+    instagram: string;
+    website: string;
+    facebook: string;
+  };
+  image: string;
+  rating?: number;
+  lastUpdated: string;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export interface MongoDBError extends Error {

@@ -1,0 +1,47 @@
+{
+  "origins": [
+    "Colombia",
+    "Brazil",
+    "Burundi",
+    "Zambia",
+    "Ethiopia",
+    "Guatemala",
+    "Honduras",
+    "Indonesia",
+    "Jamaica",
+    "Kenya",
+    "Mexico",
+    "Nicaragua",
+    "Panama",
+    "Peru",
+    "Vietnam",
+    "Yemen",
+    "Zimbabwe"
+  ],
+  "brew_methods": [
+    "espresso",
+    "filter coffee",
+    "pour-over",
+    "cold brew"
+  ],
+  "services": [
+    "Kids Friendly",
+    "Dog Friendly",
+    "Accept Credit Cards",
+    "Wheelchair access",
+    "Free Wi-Fi",
+    "Laptop Friendly",
+    "Vegan Options",
+    "Outdoor Seating"
+  ],
+  "serving": [
+    "Espresso",
+    "Filter Coffee",
+    "Cold Brew/Drip",
+    "Decaf Coffee",
+    "Breakfast",
+    "Plant-based Milk",
+    "Lunch",
+    "Nitro Coffee"
+  ]
+}

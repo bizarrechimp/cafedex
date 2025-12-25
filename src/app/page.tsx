@@ -41,16 +41,7 @@ export default async function Home() {
                     }`}
                   >
                     <CafeCard
-                      name={cafe.name}
-                      image={cafe.image}
-                      city={cafe.city}
-                      country={cafe.country}
-                      address={cafe.address}
-                      rating={cafe.rating}
-                      slug={cafe.slug}
-                      googleMapsUrl={cafe.googleMapsUrl}
-                      instagramUrl={cafe.instagramUrl}
-                      websiteUrl={cafe.websiteUrl}
+                      cafe={cafe}
                       number={cafeNumbers[cafe.slug]}
                     />
                   </div>
