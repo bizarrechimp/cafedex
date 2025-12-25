@@ -37,12 +37,17 @@ export default function BlogCard({
                 src={imageUrl}
                 alt={`Imagen para ${title}`}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             ) : (
-              <div className="flex items-center justify-center w-full h-full bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
-                {`Imagen para ${title}`}
+                <div className="flex flex-col items-center justify-center w-full h-full bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 border-b border-gray-100 dark:border-gray-800">
+                  <svg className="w-16 h-16 text-blue-200 dark:text-gray-700 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M14 4v4h4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M8 12h8M8 16h4" />
+                  </svg>
+                  <span className="text-xs font-bold text-blue-800/30 dark:text-white/20 uppercase tracking-[0.2em]">Crónica de Café</span>
               </div>
             )}
           </div>

@@ -63,11 +63,22 @@ export default async function BlogPost(
           {post.author && <span className="ml-4">por {post.author}</span>}
         </div>
 
-        {post.coverImage && (
-          <div className="mb-8 relative w-full h-[400px]">
-            <Image src={post.coverImage} alt={post.title} fill className="object-cover rounded-lg" priority />
-          </div>
-        )}
+        <div className="mb-8 relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl bg-gray-100 dark:bg-gray-900 border border-gray-100 dark:border-gray-800">
+          {post.coverImage ? (
+            <Image src={post.coverImage} alt={post.title} fill className="object-cover" priority />
+          ) : (
+            <div className="flex flex-col items-center justify-center w-full h-full bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 px-12 text-center">
+              <svg className="w-24 h-24 text-blue-200 dark:text-gray-700 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M14 4v4h4" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M8 12h8M8 16h4" />
+              </svg>
+              <h2 className="text-blue-800/10 dark:text-white/5 font-black text-6xl uppercase tracking-tighter italic">
+                {post.title}
+              </h2>
+            </div>
+          )}
+        </div>
 
         <div className="prose prose-lg max-w-none dark:prose-invert" dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
 

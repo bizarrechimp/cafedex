@@ -3,19 +3,41 @@ import { cache } from 'react';
 import CafeModel from '@/lib/models/cafe';
 import connectMongo from '@/lib/mongodb';
 
+const serializeMongoose = (doc: any) => {
+  if (!doc) return null;
+
+  // Clone the object to avoid mutating the original
+  const obj = { ...doc };
+
+  // Convert _id to string
+  if (obj._id) obj._id = obj._id.toString();
+
+  // Convert Dates to ISO strings
+  if (obj.createdAt instanceof Date) obj.createdAt = obj.createdAt.toISOString();
+  if (obj.updatedAt instanceof Date) obj.updatedAt = obj.updatedAt.toISOString();
+
+  // Handle specialty_features Map
+  if (obj.specialty_features?.opening_Hours) {
+    if (obj.specialty_features.opening_Hours instanceof Map) {
+      obj.specialty_features.opening_Hours = Object.fromEntries(obj.specialty_features.opening_Hours);
+    } else if (typeof obj.specialty_features.opening_Hours.toJSON === 'function') {
+      obj.specialty_features.opening_Hours = obj.specialty_features.opening_Hours.toJSON();
+    }
+  }
+
+  return obj;
+};
+
 export const getAllCafes = cache(async (): Promise<Cafe[]> => {
-  console.log('Fetching all cafes...');
-  const mongoose = await connectMongo();
+  await connectMongo();
   const cafes = await CafeModel.find()
     .sort({ slug: 1 })
     .lean();
-  console.log('Cafes found:', cafes.length);
-  console.log('Cafe data:', JSON.stringify(cafes, null, 2));
-  return cafes as unknown as Cafe[];
+  return cafes.map(serializeMongoose) as Cafe[];
 });
 
 export const getFeaturedCafes = cache(async (): Promise<Cafe[]> => {
-  const mongoose = await connectMongo();
+  await connectMongo();
 
   // First try to get featured cafes
   const featuredCafes = await CafeModel.find({ featured: true })
@@ -29,24 +51,30 @@ export const getFeaturedCafes = cache(async (): Promise<Cafe[]> => {
       .sort({ rating: -1 })
       .limit(3)
       .lean();
-    return topRatedCafes as unknown as Cafe[];
+    return topRatedCafes.map(serializeMongoose) as Cafe[];
   }
 
-  return featuredCafes as unknown as Cafe[];
+  return featuredCafes.map(serializeMongoose) as Cafe[];
 });
 
 export const getCafesByCity = cache(async (city: string): Promise<Cafe[]> => {
-  const mongoose = await connectMongo();
+  await connectMongo();
   const cafes = await CafeModel.find({ city })
     .sort({ rating: -1 })
     .lean();
-  return cafes as unknown as Cafe[];
+  return cafes.map(serializeMongoose) as Cafe[];
 });
 
 export const getCafesByFeature = cache(async (feature: string): Promise<Cafe[]> => {
-  const mongoose = await connectMongo();
-  const cafes = await CafeModel.find({ features: feature })
+  await connectMongo();
+  const cafes = await CafeModel.find({
+    $or: [
+      { 'specialty_features.brew_methods': feature },
+      { 'specialty_features.services': feature },
+      { 'specialty_features.serving': feature }
+    ]
+  })
     .sort({ rating: -1 })
     .lean();
-  return cafes as unknown as Cafe[];
+  return cafes.map(serializeMongoose) as Cafe[];
 });

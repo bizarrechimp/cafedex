@@ -2,7 +2,8 @@
 
 import * as dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import { BlogPost } from '../lib/models/blogpost';
+import Cafe from '../lib/models/cafe';
+import initialCafes from '../lib/data/initial_cafes.json';
 
 // Load environment variables
 dotenv.config({ path: '.env.local' });
@@ -14,7 +15,6 @@ if (!MONGODB_URI) {
   process.exit(1);
 }
 
-// At this point TypeScript knows MONGODB_URI is defined
 const uri: string = MONGODB_URI;
 
 async function seed() {
@@ -23,51 +23,20 @@ async function seed() {
     console.log('Connected to MongoDB');
 
     // Clean up existing data
-    await BlogPost.deleteMany({});
-    console.log('Cleaned up existing blog posts');
+    await Cafe.deleteMany({});
+    console.log('Cleaned up existing cafes');
 
-    const blogPosts = [
-      {
-        title: "Las Mejores Cafeterías de Madrid para Trabajar Remotamente",
-        slug: "mejores-cafeterias-madrid-trabajo-remoto",
-        excerpt: "Descubre los mejores lugares en Madrid donde puedes disfrutar de un buen café mientras trabajas. Analizamos el wifi, los enchufes disponibles y el ambiente de trabajo.",
-        content: `En los últimos años, el trabajo remoto se ha convertido en una realidad para muchos profesionales, y encontrar el lugar perfecto para trabajar fuera de casa puede marcar la diferencia en nuestra productividad y bienestar.
-
-Madrid, con su vibrante cultura cafetera, ofrece numerosos espacios que combinan café de calidad con un ambiente propicio para el trabajo.
-
-## Factores Importantes
-
-- Calidad del WiFi
-- Disponibilidad de enchufes
-- Ambiente de trabajo
-- Calidad del café
-- Horario extendido
-
-## Nuestras Recomendaciones
-
-### 1. Café de la Luz
-- Ubicación: Barrio de Malasaña
-- Destacado por: Su tranquilo patio interior
-- WiFi: Fibra óptica estable
-
-### 2. La Bicicleta
-- Ubicación: Plaza de San Ildefonso
-- Destacado por: Ambiente acogedor
-- Extras: Múltiples enchufes disponibles`,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      }
-    ];
-
-    const result = await BlogPost.insertMany(blogPosts);
-    console.log(`Successfully seeded ${result.length} blog posts`);
+    const result = await Cafe.insertMany(initialCafes);
+    console.log(`Successfully seeded ${result.length} cafes`);
 
     await mongoose.disconnect();
     console.log('Database connection closed');
     process.exit(0);
   } catch (error) {
     console.error('Error seeding database:', error);
-    await mongoose.disconnect();
+    if (mongoose.connection.readyState !== 0) {
+      await mongoose.disconnect();
+    }
     process.exit(1);
   }
 }
