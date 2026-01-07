@@ -16,7 +16,7 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
       notFound();
     }
 
-    const { name, image, city, country, location, rating, specialty_features, rrss, description } = cafe;
+    const { name, image, city, state, location, rating, specialty_features, rrss, description } = cafe;
     const address = location?.address || '';
 
     // Use lat/lng if available for Google Maps, otherwise fall back to address
@@ -61,7 +61,7 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              {city}, {country}
+              {city}, {state}
             </div>
           </div>
 

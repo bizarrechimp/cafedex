@@ -7,6 +7,7 @@ export interface Cafe {
   description: string;
   slug: string;
   city: string;
+  state: string;
   country: string;
   location: {
     lat: number;

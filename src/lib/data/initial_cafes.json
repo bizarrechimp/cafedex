@@ -41,7 +41,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2d922e6aeef428cff590d4d1036c64cc2ef0a6f90d9edb2f1087bcd5efe1d919"
+    "id": "2d922e6aeef428cff590d4d1036c64cc2ef0a6f90d9edb2f1087bcd5efe1d919",
+    "state": "Alicante"
   },
   {
     "name": "Sugarpop Bakehouse",
@@ -78,7 +79,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c06a1ec9dc1dbb8defb31c489b8bd8cdfa9f572d7ad0c511ecbe3c1ba0a97495"
+    "id": "c06a1ec9dc1dbb8defb31c489b8bd8cdfa9f572d7ad0c511ecbe3c1ba0a97495",
+    "state": "Alicante"
   },
   {
     "name": "El Café de Axel",
@@ -117,7 +119,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "0b49fd1a839794c619ba548ecce59b7e3740f1e08096627f028edb0b7d423e08"
+    "id": "0b49fd1a839794c619ba548ecce59b7e3740f1e08096627f028edb0b7d423e08",
+    "state": "Alicante"
   },
   {
     "name": "Why Not by Axel",
@@ -154,7 +157,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e67b3f63d38cbe026c37b652e6120d45edf4e6a2a187ffd22bb07e14f591784c"
+    "id": "e67b3f63d38cbe026c37b652e6120d45edf4e6a2a187ffd22bb07e14f591784c",
+    "state": "Alicante"
   },
   {
     "name": "Good Day Café Benidorm",
@@ -193,7 +197,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "3bd492514a041592f201acc385d31128a35cb31f1254bcb76f622b2eb268af31"
+    "id": "3bd492514a041592f201acc385d31128a35cb31f1254bcb76f622b2eb268af31",
+    "state": "Alicante"
   },
   {
     "name": "Easy Coffee & Bakery",
@@ -230,7 +235,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2138d1b31704dfdf14e49273f1c8c09d72c4bd05eaff7d97f43be76f7f2c9423"
+    "id": "2138d1b31704dfdf14e49273f1c8c09d72c4bd05eaff7d97f43be76f7f2c9423",
+    "state": "Alicante"
   },
   {
     "name": "Café Paris Benidorm",
@@ -267,7 +273,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cefe9b91caf03043ab7942d426156014e0a2c69538fbf5f9c97b32a786394cf3"
+    "id": "cefe9b91caf03043ab7942d426156014e0a2c69538fbf5f9c97b32a786394cf3",
+    "state": "Alicante"
   },
   {
     "name": "Café Guayacán",
@@ -325,7 +332,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4448a92e096498e7d7df6fa9f242271ecf5c3e589ac9d505d8c996a48bb06dd6"
+    "id": "4448a92e096498e7d7df6fa9f242271ecf5c3e589ac9d505d8c996a48bb06dd6",
+    "state": "Madrid"
   },
   {
     "name": "Kima Coffee",
@@ -385,7 +393,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "443d217576814beeb25d8bbc132e4bb3d84f95fc5e8831db0c50f61c2654e54d"
+    "id": "443d217576814beeb25d8bbc132e4bb3d84f95fc5e8831db0c50f61c2654e54d",
+    "state": "Málaga"
   },
   {
     "name": "Santa Coffee Roaster",
@@ -446,7 +455,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5a20c8ffbebc964d74d7decfee50b5ccd3b46ecc6a4639f5f79d229b9cbf283a"
+    "id": "5a20c8ffbebc964d74d7decfee50b5ccd3b46ecc6a4639f5f79d229b9cbf283a",
+    "state": "Málaga"
   },
   {
     "name": "EL TREZE BILBAO",
@@ -506,7 +516,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8e8bce7895601f50b781e2d659476b5a750335b3a70730ee866c2d02e70c628b"
+    "id": "8e8bce7895601f50b781e2d659476b5a750335b3a70730ee866c2d02e70c628b",
+    "state": "Vizcaya"
   },
   {
     "name": "NIKI&NIKI BAKERY",
@@ -563,7 +574,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4af9572350f089d1e8134876b0fec8447502ef575006befe486d56738bf0754b"
+    "id": "4af9572350f089d1e8134876b0fec8447502ef575006befe486d56738bf0754b",
+    "state": "Alicante"
   },
   {
     "name": "güd specialty hub",
@@ -626,7 +638,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "3265a06a6c1d08109da51ce3330c62f1a3f2264bd3e01cb2afc4a67d3d9df447"
+    "id": "3265a06a6c1d08109da51ce3330c62f1a3f2264bd3e01cb2afc4a67d3d9df447",
+    "state": "Málaga"
   },
   {
     "name": "[B]-bar",
@@ -688,7 +701,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8d8ce5f6e76977d92338b05baddb21d2f056d44697455fa7fbfc121973f9165a"
+    "id": "8d8ce5f6e76977d92338b05baddb21d2f056d44697455fa7fbfc121973f9165a",
+    "state": "Madrid"
   },
   {
     "name": "Greengo Palma",
@@ -748,7 +762,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "6f3c45d0722a39cf7ae3352fd7ab11667e100c277b5c664f8c5b27c8176ec5e5"
+    "id": "6f3c45d0722a39cf7ae3352fd7ab11667e100c277b5c664f8c5b27c8176ec5e5",
+    "state": "Islas Baleares"
   },
   {
     "name": "Citio",
@@ -810,7 +825,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5ef3606ceeec7b1c2db8347fa26e9636c49719d3bb29174e46dc1f4234462954"
+    "id": "5ef3606ceeec7b1c2db8347fa26e9636c49719d3bb29174e46dc1f4234462954",
+    "state": "Barcelona"
   },
   {
     "name": "ROASTED",
@@ -871,7 +887,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "3943a07762c85e075a82c651f3a2b1fca9299c2d6a87041c679f0af619f89eb5"
+    "id": "3943a07762c85e075a82c651f3a2b1fca9299c2d6a87041c679f0af619f89eb5",
+    "state": "Málaga"
   },
   {
     "name": "Point Bianco",
@@ -931,7 +948,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ce34b2c61fb44027bbfbf9791d4f46b835fc6f6f58e5d53baf876c15161c8d17"
+    "id": "ce34b2c61fb44027bbfbf9791d4f46b835fc6f6f58e5d53baf876c15161c8d17",
+    "state": "Alicante"
   },
   {
     "name": "Coffee Casa",
@@ -988,7 +1006,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4c745e5e0d914492eb8c9e39fc2dfb8c591a7c6bf1e246fcdf1c831b7cdb3063"
+    "id": "4c745e5e0d914492eb8c9e39fc2dfb8c591a7c6bf1e246fcdf1c831b7cdb3063",
+    "state": "Barcelona"
   },
   {
     "name": "OTRA",
@@ -1048,7 +1067,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "512c6e32697acbbbd33042be93cb973abf1b9d53567b5af7feed2bc835b0dc25"
+    "id": "512c6e32697acbbbd33042be93cb973abf1b9d53567b5af7feed2bc835b0dc25",
+    "state": "Islas Baleares"
   },
   {
     "name": "The Monk Coffee Roasters",
@@ -1110,7 +1130,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8d74d0dab3573bca18d982d803ab66a49918aef7d115bd6d11df4d8272a044bc"
+    "id": "8d74d0dab3573bca18d982d803ab66a49918aef7d115bd6d11df4d8272a044bc",
+    "state": "Islas Baleares"
   },
   {
     "name": "ānāpāna coffee",
@@ -1169,7 +1190,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9a025b6305d2fa4c357e7e943534a30245f958bc9ffe72517a30e507742227dc"
+    "id": "9a025b6305d2fa4c357e7e943534a30245f958bc9ffe72517a30e507742227dc",
+    "state": "Barcelona"
   },
   {
     "name": "Licensed Coffee",
@@ -1226,7 +1248,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2c9458b0be94f87a4712f07ae8ed698556bd4c0abd2e4dd528437ac1827aa249"
+    "id": "2c9458b0be94f87a4712f07ae8ed698556bd4c0abd2e4dd528437ac1827aa249",
+    "state": "Madrid"
   },
   {
     "name": "Cafetería Bizkaia",
@@ -1287,7 +1310,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9e6bda7139a2f45ab2e496ad163f3936dc723767c4b40892830e1a5a025936df"
+    "id": "9e6bda7139a2f45ab2e496ad163f3936dc723767c4b40892830e1a5a025936df",
+    "state": "Vizcaya"
   },
   {
     "name": "MINA SPECIALTY COFFEE",
@@ -1347,7 +1371,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f72a056e0930f750eb555771a38803bb9832ce09dbd3be883cc4c1272e9bb031"
+    "id": "f72a056e0930f750eb555771a38803bb9832ce09dbd3be883cc4c1272e9bb031",
+    "state": "Madrid"
   },
   {
     "name": "Nuwanda Coffee",
@@ -1405,7 +1430,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e22d43eb9251ec3257fdffcf2c04074ae3e95fb21c35a4cda831332a8eaeb6ea"
+    "id": "e22d43eb9251ec3257fdffcf2c04074ae3e95fb21c35a4cda831332a8eaeb6ea",
+    "state": "Valencia"
   },
   {
     "name": "ARVO Specialty Coffee (Guggenheim)",
@@ -1466,7 +1492,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2d743e4f2e3edbaaec74f41a3397b5caa70f1d4742151d3dd11503e355b8b618"
+    "id": "2d743e4f2e3edbaaec74f41a3397b5caa70f1d4742151d3dd11503e355b8b618",
+    "state": "Vizcaya"
   },
   {
     "name": "Bølge Café",
@@ -1526,7 +1553,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "329c4c234e1cda9a3ce2658836ba707b91a82d78bf0a3759ad106599525affe5"
+    "id": "329c4c234e1cda9a3ce2658836ba707b91a82d78bf0a3759ad106599525affe5",
+    "state": "Vizcaya"
   },
   {
     "name": "Compañía Café",
@@ -1586,7 +1614,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "27ebfe6064e1778f78e1643236c06d76f7f7f80820937e3a5fbad8833a9f5a46"
+    "id": "27ebfe6064e1778f78e1643236c06d76f7f7f80820937e3a5fbad8833a9f5a46",
+    "state": "Navarra"
   },
   {
     "name": "Originem",
@@ -1649,7 +1678,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "392ae4f0c95cbd2f7d4791ba8bb77b23e7447efa90b1093d00fe8c4b00c0e89d"
+    "id": "392ae4f0c95cbd2f7d4791ba8bb77b23e7447efa90b1093d00fe8c4b00c0e89d",
+    "state": "Girona"
   },
   {
     "name": "Bikini Cabanyal",
@@ -1713,7 +1743,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ae79840079f2c46b872a62e9b49ea53a4c99c41ba1514e7b47e6a0e0fe7a2ce1"
+    "id": "ae79840079f2c46b872a62e9b49ea53a4c99c41ba1514e7b47e6a0e0fe7a2ce1",
+    "state": "Valencia"
   },
   {
     "name": "Lattexa",
@@ -1774,7 +1805,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "83b90112e4496a393c92c11044401065afaedb950ed87025c726a16ae5a9a25c"
+    "id": "83b90112e4496a393c92c11044401065afaedb950ed87025c726a16ae5a9a25c",
+    "state": "A Coruña"
   },
   {
     "name": "Sagrado Specialty Coffee",
@@ -1836,7 +1868,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b0edc72a982705ef99c49c37ba6019658287afdffa0d688df94da8988511731e"
+    "id": "b0edc72a982705ef99c49c37ba6019658287afdffa0d688df94da8988511731e",
+    "state": "Málaga"
   },
   {
     "name": "MANÍA Café Especial",
@@ -1899,7 +1932,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "50674db08cbf85b553128a0a48652c854b26ecb6bda3ac07818a64a74f856777"
+    "id": "50674db08cbf85b553128a0a48652c854b26ecb6bda3ac07818a64a74f856777",
+    "state": "Alicante"
   },
   {
     "name": "Viatger Cafe",
@@ -1961,7 +1995,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f71026d862ec3de42470cd6c5d693ce6c8542c82655894137fd977702f7a82bf"
+    "id": "f71026d862ec3de42470cd6c5d693ce6c8542c82655894137fd977702f7a82bf",
+    "state": "Barcelona"
   },
   {
     "name": "Makondo Coffee",
@@ -2023,7 +2058,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "0a3d58dc9a25288763c01b4a156702c59c4d04a910e9a2d1a1bafad3ea228850"
+    "id": "0a3d58dc9a25288763c01b4a156702c59c4d04a910e9a2d1a1bafad3ea228850",
+    "state": "Barcelona"
   },
   {
     "name": "Bihotz Café",
@@ -2066,7 +2102,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cc51f2529e3c077877afadd36709a1ad3f51d64776be8a3a59eb2b63710d973f"
+    "id": "cc51f2529e3c077877afadd36709a1ad3f51d64776be8a3a59eb2b63710d973f",
+    "state": "Vizcaya"
   },
   {
     "name": "Sistema Café",
@@ -2125,7 +2162,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f5841ab973812993b393f9a72723ee898d122e0e1eb96f16264b7f7a1d1295e5"
+    "id": "f5841ab973812993b393f9a72723ee898d122e0e1eb96f16264b7f7a1d1295e5",
+    "state": "Madrid"
   },
   {
     "name": "Allegro Café",
@@ -2168,7 +2206,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "878bd0ddfcca3a8c365965ecba98137b02bac5a2356d9713df1f3d176ec54ec7"
+    "id": "878bd0ddfcca3a8c365965ecba98137b02bac5a2356d9713df1f3d176ec54ec7",
+    "state": "Navarra"
   },
   {
     "name": "Hola Coffee",
@@ -2227,7 +2266,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1fa75ea11a414c4d037aa1009c3d3fd329923d1058298d7b0fc31678d1f771b7"
+    "id": "1fa75ea11a414c4d037aa1009c3d3fd329923d1058298d7b0fc31678d1f771b7",
+    "state": "Madrid"
   },
   {
     "name": "The Miners Rambla Poblenou",
@@ -2291,7 +2331,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b48d13b35aa18f2a3e082f9276bcf656d993566f4bf052e35a733e260bbbc27b"
+    "id": "b48d13b35aa18f2a3e082f9276bcf656d993566f4bf052e35a733e260bbbc27b",
+    "state": "Barcelona"
   },
   {
     "name": "ANNNA",
@@ -2353,7 +2394,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "32da78676ffe436dfa1c7857fbccb53fc5858674cf9fb4ab5d0ee3fb932c9e3b"
+    "id": "32da78676ffe436dfa1c7857fbccb53fc5858674cf9fb4ab5d0ee3fb932c9e3b",
+    "state": "Girona"
   },
   {
     "name": "Pum pum Cafe",
@@ -2396,7 +2438,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "bec1a5ba4495123b06030943d19c1a60c88fea766658f8ac0c15556e2a456b6a"
+    "id": "bec1a5ba4495123b06030943d19c1a60c88fea766658f8ac0c15556e2a456b6a",
+    "state": "Madrid"
   },
   {
     "name": "Merle",
@@ -2456,7 +2499,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "11947a3ca147216fe826376ec6d3373187abc07a95a458905f4e523dc470ab22"
+    "id": "11947a3ca147216fe826376ec6d3373187abc07a95a458905f4e523dc470ab22",
+    "state": "Barcelona"
   },
   {
     "name": "Mitzi Coffee & Brunch",
@@ -2518,7 +2562,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e7091d746249311d4e5f63f3b823e0d6dd88d54d5a0c862ac0dc7c5bd863c243"
+    "id": "e7091d746249311d4e5f63f3b823e0d6dd88d54d5a0c862ac0dc7c5bd863c243",
+    "state": "Barcelona"
   },
   {
     "name": "CAFETAZA",
@@ -2561,7 +2606,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b358e4a05c0ed9a904d5e2bdb20e05fd8dac8264fe6bda5884847bc03a08ad9c"
+    "id": "b358e4a05c0ed9a904d5e2bdb20e05fd8dac8264fe6bda5884847bc03a08ad9c",
+    "state": "Álava"
   },
   {
     "name": "Atypica",
@@ -2604,7 +2650,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "49178700d67da48c6d5389801d5ef4b0d3ea8f0ed9376f9b73f2bb8a1f1d16cd"
+    "id": "49178700d67da48c6d5389801d5ef4b0d3ea8f0ed9376f9b73f2bb8a1f1d16cd",
+    "state": "Granada"
   },
   {
     "name": "ARVO Specialty Coffee",
@@ -2666,7 +2713,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5d4d2ea703eb776c41a4677e7b49b765f5896f51ae55dcc0475689c3932eb530"
+    "id": "5d4d2ea703eb776c41a4677e7b49b765f5896f51ae55dcc0475689c3932eb530",
+    "state": "Vizcaya"
   },
   {
     "name": "Nerja Coffee Roasters",
@@ -2721,7 +2769,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "92a89790e53c89cd90d5294490575687a1456a18f03ced518d52c32b1a8a773e"
+    "id": "92a89790e53c89cd90d5294490575687a1456a18f03ced518d52c32b1a8a773e",
+    "state": "Málaga"
   },
   {
     "name": "caféURBANroasters",
@@ -2779,7 +2828,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c7bc7175a05491ba07c20c924430caa37503ef76355d2545fa9aae38d0f46ba7"
+    "id": "c7bc7175a05491ba07c20c924430caa37503ef76355d2545fa9aae38d0f46ba7",
+    "state": "Lugo"
   },
   {
     "name": "Flying Bean Coffee",
@@ -2841,7 +2891,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "279faee44781e9fe6c014915ad891d2a8e35926a6246808bcf82aa7137fb83d5"
+    "id": "279faee44781e9fe6c014915ad891d2a8e35926a6246808bcf82aa7137fb83d5",
+    "state": "Valencia"
   },
   {
     "name": "Donde Emma Café",
@@ -2899,7 +2950,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "628c67939658a76e7b509c872565cb96ee5122c8d386ba3bac19a4fc6168216d"
+    "id": "628c67939658a76e7b509c872565cb96ee5122c8d386ba3bac19a4fc6168216d",
+    "state": "Alicante"
   },
   {
     "name": "Cafe de Finca",
@@ -2942,7 +2994,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "971241dc6d2368fadd0368cac68df3bfade731903ab6bce9ea3c2a3a42858033"
+    "id": "971241dc6d2368fadd0368cac68df3bfade731903ab6bce9ea3c2a3a42858033",
+    "state": "Barcelona"
   },
   {
     "name": "JACUAÇU - La pava negra",
@@ -3003,7 +3056,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "63cd23465b547c4cae48a9caaf840c6cc42b43f9b5bc42bf2af55473e3ca9e21"
+    "id": "63cd23465b547c4cae48a9caaf840c6cc42b43f9b5bc42bf2af55473e3ca9e21",
+    "state": "Huelva"
   },
   {
     "name": "Doble coffee",
@@ -3065,7 +3119,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c73b38d2d932521230b9376461413416ae9b7f0753d8446bfe084e3b15670755"
+    "id": "c73b38d2d932521230b9376461413416ae9b7f0753d8446bfe084e3b15670755",
+    "state": "Islas Baleares"
   },
   {
     "name": "Masamune Specialty Coffee",
@@ -3124,7 +3179,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "10749eb1208c5981fe07edf79fcf7cd3ed96ec641d8247ad2d5d5e2cc7238e98"
+    "id": "10749eb1208c5981fe07edf79fcf7cd3ed96ec641d8247ad2d5d5e2cc7238e98",
+    "state": "Madrid"
   },
   {
     "name": "BLACKBIRD Coffee Corner",
@@ -3185,7 +3241,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "acb75b80ba2bfdd6307c94d580dd6e2e498c4c1fb3c8d126913875c9a6364e7a"
+    "id": "acb75b80ba2bfdd6307c94d580dd6e2e498c4c1fb3c8d126913875c9a6364e7a",
+    "state": "Barcelona"
   },
   {
     "name": "Orval Studio",
@@ -3242,7 +3299,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c481df94dc7a9f71896f84ff4fbf5672f2ad1ecca83ca8b6a582e74b714c2d43"
+    "id": "c481df94dc7a9f71896f84ff4fbf5672f2ad1ecca83ca8b6a582e74b714c2d43",
+    "state": "Barcelona"
   },
   {
     "name": "Madness Coffee",
@@ -3285,7 +3343,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "981fcb1030a0ed8dfd24965ea3d6a3d8bddadd6175701e25225b40a7bd0d4223"
+    "id": "981fcb1030a0ed8dfd24965ea3d6a3d8bddadd6175701e25225b40a7bd0d4223",
+    "state": "Alicante"
   },
   {
     "name": "OSOM Specialty Coffee",
@@ -3328,7 +3387,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c9d025edb619779030897d92d8027a4e23553d39203cf912a6af5367ec8b198b"
+    "id": "c9d025edb619779030897d92d8027a4e23553d39203cf912a6af5367ec8b198b",
+    "state": "Madrid"
   },
   {
     "name": "Roke",
@@ -3389,7 +3449,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "6abd831c472e0de384cd5f1a04a47709ec4f90f6b43644469c879fc9f7e993c0"
+    "id": "6abd831c472e0de384cd5f1a04a47709ec4f90f6b43644469c879fc9f7e993c0",
+    "state": "Guipúzcoa"
   },
   {
     "name": "Borja Specialty Coffee",
@@ -3452,7 +3513,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4deeb8c6532a80b180ddd868a3556479ac4a23d539b3c9bffa8b55fef3ffb29b"
+    "id": "4deeb8c6532a80b180ddd868a3556479ac4a23d539b3c9bffa8b55fef3ffb29b",
+    "state": "Valencia"
   },
   {
     "name": "HOTTO",
@@ -3514,7 +3576,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "6ccc67f2cf26b99a0eb6ebd0384cef03e1de52624c973516d9638e6532c3ed2e"
+    "id": "6ccc67f2cf26b99a0eb6ebd0384cef03e1de52624c973516d9638e6532c3ed2e",
+    "state": "Islas Baleares"
   },
   {
     "name": "Híbrid",
@@ -3557,7 +3620,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "49582049e9068150114b6835ee50a3ea220426c714326eb2155dbf9f2fbb0890"
+    "id": "49582049e9068150114b6835ee50a3ea220426c714326eb2155dbf9f2fbb0890",
+    "state": "Barcelona"
   },
   {
     "name": "Syra Coffee - Gràcia",
@@ -3612,7 +3676,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "72d171f3ebd133b9e2de76e29ae5eb1342b0d036e54e630115c937e01273ac5a"
+    "id": "72d171f3ebd133b9e2de76e29ae5eb1342b0d036e54e630115c937e01273ac5a",
+    "state": "Barcelona"
   },
   {
     "name": "Utøpico - Specialty Coffee",
@@ -3673,7 +3738,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c73df923c7f1df6772cbf743d20b2ba1c015476cfb541285ed8b184e01d6d869"
+    "id": "c73df923c7f1df6772cbf743d20b2ba1c015476cfb541285ed8b184e01d6d869",
+    "state": "Madrid"
   },
   {
     "name": "Cinnamon",
@@ -3728,7 +3794,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4552e59c11d570f84dfa39cc155d4f31d0dc56a0ebaa6ca8015d9bb3c0640f9b"
+    "id": "4552e59c11d570f84dfa39cc155d4f31d0dc56a0ebaa6ca8015d9bb3c0640f9b",
+    "state": "Vizcaya"
   },
   {
     "name": "Kofe Lab",
@@ -3788,7 +3855,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "3a42fcf898e98f1988bc8f80e14e77ea664075ac3151619855fd952e62c18a68"
+    "id": "3a42fcf898e98f1988bc8f80e14e77ea664075ac3151619855fd952e62c18a68",
+    "state": "Segovia"
   },
   {
     "name": "BLUR — Specialty Coffee",
@@ -3851,7 +3919,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "a9bcf3a0852584b147e2f2dece9bb46a5ff7313cbf44654f6071e8dd0436ad34"
+    "id": "a9bcf3a0852584b147e2f2dece9bb46a5ff7313cbf44654f6071e8dd0436ad34",
+    "state": "Alicante"
   },
   {
     "name": "Brew Coffee",
@@ -3894,7 +3963,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "28d2a624ad271476fc2712b8185c0bd7a2014e896af1e5ab8c1d5e896a1d935a"
+    "id": "28d2a624ad271476fc2712b8185c0bd7a2014e896af1e5ab8c1d5e896a1d935a",
+    "state": "Barcelona"
   },
   {
     "name": "Socolá",
@@ -3955,7 +4025,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "71587c9060467cdfc459f33b3daa50d262246a4c67cafaef446aeaee53cd3d98"
+    "id": "71587c9060467cdfc459f33b3daa50d262246a4c67cafaef446aeaee53cd3d98",
+    "state": "Murcia"
   },
   {
     "name": "ACID Café",
@@ -4014,7 +4085,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "df9c66758c94acfca60874988386eaedc75b9ae3bca49f501ac010bd522b1c5b"
+    "id": "df9c66758c94acfca60874988386eaedc75b9ae3bca49f501ac010bd522b1c5b",
+    "state": "Madrid"
   },
   {
     "name": "The Hippie Baker",
@@ -4072,7 +4144,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "29c18537c7f4941f16b818c06b3577dd5fea0f6cf31f965c8eb881e9e908a572"
+    "id": "29c18537c7f4941f16b818c06b3577dd5fea0f6cf31f965c8eb881e9e908a572",
+    "state": "Pontevedra"
   },
   {
     "name": "Ahul bowls&coffee",
@@ -4131,7 +4204,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8fe2c5365b3237f968d3f42ab8b167098696a620ba0dc4d28a5231cb7667c504"
+    "id": "8fe2c5365b3237f968d3f42ab8b167098696a620ba0dc4d28a5231cb7667c504",
+    "state": "Santa Cruz de Tenerife"
   },
   {
     "name": "Skye coffee corner",
@@ -4174,7 +4248,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f800b405035b1474ce0d5cdb7b1426951a432faa2de977c364ad5b4b539a0003"
+    "id": "f800b405035b1474ce0d5cdb7b1426951a432faa2de977c364ad5b4b539a0003",
+    "state": "Barcelona"
   },
   {
     "name": "Santa Kafeina",
@@ -4217,7 +4292,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "89c9432b1f0247c0f9e36ce99765745bd65f04231f769c54a8562cea7a023540"
+    "id": "89c9432b1f0247c0f9e36ce99765745bd65f04231f769c54a8562cea7a023540",
+    "state": "Madrid"
   },
   {
     "name": "Arábiga",
@@ -4275,7 +4351,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "08f4cde8b0807e1df9832c16a4f15533d1dcef6afdc9ad00c4b28344891d73ff"
+    "id": "08f4cde8b0807e1df9832c16a4f15533d1dcef6afdc9ad00c4b28344891d73ff",
+    "state": "Córdoba"
   },
   {
     "name": "Condesa Brunch",
@@ -4331,7 +4408,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4965f5e0ae031cfcaf083c1d2b28d403aa26c260614dd815b780504606c92dd2"
+    "id": "4965f5e0ae031cfcaf083c1d2b28d403aa26c260614dd815b780504606c92dd2",
+    "state": "Barcelona"
   },
   {
     "name": "Low Tide Cafe Mijas",
@@ -4392,7 +4470,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "64fd13e9098fb0954a5a0c1123926278df82c3f59bf4c65271136dca0944413c"
+    "id": "64fd13e9098fb0954a5a0c1123926278df82c3f59bf4c65271136dca0944413c",
+    "state": "Málaga"
   },
   {
     "name": "Syra Coffee - El Clot",
@@ -4446,7 +4525,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "37f8b41f09d3a7da80b2693c76e22441bc3c46d52a19999f1a4ea92ab055b812"
+    "id": "37f8b41f09d3a7da80b2693c76e22441bc3c46d52a19999f1a4ea92ab055b812",
+    "state": "Barcelona"
   },
   {
     "name": "ELIO & COCO",
@@ -4503,7 +4583,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "fb925603645b27b9e929fda47b299e4148f17035651db0b79d7900a9dbb4c183"
+    "id": "fb925603645b27b9e929fda47b299e4148f17035651db0b79d7900a9dbb4c183",
+    "state": "Zaragoza"
   },
   {
     "name": "Sa Mola 13",
@@ -4563,7 +4644,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "0aec33c4711e09327420f72e5feac741219ec80ab5b2007c0ea1c94268f48865"
+    "id": "0aec33c4711e09327420f72e5feac741219ec80ab5b2007c0ea1c94268f48865",
+    "state": "Islas Baleares"
   },
   {
     "name": "One cup coffee Ibiza",
@@ -4626,7 +4708,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c4cc71dab89a37e9b821c33394fd8c26e1f70e72e6e0223f788650b8f86eecbb"
+    "id": "c4cc71dab89a37e9b821c33394fd8c26e1f70e72e6e0223f788650b8f86eecbb",
+    "state": "Islas Baleares"
   },
   {
     "name": "Acco speciality coffee",
@@ -4683,7 +4766,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "092bb1f328872bd96fcf132295ac4576c9e24f4c20aa1fdc134145748c5a02e4"
+    "id": "092bb1f328872bd96fcf132295ac4576c9e24f4c20aa1fdc134145748c5a02e4",
+    "state": "Islas Baleares"
   },
   {
     "name": "Hispalis Cafe",
@@ -4741,7 +4825,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2a7e0af8445837bd11e607864b6b13d21c72fd2cade0b2a334fea70f49edc908"
+    "id": "2a7e0af8445837bd11e607864b6b13d21c72fd2cade0b2a334fea70f49edc908",
+    "state": "Sevilla"
   },
   {
     "name": "Departure Coffee Co.",
@@ -4797,7 +4882,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7af9d94445a8734271f6fa73822ace8d1a2590940f65a4a78051d9e057791f13"
+    "id": "7af9d94445a8734271f6fa73822ace8d1a2590940f65a4a78051d9e057791f13",
+    "state": "Barcelona"
   },
   {
     "name": "D·Origen Coffee Roasters",
@@ -4859,7 +4945,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "6deb3a59a28e40907e833ead8e94964ce4949d8fc600ee7ca0bc02b951f320a6"
+    "id": "6deb3a59a28e40907e833ead8e94964ce4949d8fc600ee7ca0bc02b951f320a6",
+    "state": "Barcelona"
   },
   {
     "name": "Mise en Place",
@@ -4902,7 +4989,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "853ddb11b5eda75b89107d143aa6f7147e3a60c08794ca68476cbebbd2ce6c59"
+    "id": "853ddb11b5eda75b89107d143aa6f7147e3a60c08794ca68476cbebbd2ce6c59",
+    "state": "Islas Baleares"
   },
   {
     "name": "Radical Coffee",
@@ -4963,7 +5051,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "dcf49a3381986a3c2d6d1ffe43ca6a85b4ffe8c836608c06531b84643d21c7e1"
+    "id": "dcf49a3381986a3c2d6d1ffe43ca6a85b4ffe8c836608c06531b84643d21c7e1",
+    "state": "Asturias"
   },
   {
     "name": "Santa Coffee Catedral",
@@ -5026,7 +5115,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "56906e9db22d6721f3e9ae3e63e9c2de783cd1338473314b86aa2e0ae55e877b"
+    "id": "56906e9db22d6721f3e9ae3e63e9c2de783cd1338473314b86aa2e0ae55e877b",
+    "state": "Málaga"
   },
   {
     "name": "Shanti Coffee",
@@ -5082,7 +5172,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b38fc8c303b74b5b4b3670dbcdb54f7d5036053d9f3c4e7e10de48540c3a96fa"
+    "id": "b38fc8c303b74b5b4b3670dbcdb54f7d5036053d9f3c4e7e10de48540c3a96fa",
+    "state": "Asturias"
   },
   {
     "name": "Oniria Cafe",
@@ -5138,7 +5229,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2a4d461392a4d7304ecfe73e68835bf4604729ba7abdd482a6606691cbd8336b"
+    "id": "2a4d461392a4d7304ecfe73e68835bf4604729ba7abdd482a6606691cbd8336b",
+    "state": "Girona"
   },
   {
     "name": "Syra Coffee - Londres",
@@ -5194,7 +5286,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "6672d62f286a8237b83d884434d65817ad0c6fb799de75d3f35c4807e73ccac7"
+    "id": "6672d62f286a8237b83d884434d65817ad0c6fb799de75d3f35c4807e73ccac7",
+    "state": "Barcelona"
   },
   {
     "name": "Warung cafe",
@@ -5251,7 +5344,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8f5e0cf28fe2858272e2e405ad89acbe8dc15b531a19c0a23128ceb3bc67da3f"
+    "id": "8f5e0cf28fe2858272e2e405ad89acbe8dc15b531a19c0a23128ceb3bc67da3f",
+    "state": "Barcelona"
   },
   {
     "name": "The Coffee - Comte Borrell",
@@ -5311,7 +5405,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1bd8231a47c99490a37ba3f2980339931ec78484b914c3761a7cf29b98c44022"
+    "id": "1bd8231a47c99490a37ba3f2980339931ec78484b914c3761a7cf29b98c44022",
+    "state": "Barcelona"
   },
   {
     "name": "Little Fern",
@@ -5374,7 +5469,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7717c687cb89e41181bba47bd6dd6410d9eb35dc527c613f56c2ad7d74c01015"
+    "id": "7717c687cb89e41181bba47bd6dd6410d9eb35dc527c613f56c2ad7d74c01015",
+    "state": "Barcelona"
   },
   {
     "name": "Kafema Las Canteras",
@@ -5436,7 +5532,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f8a7e13f71232f7b280a46bf2f3e175161f0fff282d44c3d63f33bce90ecce05"
+    "id": "f8a7e13f71232f7b280a46bf2f3e175161f0fff282d44c3d63f33bce90ecce05",
+    "state": "Las Palmas"
   },
   {
     "name": "Moin Café",
@@ -5493,7 +5590,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "233d0f564a8838c1bd75201e5042b37416d8f3a256bf8d0e4284b451b06e3cd5"
+    "id": "233d0f564a8838c1bd75201e5042b37416d8f3a256bf8d0e4284b451b06e3cd5",
+    "state": "Sevilla"
   },
   {
     "name": "Low Tide Cafe",
@@ -5554,7 +5652,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7e4a1fbfe6b2794adfd5ef3703c062c21c167c13bb0eabfd846fa87ffdf32ce9"
+    "id": "7e4a1fbfe6b2794adfd5ef3703c062c21c167c13bb0eabfd846fa87ffdf32ce9",
+    "state": "Málaga"
   },
   {
     "name": "Sensa Café",
@@ -5617,7 +5716,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9a394b119d42c67e9457d1ed2ecacd3281401016f1581f058935a655677b34cc"
+    "id": "9a394b119d42c67e9457d1ed2ecacd3281401016f1581f058935a655677b34cc",
+    "state": "Cádiz"
   },
   {
     "name": "BRUTAL COFFEE",
@@ -5662,7 +5762,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cefd9a1afa7dfa32a56361f51cf646ed99f4e717d73278d92c54319a55408b4e"
+    "id": "cefd9a1afa7dfa32a56361f51cf646ed99f4e717d73278d92c54319a55408b4e",
+    "state": "Madrid"
   },
   {
     "name": "Arábiga Express",
@@ -5719,7 +5820,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "67bf9c878ae3a183d95ff5e9264db36632fbc2bcbd67256c16d6ae03c0dbd800"
+    "id": "67bf9c878ae3a183d95ff5e9264db36632fbc2bcbd67256c16d6ae03c0dbd800",
+    "state": "Córdoba"
   },
   {
     "name": "Virgen Coffee",
@@ -5762,7 +5864,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7a10f837a856f496f0dbac9b244de58eade9893c36d5ae2fbb91111c1bf9a6ac"
+    "id": "7a10f837a856f496f0dbac9b244de58eade9893c36d5ae2fbb91111c1bf9a6ac",
+    "state": "Sevilla"
   },
   {
     "name": "Kioscoffee",
@@ -5820,7 +5923,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8f6d5d8ffb71ba403f4eae78b9e394d8f20bcc9d96605d0bba1bbb9bf68a548d"
+    "id": "8f6d5d8ffb71ba403f4eae78b9e394d8f20bcc9d96605d0bba1bbb9bf68a548d",
+    "state": "Sevilla"
   },
   {
     "name": "Café Singular",
@@ -5883,7 +5987,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "adde3d3f95a97b328b3e08d1e7de4d00e800812281721617d0a83a755c0daae0"
+    "id": "adde3d3f95a97b328b3e08d1e7de4d00e800812281721617d0a83a755c0daae0",
+    "state": "Pontevedra"
   },
   {
     "name": "CO'LAAB",
@@ -5940,7 +6045,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "922328e9bb6746a00808357d9668cdb8821c8dbd7abf30b16e44eecc7f2f57fd"
+    "id": "922328e9bb6746a00808357d9668cdb8821c8dbd7abf30b16e44eecc7f2f57fd",
+    "state": "Barcelona"
   },
   {
     "name": "Mía Coffee shop",
@@ -5999,7 +6105,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "13fbe607de94992b6ae605526d47dffd1de95effcea94b3b4eef52bb6c8dee99"
+    "id": "13fbe607de94992b6ae605526d47dffd1de95effcea94b3b4eef52bb6c8dee99",
+    "state": "Málaga"
   },
   {
     "name": "La Tulipa",
@@ -6055,7 +6162,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1726f90346c642a9acc7e67672a0aba98a09d0ea2409a0b6f1842eba4d3cb9a8"
+    "id": "1726f90346c642a9acc7e67672a0aba98a09d0ea2409a0b6f1842eba4d3cb9a8",
+    "state": "Salamanca"
   },
   {
     "name": "Muy Coffee",
@@ -6098,7 +6206,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "bc986ec880d19f9cc46e1c9c01a61f0092cd515462b30999fb0c943404a1cb24"
+    "id": "bc986ec880d19f9cc46e1c9c01a61f0092cd515462b30999fb0c943404a1cb24",
+    "state": "Sevilla"
   },
   {
     "name": "Grace Coffee",
@@ -6156,7 +6265,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1bfe66b486048576b3488bf7e72fda4cf4eb41bfebf3626e50e571e25aca2ef4"
+    "id": "1bfe66b486048576b3488bf7e72fda4cf4eb41bfebf3626e50e571e25aca2ef4",
+    "state": "Girona"
   },
   {
     "name": "Maru Specialty Coffee",
@@ -6217,7 +6327,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "428b110fa02e72a43e8389e3886f8fe6a99e72677869a8dc5a72e69967093330"
+    "id": "428b110fa02e72a43e8389e3886f8fe6a99e72677869a8dc5a72e69967093330",
+    "state": "Málaga"
   },
   {
     "name": "SUR Coffee Corner",
@@ -6275,7 +6386,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "dc0fb36c6ce93a75ad9a1d439318a3f9ae29d84783c2599fd73d7928f2cbe800"
+    "id": "dc0fb36c6ce93a75ad9a1d439318a3f9ae29d84783c2599fd73d7928f2cbe800",
+    "state": "Granada"
   },
   {
     "name": "Hiday Coffee",
@@ -6333,7 +6445,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "3b38b3192e00ea5e8c62db5fdd6dc7b91f14e97fea5f0cc9ee45225eb89d430d"
+    "id": "3b38b3192e00ea5e8c62db5fdd6dc7b91f14e97fea5f0cc9ee45225eb89d430d",
+    "state": "Pontevedra"
   },
   {
     "name": "Origin.",
@@ -6393,7 +6506,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8a0cac20f6890ca7a078fbee7a36036bbf5debdaacb657b6284f84f801064c5c"
+    "id": "8a0cac20f6890ca7a078fbee7a36036bbf5debdaacb657b6284f84f801064c5c",
+    "state": "Barcelona"
   },
   {
     "name": "Dosis Cafe",
@@ -6436,7 +6550,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d93f7c71ca8375ccd74c4e73d8d9bb9e8ac54f5b154efdf08851ae200e28d4b7"
+    "id": "d93f7c71ca8375ccd74c4e73d8d9bb9e8ac54f5b154efdf08851ae200e28d4b7",
+    "state": "Madrid"
   },
   {
     "name": "Brooklyn & Co",
@@ -6479,7 +6594,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7e8e8254265cf5a2fb31ae7e5075abd8ecd1a713a89b0bc763dd06a2b9c73815"
+    "id": "7e8e8254265cf5a2fb31ae7e5075abd8ecd1a713a89b0bc763dd06a2b9c73815",
+    "state": "Salamanca"
   },
   {
     "name": "Austral Coffee Bar",
@@ -6542,7 +6658,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "57f3c464334116d1c742391e8fb80e21d60e337fe8446fcdcf91a4433db9dfc3"
+    "id": "57f3c464334116d1c742391e8fb80e21d60e337fe8446fcdcf91a4433db9dfc3",
+    "state": "Barcelona"
   },
   {
     "name": "Hey My Coffee - Sol",
@@ -6585,7 +6702,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2a157cb42af216d1c4e13fb784ef5b4e412ae5f9f1a5b527b448895599f9ceb6"
+    "id": "2a157cb42af216d1c4e13fb784ef5b4e412ae5f9f1a5b527b448895599f9ceb6",
+    "state": "Madrid"
   },
   {
     "name": "Elefante",
@@ -6628,7 +6746,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b1b35c656d5a62a08b8de86340ddaedea94c21580b315931951c8737a1db518a"
+    "id": "b1b35c656d5a62a08b8de86340ddaedea94c21580b315931951c8737a1db518a",
+    "state": "Islas Baleares"
   },
   {
     "name": "Olula Café",
@@ -6684,7 +6803,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ee0997b210c0b58574d7a398849adcb4f046cbac22c118883aca56e08c2ad5b4"
+    "id": "ee0997b210c0b58574d7a398849adcb4f046cbac22c118883aca56e08c2ad5b4",
+    "state": "Islas Baleares"
   },
   {
     "name": "Kafeinnato Specialty Coffee & Food",
@@ -6743,7 +6863,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "fba4e4d662f25c38e5a22238ee74ebdadc0ee8879f5cfba83e263852d7f4f533"
+    "id": "fba4e4d662f25c38e5a22238ee74ebdadc0ee8879f5cfba83e263852d7f4f533",
+    "state": "Madrid"
   },
   {
     "name": "Simona Specialty Coffee Club",
@@ -6804,7 +6925,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "071a6899a5d379e85866ddd2397a2dea6abf9982cd04029d7cc5ce488c44a584"
+    "id": "071a6899a5d379e85866ddd2397a2dea6abf9982cd04029d7cc5ce488c44a584",
+    "state": "Guipúzcoa"
   },
   {
     "name": "La Nevateria",
@@ -6847,7 +6969,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1e70a465e8c7ee92e6e8e7eb4b06714dee9f33cd9c20d890ceef10d98461d62d"
+    "id": "1e70a465e8c7ee92e6e8e7eb4b06714dee9f33cd9c20d890ceef10d98461d62d",
+    "state": "Girona"
   },
   {
     "name": "Ruda Café",
@@ -6905,7 +7028,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "62db3cc03f06a771e6397444277372706761cc4ae76e24511a72ca48b5c43a8a"
+    "id": "62db3cc03f06a771e6397444277372706761cc4ae76e24511a72ca48b5c43a8a",
+    "state": "Madrid"
   },
   {
     "name": "Utopia café",
@@ -6962,7 +7086,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "66cf3ac55d84c8657d58e2654e12298c66cf1a3ea07dec0da491618f0f6d737c"
+    "id": "66cf3ac55d84c8657d58e2654e12298c66cf1a3ea07dec0da491618f0f6d737c",
+    "state": "Sevilla"
   },
   {
     "name": "Wilko",
@@ -7005,7 +7130,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9608fb2270e5d8d9810c52ff66fffc00d83b9c9168bb85ed628611f9b37af2ea"
+    "id": "9608fb2270e5d8d9810c52ff66fffc00d83b9c9168bb85ed628611f9b37af2ea",
+    "state": "Madrid"
   },
   {
     "name": "Raices Cafe",
@@ -7064,7 +7190,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "70e4b993abc0e09baf449c23bdb59510b184344a0c9154697a47ff771ebe83f0"
+    "id": "70e4b993abc0e09baf449c23bdb59510b184344a0c9154697a47ff771ebe83f0",
+    "state": "Valencia"
   },
   {
     "name": "Bahay Specialty Coffee",
@@ -7126,7 +7253,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5a2ba4626822b45a5d1e4a6a464f74a6dd814118b36e40e5a6a19c862626fdc2"
+    "id": "5a2ba4626822b45a5d1e4a6a464f74a6dd814118b36e40e5a6a19c862626fdc2",
+    "state": "Madrid"
   },
   {
     "name": "Lille Drømme kaffe",
@@ -7187,7 +7315,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "badfc9451505d1b31382f128563a107dd375c32f0351ad2b6048deee63b216e7"
+    "id": "badfc9451505d1b31382f128563a107dd375c32f0351ad2b6048deee63b216e7",
+    "state": "Madrid"
   },
   {
     "name": "Kofi - Specialty coffee roasters & bagels",
@@ -7248,7 +7377,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "83153468dc06e0b9665aa3af682458e27176eca4037b9ac74cdcdc089b101273"
+    "id": "83153468dc06e0b9665aa3af682458e27176eca4037b9ac74cdcdc089b101273",
+    "state": "Islas Baleares"
   },
   {
     "name": "ANOMALY | Specialty House",
@@ -7309,7 +7439,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "180125137ca9ef6fa696681bb7b93c1cc46370b5fbcfc4d5c63c8bf6fcb61a28"
+    "id": "180125137ca9ef6fa696681bb7b93c1cc46370b5fbcfc4d5c63c8bf6fcb61a28",
+    "state": "Alicante"
   },
   {
     "name": "ÖSS Kaffe Barcelona",
@@ -7352,7 +7483,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1fb9ed9f0b501117929be1656f4b481d0eb1aea08d83ba86fa005fbae1ecd9b3"
+    "id": "1fb9ed9f0b501117929be1656f4b481d0eb1aea08d83ba86fa005fbae1ecd9b3",
+    "state": "Barcelona"
   },
   {
     "name": "BOTANICA Coffee Experience",
@@ -7414,7 +7546,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "bd709700c857c95f6b6e339460bd71d9cc722404cd83131ee443473daa314e7e"
+    "id": "bd709700c857c95f6b6e339460bd71d9cc722404cd83131ee443473daa314e7e",
+    "state": "Alicante"
   },
   {
     "name": "CAPA.",
@@ -7474,7 +7607,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "fdc5fb5a2a6b1be4c10dca4e13c899f1ea2976ab6052e153ad7893f195cf97a7"
+    "id": "fdc5fb5a2a6b1be4c10dca4e13c899f1ea2976ab6052e153ad7893f195cf97a7",
+    "state": "Islas Baleares"
   },
   {
     "name": "Kaapeh",
@@ -7534,7 +7668,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ffb877f796d56b50f43937518e7c3b3c57e2b2ff5e5fa963280c12269cdaf9ac"
+    "id": "ffb877f796d56b50f43937518e7c3b3c57e2b2ff5e5fa963280c12269cdaf9ac",
+    "state": "Barcelona"
   },
   {
     "name": "Syra Coffee",
@@ -7577,7 +7712,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f58455efcab44b6809e8b5cd74c39b3b9ab10069bfcf6e04abb234b6c7b7e544"
+    "id": "f58455efcab44b6809e8b5cd74c39b3b9ab10069bfcf6e04abb234b6c7b7e544",
+    "state": "Sevilla"
   },
   {
     "name": "VUKA",
@@ -7637,7 +7773,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b593b6f22a137f9537ca30a3a02b223a919c7157271d601a32275477b279f3e2"
+    "id": "b593b6f22a137f9537ca30a3a02b223a919c7157271d601a32275477b279f3e2",
+    "state": "Valencia"
   },
   {
     "name": "The Little Big Cafe",
@@ -7680,7 +7817,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "20d8b49c1afedd1de884fb1cfb62f5640110255b601f5dc1f656be556d7962b0"
+    "id": "20d8b49c1afedd1de884fb1cfb62f5640110255b601f5dc1f656be556d7962b0",
+    "state": "Madrid"
   },
   {
     "name": "Pan y Pepinillos Café",
@@ -7741,7 +7879,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9583189926263ae6adac669d2fcacc1998755676f3a668776fd73f511d9b29c6"
+    "id": "9583189926263ae6adac669d2fcacc1998755676f3a668776fd73f511d9b29c6",
+    "state": "Madrid"
   },
   {
     "name": "Nina cafe y musiquita",
@@ -7801,7 +7940,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "48b44cc4a5e791dc5df9a74ba5bc1d58dc243748810f2053ea0f57cb791292f8"
+    "id": "48b44cc4a5e791dc5df9a74ba5bc1d58dc243748810f2053ea0f57cb791292f8",
+    "state": "Málaga"
   },
   {
     "name": "Abbiocco Brunch",
@@ -7861,7 +8001,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "79345e6e719194b269a02e24441c89be65fe67d37d004d716a0b748d91a7cbf7"
+    "id": "79345e6e719194b269a02e24441c89be65fe67d37d004d716a0b748d91a7cbf7",
+    "state": "Lleida"
   },
   {
     "name": "Barbaflorida cafè",
@@ -7924,7 +8065,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2db690b0c269024ba9dc09a7db7d8ce67d8049bc8962fdd9cb6079bd41aee252"
+    "id": "2db690b0c269024ba9dc09a7db7d8ce67d8049bc8962fdd9cb6079bd41aee252",
+    "state": "Islas Baleares"
   },
   {
     "name": "Blend brunch & speciality coffee",
@@ -7986,7 +8128,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "82b0643ce9f89fc1fdaa94e936df489093307cd68c2fe5517ca803739dfe1a81"
+    "id": "82b0643ce9f89fc1fdaa94e936df489093307cd68c2fe5517ca803739dfe1a81",
+    "state": "Islas Baleares"
   },
   {
     "name": "Misto Café Bar",
@@ -8047,7 +8190,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "812893e6dd2ee1a45d02bd52d92406cf9180bf6dbf8f70b4325f177f4154c877"
+    "id": "812893e6dd2ee1a45d02bd52d92406cf9180bf6dbf8f70b4325f177f4154c877",
+    "state": "Pontevedra"
   },
   {
     "name": "XALBA cafe",
@@ -8109,7 +8253,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4e4f74122f4d792070078db45de3be02332d48bf10618ed928c694fa9854e048"
+    "id": "4e4f74122f4d792070078db45de3be02332d48bf10618ed928c694fa9854e048",
+    "state": "Navarra"
   },
   {
     "name": "COFFEE BERRY",
@@ -8172,7 +8317,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f80e7c4927dd1f374666796c2505290da649980477bfa6ddb84aef22b3f30448"
+    "id": "f80e7c4927dd1f374666796c2505290da649980477bfa6ddb84aef22b3f30448",
+    "state": "Alicante"
   },
   {
     "name": "Ambu Coffee",
@@ -8229,7 +8375,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5dcc33f41f2fcbb0bb2088dae454bef9a23073c68bd26c7524da0ec446293893"
+    "id": "5dcc33f41f2fcbb0bb2088dae454bef9a23073c68bd26c7524da0ec446293893",
+    "state": "Madrid"
   },
   {
     "name": "Doux-Amer Café",
@@ -8292,7 +8439,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "a2b09ba9b6e6820ab8de249bbd03996c219a72968d5452d5b2b5c6d4884ae9d2"
+    "id": "a2b09ba9b6e6820ab8de249bbd03996c219a72968d5452d5b2b5c6d4884ae9d2",
+    "state": "Valencia"
   },
   {
     "name": "Café Fadrí",
@@ -8354,7 +8502,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "948eef98a15016ef220ec72c4e276dd81b5e9dca2ca9b0658326ef4def124294"
+    "id": "948eef98a15016ef220ec72c4e276dd81b5e9dca2ca9b0658326ef4def124294",
+    "state": "Tarragona"
   },
   {
     "name": "Tacoffee",
@@ -8415,7 +8564,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "0c33971258c165318dd11712a78a78b8278746b800ab188f1a2ee54595f011b3"
+    "id": "0c33971258c165318dd11712a78a78b8278746b800ab188f1a2ee54595f011b3",
+    "state": "Islas Baleares"
   },
   {
     "name": "Dupla Specialty Coffee",
@@ -8476,7 +8626,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "341da420aa436e91124cf2c167caf1567500492385d3c62ae151c6ea31582dc7"
+    "id": "341da420aa436e91124cf2c167caf1567500492385d3c62ae151c6ea31582dc7",
+    "state": "Vizcaya"
   },
   {
     "name": "Candela",
@@ -8519,7 +8670,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "636b8911e7de0279b5ce35cba9aa35d54697fe3c344db0a72b75517a9e3355b5"
+    "id": "636b8911e7de0279b5ce35cba9aa35d54697fe3c344db0a72b75517a9e3355b5",
+    "state": "Barcelona"
   },
   {
     "name": "Dot Café Bar",
@@ -8564,7 +8716,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "55b831d7777f11f1e34d52d3fbaa2012c3611f5b3fe6b1104af88e9bea3ccc58"
+    "id": "55b831d7777f11f1e34d52d3fbaa2012c3611f5b3fe6b1104af88e9bea3ccc58",
+    "state": "Madrid"
   },
   {
     "name": "On y va Sarria",
@@ -8607,7 +8760,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "23fc81084b631411c7884d443e0bbfc6cfd98551df652617920b6a7b9d87e0de"
+    "id": "23fc81084b631411c7884d443e0bbfc6cfd98551df652617920b6a7b9d87e0de",
+    "state": "Barcelona"
   },
   {
     "name": "Ōfi cafe",
@@ -8667,7 +8821,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "3709d15b5c9b95cbe628f230ed0e26c0d85e511a065a039a8a2aedb32f69fd3f"
+    "id": "3709d15b5c9b95cbe628f230ed0e26c0d85e511a065a039a8a2aedb32f69fd3f",
+    "state": "Madrid"
   },
   {
     "name": "Destino Café",
@@ -8710,7 +8865,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5e83cc951b7e45586602080abf3de2a44d80511a8d5afb2149699a095fdc8e1f"
+    "id": "5e83cc951b7e45586602080abf3de2a44d80511a8d5afb2149699a095fdc8e1f",
+    "state": "Las Palmas"
   },
   {
     "name": "Sagra Specialty Coffee",
@@ -8771,7 +8927,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5fd38a2e73abf999c3f97d867ffc8c79b7d2768b7ba05cc7df21f21acd567bd7"
+    "id": "5fd38a2e73abf999c3f97d867ffc8c79b7d2768b7ba05cc7df21f21acd567bd7",
+    "state": "Barcelona"
   },
   {
     "name": "BCOFFEE",
@@ -8831,7 +8988,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b1ac4f97a4cc0f6fea7d110572c31eebb826bcedc593043cfdf12ad025d4713c"
+    "id": "b1ac4f97a4cc0f6fea7d110572c31eebb826bcedc593043cfdf12ad025d4713c",
+    "state": "Barcelona"
   },
   {
     "name": "MEnUT",
@@ -8891,7 +9049,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "da55d9f6a56cbfa13d01f0a80e1548a379736dba50db87342774a21974fec7c4"
+    "id": "da55d9f6a56cbfa13d01f0a80e1548a379736dba50db87342774a21974fec7c4",
+    "state": "Islas Baleares"
   },
   {
     "name": "Misión Café",
@@ -8951,7 +9110,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "54bf118dd800dbcf03ef011271ca66d759bfa18457b96533c262ccb943e9e8e0"
+    "id": "54bf118dd800dbcf03ef011271ca66d759bfa18457b96533c262ccb943e9e8e0",
+    "state": "Madrid"
   },
   {
     "name": "9 Lives Bakery",
@@ -9011,7 +9171,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "28cfdee84cd3ad12f9724de079561b33f56cae506cc06fb3560094ae4f2d154f"
+    "id": "28cfdee84cd3ad12f9724de079561b33f56cae506cc06fb3560094ae4f2d154f",
+    "state": "Madrid"
   },
   {
     "name": "Junior’s coffee",
@@ -9068,7 +9229,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2e6462676fb34fdcc32352bb8deb6f7e0fbed58bd47bad45f03b4861d511ce9a"
+    "id": "2e6462676fb34fdcc32352bb8deb6f7e0fbed58bd47bad45f03b4861d511ce9a",
+    "state": "Madrid"
   },
   {
     "name": "Elocuente",
@@ -9127,7 +9289,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "86c3605ba79034e3d8901d9ab15a6cf58223540b5390bfece2501956a1a20290"
+    "id": "86c3605ba79034e3d8901d9ab15a6cf58223540b5390bfece2501956a1a20290",
+    "state": "Barcelona"
   },
   {
     "name": "Roots",
@@ -9190,7 +9353,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "43adafe1552a7a9dc4adbfdf8eb62374659d03c4b1501bb54da98a0d49193899"
+    "id": "43adafe1552a7a9dc4adbfdf8eb62374659d03c4b1501bb54da98a0d49193899",
+    "state": "La Rioja"
   },
   {
     "name": "Vértigo y Calambre",
@@ -9233,7 +9397,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2e4ec4f706c523e51765fc916d952d83a3d27436dd28de1b9b620a493924ecda"
+    "id": "2e4ec4f706c523e51765fc916d952d83a3d27436dd28de1b9b620a493924ecda",
+    "state": "Murcia"
   },
   {
     "name": "OMA Bistro",
@@ -9292,7 +9457,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "0c24c31ed30cf02c4c126ea25dfb53bfb7f95a4291b32821df7886c016e70100"
+    "id": "0c24c31ed30cf02c4c126ea25dfb53bfb7f95a4291b32821df7886c016e70100",
+    "state": "Barcelona"
   },
   {
     "name": "Parcería Café",
@@ -9352,7 +9518,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e28853cc7b438951151d635578d8784f0f4af15462be995bbc2b865476538617"
+    "id": "e28853cc7b438951151d635578d8784f0f4af15462be995bbc2b865476538617",
+    "state": "Sevilla"
   },
   {
     "name": "Meke Cafe",
@@ -9413,7 +9580,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "50d55bad0b6ddbae54f5849eb5275904b7177c22c573b21e69b4073362b1b088"
+    "id": "50d55bad0b6ddbae54f5849eb5275904b7177c22c573b21e69b4073362b1b088",
+    "state": "Islas Baleares"
   },
   {
     "name": "Swallow Specialty Coffee",
@@ -9471,7 +9639,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e7db2b5c88ff497126693efbec2ac6edd87adf622d81f86275c2742fc063c69b"
+    "id": "e7db2b5c88ff497126693efbec2ac6edd87adf622d81f86275c2742fc063c69b",
+    "state": "Alicante"
   },
   {
     "name": "Café Chico",
@@ -9530,7 +9699,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1a35cbd3536b92a71e21dbf7f8694c0399ca3416019d77892178fd9d8284849d"
+    "id": "1a35cbd3536b92a71e21dbf7f8694c0399ca3416019d77892178fd9d8284849d",
+    "state": "Barcelona"
   },
   {
     "name": "Lodetto",
@@ -9589,7 +9759,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b8bc63858c87475641983f0b71e3b469b5645a1d7b122cb700bbcf8894a05175"
+    "id": "b8bc63858c87475641983f0b71e3b469b5645a1d7b122cb700bbcf8894a05175",
+    "state": "Barcelona"
   },
   {
     "name": "Bianchi Kiosko Caffé",
@@ -9632,7 +9803,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "68b8b828eb2e36fa19a4a167ca40675b1c43237062dea04170a2a43a72c3f8db"
+    "id": "68b8b828eb2e36fa19a4a167ca40675b1c43237062dea04170a2a43a72c3f8db",
+    "state": "Madrid"
   },
   {
     "name": "Despiertoo",
@@ -9692,7 +9864,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8ece232ab77ae1deb31664c39519bd5b79d92297a4ccfb2a4128be05e0a7d884"
+    "id": "8ece232ab77ae1deb31664c39519bd5b79d92297a4ccfb2a4128be05e0a7d884",
+    "state": "Granada"
   },
   {
     "name": "Peseta Café y Prensa",
@@ -9750,7 +9923,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "97e5c992cebcfb85632f4a6cac785c82c4f5a3d44c2b91ab5781b1b2655391bb"
+    "id": "97e5c992cebcfb85632f4a6cac785c82c4f5a3d44c2b91ab5781b1b2655391bb",
+    "state": "Valladolid"
   },
   {
     "name": "Perspectives",
@@ -9812,7 +9986,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "eb0e126b9ba6834318fa98336879733542a68b811948f84f8ea10efae8b7998f"
+    "id": "eb0e126b9ba6834318fa98336879733542a68b811948f84f8ea10efae8b7998f",
+    "state": "Granada"
   },
   {
     "name": "OM CAFE",
@@ -9873,7 +10048,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8c18498b14b75569e86e77c82f98edc6edf90583fd78e99041ce7e6f95a14576"
+    "id": "8c18498b14b75569e86e77c82f98edc6edf90583fd78e99041ce7e6f95a14576",
+    "state": "Álava"
   },
   {
     "name": "Monkee",
@@ -9936,7 +10112,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "43fa996df7ab526264671ad1f9e0652b61f509a4f1fa40cd96f09501bdc19658"
+    "id": "43fa996df7ab526264671ad1f9e0652b61f509a4f1fa40cd96f09501bdc19658",
+    "state": "Madrid"
   },
   {
     "name": "Bô Coffee",
@@ -9979,7 +10156,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "844af944731314fe04e769a7e4e9c069e93b9cc3a284f111cc55b1decd290ab2"
+    "id": "844af944731314fe04e769a7e4e9c069e93b9cc3a284f111cc55b1decd290ab2",
+    "state": "Madrid"
   },
   {
     "name": "Ringo banana",
@@ -10038,7 +10216,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cf79862439a565d907e2b976f06b0b47fc8adc7e643cd0a8ea24c0953dbaba50"
+    "id": "cf79862439a565d907e2b976f06b0b47fc8adc7e643cd0a8ea24c0953dbaba50",
+    "state": "Sevilla"
   },
   {
     "name": "La Escala",
@@ -10100,7 +10279,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5aaa9681b733907bfaa1259249def558957b6ec444111749b23754b2d6d055ec"
+    "id": "5aaa9681b733907bfaa1259249def558957b6ec444111749b23754b2d6d055ec",
+    "state": "Santa Cruz de Tenerife"
   },
   {
     "name": "Padoca",
@@ -10161,7 +10341,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "80c5feb3c803674a2ce33256b99b22666a5f020c62525b6df61eaa39b1ca7a2d"
+    "id": "80c5feb3c803674a2ce33256b99b22666a5f020c62525b6df61eaa39b1ca7a2d",
+    "state": "Barcelona"
   },
   {
     "name": "Soma Café",
@@ -10224,7 +10405,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5dca8f423ae1fcbdece10ff79a93d78a5c10e7affa315c852498fb0030a58ad6"
+    "id": "5dca8f423ae1fcbdece10ff79a93d78a5c10e7affa315c852498fb0030a58ad6",
+    "state": "Islas Baleares"
   },
   {
     "name": "Buna",
@@ -10284,7 +10466,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d38f26b5cf857cfce343288a7c0bcf2c13bed3cf3068f20bfea5be2a3f09d450"
+    "id": "d38f26b5cf857cfce343288a7c0bcf2c13bed3cf3068f20bfea5be2a3f09d450",
+    "state": "Barcelona"
   },
   {
     "name": "Idle Hands",
@@ -10346,7 +10529,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2ae8fb36f49b82174d247a3256aaff090704a96315e8b720b8afaf925e1e31b9"
+    "id": "2ae8fb36f49b82174d247a3256aaff090704a96315e8b720b8afaf925e1e31b9",
+    "state": "Girona"
   },
   {
     "name": "MESTIZO",
@@ -10408,7 +10592,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cd62859c055dadc2986c6bb3bb9144b76925dfe5b8e9002e008bd9cb13d89bc6"
+    "id": "cd62859c055dadc2986c6bb3bb9144b76925dfe5b8e9002e008bd9cb13d89bc6",
+    "state": "Valencia"
   },
   {
     "name": "NOKORA Specialty Coffee",
@@ -10469,7 +10654,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f1e52897d2a5ea307a680cd9877f070f2c5c6c29d3446a164400ae3e947cd559"
+    "id": "f1e52897d2a5ea307a680cd9877f070f2c5c6c29d3446a164400ae3e947cd559",
+    "state": "Vizcaya"
   },
   {
     "name": "Origo",
@@ -10527,7 +10713,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5132e5c6d4f03a0c1643cfdaaf04b2a0f181823e053a5d5bcb6680b22dbc4bc6"
+    "id": "5132e5c6d4f03a0c1643cfdaaf04b2a0f181823e053a5d5bcb6680b22dbc4bc6",
+    "state": "Barcelona"
   },
   {
     "name": "Nomade Cafe",
@@ -10570,7 +10757,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8d258fb6ca264561bbb167995f8f1a56d00a1bcf84bbc02931974bcba14a369d"
+    "id": "8d258fb6ca264561bbb167995f8f1a56d00a1bcf84bbc02931974bcba14a369d",
+    "state": "Madrid"
   },
   {
     "name": "Rosevelvet Bakery",
@@ -10613,7 +10801,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "686f0ecf67e385b1d507bd57da9d69251a0bc02f9f41417d349c183125943d49"
+    "id": "686f0ecf67e385b1d507bd57da9d69251a0bc02f9f41417d349c183125943d49",
+    "state": "Islas Baleares"
   },
   {
     "name": "Slow Coffee Tenerife",
@@ -10675,7 +10864,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f84589075c9c6330ee4bfb2fe9dab5bc401e5d5876515608063fc59ce5dd04f3"
+    "id": "f84589075c9c6330ee4bfb2fe9dab5bc401e5d5876515608063fc59ce5dd04f3",
+    "state": "Santa Cruz de Tenerife"
   },
   {
     "name": "Nora Coffee",
@@ -10733,7 +10923,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1c843672c599fff7e0f532f3b7d34b8cca21c62c1ecef9f739234ead39362e3f"
+    "id": "1c843672c599fff7e0f532f3b7d34b8cca21c62c1ecef9f739234ead39362e3f",
+    "state": "Barcelona"
   },
   {
     "name": "Drømme Kaffe House",
@@ -10776,7 +10967,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4b43833b2ca6c58482cd1a941967f24ba1bc5e1d596f7793bff3a0c7c5a2e93b"
+    "id": "4b43833b2ca6c58482cd1a941967f24ba1bc5e1d596f7793bff3a0c7c5a2e93b",
+    "state": "Madrid"
   },
   {
     "name": "El Perro de Pavlov",
@@ -10819,7 +11011,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ac9dd7eed019977e136098c17aebd5d7e93f16faf76821c32900dc7657e08a25"
+    "id": "ac9dd7eed019977e136098c17aebd5d7e93f16faf76821c32900dc7657e08a25",
+    "state": "Madrid"
   },
   {
     "name": "HOROSCOFFEE",
@@ -10883,7 +11076,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ef4acbc90ac45aef255703ed3604f68680c2df09b1e19f7fc2a066fdffc9541e"
+    "id": "ef4acbc90ac45aef255703ed3604f68680c2df09b1e19f7fc2a066fdffc9541e",
+    "state": "Barcelona"
   },
   {
     "name": "La Gente Café",
@@ -10945,7 +11139,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "96656d68e2f97b453eef700eb23e97dd4a35ecd031368f88673c2e4a6e73a0eb"
+    "id": "96656d68e2f97b453eef700eb23e97dd4a35ecd031368f88673c2e4a6e73a0eb",
+    "state": "Asturias"
   },
   {
     "name": "Whatever Coffee",
@@ -11005,7 +11200,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "55e0eec22346e9ffda932ef3bd1b271e40c1a061aff8d3cd1b56e72befde8141"
+    "id": "55e0eec22346e9ffda932ef3bd1b271e40c1a061aff8d3cd1b56e72befde8141",
+    "state": "Asturias"
   },
   {
     "name": "La Maglia Coffee & Co",
@@ -11066,7 +11262,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5293ce37750b535542e03c6960c5245a0566fda51380341041d40c74ec67614d"
+    "id": "5293ce37750b535542e03c6960c5245a0566fda51380341041d40c74ec67614d",
+    "state": "Girona"
   },
   {
     "name": "Oways Café",
@@ -11123,7 +11320,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "42b238ca0ef8be04faf44e8f4b67621ff38bf316b5d13321dcced13350ee186e"
+    "id": "42b238ca0ef8be04faf44e8f4b67621ff38bf316b5d13321dcced13350ee186e",
+    "state": "Madrid"
   },
   {
     "name": "Rebel Cafe",
@@ -11182,7 +11380,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e2f8a3e561d32ae4ec918534e5b71ef67d30fc94848e99098e922f4e4178cd58"
+    "id": "e2f8a3e561d32ae4ec918534e5b71ef67d30fc94848e99098e922f4e4178cd58",
+    "state": "Madrid"
   },
   {
     "name": "Espresso Mafia",
@@ -11225,7 +11424,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9267d98149de6fc6c697a26da002ca3c9c6d155e50c766271a3949b793080dce"
+    "id": "9267d98149de6fc6c697a26da002ca3c9c6d155e50c766271a3949b793080dce",
+    "state": "Girona"
   },
   {
     "name": "Ochocero café lo-fi",
@@ -11282,7 +11482,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "01e592ccc814b534875bee27487092671a078b3017815183004db9c00c3978a8"
+    "id": "01e592ccc814b534875bee27487092671a078b3017815183004db9c00c3978a8",
+    "state": "Madrid"
   },
   {
     "name": "Alquimista Coffee Lab",
@@ -11325,7 +11526,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c606c03572b1d7a7fc389903ef05bffce1dfe61d30995187b2085e0749c09dd6"
+    "id": "c606c03572b1d7a7fc389903ef05bffce1dfe61d30995187b2085e0749c09dd6",
+    "state": "Sevilla"
   },
   {
     "name": "La Molienda Arxiduc Lluis Salvador",
@@ -11368,7 +11570,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "09ad841a859aa1bf85327bd3dd047cabb7c13eaf1b5372103da6e3898196b3bf"
+    "id": "09ad841a859aa1bf85327bd3dd047cabb7c13eaf1b5372103da6e3898196b3bf",
+    "state": "Islas Baleares"
   },
   {
     "name": "Ripa Coffee",
@@ -11426,7 +11629,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "aa57cf74273429af5af309b41a27b35741bec790ea70e91896a19eea5a9b698b"
+    "id": "aa57cf74273429af5af309b41a27b35741bec790ea70e91896a19eea5a9b698b",
+    "state": "Barcelona"
   },
   {
     "name": "Simona coffee",
@@ -11483,7 +11687,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5817f33ffa11a7b8dabcf68529643b0ca1c1d052851191fb140aa9ca728fd4aa"
+    "id": "5817f33ffa11a7b8dabcf68529643b0ca1c1d052851191fb140aa9ca728fd4aa",
+    "state": "Barcelona"
   },
   {
     "name": "Pantastic",
@@ -11546,7 +11751,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "bd46bd627840a9975d2776680cfee7645a8bf8ea776bc1192fd82c30c889340e"
+    "id": "bd46bd627840a9975d2776680cfee7645a8bf8ea776bc1192fd82c30c889340e",
+    "state": "Islas Baleares"
   },
   {
     "name": "Bean Coffee",
@@ -11603,7 +11809,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b5d121117ee67699e36ccca98e11348667f71b46bcf7db8e5d9f630bd7eb10c1"
+    "id": "b5d121117ee67699e36ccca98e11348667f71b46bcf7db8e5d9f630bd7eb10c1",
+    "state": "Zaragoza"
   },
   {
     "name": "Naji Specialty Coffee",
@@ -11665,7 +11872,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "559df339c0b8208cc6952b20729b15d46e3010b1a6891f089e197a8882c802a1"
+    "id": "559df339c0b8208cc6952b20729b15d46e3010b1a6891f089e197a8882c802a1",
+    "state": "Madrid"
   },
   {
     "name": "Nano Coffee Lab.",
@@ -11721,7 +11929,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e4926425cac1a4f0c6221a99a62d692d1a316b9c5a113c4ab87fccc09b555eb3"
+    "id": "e4926425cac1a4f0c6221a99a62d692d1a316b9c5a113c4ab87fccc09b555eb3",
+    "state": "Islas Baleares"
   },
   {
     "name": "Musa Specialty Coffee",
@@ -11779,7 +11988,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "fed0640edb42f9337c67564c6121603254a3e376004ec1074687338be93e93b1"
+    "id": "fed0640edb42f9337c67564c6121603254a3e376004ec1074687338be93e93b1",
+    "state": "Málaga"
   },
   {
     "name": "Noti Coffee Roasters",
@@ -11842,7 +12052,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "0470981b9b7bf06da01c938a0175d9e9cafeef2bbd77cdc48c93bed250d28052"
+    "id": "0470981b9b7bf06da01c938a0175d9e9cafeef2bbd77cdc48c93bed250d28052",
+    "state": "Islas Baleares"
   },
   {
     "name": "Botánica",
@@ -11903,7 +12114,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c045bdca4ed5502e48c1180aa07b25cf130ba2b29a14dcf8bd245b3487145245"
+    "id": "c045bdca4ed5502e48c1180aa07b25cf130ba2b29a14dcf8bd245b3487145245",
+    "state": "Madrid"
   },
   {
     "name": "Oppa",
@@ -11963,7 +12175,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "bcec6d1d2234fc533273b16757c549b474c54b84ab656f2ef9a692b861a6375e"
+    "id": "bcec6d1d2234fc533273b16757c549b474c54b84ab656f2ef9a692b861a6375e",
+    "state": "Las Palmas"
   },
   {
     "name": "Bonsai Café",
@@ -12022,7 +12235,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "579cff0000a2ade62f75d13748bc679e619e8ede0f4357286c92873a28d5875f"
+    "id": "579cff0000a2ade62f75d13748bc679e619e8ede0f4357286c92873a28d5875f",
+    "state": "A Coruña"
   },
   {
     "name": "BIOMIO",
@@ -12080,7 +12294,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c5b90f34e70dd3262421848835413bce29465940e6574cbd30de34c6d1f3e80d"
+    "id": "c5b90f34e70dd3262421848835413bce29465940e6574cbd30de34c6d1f3e80d",
+    "state": "Sevilla"
   },
   {
     "name": "WACO Coffee",
@@ -12123,7 +12338,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "43ef6731f46bc85cf135406d84969132e59298ce3f1f7957db6737236ec33bbc"
+    "id": "43ef6731f46bc85cf135406d84969132e59298ce3f1f7957db6737236ec33bbc",
+    "state": "A Coruña"
   },
   {
     "name": "Sinaz Coffee",
@@ -12178,7 +12394,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2429b8b9b155882ecdb41280a7c5cdd7c2e2c5110cbbb419a87171527e37c5d7"
+    "id": "2429b8b9b155882ecdb41280a7c5cdd7c2e2c5110cbbb419a87171527e37c5d7",
+    "state": "Pontevedra"
   },
   {
     "name": "The Barn Mallorca",
@@ -12239,7 +12456,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "45b277b2038f085e65c4927636bda46d89711ada613ecf87685d34effabd6386"
+    "id": "45b277b2038f085e65c4927636bda46d89711ada613ecf87685d34effabd6386",
+    "state": "Islas Baleares"
   },
   {
     "name": "Cafeinomanos Valencia",
@@ -12297,7 +12515,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "284d596ed2dafdb86dd687446265f07154a99f88dbad2c547aba7be5867e129c"
+    "id": "284d596ed2dafdb86dd687446265f07154a99f88dbad2c547aba7be5867e129c",
+    "state": "Valencia"
   },
   {
     "name": "Xiloteca",
@@ -12340,7 +12559,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "a5680928edf8ac63439d4d6fba60fb3fa36673499050d0390ed4039403f0a544"
+    "id": "a5680928edf8ac63439d4d6fba60fb3fa36673499050d0390ed4039403f0a544",
+    "state": "Barcelona"
   },
   {
     "name": "El Noa Noa",
@@ -12399,7 +12619,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "90ae6fdf6054046b7cc42abe36d3d79ac8472740392e2be2c5e42bc8513279b6"
+    "id": "90ae6fdf6054046b7cc42abe36d3d79ac8472740392e2be2c5e42bc8513279b6",
+    "state": "Barcelona"
   },
   {
     "name": "BOLO | Coffee & Bread",
@@ -12459,7 +12680,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d2f326f2838bf7fea94e2d18e1ff3d7e0d5429c05760873834191838cc2b59cf"
+    "id": "d2f326f2838bf7fea94e2d18e1ff3d7e0d5429c05760873834191838cc2b59cf",
+    "state": "Málaga"
   },
   {
     "name": "Apurado",
@@ -12519,7 +12741,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "fb435155ae85297e3eb238a8a21dae2739c5a088eed53bfc03d7db12349376a6"
+    "id": "fb435155ae85297e3eb238a8a21dae2739c5a088eed53bfc03d7db12349376a6",
+    "state": "Barcelona"
   },
   {
     "name": "La Molienda Pollença",
@@ -12581,7 +12804,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "749185660b409da1e5e4e61914305b6a687d34e72f9613f2e142b6a65609ef18"
+    "id": "749185660b409da1e5e4e61914305b6a687d34e72f9613f2e142b6a65609ef18",
+    "state": "Islas Baleares"
   },
   {
     "name": "DABOV Specialty Coffee Madrid",
@@ -12624,7 +12848,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "28bb86ee1d1f66dddc89f2e9aef00351a68b20afda961feecc088f34ead4693a"
+    "id": "28bb86ee1d1f66dddc89f2e9aef00351a68b20afda961feecc088f34ead4693a",
+    "state": "Madrid"
   },
   {
     "name": "Acho coffee",
@@ -12682,7 +12907,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f36004357aae9c0eadf46b13cae7dfc64de67f74f0407d2497a093346b6b48f0"
+    "id": "f36004357aae9c0eadf46b13cae7dfc64de67f74f0407d2497a093346b6b48f0",
+    "state": "Zaragoza"
   },
   {
     "name": "Tostarte",
@@ -12744,7 +12970,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c363d3ae9869715c62a6079c1d3581d7792a216b952bc8ecb2f0d9e2aa807fde"
+    "id": "c363d3ae9869715c62a6079c1d3581d7792a216b952bc8ecb2f0d9e2aa807fde",
+    "state": "Valencia"
   },
   {
     "name": "Café Colomer",
@@ -12804,7 +13031,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8b31ef61d9b64471f46de30c9cc9b644c805aacfa023c88a2945bf3586e18241"
+    "id": "8b31ef61d9b64471f46de30c9cc9b644c805aacfa023c88a2945bf3586e18241",
+    "state": "Valencia"
   },
   {
     "name": "Doña Barbara Cafe",
@@ -12863,7 +13091,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d295fa3aa489765b64d5b17e0bfd45b0c5149b3f967c56fa3795c6100e0d8ced"
+    "id": "d295fa3aa489765b64d5b17e0bfd45b0c5149b3f967c56fa3795c6100e0d8ced",
+    "state": "A Coruña"
   },
   {
     "name": "Mellow",
@@ -12921,7 +13150,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1a51cb39eef7b2dba13fbaa6890ccd3fffc6c8f9a0ea7e6708f24a893391576b"
+    "id": "1a51cb39eef7b2dba13fbaa6890ccd3fffc6c8f9a0ea7e6708f24a893391576b",
+    "state": "Burgos"
   },
   {
     "name": "Buche café - Specialty Coffee & Bar",
@@ -12981,7 +13211,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8f1d571aeb243b09949a43f795d751335fb35db42de80cdfa9b9ecdf2651f532"
+    "id": "8f1d571aeb243b09949a43f795d751335fb35db42de80cdfa9b9ecdf2651f532",
+    "state": "Valencia"
   },
   {
     "name": "Márago Café",
@@ -13043,7 +13274,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1c4e45d02bdf149f1d0a269a5470f2e0bc1f5caf68c08ec04d4d2f92b9097027"
+    "id": "1c4e45d02bdf149f1d0a269a5470f2e0bc1f5caf68c08ec04d4d2f92b9097027",
+    "state": "Valencia"
   },
   {
     "name": "Caracolillo Coffee",
@@ -13106,7 +13338,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1e028372d00a8a8e39eea5bfaa7844e1b3725bfcbb2e3142bb779161733110ba"
+    "id": "1e028372d00a8a8e39eea5bfaa7844e1b3725bfcbb2e3142bb779161733110ba",
+    "state": "Las Palmas"
   },
   {
     "name": "Barista’s Club",
@@ -13168,7 +13401,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "992b84e157f575eb0a5d222f605afce08830a85250ee94bba34df65457ac15d3"
+    "id": "992b84e157f575eb0a5d222f605afce08830a85250ee94bba34df65457ac15d3",
+    "state": "Vizcaya"
   },
   {
     "name": "La Cuarta Pared",
@@ -13231,7 +13465,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cc6ecd423a0c3087741ec952234d7e67a76eb139cac777ca7a440bb75414b07c"
+    "id": "cc6ecd423a0c3087741ec952234d7e67a76eb139cac777ca7a440bb75414b07c",
+    "state": "Santa Cruz de Tenerife"
   },
   {
     "name": "Santa Coffee Camas",
@@ -13294,7 +13529,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "454eca7a282f0d79659bfa7d0206b4c0e54d9cc704f3971eb0e8dc4b4c00f71b"
+    "id": "454eca7a282f0d79659bfa7d0206b4c0e54d9cc704f3971eb0e8dc4b4c00f71b",
+    "state": "Málaga"
   },
   {
     "name": "NEPO CAFÉ",
@@ -13337,7 +13573,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "523a20ed9d47329b4c06d925a0767f5c0d171066280f2c21b53e2d7d14d18ef1"
+    "id": "523a20ed9d47329b4c06d925a0767f5c0d171066280f2c21b53e2d7d14d18ef1",
+    "state": "Madrid"
   },
   {
     "name": "The Miners Gran Via",
@@ -13400,7 +13637,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "0bc8b38cf2e54931a1a11af8b498506e49df0321a4616483bdc4b950f1edd458"
+    "id": "0bc8b38cf2e54931a1a11af8b498506e49df0321a4616483bdc4b950f1edd458",
+    "state": "Barcelona"
   },
   {
     "name": "Parque café",
@@ -13443,7 +13681,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cfaa134ca0d12751fa74daaea30caf1b5b31fa2ea5541c52d5131b611c80f638"
+    "id": "cfaa134ca0d12751fa74daaea30caf1b5b31fa2ea5541c52d5131b611c80f638",
+    "state": "Madrid"
   },
   {
     "name": "Brilla",
@@ -13486,7 +13725,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "13cc63cc67805f976b3507c682763d98653d26c4f9a14f443d9a387ca13e94ad"
+    "id": "13cc63cc67805f976b3507c682763d98653d26c4f9a14f443d9a387ca13e94ad",
+    "state": "Madrid"
   },
   {
     "name": "Mala Leche - Coffee & Bakery",
@@ -13546,7 +13786,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4b09755c92e29f0ef3d18111c2971c133bef33c28cabc1472ca04e12298e6bd2"
+    "id": "4b09755c92e29f0ef3d18111c2971c133bef33c28cabc1472ca04e12298e6bd2",
+    "state": "Málaga"
   },
   {
     "name": "Boscon Coffee - Café De Especialidad & Brunch",
@@ -13606,7 +13847,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e266b256fddb7a50903697bd3789fee80911d7fea174bba3a722765664684ffd"
+    "id": "e266b256fddb7a50903697bd3789fee80911d7fea174bba3a722765664684ffd",
+    "state": "Valencia"
   },
   {
     "name": "Cult Cafe",
@@ -13669,7 +13911,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f28566af58ff675cf201a4d90d96386be79697082bbbe5d8f2e00e8fef3754b4"
+    "id": "f28566af58ff675cf201a4d90d96386be79697082bbbe5d8f2e00e8fef3754b4",
+    "state": "Valencia"
   },
   {
     "name": "Slow coffee la Orotava",
@@ -13731,7 +13974,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "acb0c436fea8cc6d7bd369ec7d3c47f304e42089e2d93e031451c8d6ba7d4a19"
+    "id": "acb0c436fea8cc6d7bd369ec7d3c47f304e42089e2d93e031451c8d6ba7d4a19",
+    "state": "Santa Cruz de Tenerife"
   },
   {
     "name": "Bocono Coffee",
@@ -13774,7 +14018,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8267ce4a12e110fcd43b984df9e49391ac66c4b80cb3eb74520110776cacf90e"
+    "id": "8267ce4a12e110fcd43b984df9e49391ac66c4b80cb3eb74520110776cacf90e",
+    "state": "Madrid"
   },
   {
     "name": "SA BAKERY",
@@ -13837,7 +14082,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "de1f43c7e0b1cf8310b7941115df6757da7b8611574b8cb3b1b0be5bdac774de"
+    "id": "de1f43c7e0b1cf8310b7941115df6757da7b8611574b8cb3b1b0be5bdac774de",
+    "state": "Islas Baleares"
   },
   {
     "name": "Etual Café",
@@ -13897,7 +14143,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1155a3c4a5f0acb1cccf33fa1df0882286cf79ae4f26f8409154811430ebbfb4"
+    "id": "1155a3c4a5f0acb1cccf33fa1df0882286cf79ae4f26f8409154811430ebbfb4",
+    "state": "Madrid"
   },
   {
     "name": "Café Sol Coffee Shop & Roastery",
@@ -13953,7 +14200,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ad03adc87f4cf8d70f2eeaced8a14b4a96cd7d9431f09242fd8e374fd92201ea"
+    "id": "ad03adc87f4cf8d70f2eeaced8a14b4a96cd7d9431f09242fd8e374fd92201ea",
+    "state": "Las Palmas"
   },
   {
     "name": "iato coffee",
@@ -14013,7 +14261,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "3f61f7de06b1b0f17eed7b60f1b355c29ddd3ec5433e2c99a57bed620784d9aa"
+    "id": "3f61f7de06b1b0f17eed7b60f1b355c29ddd3ec5433e2c99a57bed620784d9aa",
+    "state": "Alicante"
   },
   {
     "name": "Geisha Specialty Coffee",
@@ -14075,7 +14324,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "dd1648f1c9642bd65f9af6dcf9437c9562bcd4f69a1d61ceaa4d94f734bdf578"
+    "id": "dd1648f1c9642bd65f9af6dcf9437c9562bcd4f69a1d61ceaa4d94f734bdf578",
+    "state": "Madrid"
   },
   {
     "name": "Madness Coffee",
@@ -14118,7 +14368,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "434bfc3d554470d6950539a48b134d0a4b30ff1c74263c9bfea7bf18d13eec74"
+    "id": "434bfc3d554470d6950539a48b134d0a4b30ff1c74263c9bfea7bf18d13eec74",
+    "state": "Alicante"
   },
   {
     "name": "Goat coffee store",
@@ -14172,7 +14423,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "769e8085586ed15ae804710f883554683641fb5c36096d24b030633a737bc4d6"
+    "id": "769e8085586ed15ae804710f883554683641fb5c36096d24b030633a737bc4d6",
+    "state": "Valencia"
   },
   {
     "name": "COFI.",
@@ -14235,7 +14487,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "a8b8350a4464e58b798fb5fefb71ccceeaee602d917e85884343eceb5a0b888a"
+    "id": "a8b8350a4464e58b798fb5fefb71ccceeaee602d917e85884343eceb5a0b888a",
+    "state": "Madrid"
   },
   {
     "name": "Paper Cup",
@@ -14297,7 +14550,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ee21f4eec326f2777b5c71b349a4b15c0f0bec9f9743d7fd77790b7a0d9233b2"
+    "id": "ee21f4eec326f2777b5c71b349a4b15c0f0bec9f9743d7fd77790b7a0d9233b2",
+    "state": "Valencia"
   },
   {
     "name": "Ambu Coffee 2",
@@ -14353,7 +14607,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "bd36d380825a98953c74a16e09c5ddb6dfec0b2e0eb860dd98c00ed6f4c6df39"
+    "id": "bd36d380825a98953c74a16e09c5ddb6dfec0b2e0eb860dd98c00ed6f4c6df39",
+    "state": "Madrid"
   },
   {
     "name": "Mi Casa Tu Casa",
@@ -14415,7 +14670,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "18e3a6b56ac1da5547e3da8365aec13fb3ac8f47eafcaf392afbc0b4e303b95e"
+    "id": "18e3a6b56ac1da5547e3da8365aec13fb3ac8f47eafcaf392afbc0b4e303b95e",
+    "state": "Málaga"
   },
   {
     "name": "Baya",
@@ -14477,7 +14733,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "89b772b3153d7e714c5cacc2d320c18b0fca7516e430ea62e089d9d6cb2338f6"
+    "id": "89b772b3153d7e714c5cacc2d320c18b0fca7516e430ea62e089d9d6cb2338f6",
+    "state": "Madrid"
   },
   {
     "name": "Anouk Café",
@@ -14539,7 +14796,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8e804ca44cd25482b90f7f7e09342d16e708583e59492605eab87df35d702838"
+    "id": "8e804ca44cd25482b90f7f7e09342d16e708583e59492605eab87df35d702838",
+    "state": "Barcelona"
   },
   {
     "name": "COFFEE UP Speciality Coffee Shop",
@@ -14603,7 +14861,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1801908a52d056d19b48428d0d0ad3cef4dc5109debee6cfb13aad740508ef90"
+    "id": "1801908a52d056d19b48428d0d0ad3cef4dc5109debee6cfb13aad740508ef90",
+    "state": "Sevilla"
   },
   {
     "name": "Ambu Coffee 3",
@@ -14659,7 +14918,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "187cc0850401fd8d86a1a28175f4c8330c18d0eea40266546f452d8fc3d09bdf"
+    "id": "187cc0850401fd8d86a1a28175f4c8330c18d0eea40266546f452d8fc3d09bdf",
+    "state": "Madrid"
   },
   {
     "name": "CASA TAOS",
@@ -14702,7 +14962,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1c27d2d91880090e1147b83b3750c1e5489d8ab95a8d640f1ccdd6a69d5c860b"
+    "id": "1c27d2d91880090e1147b83b3750c1e5489d8ab95a8d640f1ccdd6a69d5c860b",
+    "state": "Barcelona"
   },
   {
     "name": "La Manière",
@@ -14762,7 +15023,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d66e3714ca35c8c093e6b855c206af38de5e6b2e5ba492afd9ceeafc1a7259a8"
+    "id": "d66e3714ca35c8c093e6b855c206af38de5e6b2e5ba492afd9ceeafc1a7259a8",
+    "state": "Pontevedra"
   },
   {
     "name": "Mi Manera Specialty Coffee",
@@ -14816,7 +15078,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c07212d9a7ff9f54aa256ca4ec0e52951d8c574579366e51c0eeaca8e195a3d8"
+    "id": "c07212d9a7ff9f54aa256ca4ec0e52951d8c574579366e51c0eeaca8e195a3d8",
+    "state": "Islas Baleares"
   },
   {
     "name": "Syra Coffee - El Born",
@@ -14870,7 +15133,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d4537a7d85c4ce624d0aa6f8fbb54b568ae7fd300064bc4f833cbfc6318e7645"
+    "id": "d4537a7d85c4ce624d0aa6f8fbb54b568ae7fd300064bc4f833cbfc6318e7645",
+    "state": "Barcelona"
   },
   {
     "name": "Plein Cafe & Deli",
@@ -14933,7 +15197,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "047f197e8352514655b59178eb33d474b208342ebe4d9de055599df1f423052e"
+    "id": "047f197e8352514655b59178eb33d474b208342ebe4d9de055599df1f423052e",
+    "state": "Madrid"
   },
   {
     "name": "Grooffee",
@@ -14994,7 +15259,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "59074d62e8878ab61becffe86f89b049bb5c1344a02686d7661455adb8b06da6"
+    "id": "59074d62e8878ab61becffe86f89b049bb5c1344a02686d7661455adb8b06da6",
+    "state": "Barcelona"
   },
   {
     "name": "On y va Les Corts",
@@ -15055,7 +15321,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c04d8996adac0e445c110682a491a4c291106050564f8e158c6babd2f43ff30a"
+    "id": "c04d8996adac0e445c110682a491a4c291106050564f8e158c6babd2f43ff30a",
+    "state": "Barcelona"
   },
   {
     "name": "LATE.",
@@ -15117,7 +15384,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "151661909817a038f90cd95a970223d252283b014b21dd5983710e42d3fc6f91"
+    "id": "151661909817a038f90cd95a970223d252283b014b21dd5983710e42d3fc6f91",
+    "state": "Sevilla"
   },
   {
     "name": "Baburu coffee",
@@ -15173,7 +15441,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5556dea32cd79566acccc7ff7e34a2d35d9e515fd2606b261d4e146247ab99ff"
+    "id": "5556dea32cd79566acccc7ff7e34a2d35d9e515fd2606b261d4e146247ab99ff",
+    "state": "Zamora"
   },
   {
     "name": "Plumo",
@@ -15235,7 +15504,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "01c985df30d48d3c09cd9e0bdd26aa04087bbea393d9e902eaf88b19613b1187"
+    "id": "01c985df30d48d3c09cd9e0bdd26aa04087bbea393d9e902eaf88b19613b1187",
+    "state": "Islas Baleares"
   },
   {
     "name": "Coffee & Bikes",
@@ -15291,7 +15561,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e4992aae37d55961ca0792a6b1dedfe2f1ad9cddfb73154194bb6445864eb21b"
+    "id": "e4992aae37d55961ca0792a6b1dedfe2f1ad9cddfb73154194bb6445864eb21b",
+    "state": "Valencia"
   },
   {
     "name": "Espacio Elemental",
@@ -15351,7 +15622,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2e9318c38aa9ed8b8c985d4144626ad2651d16052f746a5bca528f1a89950b96"
+    "id": "2e9318c38aa9ed8b8c985d4144626ad2651d16052f746a5bca528f1a89950b96",
+    "state": "Alicante"
   },
   {
     "name": "Rapha Cycling Cafe",
@@ -15394,7 +15666,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cad988073e43a66eb6d00a967d099e4cd0c17e96cbccedba43e89db3b655c853"
+    "id": "cad988073e43a66eb6d00a967d099e4cd0c17e96cbccedba43e89db3b655c853",
+    "state": "Islas Baleares"
   },
   {
     "name": "D•Origen Coffee Roasters",
@@ -15458,7 +15731,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d2646dd4c98a9eb3651c2896fe580208374e364e83996a69d25cdd97e66a64c4"
+    "id": "d2646dd4c98a9eb3651c2896fe580208374e364e83996a69d25cdd97e66a64c4",
+    "state": "Alicante"
   },
   {
     "name": "SlowMov",
@@ -15517,7 +15791,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "6b6d08bbd079663a601f2a31287135ed125410a305a1a98902d6d0213f8e3436"
+    "id": "6b6d08bbd079663a601f2a31287135ed125410a305a1a98902d6d0213f8e3436",
+    "state": "Barcelona"
   },
   {
     "name": "MØDE",
@@ -15580,7 +15855,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "13b9f54c1ad2098d17ce5c91754a227b1cc968b85d11d8eec7c0c3ae9d80748e"
+    "id": "13b9f54c1ad2098d17ce5c91754a227b1cc968b85d11d8eec7c0c3ae9d80748e",
+    "state": "Barcelona"
   },
   {
     "name": "Fav Coffee",
@@ -15623,7 +15899,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b6c6cca540dc76ac11101d233dc6f743759e924aea2b56862ca3e1b520a50b08"
+    "id": "b6c6cca540dc76ac11101d233dc6f743759e924aea2b56862ca3e1b520a50b08",
+    "state": "Valencia"
   },
   {
     "name": "Catlove Coffee",
@@ -15666,7 +15943,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2d67f3a93e799df0fd86b69f7ee0a8811fb53032af92ddb8628f6c3b346dfd37"
+    "id": "2d67f3a93e799df0fd86b69f7ee0a8811fb53032af92ddb8628f6c3b346dfd37",
+    "state": "Asturias"
   },
   {
     "name": "Santa G. Bagel House",
@@ -15728,7 +16006,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ef43813e401f812a7fd6e4952b2c7408381afd4fbd5050a3433dce12a00f3d2d"
+    "id": "ef43813e401f812a7fd6e4952b2c7408381afd4fbd5050a3433dce12a00f3d2d",
+    "state": "Islas Baleares"
   },
   {
     "name": "Los Picos Café",
@@ -15771,7 +16050,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "06e5fdd11ea74d1ada099496aeaf5c6a8f56fd556f2c65b044190eef14314130"
+    "id": "06e5fdd11ea74d1ada099496aeaf5c6a8f56fd556f2c65b044190eef14314130",
+    "state": "Valencia"
   },
   {
     "name": "Bun and Coffee",
@@ -15831,7 +16111,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c445c90e0141745428bb39ff219aca00c630bd44aebfda0dc052109368dfe38b"
+    "id": "c445c90e0141745428bb39ff219aca00c630bd44aebfda0dc052109368dfe38b",
+    "state": "Málaga"
   },
   {
     "name": "Pastora",
@@ -15874,7 +16155,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "27e56f3a7d82db9a3617211fc209af711b3fb68d31401fb20b1bd09f7b30097f"
+    "id": "27e56f3a7d82db9a3617211fc209af711b3fb68d31401fb20b1bd09f7b30097f",
+    "state": "Madrid"
   },
   {
     "name": "Santa Coffee Soho",
@@ -15937,7 +16219,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5599ab2522df6e180fd771d1bcb8a383e4ca4eb05dfbd29293b916db4b1948f2"
+    "id": "5599ab2522df6e180fd771d1bcb8a383e4ca4eb05dfbd29293b916db4b1948f2",
+    "state": "Málaga"
   },
   {
     "name": "Koffushi | Specialty Coffee & Conscious Cuisine",
@@ -15999,7 +16282,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "0d2dfaddd0fdca6ad64baaca48229e7055975df061cfe00074824dd375db3eca"
+    "id": "0d2dfaddd0fdca6ad64baaca48229e7055975df061cfe00074824dd375db3eca",
+    "state": "Santa Cruz de Tenerife"
   },
   {
     "name": "Mayan Coffees",
@@ -16042,7 +16326,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "fce496113dae3adae74e66fba75f721c8e2d9c4f8c367a86cddb720438be24e3"
+    "id": "fce496113dae3adae74e66fba75f721c8e2d9c4f8c367a86cddb720438be24e3",
+    "state": "Valencia"
   },
   {
     "name": "CLEM CAFE",
@@ -16104,7 +16389,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d022d03cb5dd4918a53da004301a22413cae12341fcdc93efc6fbd390e8ac54b"
+    "id": "d022d03cb5dd4918a53da004301a22413cae12341fcdc93efc6fbd390e8ac54b",
+    "state": "Valencia"
   },
   {
     "name": "Morrow Coffee",
@@ -16149,7 +16435,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9acbe5da3b23ccbf23fe9ee2f20b980e2c85a633c1a3aa386dc6e30bb291cab2"
+    "id": "9acbe5da3b23ccbf23fe9ee2f20b980e2c85a633c1a3aa386dc6e30bb291cab2",
+    "state": "Barcelona"
   },
   {
     "name": "Trava",
@@ -16208,7 +16495,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ac61fa9035504be0fe5302df515c730311e0fe5386009b5c2e9107c887b2026e"
+    "id": "ac61fa9035504be0fe5302df515c730311e0fe5386009b5c2e9107c887b2026e",
+    "state": "Madrid"
   },
   {
     "name": "East Crema Coffee Almirante",
@@ -16265,7 +16553,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "95566d5481d9e7bdd05a5095696ea0e49b628d159a744956d6d48b044e5227d2"
+    "id": "95566d5481d9e7bdd05a5095696ea0e49b628d159a744956d6d48b044e5227d2",
+    "state": "Madrid"
   },
   {
     "name": "Breu Café",
@@ -16322,7 +16611,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d552537360401eaa406e57c0cfb62af1e263a838c12cd548ec398524743b8d1a"
+    "id": "d552537360401eaa406e57c0cfb62af1e263a838c12cd548ec398524743b8d1a",
+    "state": "Barcelona"
   },
   {
     "name": "East Crema Coffee Diego",
@@ -16383,7 +16673,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "98739f79f946e42ef9fa1f772378af3bdd21f16b938e911ef0dfb83bb8466d18"
+    "id": "98739f79f946e42ef9fa1f772378af3bdd21f16b938e911ef0dfb83bb8466d18",
+    "state": "Madrid"
   },
   {
     "name": "Blueloop coffee",
@@ -16446,7 +16737,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f1f73d76c0acf18f1a1d24af5ce2e69559afe13d3943d272e7373d5c0a745b57"
+    "id": "f1f73d76c0acf18f1a1d24af5ce2e69559afe13d3943d272e7373d5c0a745b57",
+    "state": "Alicante"
   },
   {
     "name": "Siembra Coffee",
@@ -16502,7 +16794,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9303e508267504800ca5878e47ec9485f576107ae61dd6702cf0cd4cd676ce45"
+    "id": "9303e508267504800ca5878e47ec9485f576107ae61dd6702cf0cd4cd676ce45",
+    "state": "Vizcaya"
   },
   {
     "name": "Three Marks Coffee",
@@ -16564,7 +16857,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9108583b83df891abec74b642faf27ea82fa8cee125246f78f96dd5830ebb44b"
+    "id": "9108583b83df891abec74b642faf27ea82fa8cee125246f78f96dd5830ebb44b",
+    "state": "Barcelona"
   },
   {
     "name": "La Molienda Bisbe Campins",
@@ -16607,7 +16901,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "dea80b03541e4c8630854135614a8fba14295a644535dd96f44585e7d250bc2b"
+    "id": "dea80b03541e4c8630854135614a8fba14295a644535dd96f44585e7d250bc2b",
+    "state": "Islas Baleares"
   },
   {
     "name": "AFORTUNATO CAFÉS",
@@ -16669,7 +16964,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "31da9f9c5bd6c6edaf3974109e258f8edd858845291c06e61def6a6a0f9d90fd"
+    "id": "31da9f9c5bd6c6edaf3974109e258f8edd858845291c06e61def6a6a0f9d90fd",
+    "state": "Navarra"
   },
   {
     "name": "Fargo Café",
@@ -16712,7 +17008,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "60c8e71ff7dd8e011b3935fcf5ab45771a74541f82020eba739690e96d1610af"
+    "id": "60c8e71ff7dd8e011b3935fcf5ab45771a74541f82020eba739690e96d1610af",
+    "state": "Barcelona"
   },
   {
     "name": "Seixal coffee",
@@ -16775,7 +17072,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8649d0dc8f19ab426ff84bc906e21822428f7cadf397414ffb59a1ebaae16660"
+    "id": "8649d0dc8f19ab426ff84bc906e21822428f7cadf397414ffb59a1ebaae16660",
+    "state": "Alicante"
   },
   {
     "name": "PANDA",
@@ -16838,7 +17136,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "afbab45d7f40731e2a279aa69eb26a8eacf88f2029b31cb5256207960af1315a"
+    "id": "afbab45d7f40731e2a279aa69eb26a8eacf88f2029b31cb5256207960af1315a",
+    "state": "Madrid"
   },
   {
     "name": "tallat",
@@ -16901,7 +17200,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "650581abd90000ee7fcf76e9c150f27634d9e818cc8e4b7b4f55455d3a026383"
+    "id": "650581abd90000ee7fcf76e9c150f27634d9e818cc8e4b7b4f55455d3a026383",
+    "state": "Valencia"
   },
   {
     "name": "Kissaten Place",
@@ -16963,7 +17263,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c91f9eeb5543289eb486af584fd411f1f98c831d438191c05aa6c81dbeb853fd"
+    "id": "c91f9eeb5543289eb486af584fd411f1f98c831d438191c05aa6c81dbeb853fd",
+    "state": "Madrid"
   },
   {
     "name": "Kaide Coffee",
@@ -17026,7 +17327,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "258c5f830c14bbfceae27e0a932e4d4e8bc3ad06888017053fe99d4afea82d3a"
+    "id": "258c5f830c14bbfceae27e0a932e4d4e8bc3ad06888017053fe99d4afea82d3a",
+    "state": "Valencia"
   },
   {
     "name": "Holgura x Placeo",
@@ -17084,7 +17386,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "657fdb41b19239ee4ee8bf46df639f30b53656caec1c15458fd0f43df3bbc9aa"
+    "id": "657fdb41b19239ee4ee8bf46df639f30b53656caec1c15458fd0f43df3bbc9aa",
+    "state": "Madrid"
   },
   {
     "name": "Faraday",
@@ -17139,7 +17442,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "43a5b3f652432c6baa6d5c1c1c54ec3a031ab0f77f4ffaa44038c85b77fd8eb2"
+    "id": "43a5b3f652432c6baa6d5c1c1c54ec3a031ab0f77f4ffaa44038c85b77fd8eb2",
+    "state": "Madrid"
   },
   {
     "name": "Café Originale",
@@ -17202,7 +17506,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "16e81e4e86018cc428733500ec0cffc9c5755d3a5875ab2fc2da87b507d17d0c"
+    "id": "16e81e4e86018cc428733500ec0cffc9c5755d3a5875ab2fc2da87b507d17d0c",
+    "state": "Vizcaya"
   },
   {
     "name": "Next Level 1",
@@ -17262,7 +17567,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9ecbe3190fd690e19ca8d5e2dfa2999973bee4f01c1361011796017d932e8032"
+    "id": "9ecbe3190fd690e19ca8d5e2dfa2999973bee4f01c1361011796017d932e8032",
+    "state": "Málaga"
   },
   {
     "name": "Old Town Coffee",
@@ -17321,7 +17627,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "718286d9371ae1bd5bd5efb76c7e7660a455b85416addf071d9b263ec054f4b6"
+    "id": "718286d9371ae1bd5bd5efb76c7e7660a455b85416addf071d9b263ec054f4b6",
+    "state": "Guipúzcoa"
   },
   {
     "name": "Around",
@@ -17382,7 +17689,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c063aef69d69b7ba318345921ccf0d27d60f05949093f19fe61d7922ec3362e9"
+    "id": "c063aef69d69b7ba318345921ccf0d27d60f05949093f19fe61d7922ec3362e9",
+    "state": "Pontevedra"
   },
   {
     "name": "La Finca Coffee",
@@ -17441,7 +17749,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "46f9ae71826b0e5e21a486565cebd41cb7f5ac50a456b5b7bd7acdf00ab8adf4"
+    "id": "46f9ae71826b0e5e21a486565cebd41cb7f5ac50a456b5b7bd7acdf00ab8adf4",
+    "state": "Granada"
   },
   {
     "name": "Angélica",
@@ -17484,7 +17793,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ead88897269b3060576ea0ccf8d2e2391dd65e71eb76ba9665be12d3002b2372"
+    "id": "ead88897269b3060576ea0ccf8d2e2391dd65e71eb76ba9665be12d3002b2372",
+    "state": "Madrid"
   },
   {
     "name": "Bluebell Coffee",
@@ -17529,7 +17839,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c319886b3505a6add9e8afa7617070a1fe1a2e3e945b772b4ddc0eec544b87c0"
+    "id": "c319886b3505a6add9e8afa7617070a1fe1a2e3e945b772b4ddc0eec544b87c0",
+    "state": "Valencia"
   },
   {
     "name": "Dirty Rabbit",
@@ -17591,7 +17902,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8eac4dc6e371682331636c77c49f64a72f52d015cc9b32ca3390105ab66c21a7"
+    "id": "8eac4dc6e371682331636c77c49f64a72f52d015cc9b32ca3390105ab66c21a7",
+    "state": "Girona"
   },
   {
     "name": "SOMMES COFFEE",
@@ -17654,7 +17966,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f2db0c0b3b421b56598a70436c26710b7ecc53d5ec1a0810ca8aea73ae7ebfae"
+    "id": "f2db0c0b3b421b56598a70436c26710b7ecc53d5ec1a0810ca8aea73ae7ebfae",
+    "state": "Las Palmas"
   },
   {
     "name": "Casa Quadrat",
@@ -17697,7 +18010,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1beec9935f8489cf70032d101dbfc3a7759e29f662e199b3191ce276051c7e83"
+    "id": "1beec9935f8489cf70032d101dbfc3a7759e29f662e199b3191ce276051c7e83",
+    "state": "Tarragona"
   },
   {
     "name": "Nopa Bagels",
@@ -17757,7 +18071,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9610032dff516180f60e3ae05a112ae86aba80da5e25baa28884bd65c3cb5058"
+    "id": "9610032dff516180f60e3ae05a112ae86aba80da5e25baa28884bd65c3cb5058",
+    "state": "Madrid"
   },
   {
     "name": "East Crema Coffee Eloy",
@@ -17818,7 +18133,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d13631a70050025ecbac7c86123f9764675ccde2ea2923c90268fb4350ea5341"
+    "id": "d13631a70050025ecbac7c86123f9764675ccde2ea2923c90268fb4350ea5341",
+    "state": "Madrid"
   },
   {
     "name": "Plácido Y Grata",
@@ -17879,7 +18195,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "6e52413c2694c7bf13b25c470e351446bc265b579ddf76d5ad8236440b6dd15b"
+    "id": "6e52413c2694c7bf13b25c470e351446bc265b579ddf76d5ad8236440b6dd15b",
+    "state": "Sevilla"
   },
   {
     "name": "Literal Coffee",
@@ -17940,7 +18257,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ae398657c63c0ac52f475a4479019f91e157a02b98f3431788fbe51e99fd5812"
+    "id": "ae398657c63c0ac52f475a4479019f91e157a02b98f3431788fbe51e99fd5812",
+    "state": "Madrid"
   },
   {
     "name": "Matèria Estudi Cafè",
@@ -17999,7 +18317,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e558f1bdc803e019e843c3350976d82f3987ebc3aa50d6031fab89cad60564af"
+    "id": "e558f1bdc803e019e843c3350976d82f3987ebc3aa50d6031fab89cad60564af",
+    "state": "Barcelona"
   },
   {
     "name": "Bucólico Café",
@@ -18060,7 +18379,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "dc77ad337d5989a8b6296b138b481a80fbdc3f1309211ce8ad0676d0614aabb0"
+    "id": "dc77ad337d5989a8b6296b138b481a80fbdc3f1309211ce8ad0676d0614aabb0",
+    "state": "Madrid"
   },
   {
     "name": "BACAN",
@@ -18124,7 +18444,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "59bc03ec4a049de0609a4a6568f0a12ca44dbb9cf8689263183641af9ff4d3c9"
+    "id": "59bc03ec4a049de0609a4a6568f0a12ca44dbb9cf8689263183641af9ff4d3c9",
+    "state": "Islas Baleares"
   },
   {
     "name": "KABA",
@@ -18181,7 +18502,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7488917161286f73c553c97004ed6ac7f05b9c42de1da980640caca136ac0add"
+    "id": "7488917161286f73c553c97004ed6ac7f05b9c42de1da980640caca136ac0add",
+    "state": "Barcelona"
   },
   {
     "name": "Caravelle",
@@ -18239,7 +18561,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ea34e5bda73527dfc6edc356b26a3f66014ad3eda7d4c30b454a0e0e37fbf8f6"
+    "id": "ea34e5bda73527dfc6edc356b26a3f66014ad3eda7d4c30b454a0e0e37fbf8f6",
+    "state": "Barcelona"
   },
   {
     "name": "Bertani café",
@@ -18282,7 +18605,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f9612726b84603a74ba3c567f0cc29bae592a879c5232491ee65a3fd74219dfd"
+    "id": "f9612726b84603a74ba3c567f0cc29bae592a879c5232491ee65a3fd74219dfd",
+    "state": "Málaga"
   },
   {
     "name": "Kaffekos Specialty",
@@ -18342,7 +18666,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "46fa55464fea37059a0ff9637683ad59d8fa48b04e58f24d104fa5cc760218e5"
+    "id": "46fa55464fea37059a0ff9637683ad59d8fa48b04e58f24d104fa5cc760218e5",
+    "state": "Alicante"
   },
   {
     "name": "Sopelana Specialty Coffee",
@@ -18404,7 +18729,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "04c7a115b096e746a21c14be60e67b0443ebca27e29182a4f5582590f7eab1cd"
+    "id": "04c7a115b096e746a21c14be60e67b0443ebca27e29182a4f5582590f7eab1cd",
+    "state": "Islas Baleares"
   },
   {
     "name": "Syra Coffee - Sarriá",
@@ -18460,7 +18786,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e484ae5e3692dc9bbb0e72366887227b4d3be32f168f3fa2c52a8e3eb825c6e2"
+    "id": "e484ae5e3692dc9bbb0e72366887227b4d3be32f168f3fa2c52a8e3eb825c6e2",
+    "state": "Barcelona"
   },
   {
     "name": "Sood Coffee",
@@ -18523,7 +18850,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "3243f2bbfc7c6075c1959cee0226576d086a5e99f7eed875a1113097d36f1808"
+    "id": "3243f2bbfc7c6075c1959cee0226576d086a5e99f7eed875a1113097d36f1808",
+    "state": "Madrid"
   },
   {
     "name": "Arabay Coffee",
@@ -18566,7 +18894,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "296b2c7000025fe4796e9dcecb04cd6927a5acc06dbf5eadbdb7ee2b8de386e1"
+    "id": "296b2c7000025fe4796e9dcecb04cd6927a5acc06dbf5eadbdb7ee2b8de386e1",
+    "state": "Islas Baleares"
   },
   {
     "name": "Pink Bourbon",
@@ -18626,7 +18955,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5dcbd1a60ff6083ef3b5e4c288ee106122e5ef3718606041c9e787cb5018e2f4"
+    "id": "5dcbd1a60ff6083ef3b5e4c288ee106122e5ef3718606041c9e787cb5018e2f4",
+    "state": "Madrid"
   },
   {
     "name": "Madness Coffee",
@@ -18669,7 +18999,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ae742ac63a8b3f859b4231afc46fe320ba50ba3a0cf8dcae242e62c9a5942b78"
+    "id": "ae742ac63a8b3f859b4231afc46fe320ba50ba3a0cf8dcae242e62c9a5942b78",
+    "state": "Murcia"
   },
   {
     "name": "Hidden Coffee Roasters - Les Corts",
@@ -18728,7 +19059,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5e03fe47d95694f6fdfb123a1fee0cf76514ca71ab42f3114f041988f24cbe13"
+    "id": "5e03fe47d95694f6fdfb123a1fee0cf76514ca71ab42f3114f041988f24cbe13",
+    "state": "Barcelona"
   },
   {
     "name": "COFFEE UP",
@@ -18791,7 +19123,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d2ad971a2926530c733a33432ab79dfd41c7e7425cd8c9ddbcb6bbafd38b499e"
+    "id": "d2ad971a2926530c733a33432ab79dfd41c7e7425cd8c9ddbcb6bbafd38b499e",
+    "state": "Sevilla"
   },
   {
     "name": "Roast Club Cafe",
@@ -18847,7 +19180,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "753e7dc1116a233fb038f8ace118d0eb118dbb0c0a3050d5a298ecdee6ed5ba9"
+    "id": "753e7dc1116a233fb038f8ace118d0eb118dbb0c0a3050d5a298ecdee6ed5ba9",
+    "state": "Barcelona"
   },
   {
     "name": "Delicotte",
@@ -18894,7 +19228,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "75eaed8a1012078d4bc9ebd1f34a8d6e680dcb55043778431cdd1e220133fbc6"
+    "id": "75eaed8a1012078d4bc9ebd1f34a8d6e680dcb55043778431cdd1e220133fbc6",
+    "state": "Málaga"
   },
   {
     "name": "The Fix",
@@ -18956,7 +19291,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1fce5591fc17ed7abb5c49fd65b2df09f0118f577a9251eeb102f8140e8538eb"
+    "id": "1fce5591fc17ed7abb5c49fd65b2df09f0118f577a9251eeb102f8140e8538eb",
+    "state": "Madrid"
   },
   {
     "name": "Caffeine BCN",
@@ -18999,7 +19335,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "53ae4e8dc6e10501cd8165e729228a683d6ef837d58fb921002db1b7defd8728"
+    "id": "53ae4e8dc6e10501cd8165e729228a683d6ef837d58fb921002db1b7defd8728",
+    "state": "Barcelona"
   },
   {
     "name": "Onis Coffee",
@@ -19057,7 +19394,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "bef5cd570ba5d407b77662515e0060b643a9461f8bbf8eec35a5d3d67f058713"
+    "id": "bef5cd570ba5d407b77662515e0060b643a9461f8bbf8eec35a5d3d67f058713",
+    "state": "Barcelona"
   },
   {
     "name": "Syra Coffee - Rosselló",
@@ -19113,7 +19451,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8bcb6222e78119cabf4ef33c8f2d6a7878d5ec11229a23af22756f2fcbdbc8b4"
+    "id": "8bcb6222e78119cabf4ef33c8f2d6a7878d5ec11229a23af22756f2fcbdbc8b4",
+    "state": "Barcelona"
   },
   {
     "name": "Surry Hills Coffee",
@@ -19156,7 +19495,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "11ab983508897d1577ceddba5850897836e34269ea7026cfe09f4b91cd796d2a"
+    "id": "11ab983508897d1577ceddba5850897836e34269ea7026cfe09f4b91cd796d2a",
+    "state": "Islas Baleares"
   },
   {
     "name": "Caraï",
@@ -19219,7 +19559,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "0288057956fb10d065f1a922e4338ac8e8028e1017b77f2a7c6b33f624cfa720"
+    "id": "0288057956fb10d065f1a922e4338ac8e8028e1017b77f2a7c6b33f624cfa720",
+    "state": "Guipúzcoa"
   },
   {
     "name": "Guiri's. Specialty Cafe & Pasteles Caseros.",
@@ -19281,7 +19622,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7ab0408c0f28e96e0ea00186ba05686752e3c83da727a4bdd96b4a48f95f157b"
+    "id": "7ab0408c0f28e96e0ea00186ba05686752e3c83da727a4bdd96b4a48f95f157b",
+    "state": "Cádiz"
   },
   {
     "name": "Syra Coffee - Balmes",
@@ -19337,7 +19679,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "0745aca7d62894728bfa22601d870cf65711303ab01d7762e22db97333367201"
+    "id": "0745aca7d62894728bfa22601d870cf65711303ab01d7762e22db97333367201",
+    "state": "Barcelona"
   },
   {
     "name": "Cups & Coffee",
@@ -19380,7 +19723,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f295ae0beaedb52d1613c9bc896f9b50dbca3144676770ed0161e5b4fceb81cf"
+    "id": "f295ae0beaedb52d1613c9bc896f9b50dbca3144676770ed0161e5b4fceb81cf",
+    "state": "Barcelona"
   },
   {
     "name": "UNFLTRD Coffee",
@@ -19441,7 +19785,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "89e87b1885b30c05dec089a365fdac0e4ac08fc047d890814de472e5069e992e"
+    "id": "89e87b1885b30c05dec089a365fdac0e4ac08fc047d890814de472e5069e992e",
+    "state": "Madrid"
   },
   {
     "name": "Ganbaru Coffee San Juan",
@@ -19494,7 +19839,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "81880770339a67b6dccf7f12aac4f5d65c2ea313961a635a3e89bb326efab00c"
+    "id": "81880770339a67b6dccf7f12aac4f5d65c2ea313961a635a3e89bb326efab00c",
+    "state": "Málaga"
   },
   {
     "name": "El Grano de Café",
@@ -19557,7 +19903,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "60083ca05f133b3291af2e1a88b9b48a580d517526e5c2d556d7ca7f76425820"
+    "id": "60083ca05f133b3291af2e1a88b9b48a580d517526e5c2d556d7ca7f76425820",
+    "state": "Islas Baleares"
   },
   {
     "name": "Koality Coffee",
@@ -19619,7 +19966,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "915bdb599602ab1008bc71306e9372aaf633b7ed767b18ada8100535a59189d9"
+    "id": "915bdb599602ab1008bc71306e9372aaf633b7ed767b18ada8100535a59189d9",
+    "state": "Zaragoza"
   },
   {
     "name": "Blackbird Café",
@@ -19662,7 +20010,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d15f2c5a13aa5ae625530a457d91e130e25f0c280d37f60392e242c15755b7fb"
+    "id": "d15f2c5a13aa5ae625530a457d91e130e25f0c280d37f60392e242c15755b7fb",
+    "state": "Valencia"
   },
   {
     "name": "East Crema Coffee Hermosilla",
@@ -19720,7 +20069,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "3554247eae63cd99f150feeb2aa16f83b9756b67a75f70fa00ad34c021ad82b3"
+    "id": "3554247eae63cd99f150feeb2aa16f83b9756b67a75f70fa00ad34c021ad82b3",
+    "state": "Madrid"
   },
   {
     "name": "Oh! Cintes",
@@ -19776,7 +20126,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1bac43f7628036054f0941648cf0f869a4625ca5459f4d4da8ec16db4ee30df5"
+    "id": "1bac43f7628036054f0941648cf0f869a4625ca5459f4d4da8ec16db4ee30df5",
+    "state": "Barcelona"
   },
   {
     "name": "Slow Café",
@@ -19836,7 +20187,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "44df3d0b463cfddd815b30202318051794a3bf48a6863c3965af867b82db19ef"
+    "id": "44df3d0b463cfddd815b30202318051794a3bf48a6863c3965af867b82db19ef",
+    "state": "Madrid"
   },
   {
     "name": "IL CAPPUCCINO",
@@ -19892,7 +20244,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "eb6a0fd7a911b10323e7cbe710ae021d41d95b4cbcd71f851ef74a40b6dc52d5"
+    "id": "eb6a0fd7a911b10323e7cbe710ae021d41d95b4cbcd71f851ef74a40b6dc52d5",
+    "state": "Toledo"
   },
   {
     "name": "Charo Coffee House",
@@ -19952,7 +20305,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c1892ac306255c270ada2fd2ffba194661751a92384f3d8835eb1e186cdbcb4e"
+    "id": "c1892ac306255c270ada2fd2ffba194661751a92384f3d8835eb1e186cdbcb4e",
+    "state": "Alicante"
   },
   {
     "name": "Ollo Canalla Kfé",
@@ -20011,7 +20365,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d3604b5c21c883911c24138e0c46568a971538e32518a9ff17c2932b51a68e76"
+    "id": "d3604b5c21c883911c24138e0c46568a971538e32518a9ff17c2932b51a68e76",
+    "state": "Ourense"
   },
   {
     "name": "Casa Raíz",
@@ -20072,7 +20427,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "690faebef76f034cdc20e75febe1a182dbe582a916042cdc66aca1d6bce56e41"
+    "id": "690faebef76f034cdc20e75febe1a182dbe582a916042cdc66aca1d6bce56e41",
+    "state": "Valencia"
   },
   {
     "name": "No Name Coffee Lab",
@@ -20131,7 +20487,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9e7ee4d0f03c23eb9fb1f05a680b886563bf241b021fe76fd26f8ad78460b2eb"
+    "id": "9e7ee4d0f03c23eb9fb1f05a680b886563bf241b021fe76fd26f8ad78460b2eb",
+    "state": "Barcelona"
   },
   {
     "name": "Sula Espai",
@@ -20192,7 +20549,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f794bfe54b703ed54acd50e3959a7c142195f8cd1c4a995fd335015786afe4a1"
+    "id": "f794bfe54b703ed54acd50e3959a7c142195f8cd1c4a995fd335015786afe4a1",
+    "state": "Barcelona"
   },
   {
     "name": "Cafe Riutort",
@@ -20253,7 +20611,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "61e78561efd8b6f095d06d4488c80553025e68b474f4712afa89737d8102cdb7"
+    "id": "61e78561efd8b6f095d06d4488c80553025e68b474f4712afa89737d8102cdb7",
+    "state": "Islas Baleares"
   },
   {
     "name": "One Cup Coffee Mlg",
@@ -20314,7 +20673,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1b7e48c508a47c2fc2adacc2ce0c0e44d768697845a307909d20f8185de9c6ac"
+    "id": "1b7e48c508a47c2fc2adacc2ce0c0e44d768697845a307909d20f8185de9c6ac",
+    "state": "Málaga"
   },
   {
     "name": "Syra Coffee - Sants",
@@ -20370,7 +20730,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5001996994f6c29030d396a4a1749895d33c7c88f39e8c60df18c4923f944f72"
+    "id": "5001996994f6c29030d396a4a1749895d33c7c88f39e8c60df18c4923f944f72",
+    "state": "Barcelona"
   },
   {
     "name": "The Lab by Next Level",
@@ -20430,7 +20791,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "a16a8f37d995f38b9cd8f2ce3e03c64f359d9f5a1e568b072f517d4bf26a148a"
+    "id": "a16a8f37d995f38b9cd8f2ce3e03c64f359d9f5a1e568b072f517d4bf26a148a",
+    "state": "Málaga"
   },
   {
     "name": "East Crema Coffee Conde",
@@ -20488,7 +20850,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d711016d30e0c57b18148b661058ee9600411c5b1414bf0e9a6de9ae9e84c495"
+    "id": "d711016d30e0c57b18148b661058ee9600411c5b1414bf0e9a6de9ae9e84c495",
+    "state": "Madrid"
   },
   {
     "name": "UMAMI SPECIALTY COFFEE",
@@ -20549,7 +20912,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c9bdf647417cec46222df3068faccbe4e79fcbc2afabf22af3d9202672b08af3"
+    "id": "c9bdf647417cec46222df3068faccbe4e79fcbc2afabf22af3d9202672b08af3",
+    "state": "Madrid"
   },
   {
     "name": "KEFIR cofee&bakery",
@@ -20609,7 +20973,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7730cb4357c5f79902b215a888dfd44a1889d9198b1c3e83f9023883755c8915"
+    "id": "7730cb4357c5f79902b215a888dfd44a1889d9198b1c3e83f9023883755c8915",
+    "state": "Barcelona"
   },
   {
     "name": "Cuore di latte",
@@ -20670,7 +21035,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "53b17cd0516cf71effc46936a8dd41cb01dd0acac26fc9b48e054d0c88c5f751"
+    "id": "53b17cd0516cf71effc46936a8dd41cb01dd0acac26fc9b48e054d0c88c5f751",
+    "state": "Valencia"
   },
   {
     "name": "Noat Coffee",
@@ -20728,7 +21094,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d41c993a1c18948247be5998380b41494c2d1f9539e08070f64d066f0f2dec6a"
+    "id": "d41c993a1c18948247be5998380b41494c2d1f9539e08070f64d066f0f2dec6a",
+    "state": "Granada"
   },
   {
     "name": "DOCTA COFFEE",
@@ -20784,7 +21151,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7f31d1637f963e2686013b7962cb92d19710bc9119eaa11b17091a4e7699b986"
+    "id": "7f31d1637f963e2686013b7962cb92d19710bc9119eaa11b17091a4e7699b986",
+    "state": "Valencia"
   },
   {
     "name": "Primero Café",
@@ -20827,7 +21195,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "2769eb6b1802845ccfebb533c10caaa77c6ee061da93ae972932fd2dce177635"
+    "id": "2769eb6b1802845ccfebb533c10caaa77c6ee061da93ae972932fd2dce177635",
+    "state": "Asturias"
   },
   {
     "name": "Seda Coffee",
@@ -20870,7 +21239,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "33c6aee7d1a1f7186135e51b8b925f2dbab5558560700559ab8c6ddbb8578cf6"
+    "id": "33c6aee7d1a1f7186135e51b8b925f2dbab5558560700559ab8c6ddbb8578cf6",
+    "state": "Granada"
   },
   {
     "name": "Mo Specialty Coffee",
@@ -20928,7 +21298,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "374a379a78c62da6eda5571eb5acf1009d869de046f4d5fe5fc51b63636ab431"
+    "id": "374a379a78c62da6eda5571eb5acf1009d869de046f4d5fe5fc51b63636ab431",
+    "state": "Alicante"
   },
   {
     "name": "Siniestro Cafe",
@@ -20988,7 +21359,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ae088ed0660ff8c6f7478dab501ae69bd96e729a82b35ad34116a2b687d5071f"
+    "id": "ae088ed0660ff8c6f7478dab501ae69bd96e729a82b35ad34116a2b687d5071f",
+    "state": "Madrid"
   },
   {
     "name": "Amiko gelato",
@@ -21047,7 +21419,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "fe63327093e92d4bba45e78e811eb160465b7a33723968ab7541b6197a03631d"
+    "id": "fe63327093e92d4bba45e78e811eb160465b7a33723968ab7541b6197a03631d",
+    "state": "Barcelona"
   },
   {
     "name": "Nuna Coffee Shop",
@@ -21090,7 +21463,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "85a8323b2b4743e56855ac66169aeb5ae188c24fe171d852e92506945ac5a79d"
+    "id": "85a8323b2b4743e56855ac66169aeb5ae188c24fe171d852e92506945ac5a79d",
+    "state": "Madrid"
   },
   {
     "name": "La Galga",
@@ -21152,7 +21526,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5275e58e7b9b84cf4a67aa4c54ffcf9ad66bbe405cc7a9041fcfebd541019e76"
+    "id": "5275e58e7b9b84cf4a67aa4c54ffcf9ad66bbe405cc7a9041fcfebd541019e76",
+    "state": "Málaga"
   },
   {
     "name": "Hey My Coffee - Goya",
@@ -21209,7 +21584,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "302bf8f3d62a7d5959fdbafe7ff00ebfc9b00b00a5ec37048eca59f527740c1f"
+    "id": "302bf8f3d62a7d5959fdbafe7ff00ebfc9b00b00a5ec37048eca59f527740c1f",
+    "state": "Madrid"
   },
   {
     "name": "Vanta Coffee",
@@ -21269,7 +21645,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8521d835101dcf1d3c2917ddcced0e42df0c196f6d8f90e23f10e1976dd12c10"
+    "id": "8521d835101dcf1d3c2917ddcced0e42df0c196f6d8f90e23f10e1976dd12c10",
+    "state": "Barcelona"
   },
   {
     "name": "Easy Coffee",
@@ -21330,7 +21707,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5a965fc50295c5f9bbc71d4189dcfc6f756c6d40862bc99f14c385793c397e1c"
+    "id": "5a965fc50295c5f9bbc71d4189dcfc6f756c6d40862bc99f14c385793c397e1c",
+    "state": "Alicante"
   },
   {
     "name": "Sentir Café",
@@ -21393,7 +21771,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "192b3d173fd02bbf08dd11cd5cfa0b2c90e7e100667c6e35628028f347461717"
+    "id": "192b3d173fd02bbf08dd11cd5cfa0b2c90e7e100667c6e35628028f347461717",
+    "state": "Málaga"
   },
   {
     "name": "Dalston Coffee",
@@ -21451,7 +21830,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4d8fe66203def95815c0c59f9fb71337f210e65a5ca937566cf6c534e14145a8"
+    "id": "4d8fe66203def95815c0c59f9fb71337f210e65a5ca937566cf6c534e14145a8",
+    "state": "Barcelona"
   },
   {
     "name": "Nica Specialty Coffee",
@@ -21494,7 +21874,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "6d822d1a0423cd8075cb70cd8bd389b7b5a9c3513eb5c6f83a69d6f2654e0bae"
+    "id": "6d822d1a0423cd8075cb70cd8bd389b7b5a9c3513eb5c6f83a69d6f2654e0bae",
+    "state": "Madrid"
   },
   {
     "name": "Nook coffee",
@@ -21551,7 +21932,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9cb61d2d4bc26ea29533debb048682a9621bd33fc90767e059673d3a6b234c12"
+    "id": "9cb61d2d4bc26ea29533debb048682a9621bd33fc90767e059673d3a6b234c12",
+    "state": "Barcelona"
   },
   {
     "name": "Cokooncafé",
@@ -21610,7 +21992,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f84bec1f4e1c5ad9347c2920be29d538e70ac4eb2742dcf12a9cded882dda29c"
+    "id": "f84bec1f4e1c5ad9347c2920be29d538e70ac4eb2742dcf12a9cded882dda29c",
+    "state": "Vizcaya"
   },
   {
     "name": "cuptural coffee roasters",
@@ -21669,7 +22052,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c8fff537f15b237c6089b5149612ac45f3d82bdfff42d2af8e8f32a3b4762d83"
+    "id": "c8fff537f15b237c6089b5149612ac45f3d82bdfff42d2af8e8f32a3b4762d83",
+    "state": "Las Palmas"
   },
   {
     "name": "LYV COFFEE",
@@ -21726,7 +22110,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d03d84dd5d96674ac63e9a806367f19336ecfeb01ac43a9d9d66d6cb76b40bfe"
+    "id": "d03d84dd5d96674ac63e9a806367f19336ecfeb01ac43a9d9d66d6cb76b40bfe",
+    "state": "Málaga"
   },
   {
     "name": "Kafe El Vagón",
@@ -21783,7 +22168,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8c2b50e0554012c6da4db70ac5723346ecfdc1398bb422e0202e98c388abcde7"
+    "id": "8c2b50e0554012c6da4db70ac5723346ecfdc1398bb422e0202e98c388abcde7",
+    "state": "Álava"
   },
   {
     "name": "Coffee Hackers",
@@ -21845,7 +22231,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "66f47f55e816ba04b0433a4f1e9e5fc913ba6d9ffec21017451d7eba00407652"
+    "id": "66f47f55e816ba04b0433a4f1e9e5fc913ba6d9ffec21017451d7eba00407652",
+    "state": "Barcelona"
   },
   {
     "name": "antirush",
@@ -21903,7 +22290,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4d6ab9d790d349132e43a6bc6076473b22ac5fd8447e610ae722fb310b774b5a"
+    "id": "4d6ab9d790d349132e43a6bc6076473b22ac5fd8447e610ae722fb310b774b5a",
+    "state": "Málaga"
   },
   {
     "name": "Met Coffee & Co",
@@ -21966,7 +22354,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "95f1beeb982af6c7b72afe7aba0e32b7e100a285c27ced67b3dac860a92e9d91"
+    "id": "95f1beeb982af6c7b72afe7aba0e32b7e100a285c27ced67b3dac860a92e9d91",
+    "state": "Zaragoza"
   },
   {
     "name": "AIRES café",
@@ -22024,7 +22413,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "a354c0d9d73bc1114c7bc751ba945eea34cd8574f83dadb7e3708207a542eadb"
+    "id": "a354c0d9d73bc1114c7bc751ba945eea34cd8574f83dadb7e3708207a542eadb",
+    "state": "Valencia"
   },
   {
     "name": "Culture Coffee",
@@ -22083,7 +22473,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "e9eb85e6474d76839f33abbbae0fa0ec85a0167f18b3bae109ab3aca4ab3e8ca"
+    "id": "e9eb85e6474d76839f33abbbae0fa0ec85a0167f18b3bae109ab3aca4ab3e8ca",
+    "state": "León"
   },
   {
     "name": "Ganbaru Coffee Plaza Enrique",
@@ -22137,7 +22528,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d27e0a563cfeb357081a2fbfd3bd4d00ed6ec435ae9b77a02b262705457d65a7"
+    "id": "d27e0a563cfeb357081a2fbfd3bd4d00ed6ec435ae9b77a02b262705457d65a7",
+    "state": "Málaga"
   },
   {
     "name": "Pipol Coffee",
@@ -22194,7 +22586,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cf83cdf647768dc7c87a343277aa3759ad841a5a14d451a579b3a903c9757e3f"
+    "id": "cf83cdf647768dc7c87a343277aa3759ad841a5a14d451a579b3a903c9757e3f",
+    "state": "Barcelona"
   },
   {
     "name": "On y va Eixample",
@@ -22237,7 +22630,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9145a4cfc1d64972a15507bd583418195e211d70455e50ad5e68fe76e385849c"
+    "id": "9145a4cfc1d64972a15507bd583418195e211d70455e50ad5e68fe76e385849c",
+    "state": "Barcelona"
   },
   {
     "name": "Puchero",
@@ -22280,7 +22674,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ce21a59f0fb237ab9ae3ad18c7da4d4e65929ef0c6fd25342a218d2664c43519"
+    "id": "ce21a59f0fb237ab9ae3ad18c7da4d4e65929ef0c6fd25342a218d2664c43519",
+    "state": "Valladolid"
   },
   {
     "name": "Cafeteando",
@@ -22323,7 +22718,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "879ef8709362b47d729fdf72e742eb5e73d72c77f4714834b71fc7bc7e029025"
+    "id": "879ef8709362b47d729fdf72e742eb5e73d72c77f4714834b71fc7bc7e029025",
+    "state": "Madrid"
   },
   {
     "name": "Ruma’s coffee",
@@ -22366,7 +22762,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7ca023b2122154aa46b9f382b3a4e0d216793f9adea03ac888071ca1560e5235"
+    "id": "7ca023b2122154aa46b9f382b3a4e0d216793f9adea03ac888071ca1560e5235",
+    "state": "Barcelona"
   },
   {
     "name": "Jacaranda",
@@ -22426,7 +22823,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c8147c153cc7fc8f7e9fbe95d6ca8f8e3d5f6d1a80b0718517738c8bc596956b"
+    "id": "c8147c153cc7fc8f7e9fbe95d6ca8f8e3d5f6d1a80b0718517738c8bc596956b",
+    "state": "Barcelona"
   },
   {
     "name": "Coto",
@@ -22469,7 +22867,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "eb91d821a1ddfc5feffc9372849e84e1d52d2a6eb272319e9b1e5acd933bef1a"
+    "id": "eb91d821a1ddfc5feffc9372849e84e1d52d2a6eb272319e9b1e5acd933bef1a",
+    "state": "Barcelona"
   },
   {
     "name": "La Cherry",
@@ -22526,7 +22925,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "19293ad49cef314284c4a5c9e25348d8ef7801bc58fa6e4d6029cf518e419c70"
+    "id": "19293ad49cef314284c4a5c9e25348d8ef7801bc58fa6e4d6029cf518e419c70",
+    "state": "Barcelona"
   },
   {
     "name": "Hanso 2",
@@ -22582,7 +22982,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "64f2549fe7aa4f70e3218033021ca78ab6c759fb9dcc73da253096417373985c"
+    "id": "64f2549fe7aa4f70e3218033021ca78ab6c759fb9dcc73da253096417373985c",
+    "state": "Madrid"
   },
   {
     "name": "Next Level 2",
@@ -22643,7 +23044,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9cc892439a58d0353c65f0cc0cd9ca198e4ce4a4b94701c2652065dce2715b5c"
+    "id": "9cc892439a58d0353c65f0cc0cd9ca198e4ce4a4b94701c2652065dce2715b5c",
+    "state": "Málaga"
   },
   {
     "name": "Justicia Café",
@@ -22686,7 +23088,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d95090389c0ffd8ba47d64cc7f2a392b05efb085270e729af5f5f0f5519abbdb"
+    "id": "d95090389c0ffd8ba47d64cc7f2a392b05efb085270e729af5f5f0f5519abbdb",
+    "state": "Zaragoza"
   },
   {
     "name": "Syra Coffee - Turia",
@@ -22745,7 +23148,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "d63a86d117b2eb077a0651904440c518d044d7dbc24d88aa3a59e94c558b9ca1"
+    "id": "d63a86d117b2eb077a0651904440c518d044d7dbc24d88aa3a59e94c558b9ca1",
+    "state": "Valencia"
   },
   {
     "name": "Fran Café",
@@ -22788,7 +23192,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ea5ee06fc80e9fdfe0a4ddc04f685481af1d7356f55b06cfde9617b303bc422f"
+    "id": "ea5ee06fc80e9fdfe0a4ddc04f685481af1d7356f55b06cfde9617b303bc422f",
+    "state": "Valencia"
   },
   {
     "name": "ÖSS Kaffe",
@@ -22831,7 +23236,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7f57ba3a7a38d0e81058387e6fd2d93095a98ef2461c1dcb6e67d52cf867ffcd"
+    "id": "7f57ba3a7a38d0e81058387e6fd2d93095a98ef2461c1dcb6e67d52cf867ffcd",
+    "state": "Madrid"
   },
   {
     "name": "Skye Coffee Co.",
@@ -22874,7 +23280,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "dee9e40bd6bd8cd920cdb2afd74cc9d48da1ced947de4e17ac627d40b45ea939"
+    "id": "dee9e40bd6bd8cd920cdb2afd74cc9d48da1ced947de4e17ac627d40b45ea939",
+    "state": "Barcelona"
   },
   {
     "name": "Mundo Novo Coffee",
@@ -22932,7 +23339,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4184ba718081dafdc4194b6263f9bf6662e995f2d2991360acc0e872be4d194e"
+    "id": "4184ba718081dafdc4194b6263f9bf6662e995f2d2991360acc0e872be4d194e",
+    "state": "Murcia"
   },
   {
     "name": "I`N Coffee&Tea",
@@ -22994,7 +23402,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "afa17751b9486a9b800938a1e1c706dcd2ec8a96ee11d91f6db7b72efd08f637"
+    "id": "afa17751b9486a9b800938a1e1c706dcd2ec8a96ee11d91f6db7b72efd08f637",
+    "state": "Valencia"
   },
   {
     "name": "UNCAFE",
@@ -23037,7 +23446,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "6a54c19d3603d69fbfc6bd006009b41c8995cd2de2ad5e94d421eead69bd022b"
+    "id": "6a54c19d3603d69fbfc6bd006009b41c8995cd2de2ad5e94d421eead69bd022b",
+    "state": "Valencia"
   },
   {
     "name": "Pum pum bakery",
@@ -23080,7 +23490,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "40f831a4fd5b196a312b6c741c8c52a0df9d404385e0a904874fc0529014d967"
+    "id": "40f831a4fd5b196a312b6c741c8c52a0df9d404385e0a904874fc0529014d967",
+    "state": "Madrid"
   },
   {
     "name": "Atypique",
@@ -23142,7 +23553,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4b8b3a78ec3ccf7917f567fc1b363f128c2746929a9996633fd51d6319949458"
+    "id": "4b8b3a78ec3ccf7917f567fc1b363f128c2746929a9996633fd51d6319949458",
+    "state": "Cantabria"
   },
   {
     "name": "Toma Café",
@@ -23185,7 +23597,8 @@
     "image": "",
     "rating": 4.3,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "645dfef0f3c9347b1f2086d6e2926f7da8d3aaa72555cc7d3a2fc829e5d74307"
+    "id": "645dfef0f3c9347b1f2086d6e2926f7da8d3aaa72555cc7d3a2fc829e5d74307",
+    "state": "Madrid"
   },
   {
     "name": "La Papaya",
@@ -23247,7 +23660,8 @@
     "image": "",
     "rating": 4.1,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "eeead395a9d331f395ba03d7562a70a783c5b371fc5937ab275144be4c30824e"
+    "id": "eeead395a9d331f395ba03d7562a70a783c5b371fc5937ab275144be4c30824e",
+    "state": "Santa Cruz de Tenerife"
   },
   {
     "name": "Maybean Cafe",
@@ -23305,7 +23719,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "1e7b3fff6d02bc2fd700feedeea34e60dcc482dc797a6b593717be0efe41e6fb"
+    "id": "1e7b3fff6d02bc2fd700feedeea34e60dcc482dc797a6b593717be0efe41e6fb",
+    "state": "Valencia"
   },
   {
     "name": "ALFAR Medialunas & Café de Especialidad",
@@ -23363,7 +23778,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "4ce474651d44d8f3a052e203611b54a2a99d9ca809d336d37146daf393b63334"
+    "id": "4ce474651d44d8f3a052e203611b54a2a99d9ca809d336d37146daf393b63334",
+    "state": "Barcelona"
   },
   {
     "name": "Onda Cafe Foundation",
@@ -23406,7 +23822,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8eb72aa16bd7a8ce6cb78e4cbc7f8e9319acf9f63530a13b715d5aba44324d5b"
+    "id": "8eb72aa16bd7a8ce6cb78e4cbc7f8e9319acf9f63530a13b715d5aba44324d5b",
+    "state": "A Coruña"
   },
   {
     "name": "Selva",
@@ -23469,7 +23886,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "02e1f01dca5d26ba7e0a7e450575448e8d6f240ca8b3fa41f96e49d345d7cf06"
+    "id": "02e1f01dca5d26ba7e0a7e450575448e8d6f240ca8b3fa41f96e49d345d7cf06",
+    "state": "Sevilla"
   },
   {
     "name": "Amatter",
@@ -23512,7 +23930,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c10c99aefffb4d349c4378c8abcd0cd074faf3d2f50d9b14c56ad7bfd5299ba0"
+    "id": "c10c99aefffb4d349c4378c8abcd0cd074faf3d2f50d9b14c56ad7bfd5299ba0",
+    "state": "Álava"
   },
   {
     "name": "Oso Ona Specialty Coffee Take Away",
@@ -23571,7 +23990,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "7a3e47af584cc1dcdc6580cad3ee9b9bb69ace9349c508f639b03188ccc4b0fd"
+    "id": "7a3e47af584cc1dcdc6580cad3ee9b9bb69ace9349c508f639b03188ccc4b0fd",
+    "state": "Álava"
   },
   {
     "name": "CafeLab",
@@ -23614,7 +24034,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cfd8acd1ea9ef5138ee87524738de610df49d97b9725dcc610d9eaf80f643e38"
+    "id": "cfd8acd1ea9ef5138ee87524738de610df49d97b9725dcc610d9eaf80f643e38",
+    "state": "Murcia"
   },
   {
     "name": "HanSo Café",
@@ -23675,7 +24096,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "017366963d8b6b61de58cc4d2ec45ac81a8a337e1fb522c868264902a2bb1677"
+    "id": "017366963d8b6b61de58cc4d2ec45ac81a8a337e1fb522c868264902a2bb1677",
+    "state": "Madrid"
   },
   {
     "name": "Atom Coffee Lab",
@@ -23737,7 +24159,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "b537e339bd31cae605327245a87ab17018d5e69a2ac9becc6ee70fa8c92afdbf"
+    "id": "b537e339bd31cae605327245a87ab17018d5e69a2ac9becc6ee70fa8c92afdbf",
+    "state": "Barcelona"
   },
   {
     "name": "Café del Art",
@@ -23780,7 +24203,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "07c5e829878ebe6f2836f9d361678baac172673822d3e06af67fae4098334251"
+    "id": "07c5e829878ebe6f2836f9d361678baac172673822d3e06af67fae4098334251",
+    "state": "Madrid"
   },
   {
     "name": "SAGA Coffee Stories",
@@ -23840,7 +24264,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "745dcc8e0be308abb9f7e00cbff64441c7c74e774319b226d99d67c602830f92"
+    "id": "745dcc8e0be308abb9f7e00cbff64441c7c74e774319b226d99d67c602830f92",
+    "state": "Barcelona"
   },
   {
     "name": "Bruma Cafe",
@@ -23883,7 +24308,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "889e5c7055e4c8e5eca22a1d7376594da5fb68213c6f89902aa5068fe7cccd53"
+    "id": "889e5c7055e4c8e5eca22a1d7376594da5fb68213c6f89902aa5068fe7cccd53",
+    "state": "Cádiz"
   },
   {
     "name": "BB's Café",
@@ -23944,7 +24370,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "445501b41a8b345efea82e364e599047dfd21d4d28e285f19e93a860ba3e4299"
+    "id": "445501b41a8b345efea82e364e599047dfd21d4d28e285f19e93a860ba3e4299",
+    "state": "Vizcaya"
   },
   {
     "name": "Fika Farina",
@@ -23987,7 +24414,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f67e48ce9c94229d3aea0201d3382cfc56768ccbf0d01ed66f08b11f46dc8036"
+    "id": "f67e48ce9c94229d3aea0201d3382cfc56768ccbf0d01ed66f08b11f46dc8036",
+    "state": "Islas Baleares"
   },
   {
     "name": "On y va Sant Gervasi",
@@ -24030,7 +24458,8 @@
     "image": "",
     "rating": 4.5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9f588a0a66d3527dafb1f47de9274d36de2c2aa0377a7e1ceb3cc010bc747ead"
+    "id": "9f588a0a66d3527dafb1f47de9274d36de2c2aa0377a7e1ceb3cc010bc747ead",
+    "state": "Barcelona"
   },
   {
     "name": "Toma Café Olavide",
@@ -24073,7 +24502,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "aa0d27555bfee875d715d3e2ab0165dad67e5aca7a91d467fd6815a63680b7ca"
+    "id": "aa0d27555bfee875d715d3e2ab0165dad67e5aca7a91d467fd6815a63680b7ca",
+    "state": "Madrid"
   },
   {
     "name": "On y va Numancia",
@@ -24116,7 +24546,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "9c50db274fe0a22557240c7d23dff84c853bbfec1bf067b0e029e841db7e3d19"
+    "id": "9c50db274fe0a22557240c7d23dff84c853bbfec1bf067b0e029e841db7e3d19",
+    "state": "Barcelona"
   },
   {
     "name": "Fika Coffee",
@@ -24159,7 +24590,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "c15274bc20fe41300f00c6da8f6083e2438e305ca313432d4e8368c6bce223a3"
+    "id": "c15274bc20fe41300f00c6da8f6083e2438e305ca313432d4e8368c6bce223a3",
+    "state": "Barcelona"
   },
   {
     "name": "Número C",
@@ -24221,7 +24653,8 @@
     "image": "",
     "rating": 4.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5cdcb55e897f8adc227ce19f139e1ae7940ab15165d8ab0cf26e2e3af6388f58"
+    "id": "5cdcb55e897f8adc227ce19f139e1ae7940ab15165d8ab0cf26e2e3af6388f58",
+    "state": "Cádiz"
   },
   {
     "name": "Primos de Origen",
@@ -24256,7 +24689,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "dc6e200d34d84bff67c09fe3e11d2aa934e486819e1259236a67944b7d2b762a"
+    "id": "dc6e200d34d84bff67c09fe3e11d2aa934e486819e1259236a67944b7d2b762a",
+    "state": "Cantabria"
   },
   {
     "name": "San Agustín",
@@ -24291,7 +24725,8 @@
     "image": "",
     "rating": 4.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "483e208aa996cad051119603a47772baa443ab1624af671a29c809678e6ab698"
+    "id": "483e208aa996cad051119603a47772baa443ab1624af671a29c809678e6ab698",
+    "state": "León"
   },
   {
     "name": "Animal Coffee Roasters",
@@ -24326,7 +24761,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "012d7f9435e9a6559ede9f5f73ce188ec2807229e6994c7a38d2eeb428094cc5"
+    "id": "012d7f9435e9a6559ede9f5f73ce188ec2807229e6994c7a38d2eeb428094cc5",
+    "state": "Barcelona"
   },
   {
     "name": "Ikore Kofi",
@@ -24361,7 +24797,8 @@
     "image": "",
     "rating": 4.4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "cec8f5d9178b5fff636142e280ad01d85f669b1b37425f53076c59618c55df99"
+    "id": "cec8f5d9178b5fff636142e280ad01d85f669b1b37425f53076c59618c55df99",
+    "state": "Valencia"
   },
   {
     "name": "Puchero Coffee Roasters",
@@ -24396,7 +24833,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f178a2221ba44c946dc02adbfab200c9b31604091743cf9462ee2ec8a2fdb9cb"
+    "id": "f178a2221ba44c946dc02adbfab200c9b31604091743cf9462ee2ec8a2fdb9cb",
+    "state": "Valladolid"
   },
   {
     "name": "Right Side Coffee",
@@ -24431,7 +24869,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "56b6dce91b127ea4de2c3fb587be716f7df3ff088d6915c61877aff03a7303a2"
+    "id": "56b6dce91b127ea4de2c3fb587be716f7df3ff088d6915c61877aff03a7303a2",
+    "state": "Barcelona"
   },
   {
     "name": "D-Origen Coffee Roasters",
@@ -24466,7 +24905,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "32a38c4c7ad3c50f954a338ccb98d2fbf5893467aee67a3df4ff93ab0620e08e"
+    "id": "32a38c4c7ad3c50f954a338ccb98d2fbf5893467aee67a3df4ff93ab0620e08e",
+    "state": "Alicante"
   },
   {
     "name": "Ineffable Coffee Roasters",
@@ -24501,7 +24941,8 @@
     "image": "",
     "rating": 4.7,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ffbeae7b2b07c377088045e104d7913c621a3b89ca677412389dbe75c1d1cc51"
+    "id": "ffbeae7b2b07c377088045e104d7913c621a3b89ca677412389dbe75c1d1cc51",
+    "state": "Sevilla"
   },
   {
     "name": "Tusell Tostadores",
@@ -24536,7 +24977,8 @@
     "image": "",
     "rating": 4.2,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "6328bb3bd6f91ce414306fbffd12adc2f8dfeee95cb50537a95f950152737530"
+    "id": "6328bb3bd6f91ce414306fbffd12adc2f8dfeee95cb50537a95f950152737530",
+    "state": "Barcelona"
   },
   {
     "name": "Meke Coffee Roasters",
@@ -24571,7 +25013,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "24796ae2162b719255b9b5bde5a05163c65dc5b51d9cfeb0663e3c557fd2b9c8"
+    "id": "24796ae2162b719255b9b5bde5a05163c65dc5b51d9cfeb0663e3c557fd2b9c8",
+    "state": "Islas Baleares"
   },
   {
     "name": "Randall Coffee Roasters",
@@ -24606,7 +25049,8 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ba056048b8f075e55532dccc9aa9518afe0debe9f2575513c420c92d87ef6a4a"
+    "id": "ba056048b8f075e55532dccc9aa9518afe0debe9f2575513c420c92d87ef6a4a",
+    "state": "Madrid"
   },
   {
     "name": "Café de Finca",
@@ -24641,7 +25085,8 @@
     "image": "",
     "rating": 3.9,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8c356ca9b105417f8bdeac0ef1a3826c20181c15bd9eaa3fe0422d341f663d97"
+    "id": "8c356ca9b105417f8bdeac0ef1a3826c20181c15bd9eaa3fe0422d341f663d97",
+    "state": "Barcelona"
   },
   {
     "name": "Santo Amaro",
@@ -24676,7 +25121,8 @@
     "image": "",
     "rating": 5,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "8ae6e4b01cc8a806708244d93bb47eeb96fc1512100b59a6cd33d1557e253367"
+    "id": "8ae6e4b01cc8a806708244d93bb47eeb96fc1512100b59a6cd33d1557e253367",
+    "state": "Granada"
   },
   {
     "name": "Nomad Coffee",
@@ -24711,7 +25157,8 @@
     "image": "",
     "rating": 4.6,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "381a213cfa479d5ade01885bdb648d69de48fce782ba67ba845a417858f05644"
+    "id": "381a213cfa479d5ade01885bdb648d69de48fce782ba67ba845a417858f05644",
+    "state": "Barcelona"
   },
   {
     "name": "Sakona Coffee Roasters",
@@ -24746,7 +25193,8 @@
     "image": "",
     "rating": 3.8,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "38da5fa57b425751b0b340eae643a64115f2818839e4bd589d7f1095ac96c7c6"
+    "id": "38da5fa57b425751b0b340eae643a64115f2818839e4bd589d7f1095ac96c7c6",
+    "state": "Guipúzcoa"
   },
   {
     "name": "Bluebell Coffee Co.",
@@ -24781,6 +25229,7 @@
     "image": "",
     "rating": 4,
     "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "ab0fc237d7b22945f82426870c0c25b123f768daa37182cd1dd3038533bb1e7d"
+    "id": "ab0fc237d7b22945f82426870c0c25b123f768daa37182cd1dd3038533bb1e7d",
+    "state": "Valencia"
   }
 ]

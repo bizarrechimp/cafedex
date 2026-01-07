@@ -78,3 +78,19 @@ export const getCafesByFeature = cache(async (feature: string): Promise<Cafe[]> 
     .lean();
   return cafes.map(serializeMongoose) as Cafe[];
 });
+
+import { isActiveProvince } from '@/lib/data/provinces';
+
+export const getCafesByState = cache(async (state: string): Promise<Cafe[]> => {
+  await connectMongo();
+
+  // Normalize and validate against the active provinces list (MVP: only Alicante active)
+  const normalized = state?.trim();
+  if (!normalized || !isActiveProvince(normalized)) return [];
+
+  const cafes = await CafeModel.find({ state: normalized })
+    .sort({ rating: -1 })
+    .lean();
+
+  return cafes.map(serializeMongoose) as Cafe[];
+});

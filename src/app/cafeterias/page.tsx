@@ -1,6 +1,7 @@
 import CafeCard from '@/components/CafeCard';
 import CityFilter from '@/components/CityFilter';
-import { getAllCafes } from '@/utils/cafeUtils';
+import ProvinceFilter from '@/components/ProvinceFilter';
+import { getAllCafes, getCafesByState } from '@/utils/cafeUtils';
 import { Cafe } from '@/data/types';
 
 export const dynamic = 'force-dynamic';
@@ -9,16 +10,20 @@ export const revalidate = false;
 export default async function CafeteriasPage(props: { searchParams?: Promise<{ [key: string]: string | undefined }> }) {
   const searchParams = await props.searchParams;
   const selectedCity = searchParams?.city || 'all';
+  const selectedState = searchParams?.state || 'all';
 
-  const allCafes = await getAllCafes();
-  const cities = Array.from(new Set(allCafes.map((cafe: Cafe) => cafe.city))).sort();
+  // If a province is selected and it is Alicante (MVP hardcoded behavior),
+  // fetch only those cafes; otherwise fetch all cafes.
+  const allCafes: Cafe[] = selectedState === 'Alicante' ? await getCafesByState('Alicante') : await getAllCafes();
 
-  const filteredCafes = selectedCity === 'all'
+  const cities: string[] = Array.from(new Set(allCafes.map((cafe: Cafe) => cafe.city))).sort();
+
+  const filteredCafes: Cafe[] = selectedCity === 'all'
     ? allCafes
     : allCafes.filter((cafe: Cafe) => cafe.city === selectedCity);
 
   const cafeNumbers = Object.fromEntries(
-    allCafes.map((cafe, index) => [cafe.slug, index + 1])
+    allCafes.map((cafe: Cafe, index: number) => [cafe.slug, index + 1])
   );
 
   return (
@@ -27,12 +32,15 @@ export default async function CafeteriasPage(props: { searchParams?: Promise<{ [
 
       {allCafes.length > 0 ? (
         <>
-          <CityFilter cities={cities} selectedCity={selectedCity} />
+          <div className="flex gap-4 flex-col md:flex-row md:items-end md:gap-8">
+            <CityFilter cities={cities} selectedCity={selectedCity} />
+            <ProvinceFilter selectedState={selectedState} />
+          </div>
 
           <div className="py-8 pb-12 px-4 overflow-hidden">
             <div className="flex flex-wrap justify-center gap-6">
               {filteredCafes.map((cafe: Cafe) => {
-                if (!cafe.name || !cafe.city || !cafe.country || !cafe.location?.address || !cafe.slug) {
+                if (!cafe.name || !cafe.city || !cafe.state || !cafe.location?.address || !cafe.slug) {
                   return (
                     <div key={`cafe-missing-${cafe.slug || Math.random()}`} className="w-[320px] h-[427px] flex items-center justify-center bg-red-100 dark:bg-red-900 rounded-xl shadow-lg text-red-700 dark:text-red-200">
                       <span>Datos faltantes para esta cafetería.</span>
