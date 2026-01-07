@@ -16,30 +16,36 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
       notFound();
     }
 
-    const { name, image, city, state, location, rating, specialty_features, rrss, description } = cafe;
+    const { name, image, city, state, location, rating, specialty_features, rrss, description } =
+      cafe;
     const address = location?.address || '';
 
     // Use lat/lng if available for Google Maps, otherwise fall back to address
-    const googleMapsUrl = location?.lat && location?.lng
-      ? `https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}`
-      : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address || name)}`;
+    const googleMapsUrl =
+      location?.lat && location?.lng
+        ? `https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}`
+        : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address || name)}`;
 
     return (
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full h-[400px] mb-8 rounded-2xl overflow-hidden shadow-2xl bg-gray-100 dark:bg-gray-900 border border-gray-100 dark:border-gray-800">
             {image ? (
-              <Image
-                src={image}
-                alt={name}
-                fill
-                className="object-cover"
-                priority
-              />
+              <Image src={image} alt={name} fill className="object-cover" priority />
             ) : (
               <div className="flex flex-col items-center justify-center w-full h-full bg-gradient-to-br from-amber-50 to-orange-100 dark:from-gray-800 dark:to-gray-900 px-12 text-center">
-                <svg className="w-24 h-24 text-amber-200 dark:text-gray-700 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                <svg
+                  className="w-24 h-24 text-amber-200 dark:text-gray-700 mb-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
                 </svg>
                 <h2 className="text-amber-800/20 dark:text-white/10 font-black text-5xl uppercase tracking-tighter italic">
                   {name}
@@ -48,7 +54,9 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
             )}
           </div>
 
-          <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900 dark:text-white">{name}</h1>
+          <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900 dark:text-white">
+            {name}
+          </h1>
 
           <div className="flex flex-wrap items-center gap-6 mb-8">
             {rating !== undefined && (
@@ -57,9 +65,25 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
               </div>
             )}
             <div className="flex items-center text-gray-600 dark:text-gray-400 font-medium">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 mr-2 text-amber-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
               </svg>
               {city}, {state}
             </div>
@@ -76,10 +100,14 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <section className="bg-gray-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm">
               <h2 className="text-2xl font-bold mb-6 flex items-center">
-                <span className="w-8 h-8 bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 rounded-lg flex items-center justify-center mr-3">📍</span>
+                <span className="w-8 h-8 bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 rounded-lg flex items-center justify-center mr-3">
+                  📍
+                </span>
                 Ubicación
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-6 text-lg leading-snug">{address}</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-6 text-lg leading-snug">
+                {address}
+              </p>
               <a
                 href={googleMapsUrl}
                 target="_blank"
@@ -88,7 +116,12 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
               >
                 Abrir en Google Maps
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
                 </svg>
               </a>
             </section>
@@ -96,12 +129,17 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
             {specialty_features?.opening_Hours && (
               <section className="bg-gray-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm">
                 <h2 className="text-2xl font-bold mb-6 flex items-center">
-                  <span className="w-8 h-8 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg flex items-center justify-center mr-3">🕒</span>
+                  <span className="w-8 h-8 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg flex items-center justify-center mr-3">
+                    🕒
+                  </span>
                   Horario
                 </h2>
                 <div className="space-y-3">
                   {Object.entries(specialty_features.opening_Hours).map(([day, hours]) => (
-                    <div key={day} className="flex justify-between items-center border-b border-gray-200/50 dark:border-gray-700/50 pb-2 last:border-0 last:pb-0">
+                    <div
+                      key={day}
+                      className="flex justify-between items-center border-b border-gray-200/50 dark:border-gray-700/50 pb-2 last:border-0 last:pb-0"
+                    >
                       <span className="text-gray-500 dark:text-gray-400 font-medium">{day}</span>
                       <span className="text-gray-900 dark:text-white font-bold">{hours}</span>
                     </div>
@@ -111,14 +149,16 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
             )}
           </div>
 
-          {(specialty_features?.brew_methods?.length || specialty_features?.services?.length || specialty_features?.serving?.length) ? (
+          {specialty_features?.brew_methods?.length ||
+          specialty_features?.services?.length ||
+          specialty_features?.serving?.length ? (
             <div className="mb-12">
               <h2 className="text-2xl font-bold mb-6">Características del Café</h2>
               <div className="flex flex-wrap gap-3">
                 {[
                   ...(specialty_features?.brew_methods || []),
                   ...(specialty_features?.services || []),
-                  ...(specialty_features?.serving || [])
+                  ...(specialty_features?.serving || []),
                 ].map((feature) => (
                   <span
                     key={feature}
@@ -178,7 +218,12 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
             className="inline-flex items-center gap-2 text-amber-600 dark:text-amber-400 font-bold hover:underline mb-20"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              />
             </svg>
             Volver a la lista de cafeterías
           </Link>

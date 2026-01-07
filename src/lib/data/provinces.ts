@@ -57,13 +57,13 @@ export const PROVINCES: Province[] = [
   { code: 'vizcaya', name: 'Vizcaya', active: false },
   { code: 'zamora', name: 'Zamora', active: false },
   { code: 'zaragoza', name: 'Zaragoza', active: false },
-  { code: 'melilla', name: 'Melilla', active: false }
+  { code: 'melilla', name: 'Melilla', active: false },
 ];
 
-export const getActiveProvinces = () => PROVINCES.filter(p => p.active);
+export const getActiveProvinces = () => PROVINCES.filter((p) => p.active);
 
 export const isActiveProvince = (value?: string) => {
   if (!value) return false;
   const norm = value.trim().toLowerCase();
-  return PROVINCES.some(p => p.active && p.name.toLowerCase() === norm);
+  return PROVINCES.some((p) => p.active && p.name.toLowerCase() === norm);
 };

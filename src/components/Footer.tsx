@@ -1,10 +1,10 @@
 // src/components/Footer.tsx
-"use client"; // Mark the component as client-side only
+'use client'; // Mark the component as client-side only
 
 const Footer = () => {
   return (
-<footer className="bg-[var(--primary-color)] text-[var(--secondary-color)]">
-<div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <footer className="bg-[var(--primary-color)] text-[var(--secondary-color)]">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Brand or Logo Section */}
         <div className="mb-4 md:mb-0">
           <h1 className="text-xl font-semibold">Cafedex</h1>

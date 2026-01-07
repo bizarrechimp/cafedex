@@ -9,7 +9,8 @@ const BlogPostSchema = new mongoose.Schema({
   date: { type: Date },
   author: { type: String },
   createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now }
+  updatedAt: { type: Date, default: Date.now },
 });
 
-export const BlogPost = mongoose.models.BlogPost || mongoose.model('BlogPost', BlogPostSchema, 'Posts');
+export const BlogPost =
+  mongoose.models.BlogPost || mongoose.model('BlogPost', BlogPostSchema, 'Posts');

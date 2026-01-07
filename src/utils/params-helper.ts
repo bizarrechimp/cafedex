@@ -21,10 +21,10 @@ export async function getSafeParams<T extends Record<string, string | Promise<st
   params: T
 ): Promise<{ [K in keyof T]: string }> {
   const result: any = {};
-  
+
   for (const [key, value] of Object.entries(params)) {
     result[key] = value instanceof Promise ? await value : value;
   }
-  
+
   return result;
 }

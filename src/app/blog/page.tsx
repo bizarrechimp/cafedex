@@ -27,7 +27,7 @@ async function BlogPosts() {
         date={new Date(post.date).toLocaleDateString('es-ES', {
           year: 'numeric',
           month: 'long',
-          day: 'numeric'
+          day: 'numeric',
         })}
         slug={post.slug}
         author={post.author}

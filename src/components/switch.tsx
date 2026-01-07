@@ -19,7 +19,7 @@ const Switch: React.FC<SwitchProps> = ({ isDarkMode, onToggle }) => {
       </label>
     </StyledWrapper>
   );
-}
+};
 
 const StyledWrapper = styled.div`
   /* El contenedor del switch */
@@ -46,13 +46,13 @@ const StyledWrapper = styled.div`
     right: 0;
     bottom: 0;
     background-color: var(--background);
-    transition: .5s;
+    transition: 0.5s;
     border-radius: 30px;
   }
 
   .slider:before {
     position: absolute;
-    content: "";
+    content: '';
     height: 1.4em;
     width: 1.4em;
     border-radius: 50%;
@@ -60,7 +60,7 @@ const StyledWrapper = styled.div`
     bottom: 15%;
     box-shadow: inset 8px -4px 0px 0px #fff000;
     background: var(--background);
-    transition: .5s;
+    transition: 0.5s;
   }
 
   input:checked + .slider {

@@ -11,15 +11,13 @@ export default async function Home() {
   const [cafes, allCafes, posts] = await Promise.all([
     getFeaturedCafes(),
     getAllCafes(),
-    getAllPosts()
+    getAllPosts(),
   ]);
 
   const recentPosts = posts.slice(0, 3);
 
   // Create a mapping of cafe slugs to their original index
-  const cafeNumbers = Object.fromEntries(
-    allCafes.map((cafe, index) => [cafe.slug, index + 1])
-  );
+  const cafeNumbers = Object.fromEntries(allCafes.map((cafe, index) => [cafe.slug, index + 1]));
 
   return (
     <div className="min-h-screen">
@@ -40,10 +38,7 @@ export default async function Home() {
                       'hidden'
                     }`}
                   >
-                    <CafeCard
-                      cafe={cafe}
-                      number={cafeNumbers[cafe.slug]}
-                    />
+                    <CafeCard cafe={cafe} number={cafeNumbers[cafe.slug]} />
                   </div>
                 ))}
               </div>
