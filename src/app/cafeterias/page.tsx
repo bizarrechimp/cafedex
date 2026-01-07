@@ -67,7 +67,12 @@ export default async function CafeteriasPage(props: {
                   );
                 }
                 return (
-                  <CafeCard key={`cafe-${cafe.slug}`} cafe={cafe} number={cafeNumbers[cafe.slug]} hideMeta={true} />
+                  <CafeCard
+                    key={`cafe-${cafe.slug}`}
+                    cafe={cafe}
+                    number={cafeNumbers[cafe.slug]}
+                    hideMeta={true}
+                  />
                 );
               })}
             </div>
