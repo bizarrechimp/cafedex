@@ -8,10 +8,12 @@ import StarRating from './StarRating';
 interface CafeCardProps {
   cafe: Cafe;
   number?: number;
+  hideMeta?: boolean; // when true, visually hide number and rating (used in listings)
 }
 
-export default function CafeCard({ cafe, number }: CafeCardProps) {
+export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardProps) {
   const { name, image, city, state, location, rating, slug, rrss } = cafe;
+  const hideMetaClass = hideMeta ? 'opacity-0 pointer-events-none' : '';
   const address = location?.address || '';
   const instagramUrl = rrss?.instagram;
   const websiteUrl = rrss?.website;
@@ -63,17 +65,13 @@ export default function CafeCard({ cafe, number }: CafeCardProps) {
               <div className="absolute inset-0 bg-white/10 dark:bg-black/10 backdrop-blur-[1px] opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
             </div>
           )}
-          {number !== undefined && (
-            <div className="absolute top-4 -left-2 bg-white dark:bg-gray-800 px-4 py-1 flex items-center shadow-lg rounded-r-lg z-20">
-              <div className="absolute -left-2 -top-2 w-2 h-2 bg-gray-600 dark:bg-gray-950"></div>
-              <span className="text-sm font-bold text-gray-900 dark:text-white">#{number}</span>
-            </div>
-          )}
-          {rating !== undefined && (
-            <div className="absolute top-3 right-3 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center shadow-lg border border-white/20 z-20">
-              <StarRating rating={rating} />
-            </div>
-          )}
+          <div className={`absolute top-4 -left-2 bg-white dark:bg-gray-800 px-4 py-1 flex items-center shadow-lg rounded-r-lg z-20 ${hideMetaClass}`} aria-hidden={hideMeta ? 'true' : 'false'}>
+            <div className="absolute -left-2 -top-2 w-2 h-2 bg-gray-600 dark:bg-gray-950"></div>
+            <span className="text-sm font-bold text-gray-900 dark:text-white">{number !== undefined ? `#${number}` : ''}</span>
+          </div>
+          <div className={`absolute top-3 right-3 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center shadow-lg border border-white/20 z-20 ${hideMetaClass}`} aria-hidden={hideMeta ? 'true' : 'false'}>
+            {rating !== undefined ? <StarRating rating={rating} /> : <div style={{ width: 18, height: 18 }} />}
+          </div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-3 z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:-translate-y-1/2">
             {googleMapsUrl && (
               <a
