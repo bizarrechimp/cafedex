@@ -10,7 +10,7 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals"),
+  ...compat.extends("next/core-web-vitals", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"),
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
     rules: {
@@ -19,6 +19,8 @@ const eslintConfig = [
         "checkKeyMustBeforeSpread": true,
         "warnOnDuplicates": true
       }],
+      // TypeScript-specific adjustments can be added here
+      "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
     },
   },
 ];
