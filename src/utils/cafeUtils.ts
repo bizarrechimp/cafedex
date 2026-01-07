@@ -19,7 +19,9 @@ const serializeMongoose = (doc: any) => {
   // Handle specialty_features Map
   if (obj.specialty_features?.opening_Hours) {
     if (obj.specialty_features.opening_Hours instanceof Map) {
-      obj.specialty_features.opening_Hours = Object.fromEntries(obj.specialty_features.opening_Hours);
+      obj.specialty_features.opening_Hours = Object.fromEntries(
+        obj.specialty_features.opening_Hours
+      );
     } else if (typeof obj.specialty_features.opening_Hours.toJSON === 'function') {
       obj.specialty_features.opening_Hours = obj.specialty_features.opening_Hours.toJSON();
     }
@@ -30,9 +32,7 @@ const serializeMongoose = (doc: any) => {
 
 export const getAllCafes = cache(async (): Promise<Cafe[]> => {
   await connectMongo();
-  const cafes = await CafeModel.find()
-    .sort({ slug: 1 })
-    .lean();
+  const cafes = await CafeModel.find().sort({ slug: 1 }).lean();
   return cafes.map(serializeMongoose) as Cafe[];
 });
 
@@ -47,10 +47,7 @@ export const getFeaturedCafes = cache(async (): Promise<Cafe[]> => {
 
   // If no featured cafes, get top rated ones instead
   if (featuredCafes.length === 0) {
-    const topRatedCafes = await CafeModel.find()
-      .sort({ rating: -1 })
-      .limit(3)
-      .lean();
+    const topRatedCafes = await CafeModel.find().sort({ rating: -1 }).limit(3).lean();
     return topRatedCafes.map(serializeMongoose) as Cafe[];
   }
 
@@ -59,9 +56,7 @@ export const getFeaturedCafes = cache(async (): Promise<Cafe[]> => {
 
 export const getCafesByCity = cache(async (city: string): Promise<Cafe[]> => {
   await connectMongo();
-  const cafes = await CafeModel.find({ city })
-    .sort({ rating: -1 })
-    .lean();
+  const cafes = await CafeModel.find({ city }).sort({ rating: -1 }).lean();
   return cafes.map(serializeMongoose) as Cafe[];
 });
 
@@ -71,8 +66,8 @@ export const getCafesByFeature = cache(async (feature: string): Promise<Cafe[]> 
     $or: [
       { 'specialty_features.brew_methods': feature },
       { 'specialty_features.services': feature },
-      { 'specialty_features.serving': feature }
-    ]
+      { 'specialty_features.serving': feature },
+    ],
   })
     .sort({ rating: -1 })
     .lean();
@@ -88,9 +83,7 @@ export const getCafesByState = cache(async (state: string): Promise<Cafe[]> => {
   const normalized = state?.trim();
   if (!normalized || !isActiveProvince(normalized)) return [];
 
-  const cafes = await CafeModel.find({ state: normalized })
-    .sort({ rating: -1 })
-    .lean();
+  const cafes = await CafeModel.find({ state: normalized }).sort({ rating: -1 }).lean();
 
   return cafes.map(serializeMongoose) as Cafe[];
 });

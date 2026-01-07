@@ -37,7 +37,10 @@ export default function Loading() {
           <div className="h-8 w-40 bg-gray-200 dark:bg-gray-700 rounded mb-4 animate-pulse"></div>
           <div className="flex flex-wrap gap-2">
             {[...Array(5)].map((_, i) => (
-              <div key={i} className="h-8 w-24 bg-gray-200 dark:bg-gray-700 rounded-full animate-pulse"></div>
+              <div
+                key={i}
+                className="h-8 w-24 bg-gray-200 dark:bg-gray-700 rounded-full animate-pulse"
+              ></div>
             ))}
           </div>
         </div>

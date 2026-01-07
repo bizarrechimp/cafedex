@@ -8,17 +8,17 @@
  * @param searchParams The searchParams object from Next.js page props
  * @returns A safe object with all values properly awaited
  */
-export async function getSafeSearchParams<T extends Record<string, string | Promise<string> | undefined>>(
-  searchParams: T
-): Promise<{ [K in keyof T]: string | undefined }> {
+export async function getSafeSearchParams<
+  T extends Record<string, string | Promise<string> | undefined>,
+>(searchParams: T): Promise<{ [K in keyof T]: string | undefined }> {
   const result: any = {};
-  
+
   for (const [key, value] of Object.entries(searchParams)) {
     if (value !== undefined) {
       result[key] = value instanceof Promise ? await value : value;
     }
   }
-  
+
   return result;
 }
 

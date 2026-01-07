@@ -35,9 +35,9 @@ export async function GET() {
         dataSize: stats.dataSize,
         storageSize: stats.storageSize,
         indexes: stats.indexes,
-        indexSize: stats.indexSize
+        indexSize: stats.indexSize,
       },
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (err: unknown) {
     const error = err as Error;
@@ -46,7 +46,7 @@ export async function GET() {
       message: error?.message || 'An unknown error occurred',
       code: err instanceof mongoose.Error ? (err as any).code : undefined,
       codeName: err instanceof mongoose.Error ? (err as any).codeName : undefined,
-      stack: error?.stack
+      stack: error?.stack,
     });
 
     // Determine appropriate status code based on error type
@@ -62,11 +62,14 @@ export async function GET() {
       {
         status: 'error',
         message: errorMessage,
-        details: err instanceof mongoose.Error ? {
-          code: (err as any).code,
-          codeName: (err as any).codeName
-        } : undefined,
-        timestamp: new Date().toISOString()
+        details:
+          err instanceof mongoose.Error
+            ? {
+                code: (err as any).code,
+                codeName: (err as any).codeName,
+              }
+            : undefined,
+        timestamp: new Date().toISOString(),
       },
       { status: statusCode }
     );

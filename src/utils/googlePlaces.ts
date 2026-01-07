@@ -15,7 +15,7 @@ interface PlaceDetails {
 const loader = new Loader({
   apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
   version: 'weekly',
-  libraries: ['places']
+  libraries: ['places'],
 });
 
 export async function getPlaceDetails(placeId: string): Promise<PlaceDetails> {
@@ -26,7 +26,7 @@ export async function getPlaceDetails(placeId: string): Promise<PlaceDetails> {
     service.getDetails(
       {
         placeId: placeId,
-        fields: ['photos', 'rating', 'opening_hours']
+        fields: ['photos', 'rating', 'opening_hours'],
       },
       (
         place: google.maps.places.PlaceResult | null,
@@ -36,10 +36,13 @@ export async function getPlaceDetails(placeId: string): Promise<PlaceDetails> {
           const details: PlaceDetails = {
             photo: place.photos?.[0]?.getUrl(),
             rating: place.rating,
-            openingHours: place.opening_hours && place.opening_hours.periods && place.opening_hours.weekday_text ? {
-              periods: place.opening_hours.periods,
-              weekdayText: place.opening_hours.weekday_text
-            } : undefined
+            openingHours:
+              place.opening_hours && place.opening_hours.periods && place.opening_hours.weekday_text
+                ? {
+                    periods: place.opening_hours.periods,
+                    weekdayText: place.opening_hours.weekday_text,
+                  }
+                : undefined,
           };
           resolve(details);
         } else {

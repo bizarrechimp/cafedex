@@ -30,7 +30,7 @@ export default function ProvinceFilter({ selectedState }: ProvinceFilterProps) {
           router.push(url.pathname + url.search);
         }}
       >
-        <option value="all">Todas</option>
+        {/* <option value="all">Todas</option> */}
         {provinces.map((p) => (
           <option key={`state-${p.code}`} value={p.name}>
             {p.name}

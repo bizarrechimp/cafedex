@@ -31,10 +31,7 @@ interface MongoBlogPost {
 export const getAllPosts = cache(async (): Promise<BlogPostType[]> => {
   await connectMongo();
 
-  const docs = await BlogPost.find(
-    {},
-    'slug title date author excerpt content coverImage'
-  )
+  const docs = await BlogPost.find({}, 'slug title date author excerpt content coverImage')
     .sort({ date: -1 })
     .lean()
     .exec();
@@ -60,10 +57,7 @@ export const getPostBySlug = cache(async (slug: string): Promise<BlogPostType | 
 
   await connectMongo();
 
-  const d = await BlogPost.findOne(
-    { slug },
-    'slug title date author excerpt content coverImage'
-  )
+  const d = await BlogPost.findOne({ slug }, 'slug title date author excerpt content coverImage')
     .lean()
     .exec();
 
