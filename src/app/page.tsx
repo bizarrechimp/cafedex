@@ -38,7 +38,7 @@ export default async function Home() {
                       'hidden'
                     }`}
                   >
-                    <CafeCard cafe={cafe} number={cafeNumbers[cafe.slug]} hideMeta={false} />
+                    <CafeCard cafe={cafe} number={cafeNumbers[cafe.slug]} hideMeta={true} />
                   </div>
                 ))}
               </div>
