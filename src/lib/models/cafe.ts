@@ -7,6 +7,7 @@ const cafeSchema = new mongoose.Schema({
   description: { type: String },
   slug: { type: String, required: true, unique: true },
   city: { type: String, required: true },
+  state: { type: String, required: true },
   country: { type: String, required: true },
   location: {
     lat: { type: Number },
@@ -14,7 +15,7 @@ const cafeSchema = new mongoose.Schema({
     address: { type: String, required: true }
   },
   specialty_features: {
-    brew_methods: { type: [String], default: [] },
+    brew_methods: { type: [String], default: [] }, 
     roastery: { type: Boolean, default: false },
     beans_origin: { type: [String], default: [] },
     opening_Hours: { type: Map, of: String, default: {} },
