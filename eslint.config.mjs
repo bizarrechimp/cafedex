@@ -20,7 +20,9 @@ const eslintConfig = [
         "warnOnDuplicates": true
       }],
       // TypeScript-specific adjustments can be added here
-      "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
+      "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+      // Allow explicit use of `any` for MVP/dev convenience, but warn rather than error
+      "@typescript-eslint/no-explicit-any": "warn"
     },
   },
 ];
