@@ -38,5 +38,16 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "target": "ES2020",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true
+    },
+    "esm": false,
+    "experimentalSpecifiers": false
+  }
 }

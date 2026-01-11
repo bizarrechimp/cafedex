@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { getCafe } from '@/lib/db/cafeDb';
+import { getCafeBySlug } from '@/lib/services/cafeService';
 import { notFound } from 'next/navigation';
-import StarRating from '@/components/StarRating';
+import StarRating from '@/components/ui/StarRating';
+import { logger } from '@/lib/logger';
 
 // Make this page dynamic
 export const dynamic = 'force-dynamic';
@@ -10,7 +11,7 @@ export const dynamic = 'force-dynamic';
 export default async function CafePage({ params }: { params: Promise<{ slug: string }> }) {
   try {
     const { slug } = await params;
-    const cafe = await getCafe(slug);
+    const cafe = await getCafeBySlug(slug);
 
     if (!cafe) {
       notFound();
@@ -231,7 +232,7 @@ export default async function CafePage({ params }: { params: Promise<{ slug: str
       </main>
     );
   } catch (error) {
-    console.error('Error fetching cafe:', error);
+    logger.error('Error fetching cafe:', error);
     notFound();
   }
 }

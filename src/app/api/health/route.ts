@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
-import connectMongo from '@/lib/mongodb';
+import connectMongo from '@/lib/db/mongodb';
 import mongoose from 'mongoose';
+import { logger } from '@/lib/logger';
 
 export async function GET() {
   try {
@@ -9,20 +10,25 @@ export async function GET() {
       throw new Error('MongoDB URI is not configured');
     }
 
-    console.log('Health check: Attempting to connect to MongoDB...');
+    logger.info('Health check: Attempting to connect to MongoDB...');
     const connection = await connectMongo();
 
-    // Test the connection using Mongoose
-    const adminDb = connection.connection.db.admin();
+    // Test the connection using the admin database
+    if (!connection.db) {
+      throw new Error('Database connection is not available');
+    }
+
+    const adminDb = connection.db.admin();
     const pingResult = await adminDb.ping();
 
     if (pingResult?.ok !== 1) {
       throw new Error('MongoDB ping failed');
     }
 
-    // Get database stats using Mongoose connection
-    const db = connection.connection.db;
-    const stats = await db.command({ dbStats: 1 });
+    logger.info('Health check passed: MongoDB is operational');
+
+    // Get database stats
+    const stats = await connection.db.command({ dbStats: 1 });
 
     return NextResponse.json({
       status: 'ok',
@@ -41,10 +47,12 @@ export async function GET() {
     });
   } catch (err: unknown) {
     const error = err as Error;
-    console.error('Health check failed:', {
+    logger.error('Health check failed', {
       name: error?.name || 'Unknown Error',
       message: error?.message || 'An unknown error occurred',
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       code: err instanceof mongoose.Error ? (err as any).code : undefined,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       codeName: err instanceof mongoose.Error ? (err as any).codeName : undefined,
       stack: error?.stack,
     });
@@ -65,7 +73,9 @@ export async function GET() {
         details:
           err instanceof mongoose.Error
             ? {
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 code: (err as any).code,
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 codeName: (err as any).codeName,
               }
             : undefined,
