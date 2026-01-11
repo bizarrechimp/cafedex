@@ -1,12 +1,22 @@
 'use client';
 
+import { logger } from '@/lib/logger';
+import { useEffect } from 'react';
+
 export default function Error({
-  error,
+  error: _error,
   reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  useEffect(() => {
+    // Log error to console in development
+    if (process.env.NODE_ENV === 'development') {
+      logger.error('[Cafeterias Page Error]', _error);
+    }
+  }, [_error]);
+
   return (
     <main className="container mx-auto px-4 py-16">
       <div className="max-w-2xl mx-auto text-center">

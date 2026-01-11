@@ -8,10 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "seed": "ts-node --project tsconfig.node.json src/scripts/seed-db.ts",
-    "clean": "rm -rf .next",
-    "make-admin": "ts-node --project tsconfig.node.json admin-tools/set-admin.ts",
-    "check-db": "ts-node --project tsconfig.node.json admin-tools/check-db.ts"
+    "seed": "ts-node --project tsconfig.json src/scripts/seed-db.ts",
+    "clean": "rm -rf .next"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
@@ -31,7 +29,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-markdown": "^10.1.0",
-    "styled-components": "^6.1.17"
+    "styled-components": "^6.1.17",
+    "zod": "^4.3.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

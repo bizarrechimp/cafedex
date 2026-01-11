@@ -1,10 +1,9 @@
-import CafeCard from '@/components/CafeCard';
-import CityFilter from '@/components/CityFilter';
-import ProvinceFilter from '@/components/ProvinceFilter';
-import EnsureStateInUrl from '@/components/EnsureStateInUrl';
-import { getAllCafes, getCafesByState } from '@/utils/cafeUtils';
-import { Cafe } from '@/data/types';
-import { redirect } from 'next/navigation';
+import CafeCard from '@/components/cafe/CafeCard';
+import CityFilter from '@/components/filters/CityFilter';
+import ProvinceFilter from '@/components/filters/ProvinceFilter';
+import EnsureStateInUrl from '@/components/filters/EnsureStateInUrl';
+import { getAllCafes, getCafesByState } from '@/lib/services/cafeService';
+import { Cafe } from '@/types/cafe';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = false;
