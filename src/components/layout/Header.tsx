@@ -1,95 +1,90 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react'; // iconos modernos
-import Switch from '@/components/ui/Switch'; // Importa el nuevo Switch
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+} from '@heroui/react';
+import { Menu } from 'lucide-react';
+import Switch from '@/components/ui/Switch';
+import { useTheme } from '@/providers/ThemeProvider';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado del menú
-  const [isDarkMode, setIsDarkMode] = useState(false); // Estado del modo oscuro
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isDarkMode, toggleTheme } = useTheme();
 
-  // Cargar el modo oscuro desde localStorage si está almacenado
-  useEffect(() => {
-    const savedMode = localStorage.getItem('darkMode');
-    if (savedMode === 'true') {
-      setIsDarkMode(true);
-      document.body.classList.add('dark');
-    }
-  }, []);
-
-  // Cambiar entre el modo claro y oscuro
-  const toggleDarkMode = (isChecked: boolean) => {
-    setIsDarkMode(isChecked);
-    if (isChecked) {
-      document.body.classList.add('dark');
-      localStorage.setItem('darkMode', 'true');
-    } else {
-      document.body.classList.remove('dark');
-      localStorage.setItem('darkMode', 'false');
-    }
-  };
-
-  // Alternar el menú móvil
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const menuItems = [
+    { label: 'Inicio', href: '/' },
+    { label: 'Cafeterías', href: '/cafeterias' },
+    { label: 'Contacto', href: '/contact' },
+  ];
 
   return (
-    <header className="bg-white dark:bg-gray-900 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <h1 className="text-black dark:text-white text-2xl font-semibold">Cafedex</h1>
+    <Navbar
+      isBordered
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      className="bg-white dark:bg-slate-950 shadow-sm"
+    >
+      {/* Brand */}
+      <NavbarBrand className="flex-1">
+        <Link
+          href="/"
+          className="font-bold text-xl bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent"
+        >
+          ☕ Cafedex
+        </Link>
+      </NavbarBrand>
 
-        {/* Botón para cambiar el modo */}
-        <Switch isDarkMode={isDarkMode} onToggle={toggleDarkMode} />
-      </div>
+      {/* Desktop Menu */}
+      <NavbarContent className="hidden md:flex gap-4" justify="center">
+        {menuItems.map((item) => (
+          <NavbarItem key={item.href}>
+            <Link
+              href={item.href}
+              className="text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium"
+            >
+              {item.label}
+            </Link>
+          </NavbarItem>
+        ))}
+      </NavbarContent>
 
-      {/* Icono hamburguesa para móviles */}
-      <div className="md:hidden">
-        <button onClick={toggleMenu} aria-label="Alternar menú">
-          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
+      {/* Right Section - Theme Toggle */}
+      <NavbarContent justify="end">
+        <NavbarItem>
+          <Switch isDarkMode={isDarkMode} onToggle={toggleTheme} />
+        </NavbarItem>
 
-      {/* Menú de escritorio (para pantallas grandes) */}
-      <header className="header">
-        <nav className="nav">
-          <ul className="menu-list">
-            <li>
-              <Link href="/">Inicio</Link>
-            </li>
-            <li>
-              <Link href="/cafeterias">Cafeterías</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contacto</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        {/* Mobile Menu Toggle */}
+        <NavbarMenuToggle
+          aria-label="Alternar menú"
+          className="md:hidden"
+          icon={<Menu size={24} />}
+        />
+      </NavbarContent>
 
-      {/* Menú móvil (desplegable) */}
-      {isMenuOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-black/80 text-white px-6 py-4 space-y-4 z-40 rounded-b-2xl backdrop-blur">
-          <ul className="flex flex-col gap-4 text-lg font-medium">
-            <li>
-              <Link href="/" onClick={toggleMenu}>
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link href="/cafeterias" onClick={toggleMenu}>
-                Cafeterías
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" onClick={toggleMenu}>
-                Contacto
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
-    </header>
+      {/* Mobile Menu */}
+      <NavbarMenu className="bg-white dark:bg-slate-950 shadow-lg">
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item.href}-${index}`}>
+            <Link
+              href={item.href}
+              onClick={() => setIsMenuOpen(false)}
+              className="w-full text-lg font-medium text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors py-2"
+            >
+              {item.label}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
+    </Navbar>
   );
 };
 

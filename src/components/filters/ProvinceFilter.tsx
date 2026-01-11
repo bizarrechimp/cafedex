@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { Select, SelectItem } from '@heroui/react';
 import { getActiveProvinces } from '@/lib/constants/provinces';
 
 interface ProvinceFilterProps {
@@ -9,34 +10,39 @@ interface ProvinceFilterProps {
 
 export default function ProvinceFilter({ selectedState }: ProvinceFilterProps) {
   const router = useRouter();
-  const provinces = getActiveProvinces(); // for MVP this will return only Alicante
+  const provinces = getActiveProvinces();
+
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const url = new URL(window.location.href);
+    if (e.target.value === 'all') {
+      url.searchParams.delete('state');
+    } else {
+      url.searchParams.set('state', e.target.value);
+    }
+    router.push(url.pathname + url.search);
+  };
 
   return (
-    <div className="mb-8">
-      <label htmlFor="state-filter" className="block text-lg font-medium mb-2">
-        Filtrar por provincia:
-      </label>
-      <select
-        id="state-filter"
-        className="border border-gray-300 rounded px-4 py-2"
-        value={selectedState}
-        onChange={(e) => {
-          const url = new URL(window.location.href);
-          if (e.target.value === 'all') {
-            url.searchParams.delete('state');
-          } else {
-            url.searchParams.set('state', e.target.value);
-          }
-          router.push(url.pathname + url.search);
+    <div className="w-full md:max-w-xs">
+      <Select
+        label="Filtrar por provincia"
+        placeholder="Selecciona una provincia"
+        selectedKeys={selectedState ? [selectedState] : []}
+        onChange={handleChange}
+        color="warning"
+        variant="bordered"
+        className="w-full"
+        classNames={{
+          label: 'text-gray-700 dark:text-gray-300 font-medium',
+          trigger: 'bg-white dark:bg-slate-800 border border-gray-300 dark:border-slate-600',
         }}
       >
-        {/* <option value="all">Todas</option> */}
         {provinces.map((p) => (
-          <option key={`state-${p.code}`} value={p.name}>
+          <SelectItem key={p.name} textValue={p.name}>
             {p.name}
-          </option>
+          </SelectItem>
         ))}
-      </select>
+      </Select>
     </div>
   );
 }

@@ -5,10 +5,12 @@ Una plataforma moderna para descubrir y explorar cafeterías independientes en E
 ## 🚀 Stack Tecnológico
 
 - **Frontend**: [Next.js 15](https://nextjs.org/) + [React 19](https://react.dev/) + TypeScript
-- **Estilos**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Library**: [HERO UI](https://heroui.com/) - Componentes modernos, accesibles y personalizables
+- **Estilos**: [Tailwind CSS v4](https://tailwindcss.com/) - Utility-first CSS framework
 - **Base de Datos**: [MongoDB](https://www.mongodb.com/) + [Mongoose](https://mongoosejs.com/)
 - **Iconos**: [Lucide React](https://lucide.dev/) + [FontAwesome](https://fontawesome.com/)
 - **Mapas**: [Google Maps API](https://developers.google.com/maps)
+- **Animaciones**: [Framer Motion](https://www.framer.com/motion/)
 - **Despliegue**: Preparado para [Vercel](https://vercel.com/)
 
 ## 📁 Estructura del Proyecto
@@ -20,53 +22,85 @@ src/
 │   │   └── health/              # Health check endpoint
 │   ├── cafe/[slug]/             # Página detalle de café
 │   ├── cafeterias/              # Listado de cafeterías
-│   ├── layout.tsx               # Layout raíz
+│   ├── layout.tsx               # Layout raíz (con ThemeProvider)
 │   ├── page.tsx                 # Página de inicio
-│   └── globals.css              # Estilos globales
+│   └── globals.css              # Estilos globales (HERO UI)
 │
-├── components/                   # Componentes React
+├── providers/                    # Proveedores de contexto
+│   └── ThemeProvider.tsx        # Gestor de temas light/dark
+│
+├── components/                   # Componentes React (Basados en HERO UI)
 │   ├── layout/                  # Layout components
-│   │   ├── Header.tsx          # Navegación principal
-│   │   └── Footer.tsx          # Footer
+│   │   ├── Header.tsx          # Navegación principal (Navbar HERO)
+│   │   └── Footer.tsx          # Footer (con Divider HERO)
 │   ├── cafe/                    # Componentes relacionados con cafés
-│   │   └── CafeCard.tsx        # Tarjeta de café
+│   │   └── CafeCard.tsx        # Tarjeta de café (Card + Badge HERO)
 │   ├── filters/                 # Componentes de filtrado
-│   │   ├── CityFilter.tsx      # Filtro por ciudad
-│   │   ├── ProvinceFilter.tsx  # Filtro por provincia
+│   │   ├── CityFilter.tsx      # Filtro por ciudad (Select HERO)
+│   │   ├── ProvinceFilter.tsx  # Filtro por provincia (Select HERO)
 │   │   └── EnsureStateInUrl.tsx # Middleware de state
 │   └── ui/                      # Componentes genéricos UI
-│       ├── StarRating.tsx      # Puntuación de estrellas
-│       └── Switch.tsx          # Toggle switch
+│       ├── StarRating.tsx      # Puntuación de estrellas (con Tooltip HERO)
+│       └── Switch.tsx          # Toggle switch (Switch HERO)
 │
 ├── types/                        # Definiciones TypeScript
 │   └── cafe.ts                  # Tipos de cafeterías
 │
 ├── lib/                         # Librerías y utilidades
 │   ├── db/                      # Base de datos
-│   │   ├── mongodb.ts          # Conexión MongoDB
-│   │   ├── cafe.ts             # Modelo Mongoose de Café
-│   │   └── cafeDb.ts           # Queries de cafés (cached)
 │   ├── constants/               # Constantes y datos estáticos
-│   │   ├── provinces.ts        # Lista de provincias españolas
-│   │   ├── initial_cafes.json  # Datos iniciales de cafés
-│   │   └── scraped_enums.json  # Enumeraciones scrapeadas
 │   ├── external/                # Integraciones externas
-│   │   └── googlePlaces.ts     # Integración Google Places API
 │   ├── cafe/                    # Lógica de negocio de cafés
-│   │   └── cafeUtils.ts        # Funciones auxiliares
 │   └── searchParams/            # Utilidades de parámetros URL
-│       ├── params-helper.ts    # Helper de parámetros
-│       └── search-params-helper.ts # Helper de búsqueda
 │
 ├── scripts/                     # Scripts de utilidad
-│   ├── seed-db.ts             # Script de seed de base de datos
-│   └── admin/                  # Herramientas administrativas
+│   └── seed-db.ts             # Script de seed de base de datos
 │
 ├── constants/                   # Constantes de aplicación
 │
-├── hooks/                       # Custom React Hooks
+├── styles/                      # Estilos globales
+│   ├── globals.css            # Estilos base + HERO UI
+│   └── variables.css          # Variables CSS personalizadas
 │
 └── __tests__/                  # Tests unitarios
+```
+
+## 🎨 Sistema de Temas
+
+### Características del Tema
+
+- **Automático**: Detecta las preferencias del sistema (light/dark)
+- **Manual**: Switch de tema en el header
+- **Persistente**: Se guarda en `localStorage`
+- **Suave**: Transiciones animadas entre temas
+- **Global**: Disponible en todos los componentes vía `useTheme()`
+
+### Colores Principales
+
+| Elemento | Light | Dark |
+|----------|-------|------|
+| Primary | Amber-600 (#d97706) | Amber-300 (#fbbf24) |
+| Secondary | Amber-500 (#f59e0b) | Amber-500 (#f59e0b) |
+| Success | Green-500 (#10b981) | Green-500 (#10b981) |
+| Warning | Amber-500 (#f59e0b) | Amber-500 (#f59e0b) |
+| Error | Red-500 (#ef4444) | Red-500 (#ef4444) |
+
+### Usar el Tema en Componentes
+
+```typescript
+'use client';
+
+import { useTheme } from '@/providers/ThemeProvider';
+
+export default function MyComponent() {
+  const { isDarkMode, toggleTheme } = useTheme();
+  
+  return (
+    <div className="bg-white dark:bg-slate-900">
+      {isDarkMode ? '🌙 Dark' : '☀️ Light'}
+    </div>
+  );
+}
 ```
 
 ## 🛠️ Instalación y Setup
@@ -87,8 +121,6 @@ src/
 2. **Instalar dependencias**
    ```bash
    npm install
-   # o
-   pnpm install
    ```
 
 3. **Configurar variables de entorno**
@@ -110,6 +142,12 @@ src/
    npm run seed
    ```
 
+5. **Iniciar servidor de desarrollo**
+   ```bash
+   npm run dev
+   ```
+   La aplicación estará disponible en `http://localhost:3000`
+
 ## 📚 Comandos Disponibles
 
 | Comando | Descripción |
@@ -125,15 +163,16 @@ src/
 ## 🎨 Características Principales
 
 ### Página de Inicio
-- Listado destacado de cafeterías
-- Interfaz limpia y moderna
-- Diseño responsive
+- Listado destacado de cafeterías con tarjetas HERO UI
+- Interfaz limpia y moderna con temas adaptables
+- Diseño 100% responsive
 
 ### Directorio de Cafeterías
 - Listado completo de cafeterías
-- Filtros por provincia y ciudad
+- Filtros por provincia y ciudad (Select HERO UI)
 - Búsqueda y ordenamiento
 - Paginación
+- Soporte para light/dark mode
 
 ### Página Detalle de Café
 - Información completa del café
@@ -141,14 +180,15 @@ src/
 - Mapa de ubicación (Google Maps)
 - Horario de apertura
 - Enlaces a redes sociales
-- Puntuación y reseñas
+- Puntuación con estrellas (StarRating HERO)
 
 ### Funcionalidades Técnicas
 - **Caché**: React cache para queries críticas
 - **Revalidación**: Revalidación automática de datos en build
 - **Búsqueda por parámetros URL**: Sistema robusto de state en URL
-- **Temas**: Soporte para modo oscuro/claro
+- **Temas**: Soporte completo para modo oscuro/claro
 - **Responsive**: Optimizado para móvil, tablet y desktop
+- **Accesibilidad**: Componentes HERO UI con ARIA labels y keyboard support
 
 ## 🏗️ Arquitectura de Datos
 
@@ -204,6 +244,11 @@ interface Cafe {
 5. **MongoDB**: Persistencia de datos
 6. **Revalidation**: Regeneración de páginas estáticas según configuración
 
+## 📖 Documentación Adicional
+
+- [HERO UI Setup](./HERO_UI_SETUP.md) - Configuración detallada de temas y componentes HERO UI
+- [Components README](./src/components/README.md) - Documentación de componentes individuales
+
 ## 🚀 Despliegue
 
 ### Preparación para Producción
@@ -228,3 +273,4 @@ Este repositorio es privado y de uso personal. Se mantiene con fines educativos 
 ---
 
 ⭐ Si encuentras este proyecto interesante, ¡siéntete libre de visitarlo!
+
