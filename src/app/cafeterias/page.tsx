@@ -1,7 +1,6 @@
 import CafeCard from '@/components/cafe/CafeCard';
-import CityFilter from '@/components/filters/CityFilter';
-import ProvinceFilter from '@/components/filters/ProvinceFilter';
-import EnsureStateInUrl from '@/components/filters/EnsureStateInUrl';
+import { CardGrid } from '@/components/sections';
+import { CityFilter, ProvinceFilter, EnsureStateInUrl } from '@/components';
 import { getAllCafes, getCafesByState } from '@/lib/services/cafeService';
 import { Cafe } from '@/types/cafe';
 
@@ -47,7 +46,7 @@ export default async function CafeteriasPage(props: {
           <EnsureStateInUrl />
 
           <div className="py-8 pb-12 px-4 overflow-hidden">
-            <div className="flex flex-wrap justify-center gap-6">
+            <CardGrid columns="auto" gap="medium">
               {filteredCafes.map((cafe: Cafe) => {
                 if (
                   !cafe.name ||
@@ -74,7 +73,7 @@ export default async function CafeteriasPage(props: {
                   />
                 );
               })}
-            </div>
+            </CardGrid>
           </div>
         </>
       ) : (

@@ -3,6 +3,7 @@
 import { ReactNode } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import ThemeProvider from '@/providers/ThemeProvider';
 import '@/styles/globals.css';
 
 export const metadata = {
@@ -12,12 +13,14 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
       <head />
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
