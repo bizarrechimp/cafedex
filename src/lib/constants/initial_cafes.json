@@ -1,14 +1,14 @@
 [
   {
-    "name": "Madness Coffee Benidorm",
+    "name": "Madness Specialty Coffee Benidorm",
     "description": "Cafetería pionera del café de especialidad en la Costa Blanca. Cuenta con su propia tostadora y organiza catas, talleres y eventos formativos. Preparan café con métodos como espresso y pour‑over y ofrecen una carta amplia de desayunos y brunch.",
     "slug": "madness-coffee-benidorm",
     "city": "Benidorm",
     "country": "Spain",
     "location": {
-      "lat": 38.5346954,
-      "lng": -0.1545189,
-      "address": "Av. Vicente Llorca Alós, 8, 03502 Benidorm, Spain"
+      "lat": 38.5346996,
+      "lng": -0.1570992,
+      "address": "Madness, Avinguda de Vicent Llorca Alós, Poniente, Benidorm, La Marina Baja, Alicante, Comunidad Valenciana, 03509, España"
     },
     "specialty_features": {
       "brew_methods": [
@@ -51,8 +51,8 @@
     "city": "Benidorm",
     "country": "Spain",
     "location": {
-      "lat": 38.5398743,
-      "lng": -0.1317795,
+      "lat": 38.5399474,
+      "lng": -0.133077,
       "address": "Avenida de los Limones, 5, 03501 Benidorm, Spain"
     },
     "specialty_features": {
@@ -89,8 +89,8 @@
     "city": "Benidorm",
     "country": "Spain",
     "location": {
-      "lat": 38.5393715,
-      "lng": -0.1319657,
+      "lat": 38.5393623,
+      "lng": -0.1330801,
       "address": "Carrer Apolo XI, 8, 03501 Benidorm, Spain"
     },
     "specialty_features": {
@@ -129,8 +129,8 @@
     "city": "Benidorm",
     "country": "Spain",
     "location": {
-      "lat": 38.53451,
-      "lng": -0.13068,
+      "lat": 38.5369192,
+      "lng": -0.1303624,
       "address": "Plaza Mayor, 03501 Benidorm, Spain"
     },
     "specialty_features": {
@@ -161,15 +161,15 @@
     "state": "Alicante"
   },
   {
-    "name": "Good Day Café Benidorm",
+    "name": "Good Day Café",
     "description": "Cafetería y brunch con ambiente cálido y acogedor. Sirve café 100 % colombiano de especialidad, tostas, pancakes, opciones frescas y saludables; cuenta con Wi‑Fi y es popular entre nómadas digitales.",
     "slug": "good-day-cafe-benidorm",
     "city": "Benidorm",
     "country": "Spain",
     "location": {
-      "lat": 38.537724,
-      "lng": -0.1320603,
-      "address": "Pasaje de Santa Rita de Casia, 4, 03501 Benidorm, Spain"
+      "lat": 38.5377282,
+      "lng": -0.1346406,
+      "address": "Passatge de Santa Rita, el Calvari, Benidorm, La Marina Baja, Alicante, Comunidad Valenciana, 03501, España"
     },
     "specialty_features": {
       "brew_methods": [
@@ -207,9 +207,9 @@
     "city": "Benidorm",
     "country": "Spain",
     "location": {
-      "lat": 38.5393936,
-      "lng": -0.1199719,
-      "address": "Av. de Europa, 12, local 7, 03503 Benidorm, Spain"
+      "lat": 38.5393978,
+      "lng": -0.1225522,
+      "address": "Aloturin, 12, Avenida de Europa, Levante, Benidorm, La Marina Baja, Alicante, Comunidad Valenciana, 03503, España"
     },
     "specialty_features": {
       "brew_methods": [
@@ -245,8 +245,8 @@
     "city": "Benidorm",
     "country": "Spain",
     "location": {
-      "lat": 38.537013,
-      "lng": -0.120513,
+      "lat": 38.5371225,
+      "lng": -0.1208101,
       "address": "13 Avenida del Mediterráneo, 03503 Benidorm, Spain"
     },
     "specialty_features": {
@@ -526,8 +526,8 @@
     "city": "Denia",
     "country": "Spain",
     "location": {
-      "lat": 38.8406069,
-      "lng": 0.1059817,
+      "lat": 38.8434137,
+      "lng": 0.110412,
       "address": "Plaça Fontanella 1, 03700 Denia, Spain"
     },
     "specialty_features": {
@@ -897,8 +897,8 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 38.3457654,
-      "lng": -0.4856707,
+      "lat": 38.3453537,
+      "lng": -0.4876271,
       "address": "C. del Teatro, 25, 03001 Alicante, Spain"
     },
     "specialty_features": {
@@ -1878,8 +1878,8 @@
     "city": "Torrevieja",
     "country": "Spain",
     "location": {
-      "lat": 37.97755577701821,
-      "lng": -0.6750601937032189,
+      "lat": 37.9784104,
+      "lng": -0.670556,
       "address": "C. Ramón Gallud 163, 03182 Torrevieja, Spain"
     },
     "specialty_features": {
@@ -2901,8 +2901,8 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 38.35258715,
-      "lng": -0.4845400201998942,
+      "lat": 38.345624,
+      "lng": -0.4865588,
       "address": "C. Susana Llaneras, 42, 03001 Alicante, Spain"
     },
     "specialty_features": {
@@ -3301,50 +3301,6 @@
     "lastUpdated": "2025-12-25T11:24:09.826Z",
     "id": "c481df94dc7a9f71896f84ff4fbf5672f2ad1ecca83ca8b6a582e74b714c2d43",
     "state": "Barcelona"
-  },
-  {
-    "name": "Madness Coffee",
-    "description": "",
-    "slug": "madnesscoffee-benidorm",
-    "city": "Benidorm",
-    "country": "Spain",
-    "location": {
-      "lat": 38.5527174,
-      "lng": -0.1065824,
-      "address": "Av. Vicente Llorca Alós, 8, 03502 Benidorm, Spain"
-    },
-    "specialty_features": {
-      "brew_methods": [],
-      "roastery": false,
-      "beans_origin": [],
-      "opening_Hours": {
-        "Monday": "09:00-21:00",
-        "Tuesday": "09:00-21:00",
-        "Wednesday": "09:00-21:00",
-        "Thursday": "09:00-21:00",
-        "Friday": "09:00-21:00",
-        "Saturday": "09:00-21:00",
-        "Sunday": "09:00-21:00"
-      },
-      "services": [],
-      "serving": []
-    },
-    "source": {
-      "origin": "European Coffee Trip",
-      "curated": true
-    },
-    "published": true,
-    "rrss": {
-      "instagram": "https://www.instagram.com/madnesscoffee/",
-      "website": "https://madnesscoffee.com/",
-      "facebook": "https://www.facebook.com/madnesscoffeeofficial"
-    },
-    "featured": false,
-    "image": "",
-    "rating": 4.5,
-    "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "981fcb1030a0ed8dfd24965ea3d6a3d8bddadd6175701e25225b40a7bd0d4223",
-    "state": "Alicante"
   },
   {
     "name": "OSOM Specialty Coffee",
@@ -4206,50 +4162,6 @@
     "lastUpdated": "2025-12-25T11:24:09.826Z",
     "id": "8fe2c5365b3237f968d3f42ab8b167098696a620ba0dc4d28a5231cb7667c504",
     "state": "Santa Cruz de Tenerife"
-  },
-  {
-    "name": "Skye coffee corner",
-    "description": "",
-    "slug": "skyecoffeecorner-barcelona",
-    "city": "Barcelona",
-    "country": "Spain",
-    "location": {
-      "lat": 41.3993638,
-      "lng": 2.2071157,
-      "address": "C/ d'Àvila, 32, 08005 Barcelona, Spain"
-    },
-    "specialty_features": {
-      "brew_methods": [],
-      "roastery": false,
-      "beans_origin": [],
-      "opening_Hours": {
-        "Monday": "09:00-13:30",
-        "Tuesday": "09:00-13:30",
-        "Wednesday": "09:00-13:30",
-        "Thursday": "09:00-13:30",
-        "Friday": "09:00-13:30",
-        "Saturday": "Closed",
-        "Sunday": "Closed"
-      },
-      "services": [],
-      "serving": []
-    },
-    "source": {
-      "origin": "European Coffee Trip",
-      "curated": true
-    },
-    "published": true,
-    "rrss": {
-      "instagram": "https://www.instagram.com/skyecoffeeco/",
-      "website": "http://www.skye-coffee.com/",
-      "facebook": ""
-    },
-    "featured": false,
-    "image": "",
-    "rating": 5,
-    "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "f800b405035b1474ce0d5cdb7b1426951a432faa2de977c364ad5b4b539a0003",
-    "state": "Barcelona"
   },
   {
     "name": "Santa Kafeina",
@@ -7387,8 +7299,8 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 38.339784699999996,
-      "lng": -0.47977052968120054,
+      "lat": 38.3454419,
+      "lng": -0.485932,
       "address": "C. San Ildefonso, 10, 03001 Alicante, Spain"
     },
     "specialty_features": {
@@ -7493,8 +7405,8 @@
     "city": "Elx",
     "country": "Spain",
     "location": {
-      "lat": 38.2713718,
-      "lng": -0.6838486,
+      "lat": 38.2733039,
+      "lng": -0.6864309,
       "address": "Avinguda de la Universitat d'Elx, 24, 03202 Elx, Spain"
     },
     "specialty_features": {
@@ -9590,8 +9502,8 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 38.3454876,
-      "lng": -0.4796001,
+      "lat": 38.3468192,
+      "lng": -0.4824429,
       "address": "Plaza del Carmen, 13, 03002 Alicante, Spain"
     },
     "specialty_features": {
@@ -14210,9 +14122,9 @@
     "city": "Sant Joan d'Alacant",
     "country": "Spain",
     "location": {
-      "lat": 38.40110268919162,
-      "lng": -0.43284778807319624,
-      "address": "Carrer del Pintor Manuel Baeza Gómez 8, 03550 Sant Joan d'Alacant, Spain"
+      "lat": 38.4004442,
+      "lng": -0.4372546,
+      "address": "calle Pintor Baeza Gómez, San Juan de Alicante, El Alacantí, Alicante, Comunidad Valenciana, 03550, España"
     },
     "specialty_features": {
       "brew_methods": [
@@ -14334,8 +14246,8 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 38.34561915,
-      "lng": -0.4823369875596748,
+      "lat": 38.3452947,
+      "lng": -0.4819925,
       "address": "C. San Nicolás nº4 Bajo, 03002 Alicante, Spain"
     },
     "specialty_features": {
@@ -15571,8 +15483,8 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 38.3426843,
-      "lng": -0.4903088,
+      "lat": 38.3434365,
+      "lng": -0.4863064,
       "address": "Carrer del Cid, 3, Local Izq, 03001 Alicante, Spain"
     },
     "specialty_features": {
@@ -15676,8 +15588,8 @@
     "city": "Albir",
     "country": "Spain",
     "location": {
-      "lat": 38.5722932,
-      "lng": -0.0663689,
+      "lat": 38.5744588,
+      "lng": -0.0658523,
       "address": "Av. de Oscar Esplà, 8, 03581 Albir, Spain"
     },
     "specialty_features": {
@@ -16683,8 +16595,8 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 38.3575931,
-      "lng": -0.42508368292373383,
+      "lat": 38.3621247,
+      "lng": -0.424963,
       "address": "Avinguda Goleta, 25, 03540 Alicante, Spain"
     },
     "specialty_features": {
@@ -17018,9 +16930,9 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 38.079835200000005,
-      "lng": -0.9439521116929381,
-      "address": "C. Ruperto Chapí, 4, Edificio Capitolio Bajo 6, 03581 Alicante, Spain"
+      "lat": 38.5723744,
+      "lng": -0.0719221,
+      "address": "17, Calle Castellón, Las Monserratinas, Orihuela, La Vega Baja, Alicante, Comunidad Valenciana, 03300, España"
     },
     "specialty_features": {
       "brew_methods": [
@@ -18615,8 +18527,8 @@
     "city": "Elx",
     "country": "Spain",
     "location": {
-      "lat": 38.2939122,
-      "lng": -0.6078356,
+      "lat": 38.2619816,
+      "lng": -0.6988117,
       "address": "Carrer Sant Joan, 11, 03203 Elx, Spain"
     },
     "specialty_features": {
@@ -20254,8 +20166,8 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 38.35258715,
-      "lng": -0.4845400201998942,
+      "lat": 38.3480492,
+      "lng": -0.485262,
       "address": "Av. Alfonso El Sabio 2, A, 03004 Alicante, Spain"
     },
     "specialty_features": {
@@ -21249,8 +21161,8 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 36.687197499999996,
-      "lng": -6.143630346526427,
+      "lat": 38.3473283,
+      "lng": -0.4841835,
       "address": "Calle General Primo de Rivera 3, 03002 Alicante, Spain"
     },
     "specialty_features": {
@@ -21647,68 +21559,6 @@
     "lastUpdated": "2025-12-25T11:24:09.826Z",
     "id": "8521d835101dcf1d3c2917ddcced0e42df0c196f6d8f90e23f10e1976dd12c10",
     "state": "Barcelona"
-  },
-  {
-    "name": "Easy Coffee",
-    "description": "",
-    "slug": "easycoffee-benidorm",
-    "city": "Benidorm",
-    "country": "Spain",
-    "location": {
-      "lat": 38.5394665,
-      "lng": -0.1200218,
-      "address": "Avenida Europa 12, 03503 Benidorm, Spain"
-    },
-    "specialty_features": {
-      "brew_methods": [
-        "espresso",
-        "filter coffee"
-      ],
-      "roastery": false,
-      "beans_origin": [],
-      "opening_Hours": {
-        "Monday": "09:00-17:00",
-        "Tuesday": "09:00-17:00",
-        "Wednesday": "09:00-17:00",
-        "Thursday": "09:00-17:00",
-        "Friday": "09:00-17:00",
-        "Saturday": "09:00-17:00",
-        "Sunday": "09:00-17:00"
-      },
-      "services": [
-        "Free Wi-Fi",
-        "Laptop Friendly",
-        "Kids Friendly",
-        "Vegan Options",
-        "Dog Friendly",
-        "Outdoor Seating",
-        "Accept Credit Cards",
-        "Wheelchair access"
-      ],
-      "serving": [
-        "Espresso",
-        "Filter Coffee",
-        "Decaf Coffee",
-        "Breakfast",
-        "Plant-based Milk"
-      ]
-    },
-    "source": {
-      "origin": "European Coffee Trip",
-      "curated": true
-    },
-    "published": true,
-    "rrss": {
-      "instagram": "https://www.instagram.com/easy_coffee_benidorm",
-      "website": "",
-      "facebook": ""
-    },
-    "featured": false,
-    "image": "",
-    "rating": 4.6,
-    "lastUpdated": "2025-12-25T11:24:09.826Z",
-    "id": "5a965fc50295c5f9bbc71d4189dcfc6f756c6d40862bc99f14c385793c397e1c",
-    "state": "Alicante"
   },
   {
     "name": "Sentir Café",
@@ -24879,8 +24729,8 @@
     "city": "Alicante",
     "country": "Spain",
     "location": {
-      "lat": 38.5692346,
-      "lng": -0.06955,
+      "lat": 38.5743453,
+      "lng": -0.066056,
       "address": "Bulevard dels Musics, 21, L'Albir, 3581 Alicante, Spain"
     },
     "specialty_features": {
