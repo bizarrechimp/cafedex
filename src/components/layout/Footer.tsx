@@ -16,7 +16,8 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="flex flex-col gap-3">
             <h2 className="text-2xl font-bold">
-              ☕<span className="bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
+              ☕
+              <span className="bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
                 Cafedex
               </span>
             </h2>

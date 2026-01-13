@@ -31,11 +31,7 @@ const Header = () => {
         return;
       }
 
-      if (
-        isMenuOpen &&
-        !target.closest('.js-menu-panel') &&
-        !target.closest('.js-menu-toggle')
-      ) {
+      if (isMenuOpen && !target.closest('.js-menu-panel') && !target.closest('.js-menu-toggle')) {
         setIsMenuOpen(false);
       }
 
@@ -90,13 +86,9 @@ const Header = () => {
     >
       {/* Brand */}
       <NavbarBrand className="flex-1">
-        <Link
-          href="/"
-          className="font-bold text-xl"
-        >
-          ☕<span
-            className="bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent"
-          >
+        <Link href="/" className="font-bold text-xl">
+          ☕
+          <span className="bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
             Cafedex
           </span>
         </Link>

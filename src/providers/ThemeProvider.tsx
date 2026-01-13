@@ -80,9 +80,7 @@ const getSystemTheme = (): ThemePreference => {
     return DEFAULT_PREFERENCES.theme ?? 'light';
   }
 
-  return window.matchMedia('(prefers-color-scheme: dark)').matches
-    ? 'dark'
-    : 'light';
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 };
 
 const writePreferences = (prefs: UserPreferences) => {
@@ -98,10 +96,7 @@ const writePreferences = (prefs: UserPreferences) => {
   document.cookie = cookie;
 };
 
-const mergePreferences = (
-  base: UserPreferences,
-  next: Partial<UserPreferences>
-) => {
+const mergePreferences = (base: UserPreferences, next: Partial<UserPreferences>) => {
   return {
     ...base,
     ...next,
@@ -115,15 +110,13 @@ const mergePreferences = (
 export default function ThemeProvider({ children }: ThemeProviderProps) {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
-  const [preferences, setPreferences] = useState<UserPreferences>(
-    DEFAULT_PREFERENCES
-  );
+  const [preferences, setPreferences] = useState<UserPreferences>(DEFAULT_PREFERENCES);
   const preferencesRef = useRef<UserPreferences>(DEFAULT_PREFERENCES);
 
   // Cargar preferencia de tema al montar
   useEffect(() => {
     const { prefs, hasCookie } = readPreferences();
-    const resolvedTheme = hasCookie ? prefs.theme ?? 'light' : getSystemTheme();
+    const resolvedTheme = hasCookie ? (prefs.theme ?? 'light') : getSystemTheme();
     const shouldBeDark = resolvedTheme === 'dark';
     preferencesRef.current = mergePreferences(prefs, { theme: resolvedTheme });
 
@@ -164,9 +157,7 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
     updatePreferences({ language });
   };
 
-  const setCookiePreferences = (
-    cookies: NonNullable<UserPreferences['cookies']>
-  ) => {
+  const setCookiePreferences = (cookies: NonNullable<UserPreferences['cookies']>) => {
     updatePreferences({ cookies });
   };
 
@@ -207,9 +198,7 @@ interface ThemeContextType {
   preferences: UserPreferences;
   updatePreferences: (next: Partial<UserPreferences>) => void;
   setLanguagePreference: (language: string) => void;
-  setCookiePreferences: (
-    cookies: NonNullable<UserPreferences['cookies']>
-  ) => void;
+  setCookiePreferences: (cookies: NonNullable<UserPreferences['cookies']>) => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
