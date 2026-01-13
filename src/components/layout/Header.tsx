@@ -146,13 +146,16 @@ const Header = () => {
       </NavbarContent>
 
       {/* Mobile/Tablet Menu */}
-      <NavbarMenu className="navbar-menu-float js-menu-panel card-custom !fixed !right-4 !left-auto !bottom-auto !h-auto !w-[min(90vw,18rem)] !max-h-none !overflow-visible !p-4 !z-40">
+      <NavbarMenu className="navbar-menu-float js-menu-panel card-custom !fixed !right-4 !left-auto !bottom-auto !h-auto !w-[min(85vw,14rem)] !max-h-none !overflow-visible !py-0 !px-0 !gap-0 !z-40">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item.href}-${index}`}>
+          <NavbarMenuItem
+            key={`${item.href}-${index}`}
+            className="border-b border-gray-200/60 dark:border-slate-800/60 last:border-b-0 first:mt-1 last:mb-1"
+          >
             <Link
               href={item.href}
               onClick={() => setIsMenuOpen(false)}
-              className="w-full text-lg font-medium text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors py-4"
+              className="block w-full rounded-md px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
             >
               {item.label}
             </Link>
