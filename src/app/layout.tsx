@@ -4,6 +4,7 @@ import { ReactNode } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ThemeProvider from '@/providers/ThemeProvider';
+import GoogleTagManagerProvider from '@/providers/GoogleTagManagerProvider';
 import '@/styles/globals.css';
 
 export const metadata = {
@@ -14,7 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <head />
+      <head>
+        <GoogleTagManagerProvider />
+      </head>
       <body>
         <ThemeProvider>
           <Header />

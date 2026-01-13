@@ -9,6 +9,7 @@
 const requiredEnvVars = {
   MONGODB_URI: process.env.MONGODB_URI,
   NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+  NEXT_PUBLIC_GTM_ID: process.env.NEXT_PUBLIC_GTM_ID,
 };
 
 // Check for missing required variables in production
@@ -44,6 +45,10 @@ export const env = {
   googlePlaces: {
     /** Google Places API key (server-side only) */
     apiKey: process.env.GOOGLE_PLACES_API_KEY || '',
+  },
+  googleTagManager: {
+    /** Google Tag Manager ID (public) */
+    id: process.env.NEXT_PUBLIC_GTM_ID || '',
   },
 
   // Application
