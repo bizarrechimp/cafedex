@@ -1,7 +1,6 @@
 'use client';
 
 import { GoogleTagManager } from '@next/third-parties/google';
-import { env } from '@/env';
 
 /**
  * Google Tag Manager Provider Component
@@ -13,10 +12,12 @@ import { env } from '@/env';
  * - Uses official Next.js integration for security best practices
  */
 export default function GoogleTagManagerProvider() {
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+
   // Only render GTM if ID is configured
-  if (!env.googleTagManager.id) {
+  if (!gtmId) {
     return null;
   }
 
-  return <GoogleTagManager gtmId={env.googleTagManager.id} />;
+  return <GoogleTagManager gtmId={gtmId} />;
 }
