@@ -5,10 +5,8 @@ import { env } from '@/env';
 
 /**
  * Google Tag Manager Provider Component
- * 
  * Initializes GTM with the configured ID from environment variables.
  * Uses Next.js official third-parties package for optimal performance.
- * 
  * @security
  * - GTM ID is read from NEXT_PUBLIC_GTM_ID environment variable
  * - Only initializes if GTM ID is configured
