@@ -15,38 +15,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div className="flex flex-col gap-3">
-            <h2 className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
-              ☕ Cafedex
+            <h2 className="text-2xl font-bold">
+              ☕
+              <span className="bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
+                Cafedex
+              </span>
             </h2>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               Descubre las mejores cafeterías independientes en España. Encuentra tu café favorito y
               comparte tus experiencias.
             </p>
-          </div>
-
-          {/* Quick Links */}
-          <div className="flex flex-col gap-3">
-            <h3 className="font-semibold text-gray-900 dark:text-white">Enlaces Rápidos</h3>
-            <nav className="space-y-2">
-              <Link
-                href="/"
-                className="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
-              >
-                Inicio
-              </Link>
-              <Link
-                href="/cafeterias"
-                className="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
-              >
-                Cafeterías
-              </Link>
-              <Link
-                href="/contact"
-                className="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
-              >
-                Contacto
-              </Link>
-            </nav>
           </div>
 
           {/* Social Links */}

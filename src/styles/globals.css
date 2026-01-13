@@ -203,12 +203,14 @@ main {
 }
 
 /* Media Queries y clases de visibilidad para responsive */
-.md\:hidden {
-  display: none;
-}
+@media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
+  }
 
-.md\:block {
-  display: block;
+  .md\:block {
+    display: block;
+  }
 }
 
 .hidden {
