@@ -6,6 +6,10 @@ import { Card, CardBody, CardFooter, Button, Tooltip, Badge } from '@heroui/reac
 import { MapPin, Instagram, Globe, Map } from 'lucide-react';
 import { Cafe } from '@/types/cafe';
 import StarRating from '@/components/ui/StarRating';
+import { useI18n } from '@/lib/i18n/client';
+import { useLocale } from '@/lib/i18n/useLocale';
+import { localizePathname } from '@/lib/i18n/routing';
+import { getCafeI18n } from '@/lib/i18n/cafe';
 
 interface CafeCardProps {
   cafe: Cafe;
@@ -14,7 +18,10 @@ interface CafeCardProps {
 }
 
 export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardProps) {
-  const { name, image, city, state, location, rating, slug, rrss } = cafe;
+  const { t } = useI18n();
+  const locale = useLocale();
+  const { name } = getCafeI18n(cafe, locale);
+  const { image, city, state, location, rating, slug, rrss } = cafe;
   const address = location?.address || '';
   const instagramUrl = rrss?.instagram;
   const websiteUrl = rrss?.website;
@@ -40,7 +47,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
         {imageUrl ? (
           <Image
             src={imageUrl}
-            alt={`Foto de ${name}`}
+            alt={t('cafe.card.imageAlt', { name })}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"
             sizes="320px"
@@ -92,7 +99,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
         {/* Hover Action Buttons */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-3 z-10">
           {googleMapsUrl && (
-            <Tooltip content="Google Maps" color="foreground">
+            <Tooltip content={t('cafe.card.googleMaps')} color="foreground">
               <a
                 href={googleMapsUrl}
                 target="_blank"
@@ -105,7 +112,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
             </Tooltip>
           )}
           {instagramUrl && (
-            <Tooltip content="Instagram" color="foreground">
+            <Tooltip content={t('cafe.card.instagram')} color="foreground">
               <a
                 href={instagramUrl}
                 target="_blank"
@@ -118,7 +125,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
             </Tooltip>
           )}
           {websiteUrl && (
-            <Tooltip content="Sitio Web" color="foreground">
+            <Tooltip content={t('cafe.card.website')} color="foreground">
               <a
                 href={websiteUrl}
                 target="_blank"
@@ -153,9 +160,9 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
 
       {/* Footer - Link to Detail Page */}
       <CardFooter className="p-4 pt-0">
-        <Link href={`/cafe/${slug}`} className="w-full">
+        <Link href={localizePathname(`/cafe/${slug}`, locale)} className="w-full">
           <Button fullWidth color="warning" variant="flat" size="sm" className="font-semibold">
-            Ver Detalles
+            {t('cafe.card.viewDetails')}
           </Button>
         </Link>
       </CardFooter>

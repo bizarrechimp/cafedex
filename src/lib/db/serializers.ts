@@ -24,13 +24,14 @@ export const serializeMongoose = (doc: any): Record<string, unknown> | null => {
 
   // Handle specialty_features Map
   const features = obj.specialty_features as Record<string, unknown>;
-  if (features?.opening_Hours) {
-    const hours = features.opening_Hours;
+  if (features?.opening_hours || features?.opening_Hours) {
+    const hours = features.opening_hours ?? features.opening_Hours;
     if (hours instanceof Map) {
-      features.opening_Hours = Object.fromEntries(hours);
+      features.opening_hours = Object.fromEntries(hours);
     } else if (typeof (hours as Record<string, unknown>).toJSON === 'function') {
-      features.opening_Hours = ((hours as Record<string, unknown>).toJSON as () => unknown)();
+      features.opening_hours = ((hours as Record<string, unknown>).toJSON as () => unknown)();
     }
+    delete features.opening_Hours;
   }
 
   return obj;

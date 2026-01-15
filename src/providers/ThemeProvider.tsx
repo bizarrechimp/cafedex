@@ -2,35 +2,18 @@
 
 import { HeroUIProvider } from '@heroui/react';
 import { useEffect, useRef, useState } from 'react';
+import {
+  DEFAULT_PREFERENCES,
+  PREFERENCES_COOKIE,
+  UserPreferences,
+  mergePreferences,
+  parsePreferencesCookie,
+  ThemePreference,
+} from '@/lib/preferences';
 
 interface ThemeProviderProps {
   children: React.ReactNode;
 }
-
-type ThemePreference = 'light' | 'dark';
-
-interface UserPreferences {
-  version: 1;
-  theme?: ThemePreference;
-  language?: string;
-  cookies?: {
-    functional?: boolean;
-    analytics?: boolean;
-    marketing?: boolean;
-  };
-}
-
-const PREFERENCES_COOKIE = 'cafedex_prefs';
-const DEFAULT_PREFERENCES: UserPreferences = {
-  version: 1,
-  theme: 'light',
-  language: 'es',
-  cookies: {
-    functional: true,
-    analytics: false,
-    marketing: false,
-  },
-};
 
 const getCookieValue = (name: string) => {
   if (typeof document === 'undefined') {
@@ -49,30 +32,7 @@ const getCookieValue = (name: string) => {
 
 const readPreferences = () => {
   const raw = getCookieValue(PREFERENCES_COOKIE);
-  if (!raw) {
-    return { prefs: DEFAULT_PREFERENCES, hasCookie: false };
-  }
-
-  try {
-    const decoded = decodeURIComponent(raw);
-    const parsed = JSON.parse(decoded) as UserPreferences;
-    const theme =
-      parsed.theme === 'dark' || parsed.theme === 'light'
-        ? parsed.theme
-        : DEFAULT_PREFERENCES.theme;
-    const prefs: UserPreferences = {
-      ...DEFAULT_PREFERENCES,
-      ...parsed,
-      theme,
-      cookies: {
-        ...DEFAULT_PREFERENCES.cookies,
-        ...parsed.cookies,
-      },
-    };
-    return { prefs, hasCookie: true };
-  } catch {
-    return { prefs: DEFAULT_PREFERENCES, hasCookie: false };
-  }
+  return parsePreferencesCookie(raw);
 };
 
 const getSystemTheme = (): ThemePreference => {
@@ -94,17 +54,6 @@ const writePreferences = (prefs: UserPreferences) => {
     cookie += '; secure';
   }
   document.cookie = cookie;
-};
-
-const mergePreferences = (base: UserPreferences, next: Partial<UserPreferences>) => {
-  return {
-    ...base,
-    ...next,
-    cookies: {
-      ...base.cookies,
-      ...next.cookies,
-    },
-  };
 };
 
 export default function ThemeProvider({ children }: ThemeProviderProps) {
@@ -153,7 +102,7 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
     updatePreferences({ theme });
   };
 
-  const setLanguagePreference = (language: string) => {
+  const setLanguagePreference = (language: UserPreferences['language']) => {
     updatePreferences({ language });
   };
 
@@ -197,7 +146,7 @@ interface ThemeContextType {
   toggleTheme: (isDark: boolean) => void;
   preferences: UserPreferences;
   updatePreferences: (next: Partial<UserPreferences>) => void;
-  setLanguagePreference: (language: string) => void;
+  setLanguagePreference: (language: UserPreferences['language']) => void;
   setCookiePreferences: (cookies: NonNullable<UserPreferences['cookies']>) => void;
 }
 

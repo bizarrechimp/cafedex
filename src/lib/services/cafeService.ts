@@ -213,10 +213,11 @@ export const searchCafesByName = cache(async (query: string): Promise<Cafe[]> =>
 
     await connectMongo();
     const cafes = await CafeModel.find({
-      name: {
-        $regex: query,
-        $options: 'i', // Case-insensitive
-      },
+      $or: [
+        { 'i18n.es.name': { $regex: query, $options: 'i' } },
+        { 'i18n.en.name': { $regex: query, $options: 'i' } },
+        { name: { $regex: query, $options: 'i' } },
+      ],
     })
       .sort({ rating: -1 })
       .limit(20)

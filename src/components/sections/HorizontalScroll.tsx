@@ -1,6 +1,7 @@
 'use client';
 
 import { ReactNode } from 'react';
+import { useI18n } from '@/lib/i18n/client';
 
 interface HorizontalScrollProps {
   children: ReactNode;
@@ -10,9 +11,13 @@ interface HorizontalScrollProps {
 
 export default function HorizontalScroll({
   children,
-  emptyMessage = 'No hay cafeterías disponibles',
-  emptyDescription = 'Intenta cambiar los filtros o vuelve más tarde.',
+  emptyMessage,
+  emptyDescription,
 }: HorizontalScrollProps) {
+  const { t } = useI18n();
+  const resolvedMessage = emptyMessage ?? t('sections.horizontal.emptyTitle');
+  const resolvedDescription = emptyDescription ?? t('sections.horizontal.emptyDescription');
+
   // Verificar si no hay elementos
   const childArray = Array.isArray(children) ? children : [children];
   const hasContent = childArray.some((child) => child !== null && child !== undefined);
@@ -20,8 +25,8 @@ export default function HorizontalScroll({
   if (!hasContent) {
     return (
       <div className="text-center py-16 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
-        <h3 className="text-xl text-gray-600 dark:text-gray-400">{emptyMessage}</h3>
-        <p className="mt-2 text-gray-500 dark:text-gray-500">{emptyDescription}</p>
+        <h3 className="text-xl text-gray-600 dark:text-gray-400">{resolvedMessage}</h3>
+        <p className="mt-2 text-gray-500 dark:text-gray-500">{resolvedDescription}</p>
       </div>
     );
   }

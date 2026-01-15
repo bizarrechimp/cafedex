@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { Select, SelectItem } from '@heroui/react';
 import { getActiveProvinces } from '@/lib/constants/provinces';
+import { useI18n } from '@/lib/i18n/client';
 
 interface ProvinceFilterProps {
   selectedState: string;
@@ -10,6 +11,7 @@ interface ProvinceFilterProps {
 
 export default function ProvinceFilter({ selectedState }: ProvinceFilterProps) {
   const router = useRouter();
+  const { t } = useI18n();
   const provinces = getActiveProvinces();
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -23,10 +25,10 @@ export default function ProvinceFilter({ selectedState }: ProvinceFilterProps) {
   };
 
   return (
-    <div className="w-full md:max-w-xs">
+    <div className="w-full md:max-w-[220px]">
       <Select
-        label="Filtrar por provincia"
-        placeholder="Selecciona una provincia"
+        label={t('filters.province.label')}
+        placeholder={t('filters.province.placeholder')}
         selectedKeys={selectedState ? [selectedState] : []}
         onChange={handleChange}
         color="warning"

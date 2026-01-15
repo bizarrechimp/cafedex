@@ -5,10 +5,13 @@ Next.js 13+ App Router configuration with all page routes and layouts.
 ## Directory Structure
 
 ### Root Level (`/app`)
-- `layout.tsx` - Root layout wrapper (HTML, body, header/footer)
-- `page.tsx` - Home page (`/`)
-- `globals.css` - Global styles
+- `layout.tsx` - Root layout wrapper (HTML + shared head providers)
+- `page.tsx` - Redirects to default locale (`/[locale]`)
 - `favicon.ico` - Site favicon
+
+### Locale Segment (`/app/[locale]`)
+- `layout.tsx` - Locale layout (theme provider + header/footer)
+- `page.tsx` - Home page (`/[locale]`)
 
 ### `/api`
 API routes for backend endpoints.
@@ -28,7 +31,7 @@ API routes for backend endpoints.
     └── route.ts
 ```
 
-### `/cafe`
+### `/[locale]/cafe`
 Cafe detail page routes.
 - `[slug]/page.tsx` - Individual cafe detail page
 - `[slug]/loading.tsx` - Loading state for cafe page
@@ -38,10 +41,10 @@ Cafe detail page routes.
 **Usage**: Dynamic route parameter is `slug` (cafe URL slug).
 
 ```
-/cafe/alicante-cafedex → /cafe/[slug]/page.tsx
+/es/cafe/alicante-cafedex → /[locale]/cafe/[slug]/page.tsx
 ```
 
-### `/cafeterias`
+### `/[locale]/cafeterias`
 Cafe listing and filtering page.
 - `page.tsx` - Cafe directory with filters
 - `loading.tsx` - Loading state during data fetch

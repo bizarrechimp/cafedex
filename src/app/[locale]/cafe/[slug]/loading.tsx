@@ -23,7 +23,7 @@ export default function Loading() {
           <div>
             <div className="h-8 w-32 bg-gray-200 dark:bg-gray-700 rounded mb-4 animate-pulse"></div>
             <div className="space-y-2">
-              {[...Array(7)].map((_, i) => (
+              {[...Array(5)].map((_, i) => (
                 <div key={i} className="flex justify-between">
                   <div className="h-6 w-24 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
                   <div className="h-6 w-32 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
@@ -36,7 +36,7 @@ export default function Loading() {
         <div className="mb-8">
           <div className="h-8 w-40 bg-gray-200 dark:bg-gray-700 rounded mb-4 animate-pulse"></div>
           <div className="flex flex-wrap gap-2">
-            {[...Array(5)].map((_, i) => (
+            {[...Array(6)].map((_, i) => (
               <div
                 key={i}
                 className="h-8 w-24 bg-gray-200 dark:bg-gray-700 rounded-full animate-pulse"

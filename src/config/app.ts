@@ -3,12 +3,14 @@
  * General app constants and metadata
  */
 
+import { defaultLocale } from '@/lib/i18n/config';
+
 export const app = {
   name: 'Cafedex',
   description: 'Descubre las mejores cafeterías independientes en España',
   version: '0.1.0',
   author: 'bizarrechimp',
-  url: 'https://cafedex.com',
+  url: 'https://cafedex.es',
 
   pagination: {
     defaultLimit: 10,
@@ -24,7 +26,7 @@ export const app = {
 
   defaults: {
     country: 'Spain',
-    language: 'es',
+    language: defaultLocale,
   },
 } as const;
 
