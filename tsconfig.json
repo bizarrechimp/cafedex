@@ -9,6 +9,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
+    "downlevelIteration": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,

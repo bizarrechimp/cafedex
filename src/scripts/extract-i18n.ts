@@ -35,7 +35,9 @@ const collectKeys = async () => {
   const keys = new Set<string>();
   for (const file of files) {
     const content = await fs.readFile(file, 'utf8');
-    for (const match of content.matchAll(TRANSLATION_REGEX)) {
+    TRANSLATION_REGEX.lastIndex = 0;
+    let match: RegExpExecArray | null;
+    while ((match = TRANSLATION_REGEX.exec(content)) !== null) {
       if (match[1]) {
         keys.add(match[1]);
       }
@@ -66,13 +68,25 @@ const run = async () => {
 
   for (const locale of LOCALES) {
     const existing = await loadLocale(locale);
-    const next: Record<string, string> = {};
+    const next: Record<string, string> = { ...existing };
+    let hasChanges = false;
+    const addedKeys: string[] = [];
 
     for (const key of keys) {
-      next[key] = existing[key] ?? '';
+      if (!(key in next)) {
+        next[key] = '';
+        hasChanges = true;
+        addedKeys.push(key);
+      }
     }
 
-    await writeLocale(locale, next);
+    if (hasChanges) {
+      await writeLocale(locale, next);
+      console.log(`i18n: ${locale} - added ${addedKeys.length} keys`);
+      console.log(addedKeys.join('\n'));
+    } else {
+      console.log(`i18n: ${locale} - any new keys to add`);
+    }
   }
 
   console.log(`i18n: extracted ${keys.length} keys`);

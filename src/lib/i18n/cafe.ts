@@ -1,10 +1,11 @@
 import type { TFunction } from '@/lib/i18n/types';
+import type { TranslationKey } from '@/lib/i18n/translations';
 import { defaultLocale, Locale } from '@/lib/i18n/config';
 import type { Cafe, WeekdayCode, BrewMethodCode, ServiceCode, ServingCode } from '@/types/cafe';
 
 export const DAY_ORDER: WeekdayCode[] = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
-const DAY_LABEL_KEYS: Record<WeekdayCode, string> = {
+const DAY_LABEL_KEYS: Record<WeekdayCode, TranslationKey> = {
   mon: 'day.mon',
   tue: 'day.tue',
   wed: 'day.wed',

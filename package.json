@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint && npm run typecheck",
     "lint:fix": "next lint --fix",
+    "typecheck": "tsc --noEmit",
     "seed": "ts-node --project tsconfig.json src/scripts/seed-db.ts",
     "i18n:extract": "ts-node --project tsconfig.json src/scripts/extract-i18n.ts",
     "clean": "rm -rf .next"
