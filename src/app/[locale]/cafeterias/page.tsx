@@ -3,23 +3,68 @@ import { CardGrid } from '@/components/sections';
 import { CityFilter, ProvinceFilter, EnsureStateInUrl } from '@/components';
 import { getAllCafes, getCafesByState } from '@/lib/services/cafeService';
 import { Cafe } from '@/types/cafe';
+import { getServerTranslations } from '@/lib/i18n/server';
+import { isLocale, locales, Locale } from '@/lib/i18n/config';
+import { getCafeI18n } from '@/lib/i18n/cafe';
+import { notFound } from 'next/navigation';
+import { app } from '@/config/app';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = false;
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!isLocale(locale)) {
+    notFound();
+  }
+
+  const { t } = getServerTranslations(locale as Locale);
+  const title = t('metadata.cafes.title');
+  const description = t('metadata.cafes.description');
+  const canonical = `${app.url}/${locale}/cafeterias`;
+  const alternates = Object.fromEntries(
+    locales.map((itemLocale) => [itemLocale, `${app.url}/${itemLocale}/cafeterias`])
+  );
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical,
+      languages: alternates,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: t('metadata.siteName'),
+      locale,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
+  };
+}
+
 export default async function CafeteriasPage(props: {
+  params: Promise<{ locale: string }>;
   searchParams?: Promise<{ [key: string]: string | undefined }>;
 }) {
-  const searchParams = await props.searchParams;
+  const { locale: rawLocale } = await props.params;
+  if (!isLocale(rawLocale)) {
+    notFound();
+  }
 
-  // For initial render we default to 'Alicante' but avoid server-side redirect so
-  // the Loading component can appear during client-side navigation. A small
-  // client component will ensure the URL contains `state=Alicante` if it's missing.
+  const locale = rawLocale as Locale;
+  const { t } = getServerTranslations(locale);
+  const searchParams = props.searchParams ? await props.searchParams : undefined;
+
   const selectedCity = searchParams?.city || 'all';
   const selectedState = searchParams?.state || 'Alicante';
 
-  // If a province is selected and it is Alicante (MVP hardcoded behavior),
-  // fetch only those cafes; otherwise fetch all cafes.
   const allCafes: Cafe[] =
     selectedState === 'Alicante' ? await getCafesByState('Alicante') : await getAllCafes();
 
@@ -34,7 +79,7 @@ export default async function CafeteriasPage(props: {
 
   return (
     <main className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">Cafeterías</h1>
+      <h1 className="text-3xl font-bold mb-8">{t('cafes.title')}</h1>
 
       {allCafes.length > 0 ? (
         <>
@@ -42,25 +87,19 @@ export default async function CafeteriasPage(props: {
             <CityFilter cities={cities} selectedCity={selectedCity} />
             <ProvinceFilter selectedState={selectedState} />
           </div>
-          {/* Client-side helper: ensure state is present in the URL and replaced without history */}
           <EnsureStateInUrl />
 
           <div className="py-8 pb-12 px-4 overflow-hidden">
             <CardGrid columns="auto" gap="medium">
               {filteredCafes.map((cafe: Cafe) => {
-                if (
-                  !cafe.name ||
-                  !cafe.city ||
-                  !cafe.state ||
-                  !cafe.location?.address ||
-                  !cafe.slug
-                ) {
+                const { name } = getCafeI18n(cafe, locale);
+                if (!name || !cafe.city || !cafe.state || !cafe.location?.address || !cafe.slug) {
                   return (
                     <div
                       key={`cafe-missing-${cafe.slug || Math.random()}`}
                       className="w-[320px] h-[427px] flex items-center justify-center bg-red-100 dark:bg-red-900 rounded-xl shadow-lg text-red-700 dark:text-red-200"
                     >
-                      <span>Datos faltantes para esta cafetería.</span>
+                      <span>{t('cafes.missingData')}</span>
                     </div>
                   );
                 }
@@ -78,12 +117,8 @@ export default async function CafeteriasPage(props: {
         </>
       ) : (
         <div className="text-center py-16">
-          <h2 className="text-xl text-gray-600 dark:text-gray-400">
-            No hay cafeterías disponibles en este momento.
-          </h2>
-          <p className="mt-2 text-gray-500 dark:text-gray-500">
-            Pronto agregaremos nuevas cafeterías a nuestra base de datos.
-          </p>
+          <h2 className="text-xl text-gray-600 dark:text-gray-400">{t('cafes.empty.title')}</h2>
+          <p className="mt-2 text-gray-500 dark:text-gray-500">{t('cafes.empty.description')}</p>
         </div>
       )}
     </main>

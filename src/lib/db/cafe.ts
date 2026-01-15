@@ -24,11 +24,17 @@ const cafeSchema = new mongoose.Schema(
      */
     id: { type: String, required: true, unique: true },
 
-    /** Cafe name (required) */
-    name: { type: String, required: true },
-
-    /** Long-form description of the cafe */
-    description: { type: String },
+    /** Localized name/description */
+    i18n: {
+      es: {
+        name: { type: String, required: true },
+        description: { type: String, default: '' },
+      },
+      en: {
+        name: { type: String, required: true },
+        description: { type: String, default: '' },
+      },
+    },
 
     /**
      * URL-friendly slug for routing
@@ -77,11 +83,11 @@ const cafeSchema = new mongoose.Schema(
       beans_origin: { type: [String], default: [] },
 
       /**
-       * Opening hours by day of week
-       * Format: { "Monday": "08:00-18:00", "Tuesday": "08:00-18:00", ... }
+       * Opening hours by day of week (weekday codes)
+       * Format: { "mon": "08:00-18:00", "tue": "08:00-18:00", ... }
        * Stored as a Map for flexible key-value structure
        */
-      opening_Hours: { type: Map, of: String, default: {} },
+      opening_hours: { type: Map, of: String, default: {} },
 
       /**
        * Services available
@@ -163,6 +169,8 @@ cafeSchema.index({ published: 1 });
 cafeSchema.index({ featured: 1 });
 cafeSchema.index({ id: 1, published: 1 });
 cafeSchema.index({ 'specialty_features.roastery': 1 });
+cafeSchema.index({ 'i18n.es.name': 1 });
+cafeSchema.index({ 'i18n.en.name': 1 });
 
 /**
  * Export the model

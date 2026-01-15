@@ -1,6 +1,7 @@
 'use client';
 
 import { ReactNode } from 'react';
+import { useI18n } from '@/lib/i18n/client';
 
 interface CardGridProps {
   children: ReactNode;
@@ -27,15 +28,17 @@ export default function CardGrid({
   children,
   columns = 'auto',
   gap = 'medium',
-  emptyMessage = 'No hay elementos para mostrar',
+  emptyMessage,
 }: CardGridProps) {
+  const { t } = useI18n();
+  const resolvedEmptyMessage = emptyMessage ?? t('sections.cardGrid.emptyMessage');
   const childArray = Array.isArray(children) ? children.filter(Boolean) : [children];
   const hasContent = childArray.length > 0;
 
   if (!hasContent) {
     return (
       <div className="text-center py-16 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
-        <p className="text-gray-600 dark:text-gray-400">{emptyMessage}</p>
+        <p className="text-gray-600 dark:text-gray-400">{resolvedEmptyMessage}</p>
       </div>
     );
   }

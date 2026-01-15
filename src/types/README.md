@@ -11,7 +11,10 @@ All cafe-related types and interfaces.
 interface Cafe {
   _id?: string;
   id: string;
-  name: string;
+  i18n: {
+    es: { name: string; description: string };
+    en: { name: string; description: string };
+  };
   slug: string;
   city: string;
   state: string;

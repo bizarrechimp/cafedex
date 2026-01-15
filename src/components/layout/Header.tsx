@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type Key } from 'react';
 import Link from 'next/link';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import {
   Navbar,
   NavbarBrand,
@@ -14,15 +15,26 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
+  Select,
+  SelectItem,
 } from '@heroui/react';
 import { Menu, Settings } from 'lucide-react';
 import Switch from '@/components/ui/Switch';
 import { useTheme } from '@/providers/ThemeProvider';
+import { useI18n } from '@/lib/i18n/client';
+import { localizePathname } from '@/lib/i18n/routing';
+import { Locale } from '@/lib/i18n/config';
+import { useLocale } from '@/lib/i18n/useLocale';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDesktopConfigOpen, setIsDesktopConfigOpen] = useState(false);
-  const { isDarkMode, toggleTheme } = useTheme();
+  const { isDarkMode, toggleTheme, setLanguagePreference } = useTheme();
+  const { t } = useI18n();
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
@@ -31,12 +43,18 @@ const Header = () => {
         return;
       }
 
+      const isSelectPortalClick =
+        target.closest('[role="listbox"]') ||
+        target.closest('[data-slot="listbox"]') ||
+        target.closest('[data-slot="option"]');
+
       if (isMenuOpen && !target.closest('.js-menu-panel') && !target.closest('.js-menu-toggle')) {
         setIsMenuOpen(false);
       }
 
       if (
         isDesktopConfigOpen &&
+        !isSelectPortalClick &&
         !target.closest('.js-config-panel') &&
         !target.closest('.js-config-toggle')
       ) {
@@ -71,10 +89,32 @@ const Header = () => {
   };
 
   const menuItems = [
-    { label: 'Inicio', href: '/' },
-    { label: 'Cafeterías', href: '/cafeterias' },
-    { label: 'Contacto', href: '/contact' },
+    { label: t('header.nav.home'), href: '/' },
+    { label: t('header.nav.cafes'), href: '/cafeterias' },
+    { label: t('header.nav.contact'), href: '/contact' },
   ];
+  const languageOptions = [
+    { key: 'es', flagClass: 'fi fi-es' },
+    { key: 'en', flagClass: 'fi fi-gb' },
+  ] as const;
+
+  const handleLanguageChange = (keys: 'all' | Set<Key>) => {
+    if (keys === 'all') {
+      return;
+    }
+
+    const [selected] = Array.from(keys);
+    const nextLocale = selected as Locale | undefined;
+    if (!nextLocale || nextLocale === locale) {
+      return;
+    }
+
+    setLanguagePreference(nextLocale);
+    const nextPath = localizePathname(pathname, nextLocale);
+    const query = searchParams?.toString();
+    router.replace(query ? `${nextPath}?${query}` : nextPath);
+    router.refresh();
+  };
 
   return (
     <Navbar
@@ -86,7 +126,7 @@ const Header = () => {
     >
       {/* Brand */}
       <NavbarBrand className="flex-1">
-        <Link href="/" className="font-bold text-xl">
+        <Link href={localizePathname('/', locale)} className="font-bold text-xl">
           ☕
           <span className="bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
             Cafedex
@@ -99,7 +139,7 @@ const Header = () => {
         {menuItems.map((item) => (
           <NavbarItem key={item.href}>
             <Link
-              href={item.href}
+              href={localizePathname(item.href, locale)}
               className="text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium"
             >
               {item.label}
@@ -122,24 +162,62 @@ const Header = () => {
               <Button
                 isIconOnly
                 variant="light"
-                aria-label="Configuración"
+                aria-label={t('header.settings.aria')}
                 className="text-gray-700 dark:text-gray-300 js-config-toggle"
               >
                 <Settings size={20} />
               </Button>
             </PopoverTrigger>
             <PopoverContent className="card-custom p-3 js-config-panel">
-              <div className="flex items-center gap-3">
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                  Selector light/dark
-                </span>
-                <Switch isDarkMode={isDarkMode} onToggle={toggleTheme} />
+              <div className="flex flex-col gap-4 min-w-[180px]">
+                <div className="flex w-full items-center justify-between gap-3">
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                    {t('header.settings.themeLabel')}
+                  </span>
+                  <Switch isDarkMode={isDarkMode} onToggle={toggleTheme} />
+                </div>
+                <div className="flex w-full items-center justify-between gap-3">
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                    {t('header.settings.languageLabel')}
+                  </span>
+                  <Select
+                    aria-label={t('header.settings.languageLabel')}
+                    selectedKeys={new Set([locale])}
+                    onSelectionChange={handleLanguageChange}
+                    selectionMode="single"
+                    disallowEmptySelection
+                    color="default"
+                    variant="flat"
+                    size="sm"
+                    className="w-[56px] min-w-0"
+                    classNames={{
+                      trigger:
+                        'h-7 min-h-7 rounded-full bg-gray-300 px-2 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600',
+                      value: 'flex items-center justify-center',
+                      popoverContent: 'min-w-[84px]',
+                    }}
+                    renderValue={(items) =>
+                      items.map((item) => {
+                        const data = languageOptions.find((option) => option.key === item.key);
+                        return (
+                          <span key={item.key} className={`${data?.flagClass} language-flag`} />
+                        );
+                      })
+                    }
+                  >
+                    {languageOptions.map((option) => (
+                      <SelectItem key={option.key} textValue={option.key}>
+                        <span className={`${option.flagClass} language-flag`} />
+                      </SelectItem>
+                    ))}
+                  </Select>
+                </div>
               </div>
             </PopoverContent>
           </Popover>
         </NavbarItem>
         <NavbarMenuToggle
-          aria-label="Alternar menú"
+          aria-label={t('header.menuToggle.aria')}
           className="md:hidden js-menu-toggle"
           icon={<Menu size={24} />}
         />
@@ -153,7 +231,7 @@ const Header = () => {
             className="border-b border-gray-200/60 dark:border-slate-800/60 last:border-b-0 first:mt-1 last:mb-1"
           >
             <Link
-              href={item.href}
+              href={localizePathname(item.href, locale)}
               onClick={() => setIsMenuOpen(false)}
               className="block w-full rounded-md px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
             >

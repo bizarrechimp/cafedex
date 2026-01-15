@@ -2,6 +2,7 @@
 
 import { Tooltip } from '@heroui/react';
 import { Star } from 'lucide-react';
+import { useI18n } from '@/lib/i18n/client';
 
 interface StarRatingProps {
   rating: number;
@@ -14,12 +15,16 @@ export default function StarRating({
   maxStars = 5,
   showTooltip = true,
 }: StarRatingProps) {
+  const { t } = useI18n();
   const clampedRating = Math.max(0, Math.min(rating || 0, maxStars));
 
   const content = (
     <div
       className="flex items-center gap-0.5"
-      aria-label={`Calificación: ${clampedRating.toFixed(1)} de ${maxStars} estrellas`}
+      aria-label={t('rating.ariaLabel', {
+        rating: clampedRating.toFixed(1),
+        max: maxStars,
+      })}
     >
       {[...Array(maxStars)].map((_, i) => {
         const starIndex = i + 1;
@@ -58,7 +63,10 @@ export default function StarRating({
   if (showTooltip) {
     return (
       <Tooltip
-        content={`${clampedRating.toFixed(1)} / ${maxStars} estrellas`}
+        content={t('rating.tooltip', {
+          rating: clampedRating.toFixed(1),
+          max: maxStars,
+        })}
         color="default"
         radius="sm"
       >

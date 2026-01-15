@@ -1,6 +1,7 @@
 'use client';
 
 import CafeInfoSection from './CafeInfoSection';
+import { useI18n } from '@/lib/i18n/client';
 
 interface LocationSectionProps {
   address: string;
@@ -8,8 +9,10 @@ interface LocationSectionProps {
 }
 
 export default function LocationSection({ address, googleMapsUrl }: LocationSectionProps) {
+  const { t } = useI18n();
+
   return (
-    <CafeInfoSection icon="📍" title="Ubicación">
+    <CafeInfoSection icon="📍" title={t('cafe.location.title')}>
       <p className="text-gray-700 dark:text-gray-300 mb-6 text-lg leading-snug">{address}</p>
       <a
         href={googleMapsUrl}
@@ -17,7 +20,7 @@ export default function LocationSection({ address, googleMapsUrl }: LocationSect
         rel="noopener noreferrer"
         className="inline-flex items-center justify-center px-6 py-3 bg-white dark:bg-gray-800 text-amber-600 dark:text-amber-400 font-bold rounded-xl shadow-sm border border-amber-100 dark:border-amber-900/30 hover:bg-amber-50 dark:hover:bg-amber-900/10 transition-colors w-full md:w-auto"
       >
-        Abrir en Google Maps
+        {t('cafe.location.openMaps')}
         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"

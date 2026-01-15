@@ -7,8 +7,10 @@ import { Cafe } from '@/types/cafe';
 export const mockCafes: Cafe[] = [
   {
     id: 'mock-001',
-    name: 'Café Test 1',
-    description: 'Un excelente café para probar',
+    i18n: {
+      es: { name: 'Café Test 1', description: 'Un excelente café para probar' },
+      en: { name: 'Cafe Test 1', description: 'A great cafe to try' },
+    },
     slug: 'cafe-test-1',
     city: 'Alicante',
     state: 'Alicante',
@@ -22,9 +24,9 @@ export const mockCafes: Cafe[] = [
       brew_methods: ['espresso', 'v60'],
       roastery: true,
       beans_origin: ['Colombia'],
-      opening_Hours: { Monday: '08:00-18:00' },
-      services: ['wifi'],
-      serving: ['food'],
+      opening_hours: { mon: '08:00-18:00' },
+      services: ['free_wifi'],
+      serving: ['breakfast'],
     },
     source: {
       origin: 'test',
@@ -45,8 +47,10 @@ export const mockCafes: Cafe[] = [
   },
   {
     id: 'mock-002',
-    name: 'Café Test 2',
-    description: 'Otro café para pruebas',
+    i18n: {
+      es: { name: 'Café Test 2', description: 'Otro café para pruebas' },
+      en: { name: 'Cafe Test 2', description: 'Another cafe for tests' },
+    },
     slug: 'cafe-test-2',
     city: 'Alicante',
     state: 'Alicante',
@@ -60,9 +64,9 @@ export const mockCafes: Cafe[] = [
       brew_methods: ['espresso'],
       roastery: false,
       beans_origin: ['Ethiopia'],
-      opening_Hours: { Monday: '09:00-17:00' },
-      services: ['wifi', 'parking'],
-      serving: ['food', 'drinks'],
+      opening_hours: { mon: '09:00-17:00' },
+      services: ['free_wifi', 'outdoor_seating'],
+      serving: ['breakfast', 'lunch'],
     },
     source: {
       origin: 'test',

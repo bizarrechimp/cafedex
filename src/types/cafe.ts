@@ -13,19 +13,43 @@ export interface Location {
 /**
  * Specialty features and services offered by the cafe
  */
+export type WeekdayCode = 'mon' | 'tue' | 'wed' | 'thu' | 'fri' | 'sat' | 'sun';
+
+export type BrewMethodCode = 'espresso' | 'v60' | 'chemex' | 'filter_coffee' | 'pour_over';
+
+export type ServiceCode =
+  | 'accept_credit_cards'
+  | 'dog_friendly'
+  | 'free_wifi'
+  | 'kids_friendly'
+  | 'laptop_friendly'
+  | 'outdoor_seating'
+  | 'vegan_options'
+  | 'wheelchair_access';
+
+export type ServingCode =
+  | 'breakfast'
+  | 'cold_brew'
+  | 'decaf'
+  | 'espresso'
+  | 'filter_coffee'
+  | 'lunch'
+  | 'nitro'
+  | 'plant_milk';
+
 export interface SpecialtyFeatures {
-  /** Available brew methods (e.g., espresso, v60, pour-over) */
-  brew_methods: string[];
+  /** Available brew methods (normalized codes) */
+  brew_methods: BrewMethodCode[];
   /** Whether the cafe has an in-house roastery */
   roastery: boolean;
   /** Origins of coffee beans available */
   beans_origin: string[];
   /** Opening hours by day of week */
-  opening_Hours: { [key: string]: string };
-  /** Services available (e.g., wifi, parking) */
-  services: string[];
-  /** Items available for serving (e.g., food, desserts) */
-  serving: string[];
+  opening_hours: Partial<Record<WeekdayCode, string>>;
+  /** Services available (normalized codes) */
+  services: ServiceCode[];
+  /** Items available for serving (normalized codes) */
+  serving: ServingCode[];
 }
 
 /**
@@ -57,7 +81,10 @@ export interface SocialLinks {
  * ```typescript
  * const cafe: Cafe = {
  *   id: 'aff-madrid-001',
- *   name: 'Café del Barrio',
+ *   i18n: {
+ *     es: { name: 'Café del Barrio', description: '...' },
+ *     en: { name: 'Cafe del Barrio', description: '...' },
+ *   },
  *   slug: 'cafe-del-barrio',
  *   city: 'Madrid',
  *   state: 'Madrid',
@@ -78,11 +105,17 @@ export interface Cafe {
    */
   id: string;
 
-  /** Cafe name */
-  name: string;
-
-  /** Cafe description or overview */
-  description: string;
+  /** Localized content (name/description) */
+  i18n: {
+    es: {
+      name: string;
+      description: string;
+    };
+    en: {
+      name: string;
+      description: string;
+    };
+  };
 
   /**
    * URL-friendly slug identifier
