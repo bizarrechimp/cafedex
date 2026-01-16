@@ -68,7 +68,7 @@ export default function QuickFilters({ isVisible, activeFilters = [] }: QuickFil
   if (!isVisible) return null;
 
   return (
-    <div className="w-full py-3 px-0 flex justify-center">
+    <div className="w-full py-0 px-0 flex justify-center">
       <div className="flex flex-wrap gap-2 justify-center max-w-5xl">
         {QUICK_FILTERS.map((filter) => {
           const isActive = activeFilters.includes(filter.key);
