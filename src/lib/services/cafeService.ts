@@ -307,7 +307,7 @@ export const searchAndFilterCafes = cache(
         query.city = options.city;
       }
 
-      // Build quick filters (efficient $or condition)
+      // Build quick filters (combine as AND)
       const quickFilterConditions: Record<string, unknown>[] = [];
       let hasOpenNowFilter = false;
 
@@ -342,14 +342,22 @@ export const searchAndFilterCafes = cache(
           }
         }
 
-        // Combine all quick filters with $or (cafe must match at least one)
+        // Combine all quick filters with $and (cafe must match all)
         if (quickFilterConditions.length > 0) {
+          const andConditions: Record<string, unknown>[] = [];
+
           if (query.$or) {
-            // If we already have search $or, combine with $and
-            query.$and = [{ $or: query.$or }, { $or: quickFilterConditions }];
+            // Keep search $or grouped, then AND with each quick filter
+            andConditions.push({ $or: query.$or });
             delete query.$or;
+          }
+
+          andConditions.push(...quickFilterConditions);
+
+          if (query.$and) {
+            query.$and = [...(query.$and as Record<string, unknown>[]), ...andConditions];
           } else {
-            query.$or = quickFilterConditions;
+            query.$and = andConditions;
           }
         }
       }
