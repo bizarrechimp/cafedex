@@ -19,6 +19,7 @@
   "cafes.error.title": "Connection error",
   "cafes.error.description": "Sorry, there was an error while loading the cafe list.",
   "cafes.error.retry": "Try again",
+  "cafes.infinite.end": "You have reached the end of the list.",
   "cafe.error.title": "Something went wrong",
   "cafe.error.description": "Sorry, there was an error while loading the cafe information.",
   "cafe.error.retry": "Try again",

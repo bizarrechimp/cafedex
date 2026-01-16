@@ -7,7 +7,7 @@
  */
 
 import { cache } from 'react';
-import { Cafe } from '@/types/cafe';
+import { Cafe, WeekdayCode } from '@/types/cafe';
 import CafeModel from '@/lib/db/cafe';
 import connectMongo from '@/lib/db/mongodb';
 import { serializeCafe, serializeCafes } from '@/lib/db/serializers';
@@ -410,6 +410,211 @@ export const searchAndFilterCafes = cache(
     }
   }
 );
+
+const QUICK_FILTER_KEYS = new Set([
+  'open_now',
+  'pet_friendly',
+  'wifi',
+  'vegan',
+  'outdoor',
+  'breakfast',
+  'workspace',
+  'roastery',
+]);
+
+const DEFAULT_PAGE_LIMIT = 10;
+const MAX_PAGE_LIMIT = 20;
+const OPEN_NOW_MAX_PAGES = 5;
+
+const getOpenNowContext = () => {
+  const now = new Date();
+  const dayMap: Record<number, WeekdayCode> = {
+    0: 'sun',
+    1: 'mon',
+    2: 'tue',
+    3: 'wed',
+    4: 'thu',
+    5: 'fri',
+    6: 'sat',
+  };
+  const currentDay = dayMap[now.getDay()];
+  const currentHours =
+    String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+
+  return { currentDay, currentHours };
+};
+
+const isCafeOpenNow = (cafe: Cafe, context: ReturnType<typeof getOpenNowContext>): boolean => {
+  const hours = cafe.specialty_features?.opening_hours?.[context.currentDay];
+  if (!hours) return false;
+
+  const [start, end] = hours.split('-').map((h: string) => h.trim());
+  if (!start || !end) return false;
+
+  return context.currentHours >= start && context.currentHours < end;
+};
+
+/**
+ * Search and filter cafes with cursor-based pagination
+ * @param options - Search, filter, and pagination options
+ * @returns Object with cafes page, cursor, and totals
+ */
+export const searchAndFilterCafesPaginated = async (options: {
+  search?: string;
+  state?: string;
+  city?: string;
+  filters?: string[];
+  cursor?: string | null;
+  limit?: number;
+}): Promise<{
+  cafes: Cafe[];
+  total: number;
+  filtered: number;
+  nextCursor: string | null;
+  hasMore: boolean;
+}> => {
+  try {
+    await connectMongo();
+
+    const normalizedLimit = Math.min(
+      Math.max(options.limit ?? DEFAULT_PAGE_LIMIT, 1),
+      MAX_PAGE_LIMIT
+    );
+
+    const query: Record<string, unknown> = {};
+    const filters = options.filters?.filter((filter) => QUICK_FILTER_KEYS.has(filter)) ?? [];
+
+    if (options.search && options.search.trim().length > 0) {
+      const searchTerm = options.search.trim();
+      query.$or = [
+        { 'i18n.es.name': { $regex: searchTerm, $options: 'i' } },
+        { 'i18n.en.name': { $regex: searchTerm, $options: 'i' } },
+        { city: { $regex: searchTerm, $options: 'i' } },
+        { state: { $regex: searchTerm, $options: 'i' } },
+      ];
+    }
+
+    if (options.state && options.state.toLowerCase() !== 'all') {
+      query.state = {
+        $regex: `^${options.state.trim()}$`,
+        $options: 'i',
+      };
+    }
+
+    if (options.city && options.city.toLowerCase() !== 'all') {
+      query.city = options.city;
+    }
+
+    const quickFilterConditions: Record<string, unknown>[] = [];
+    let hasOpenNowFilter = false;
+
+    for (const filter of filters) {
+      switch (filter) {
+        case 'pet_friendly':
+          quickFilterConditions.push({ 'specialty_features.services': 'dog_friendly' });
+          break;
+        case 'wifi':
+          quickFilterConditions.push({ 'specialty_features.services': 'free_wifi' });
+          break;
+        case 'vegan':
+          quickFilterConditions.push({ 'specialty_features.services': 'vegan_options' });
+          break;
+        case 'outdoor':
+          quickFilterConditions.push({ 'specialty_features.services': 'outdoor_seating' });
+          break;
+        case 'breakfast':
+          quickFilterConditions.push({ 'specialty_features.serving': 'breakfast' });
+          break;
+        case 'workspace':
+          quickFilterConditions.push({ 'specialty_features.services': 'laptop_friendly' });
+          break;
+        case 'roastery':
+          quickFilterConditions.push({ 'specialty_features.roastery': true });
+          break;
+        case 'open_now':
+          hasOpenNowFilter = true;
+          break;
+      }
+    }
+
+    if (quickFilterConditions.length > 0) {
+      const andConditions: Record<string, unknown>[] = [];
+
+      if (query.$or) {
+        andConditions.push({ $or: query.$or });
+        delete query.$or;
+      }
+
+      andConditions.push(...quickFilterConditions);
+
+      if (query.$and) {
+        query.$and = [...(query.$and as Record<string, unknown>[]), ...andConditions];
+      } else {
+        query.$and = andConditions;
+      }
+    }
+
+    const [total, filtered] = await Promise.all([
+      CafeModel.countDocuments(),
+      CafeModel.countDocuments(query),
+    ]);
+
+    let hasMore = false;
+    let nextCursor: string | null = null;
+    let cafes: Cafe[] = [];
+    let lastCursor = options.cursor ?? null;
+    const openNowContext = hasOpenNowFilter ? getOpenNowContext() : null;
+    let iterations = 0;
+
+    while (cafes.length < normalizedLimit && iterations < OPEN_NOW_MAX_PAGES) {
+      const cursorQuery = lastCursor !== null ? { ...query, slug: { $gt: lastCursor } } : query;
+      const rawResults = await CafeModel.find(cursorQuery)
+        .sort({ slug: 1 })
+        .limit(normalizedLimit + 1)
+        .lean();
+
+      if (rawResults.length === 0) {
+        hasMore = false;
+        break;
+      }
+
+      hasMore = rawResults.length > normalizedLimit;
+      const pageRaw = rawResults.slice(0, normalizedLimit);
+      nextCursor = pageRaw[pageRaw.length - 1]?.slug ?? null;
+      lastCursor = nextCursor;
+
+      const pageItems = serializeCafes(pageRaw);
+      const pageCafes = hasOpenNowFilter
+        ? pageItems.filter((cafe) => isCafeOpenNow(cafe, openNowContext!))
+        : pageItems;
+
+      cafes = cafes.concat(pageCafes);
+
+      if (!hasOpenNowFilter) {
+        break;
+      }
+
+      if (!hasMore) {
+        break;
+      }
+
+      iterations += 1;
+    }
+
+    const trimmedCafes = cafes.slice(0, normalizedLimit);
+
+    return {
+      cafes: serializeCafes(trimmedCafes),
+      total,
+      filtered,
+      nextCursor: hasMore ? nextCursor : null,
+      hasMore,
+    };
+  } catch (error) {
+    logger.error('Error searching/filtering cafes with pagination', error);
+    return { cafes: [], total: 0, filtered: 0, nextCursor: null, hasMore: false };
+  }
+};
 
 /**
  * Get total cafe count

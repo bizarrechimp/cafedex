@@ -19,6 +19,7 @@
   "cafes.error.title": "Error de conexión",
   "cafes.error.description": "Lo sentimos, ha ocurrido un error al cargar la lista de cafeterías.",
   "cafes.error.retry": "Intentar de nuevo",
+  "cafes.infinite.end": "Has llegado al final de la lista.",
   "cafe.error.title": "Ha ocurrido un error",
   "cafe.error.description": "Lo sentimos, ha ocurrido un error al cargar la información de la cafetería.",
   "cafe.error.retry": "Intentar de nuevo",
