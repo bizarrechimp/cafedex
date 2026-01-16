@@ -44,6 +44,10 @@ export default function CardGrid({
   }
 
   return (
-    <div className={`grid ${columnClasses[columns]} ${gapClasses[gap]} w-full`}>{children}</div>
+    <div
+      className={`grid ${columnClasses[columns]} ${gapClasses[gap]} w-full justify-items-center sm:justify-items-start`}
+    >
+      {children}
+    </div>
   );
 }
