@@ -24,9 +24,13 @@ export default function HorizontalScroll({
 
   if (!hasContent) {
     return (
-      <div className="text-center py-16 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
-        <h3 className="text-xl text-gray-600 dark:text-gray-400">{resolvedMessage}</h3>
-        <p className="mt-2 text-gray-500 dark:text-gray-500">{resolvedDescription}</p>
+      <div className="text-center py-16 bg-brand-beige/40 rounded-xl">
+        <h3 className="text-h3 font-display text-brand-primary">
+          {resolvedMessage}
+        </h3>
+        <p className="mt-2 text-body-m font-ui text-brand-ink/70">
+          {resolvedDescription}
+        </p>
       </div>
     );
   }

@@ -70,7 +70,7 @@ export default function SearchBar({ onToggleFilters, showFiltersButton = true }:
         size="sm"
         startContent={
           <svg
-            className="w-4 h-4 text-gray-500 dark:text-gray-400"
+            className="w-4 h-4 text-brand-ink/60"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -84,12 +84,12 @@ export default function SearchBar({ onToggleFilters, showFiltersButton = true }:
           </svg>
         }
         endContent={
-          <div className="flex items-center gap-1 text-gray-500 dark:text-gray-400">
+          <div className="flex items-center gap-1 text-brand-ink/60">
             {showClearButton && (
               <button
                 type="button"
                 onClick={handleClear}
-                className="flex items-center justify-center hover:text-warning-500 dark:hover:text-warning-400 transition-colors p-0 w-6 h-6"
+                className="flex items-center justify-center hover:text-brand-secondary transition-colors p-0 w-6 h-6"
                 aria-label={t('search.clear')}
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -106,7 +106,7 @@ export default function SearchBar({ onToggleFilters, showFiltersButton = true }:
               <button
                 type="button"
                 onClick={onToggleFilters}
-                className="flex items-center justify-center hover:text-warning-500 dark:hover:text-warning-400 transition-colors p-0 w-6 h-6"
+                className="flex items-center justify-center hover:text-brand-secondary transition-colors p-0 w-6 h-6"
                 aria-label={t('search.toggleFilters')}
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,11 +121,11 @@ export default function SearchBar({ onToggleFilters, showFiltersButton = true }:
             )}
           </div>
         }
-        color="warning"
+        color="primary"
         variant="bordered"
         className="w-full"
         classNames={{
-          input: 'text-sm h-9 bg-white dark:bg-slate-800',
+          input: 'text-ui-label font-ui h-9 bg-white text-brand-ink',
           inputWrapper: 'h-9',
         }}
       />

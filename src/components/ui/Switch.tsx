@@ -19,12 +19,12 @@ const Switch: React.FC<SwitchProps> = ({ isDarkMode, onToggle }) => {
       onChange={(e) => onToggle(e.target.checked)}
       startContent={<Sun className="w-4 h-4" />}
       endContent={<Moon className="w-4 h-4" />}
-      color="warning"
+      color="primary"
       aria-label={t('header.theme.switchAria')}
       classNames={{
         base: 'hover:opacity-100 transition-opacity',
         wrapper:
-          'h-7 w-[56px] group-data-[selected=true]:bg-amber-500 group-data-[selected=false]:bg-gray-300',
+          'h-7 w-[56px] group-data-[selected=true]:bg-brand-primary group-data-[selected=false]:bg-brand-beige',
       }}
     />
   );

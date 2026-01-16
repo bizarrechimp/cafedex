@@ -31,15 +31,15 @@ export default function ProvinceFilter({ selectedState }: ProvinceFilterProps) {
         placeholder={t('filters.province.placeholder')}
         selectedKeys={selectedState ? [selectedState] : []}
         onChange={handleChange}
-        color="warning"
+        color="primary"
         variant="bordered"
         size="sm"
         className="w-full"
         classNames={{
-          label: 'text-gray-700 dark:text-gray-300 font-medium text-xs',
+          label: 'text-ui-label font-ui text-brand-ink',
           trigger:
-            'bg-white dark:bg-slate-800 border border-gray-300 dark:border-slate-600 h-10 min-h-10',
-          popoverContent: 'text-sm',
+            'bg-white border border-brand-beige h-10 min-h-10 text-brand-ink',
+          popoverContent: 'text-body-s font-ui',
         }}
       >
         {provinces.map((p) => (

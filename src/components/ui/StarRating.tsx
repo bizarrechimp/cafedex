@@ -38,20 +38,28 @@ export default function StarRating({
             <Star
               size={18}
               strokeWidth={1.5}
-              className="text-gray-300 dark:text-gray-600 fill-gray-200 dark:fill-gray-700"
+              className="text-brand-beige fill-brand-beige/60"
             />
 
             {/* Filled Star (Overlaid) */}
             {isFull ? (
               <div className="absolute inset-0">
-                <Star size={18} strokeWidth={1.5} className="fill-amber-400 text-amber-500" />
+                <Star
+                  size={18}
+                  strokeWidth={1.5}
+                  className="fill-brand-secondary text-brand-secondary"
+                />
               </div>
             ) : isHalf ? (
               <div
                 className="absolute inset-0 overflow-hidden"
                 style={{ width: `${(clampedRating % 1) * 100}%` }}
               >
-                <Star size={18} strokeWidth={1.5} className="fill-amber-400 text-amber-500" />
+                <Star
+                  size={18}
+                  strokeWidth={1.5}
+                  className="fill-brand-secondary text-brand-secondary"
+                />
               </div>
             ) : null}
           </div>

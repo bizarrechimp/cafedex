@@ -22,9 +22,6 @@ html.dark {
 body {
   background-color: var(--background-light);
   color: var(--foreground-light);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -37,6 +34,95 @@ html.dark body {
   color: var(--foreground-dark);
 }
 
+@layer base {
+  body {
+    font-family: var(--font-family-ui);
+    font-size: var(--font-size-body-m);
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-family-display);
+    color: rgb(var(--color-brand-primary));
+  }
+
+  h1 {
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1);
+    font-weight: var(--font-weight-h1);
+    letter-spacing: var(--letter-spacing-h1);
+  }
+
+  h2 {
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+    font-weight: var(--font-weight-h2);
+  }
+
+  h3 {
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3);
+    font-weight: var(--font-weight-h3);
+  }
+
+  h4 {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-h4);
+    font-weight: var(--font-weight-h4);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-family-display);
+  }
+
+  .font-ui {
+    font-family: var(--font-family-ui);
+  }
+
+  .text-body-l {
+    font-size: var(--font-size-body-l);
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-body);
+  }
+
+  .text-body-m {
+    font-size: var(--font-size-body-m);
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-body);
+  }
+
+  .text-body-s {
+    font-size: var(--font-size-body-s);
+    line-height: var(--line-height-body-s);
+    font-weight: var(--font-weight-body);
+  }
+
+  .text-ui-button {
+    font-size: var(--font-size-ui-button);
+    font-weight: var(--font-weight-ui-button);
+    letter-spacing: var(--letter-spacing-ui-button);
+    text-transform: none;
+  }
+
+  .text-ui-label {
+    font-size: var(--font-size-ui-label);
+    font-weight: var(--font-weight-ui-label);
+    letter-spacing: var(--letter-spacing-ui-label);
+  }
+
+  .text-caption {
+    font-size: var(--font-size-caption);
+    font-weight: var(--font-weight-caption);
+    color: var(--color-caption);
+  }
+}
+
 /* ===== Hero UI Overrides ===== */
 html {
   scroll-behavior: smooth;
@@ -44,29 +130,29 @@ html {
 
 /* Botones personalizados */
 .btn-primary {
-  @apply bg-amber-600 hover:bg-amber-700 text-white;
+  @apply bg-brand-primary text-white hover:bg-brand-primary/90;
 }
 
 .btn-secondary {
-  @apply bg-gray-200 hover:bg-gray-300 text-gray-900;
+  @apply bg-transparent border border-brand-primary text-brand-primary hover:bg-brand-warm;
 }
 
 html.dark .btn-secondary {
-  @apply bg-slate-700 hover:bg-slate-600 text-white;
+  @apply bg-transparent border border-brand-primary text-brand-beige hover:bg-brand-warm/20;
 }
 
 /* Inputs y Selects */
 .input-field {
-  @apply bg-white dark:bg-slate-800 border border-gray-300 dark:border-slate-600 rounded-lg px-3 py-2;
+  @apply bg-white dark:bg-brand-primary/10 border border-brand-beige dark:border-brand-beige/40 rounded-lg px-3 py-2 text-brand-ink;
 }
 
 .input-field:focus {
-  @apply outline-none border-amber-500 ring-2 ring-amber-500;
+  @apply outline-none border-brand-primary ring-2 ring-brand-primary/30;
 }
 
 /* Cards */
 .card-custom {
-  @apply bg-white dark:bg-slate-900 rounded-xl shadow-md border border-gray-200 dark:border-slate-800;
+  @apply bg-white dark:bg-brand-primary/10 rounded-xl shadow-md border border-brand-beige/80 dark:border-brand-beige/30;
 }
 
 .card-custom:hover {
@@ -79,15 +165,15 @@ html.dark .btn-secondary {
 }
 
 .section-title {
-  @apply text-3xl font-bold text-gray-900 dark:text-white mb-6;
+  @apply text-h2 font-display text-brand-primary mb-6;
 }
 
 .text-muted {
-  @apply text-gray-600 dark:text-gray-400;
+  @apply text-brand-ink/70;
 }
 
 .text-muted-light {
-  @apply text-gray-500 dark:text-gray-500;
+  @apply text-brand-ink/60;
 }
 
 .language-flag {
@@ -109,20 +195,20 @@ html.dark .btn-secondary {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d4a574;
+  background: rgb(var(--color-brand-secondary));
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b8956a;
+  background: rgb(var(--color-brand-primary));
 }
 
 html.dark ::-webkit-scrollbar-thumb {
-  background: #7c5c3a;
+  background: rgb(var(--color-brand-secondary));
 }
 
 html.dark ::-webkit-scrollbar-thumb:hover {
-  background: #9d6d42;
+  background: rgb(var(--color-brand-primary));
 }
 
 /* ===== Layout Styles ===== */
@@ -161,28 +247,29 @@ main {
 
 /* ===== Header Styles ===== */
 .header {
-  background-color: var(--color-background);
+  background-color: rgb(var(--color-brand-primary));
   padding: 1rem;
   transition: background-color 0.3s ease;
 }
 
 .header-logo {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--color-foreground);
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-h4);
+  color: rgb(var(--color-white));
   transition: color 0.3s ease;
 }
 
 .header-btn {
   padding: 0.5rem;
   border-radius: 0.375rem;
-  color: var(--color-foreground);
+  color: rgb(var(--color-white));
   transition: color 0.3s ease;
 }
 
 /* Menu de hamburguesa en móviles */
 .hamburger-menu {
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  background-color: rgba(27, 77, 62, 0.95);
   color: white;
   padding: 1rem;
   display: flex;
@@ -198,8 +285,9 @@ main {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-size: var(--font-size-body-l);
+  font-weight: var(--font-weight-ui-label);
+  color: rgb(var(--color-brand-ink));
 }
 
 .menu-list-mobile {
@@ -207,8 +295,9 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-size: var(--font-size-body-l);
+  font-weight: var(--font-weight-ui-label);
+  color: rgb(var(--color-brand-ink));
 }
 
 /* Media Queries y clases de visibilidad para responsive */
@@ -233,11 +322,11 @@ main {
 /* ===== Horizontal Scroll Styles ===== */
 .horizontal-scroll {
   scrollbar-width: thin;
-  scrollbar-color: #f59e0b #e5e7eb;
+  scrollbar-color: rgb(var(--color-brand-secondary)) rgb(var(--color-brand-beige));
 }
 
 html.dark .horizontal-scroll {
-  scrollbar-color: #b45309 #1e293b;
+  scrollbar-color: rgb(var(--color-brand-secondary)) rgb(var(--color-brand-primary));
 }
 
 /* Webkit scrollbar for horizontal scroll */
@@ -246,28 +335,28 @@ html.dark .horizontal-scroll {
 }
 
 .horizontal-scroll::-webkit-scrollbar-track {
-  background: #e5e7eb;
+  background: rgb(var(--color-brand-beige));
   border-radius: 5px;
 }
 
 html.dark .horizontal-scroll::-webkit-scrollbar-track {
-  background: #1e293b;
+  background: rgb(var(--color-brand-primary));
 }
 
 .horizontal-scroll::-webkit-scrollbar-thumb {
-  background: #f59e0b;
+  background: rgb(var(--color-brand-secondary));
   border-radius: 5px;
   cursor: pointer;
 }
 
 .horizontal-scroll::-webkit-scrollbar-thumb:hover {
-  background: #d97706;
+  background: rgb(var(--color-brand-primary));
 }
 
 html.dark .horizontal-scroll::-webkit-scrollbar-thumb {
-  background: #b45309;
+  background: rgb(var(--color-brand-secondary));
 }
 
 html.dark .horizontal-scroll::-webkit-scrollbar-thumb:hover {
-  background: #d97706;
+  background: rgb(var(--color-brand-primary));
 }

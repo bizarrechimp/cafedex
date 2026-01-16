@@ -4,12 +4,59 @@
  */
 
 :root {
+  /* Brand colors (RGB triplets for Tailwind alpha support) */
+  --color-brand-primary: 27 77 62; /* #1B4D3E */
+  --color-brand-secondary: 230 153 76; /* #E6994C */
+  --color-brand-warm: 254 210 164; /* #FED2A4 */
+  --color-brand-beige: 238 217 196; /* #EED9C4 */
+  --color-brand-ink: 78 88 86; /* #4E5856 */
+  --color-white: 255 255 255;
+
+  --background-light: rgb(var(--color-white));
+  --foreground-light: rgb(var(--color-brand-ink));
+  --background-dark: #0f1513;
+  --foreground-dark: #eed9c4;
+  --color-background: rgb(var(--color-white));
+  --color-foreground: rgb(var(--color-brand-ink));
+
+  /* Typography */
+  --font-family-display: var(--font-display), Georgia, serif;
+  --font-family-ui: var(--font-ui), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-h1: 48px;
+  --line-height-h1: 1.15;
+  --font-weight-h1: 700;
+  --letter-spacing-h1: -0.02em;
+  --font-size-h2: 36px;
+  --line-height-h2: 1.2;
+  --font-weight-h2: 600;
+  --font-size-h3: 28px;
+  --line-height-h3: 1.25;
+  --font-weight-h3: 600;
+  --font-size-h4: 22px;
+  --line-height-h4: 1.3;
+  --font-weight-h4: 500;
+  --font-size-body-l: 18px;
+  --font-size-body-m: 16px;
+  --font-size-body-s: 14px;
+  --line-height-body: 1.6;
+  --line-height-body-s: 1.5;
+  --font-weight-body: 400;
+  --font-size-ui-button: 15px;
+  --font-weight-ui-button: 600;
+  --letter-spacing-ui-button: 0.01em;
+  --font-size-ui-label: 13px;
+  --font-weight-ui-label: 500;
+  --letter-spacing-ui-label: 0.02em;
+  --font-size-caption: 12px;
+  --font-weight-caption: 400;
+  --color-caption: rgb(var(--color-brand-ink) / 0.7);
+
   /* Colors */
-  --color-primary: #a8704d;
-  --color-secondary: #e8b9a0;
-  --color-accent: #f4a460;
-  --color-dark: #1f1f1f;
-  --color-light: #ffffff;
+  --color-primary: rgb(var(--color-brand-primary));
+  --color-secondary: rgb(var(--color-brand-secondary));
+  --color-accent: rgb(var(--color-brand-warm));
+  --color-dark: rgb(var(--color-brand-ink));
+  --color-light: rgb(var(--color-white));
 
   /* Grays */
   --color-gray-50: #f9fafb;
@@ -21,7 +68,7 @@
   --color-gray-600: #4b5563;
   --color-gray-700: #374151;
   --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
+  --color-gray-900: rgb(var(--color-brand-ink));
 
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -52,7 +99,7 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-light: #111827;
-    --color-dark: #f9fafb;
+    --color-light: rgb(var(--color-brand-ink));
+    --color-dark: rgb(var(--color-brand-beige));
   }
 }

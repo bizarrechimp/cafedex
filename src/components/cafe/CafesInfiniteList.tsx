@@ -138,11 +138,13 @@ export default function CafesInfiniteList({
   if (!loadingInitial && items.length === 0 && error) {
     return (
       <div className="flex flex-col items-center gap-3 py-16 text-center">
-        <p className="text-sm text-red-600 dark:text-red-400">{t('cafes.error.description')}</p>
+        <p className="text-body-s font-ui text-red-600">
+          {t('cafes.error.description')}
+        </p>
         <button
           type="button"
           onClick={() => loadMore()}
-          className="px-4 py-2 rounded-full text-sm font-semibold bg-amber-500 text-white hover:bg-amber-600 transition-colors"
+          className="px-4 py-2 rounded-full text-ui-button font-ui bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors"
         >
           {t('cafes.error.retry')}
         </button>
@@ -153,10 +155,10 @@ export default function CafesInfiniteList({
   if (!loadingInitial && items.length === 0 && !error) {
     return (
       <div className="text-center py-16">
-        <h2 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
+        <h2 className="text-h3 font-display text-brand-primary">
           {t('filters.noResults')}
         </h2>
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
+        <p className="mt-2 text-body-m font-ui text-brand-ink/70">
           {t('sections.horizontal.emptyDescription')}
         </p>
       </div>
@@ -166,7 +168,7 @@ export default function CafesInfiniteList({
   return (
     <>
       {showResultsText && (
-        <div className="my-0 text-sm text-gray-600 dark:text-gray-400 text-center">
+        <div className="my-0 text-body-s font-ui text-brand-ink/70 text-center">
           {resultsText}
         </div>
       )}
@@ -205,11 +207,13 @@ export default function CafesInfiniteList({
 
       {error && (
         <div className="flex flex-col items-center gap-3 pb-12 text-center">
-          <p className="text-sm text-red-600 dark:text-red-400">{t('cafes.error.description')}</p>
+          <p className="text-body-s font-ui text-red-600">
+            {t('cafes.error.description')}
+          </p>
           <button
             type="button"
             onClick={() => loadMore()}
-            className="px-4 py-2 rounded-full text-sm font-semibold bg-amber-500 text-white hover:bg-amber-600 transition-colors"
+            className="px-4 py-2 rounded-full text-ui-button font-ui bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors"
           >
             {t('cafes.error.retry')}
           </button>

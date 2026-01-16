@@ -14,21 +14,21 @@ interface PageHeaderProps {
 export default function PageHeader({ title, location, rating }: PageHeaderProps) {
   return (
     <>
-      <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900 dark:text-white">
+      <h1 className="text-h1 font-display mb-4 tracking-tight text-brand-primary">
         {title}
       </h1>
 
       <div className="flex flex-wrap items-center gap-6 mb-8">
         {rating !== undefined && (
-          <div className="bg-white dark:bg-gray-800 rounded-full px-5 py-2.5 flex items-center shadow-md border border-gray-100 dark:border-gray-700">
+          <div className="bg-white rounded-full px-5 py-2.5 flex items-center shadow-md border border-brand-beige">
             <StarRating rating={rating} />
           </div>
         )}
         {location && (
-          <div className="flex items-center text-gray-600 dark:text-gray-400 font-medium">
+          <div className="flex items-center text-body-s font-ui text-brand-ink/80 font-medium">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 mr-2 text-amber-500"
+              className="h-5 w-5 mr-2 text-brand-secondary"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

@@ -121,14 +121,14 @@ const Header = () => {
       isBlurred
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={handleMenuOpenChange}
-      className="shadow-md"
+      className="shadow-md bg-brand-primary text-white"
       disableAnimation={true}
     >
       {/* Brand */}
       <NavbarBrand className="flex-1">
-        <Link href={localizePathname('/', locale)} className="font-bold text-xl">
+        <Link href={localizePathname('/', locale)} className="text-h4 font-display text-white">
           ☕
-          <span className="bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-brand-secondary to-brand-warm bg-clip-text text-transparent">
             Cafedex
           </span>
         </Link>
@@ -140,7 +140,7 @@ const Header = () => {
           <NavbarItem key={item.href}>
             <Link
               href={localizePathname(item.href, locale)}
-              className="text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium"
+              className="text-body-s font-ui text-brand-beige hover:text-brand-warm transition-colors font-medium"
             >
               {item.label}
             </Link>
@@ -163,7 +163,7 @@ const Header = () => {
                 isIconOnly
                 variant="light"
                 aria-label={t('header.settings.aria')}
-                className="text-gray-700 dark:text-gray-300 js-config-toggle"
+                className="text-brand-beige hover:text-white js-config-toggle"
               >
                 <Settings size={20} />
               </Button>
@@ -171,13 +171,13 @@ const Header = () => {
             <PopoverContent className="card-custom p-3 js-config-panel">
               <div className="flex flex-col gap-4 min-w-[180px]">
                 <div className="flex w-full items-center justify-between gap-3">
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  <span className="text-ui-label font-ui text-brand-ink">
                     {t('header.settings.themeLabel')}
                   </span>
                   <Switch isDarkMode={isDarkMode} onToggle={toggleTheme} />
                 </div>
                 <div className="flex w-full items-center justify-between gap-3">
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  <span className="text-ui-label font-ui text-brand-ink">
                     {t('header.settings.languageLabel')}
                   </span>
                   <Select
@@ -192,7 +192,7 @@ const Header = () => {
                     className="w-[56px] min-w-0"
                     classNames={{
                       trigger:
-                        'h-7 min-h-7 rounded-full bg-gray-300 px-2 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600',
+                        'h-7 min-h-7 rounded-full bg-brand-beige px-2 hover:bg-brand-warm',
                       value: 'flex items-center justify-center',
                       popoverContent: 'min-w-[84px]',
                     }}
@@ -228,12 +228,12 @@ const Header = () => {
         {menuItems.map((item, index) => (
           <NavbarMenuItem
             key={`${item.href}-${index}`}
-            className="border-b border-gray-200/60 dark:border-slate-800/60 last:border-b-0 first:mt-1 last:mb-1"
+            className="border-b border-brand-beige/70 last:border-b-0 first:mt-1 last:mb-1"
           >
             <Link
               href={localizePathname(item.href, locale)}
               onClick={() => setIsMenuOpen(false)}
-              className="block w-full rounded-md px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+              className="block w-full rounded-md px-3 py-2 text-body-m font-ui text-brand-ink hover:text-brand-primary transition-colors font-medium"
             >
               {item.label}
             </Link>

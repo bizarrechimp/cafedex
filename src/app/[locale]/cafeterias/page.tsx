@@ -92,7 +92,7 @@ export default async function CafeteriasPage(props: {
   return (
     <main className="w-full">
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-8 text-center">{t('cafes.title')}</h1>
+        <h1 className="text-h1 font-display mb-8 text-center">{t('cafes.title')}</h1>
 
         <EnsureStateInUrl />
 

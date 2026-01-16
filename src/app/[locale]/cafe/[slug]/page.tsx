@@ -118,7 +118,7 @@ export default async function CafePage({
           specialty_features?.services?.length ||
           specialty_features?.serving?.length ? (
             <div className="mb-12">
-              <h2 className="text-2xl font-bold mb-6">{t('cafe.features.title')}</h2>
+              <h2 className="text-h2 font-display mb-6">{t('cafe.features.title')}</h2>
               <div className="flex flex-wrap gap-3">
                 {(specialty_features?.brew_methods || []).map((feature) => (
                   <FeatureBadge

@@ -37,8 +37,8 @@ export default function CardGrid({
 
   if (!hasContent) {
     return (
-      <div className="text-center py-16 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
-        <p className="text-gray-600 dark:text-gray-400">{resolvedEmptyMessage}</p>
+      <div className="text-center py-16 bg-brand-beige/40 rounded-xl">
+        <p className="text-body-m font-ui text-brand-ink/70">{resolvedEmptyMessage}</p>
       </div>
     );
   }

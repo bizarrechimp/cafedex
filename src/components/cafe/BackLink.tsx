@@ -18,7 +18,7 @@ export default function BackLink({ href = '/cafeterias', label }: BackLinkProps)
   return (
     <Link
       href={localizePathname(href, locale)}
-      className="inline-flex items-center gap-2 text-amber-600 dark:text-amber-400 font-bold hover:underline mb-20"
+      className="inline-flex items-center gap-2 text-brand-primary text-ui-button font-ui hover:text-brand-secondary hover:underline mb-20"
     >
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path

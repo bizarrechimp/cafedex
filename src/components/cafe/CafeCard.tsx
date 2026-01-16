@@ -41,9 +41,9 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
   }
 
   return (
-    <Card className="w-full max-w-[320px] h-full bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 hover:shadow-xl transition-all duration-300 group overflow-hidden">
+    <Card className="w-full max-w-[320px] h-full bg-white border border-brand-beige hover:shadow-xl transition-all duration-300 group overflow-hidden">
       {/* Image Section */}
-      <div className="relative w-full h-[280px] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-slate-800 dark:to-slate-900">
+      <div className="relative w-full h-[280px] overflow-hidden bg-gradient-to-br from-brand-beige/40 to-brand-warm/50">
         {imageUrl ? (
           <Image
             src={imageUrl}
@@ -55,7 +55,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
         ) : (
           <div className="flex flex-col items-center justify-center w-full h-full px-4 text-center">
             <svg
-              className="w-16 h-16 text-gray-400 dark:text-gray-600 mb-2"
+              className="w-16 h-16 text-brand-ink/40 mb-2"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -67,7 +67,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
                 d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
-            <h4 className="text-gray-400 dark:text-gray-600 font-bold text-sm uppercase tracking-widest pointer-events-none select-none italic">
+            <h4 className="text-h4 font-display text-brand-primary/40 uppercase tracking-widest pointer-events-none select-none italic">
               {name}
             </h4>
           </div>
@@ -79,7 +79,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
             {number !== undefined && (
               <Badge
                 content={`#${number}`}
-                color="warning"
+                color="secondary"
                 placement="top-left"
                 className="absolute top-2 left-2"
                 size="lg"
@@ -89,7 +89,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
             )}
 
             {rating !== undefined && (
-              <div className="absolute top-3 right-3 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-full px-3 py-1.5 shadow-lg border border-white/20 dark:border-slate-700/20">
+              <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm rounded-full px-3 py-1.5 shadow-lg border border-brand-beige/60">
                 <StarRating rating={rating} showTooltip={true} />
               </div>
             )}
@@ -104,10 +104,10 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
                 href={googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white dark:bg-slate-700 rounded-full p-3 shadow-xl hover:scale-110 transition-transform"
+                className="bg-white rounded-full p-3 shadow-xl hover:scale-110 transition-transform border border-brand-beige/60"
                 onClick={(e) => e.stopPropagation()}
               >
-                <Map className="w-5 h-5 text-gray-700 dark:text-white" />
+                <Map className="w-5 h-5 text-brand-ink" />
               </a>
             </Tooltip>
           )}
@@ -117,7 +117,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
                 href={instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-tr from-purple-600 via-pink-600 to-orange-500 rounded-full p-3 shadow-xl hover:scale-110 transition-transform text-white"
+                className="bg-brand-secondary rounded-full p-3 shadow-xl hover:scale-110 transition-transform text-brand-primary"
                 onClick={(e) => e.stopPropagation()}
               >
                 <Instagram className="w-5 h-5" />
@@ -130,10 +130,10 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
                 href={websiteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white dark:bg-slate-700 rounded-full p-3 shadow-xl hover:scale-110 transition-transform"
+                className="bg-white rounded-full p-3 shadow-xl hover:scale-110 transition-transform border border-brand-beige/60"
                 onClick={(e) => e.stopPropagation()}
               >
-                <Globe className="w-5 h-5 text-gray-700 dark:text-white" />
+                <Globe className="w-5 h-5 text-brand-ink" />
               </a>
             </Tooltip>
           )}
@@ -142,17 +142,17 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
 
       {/* Content Section */}
       <CardBody className="flex-1 gap-3 p-6">
-        <h3 className="text-lg font-bold text-gray-900 dark:text-white line-clamp-1 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+        <h3 className="text-h4 font-display text-brand-primary line-clamp-1 group-hover:text-brand-secondary transition-colors">
           {name}
         </h3>
         <div className="space-y-1.5">
-          <p className="text-sm font-medium text-gray-600 dark:text-gray-400 flex items-center gap-1.5">
-            <MapPin className="w-4 h-4 text-amber-500 flex-shrink-0" />
+          <p className="text-body-s font-ui font-medium text-brand-ink/80 flex items-center gap-1.5">
+            <MapPin className="w-4 h-4 text-brand-secondary flex-shrink-0" />
             <span>
               {city}, {state}
             </span>
           </p>
-          <p className="text-xs text-gray-500 dark:text-gray-400 ml-[22px] line-clamp-2">
+          <p className="text-caption font-ui ml-[22px] line-clamp-2">
             {address}
           </p>
         </div>
@@ -161,7 +161,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
       {/* Footer - Link to Detail Page */}
       <CardFooter className="p-4 pt-0">
         <Link href={localizePathname(`/cafe/${slug}`, locale)} className="w-full">
-          <Button fullWidth color="warning" variant="flat" size="sm" className="font-semibold">
+          <Button fullWidth color="primary" variant="solid" size="sm" className="text-ui-button font-ui">
             {t('cafe.card.viewDetails')}
           </Button>
         </Link>

@@ -12,11 +12,13 @@ export default function NotFound() {
   return (
     <main className="container mx-auto px-4 py-16">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">{t('cafe.notFound.title')}</h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">{t('cafe.notFound.description')}</p>
+        <h2 className="text-h2 font-display mb-4">{t('cafe.notFound.title')}</h2>
+        <p className="text-body-m font-ui text-brand-ink/70 mb-8">
+          {t('cafe.notFound.description')}
+        </p>
         <Link
           href={localizePathname('/cafeterias', locale)}
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors"
+          className="inline-block bg-brand-primary text-white px-6 py-3 rounded-full text-ui-button font-ui hover:bg-brand-primary/90 transition-colors"
         >
           {t('cafe.notFound.cta')}
         </Link>

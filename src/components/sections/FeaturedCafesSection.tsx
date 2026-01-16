@@ -12,7 +12,7 @@ export default function FeaturedCafesSection({ children }: FeaturedCafesSectionP
 
   return (
     <section className="mb-16">
-      <h2 className="text-3xl font-bold mb-8">{t('home.featured.title')}</h2>
+      <h2 className="text-h2 font-display mb-8">{t('home.featured.title')}</h2>
       {children}
     </section>
   );

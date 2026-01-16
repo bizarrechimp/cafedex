@@ -76,10 +76,10 @@ export default function QuickFilters({ isVisible, activeFilters = [] }: QuickFil
             <Chip
               key={filter.key}
               onClick={() => handleFilterToggle(filter.key)}
-              className={`cursor-pointer transition-all text-xs py-0 h-8 ${
+              className={`cursor-pointer transition-all text-ui-label font-ui py-0 h-8 ${
                 isActive
-                  ? 'border-amber-500 bg-amber-500 text-white'
-                  : 'bg-white dark:bg-slate-700 border-gray-300 text-gray-700 dark:border-slate-600 dark:text-gray-200'
+                  ? 'border-brand-primary bg-brand-primary text-white'
+                  : 'bg-white border-brand-beige text-brand-ink hover:bg-brand-warm'
               }`}
               color="default"
               variant="bordered"
