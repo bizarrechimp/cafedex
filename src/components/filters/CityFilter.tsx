@@ -26,7 +26,7 @@ export default function CityFilter({ cities, selectedCity }: CityFilterProps) {
   const allCities = ['all', ...cities];
 
   return (
-    <div className="w-full md:max-w-[220px]">
+    <div className="w-full">
       <Select
         label={t('filters.city.label')}
         placeholder={t('filters.city.placeholder')}
@@ -34,10 +34,13 @@ export default function CityFilter({ cities, selectedCity }: CityFilterProps) {
         onChange={handleChange}
         color="warning"
         variant="bordered"
+        size="sm"
         className="w-full"
         classNames={{
-          label: 'text-gray-700 dark:text-gray-300 font-medium',
-          trigger: 'bg-white dark:bg-slate-800 border border-gray-300 dark:border-slate-600',
+          label: 'text-gray-700 dark:text-gray-300 font-medium text-xs',
+          trigger:
+            'bg-white dark:bg-slate-800 border border-gray-300 dark:border-slate-600 h-10 min-h-10',
+          popoverContent: 'text-sm',
         }}
       >
         {allCities.map((city) => (

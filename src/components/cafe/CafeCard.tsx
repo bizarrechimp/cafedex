@@ -41,7 +41,7 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
   }
 
   return (
-    <Card className="w-[320px] h-full bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 hover:shadow-xl transition-all duration-300 group overflow-hidden">
+    <Card className="w-full max-w-[320px] h-full bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 hover:shadow-xl transition-all duration-300 group overflow-hidden">
       {/* Image Section */}
       <div className="relative w-full h-[280px] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-slate-800 dark:to-slate-900">
         {imageUrl ? (

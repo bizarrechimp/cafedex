@@ -25,7 +25,7 @@ export default function ProvinceFilter({ selectedState }: ProvinceFilterProps) {
   };
 
   return (
-    <div className="w-full md:max-w-[220px]">
+    <div className="w-full">
       <Select
         label={t('filters.province.label')}
         placeholder={t('filters.province.placeholder')}
@@ -33,10 +33,13 @@ export default function ProvinceFilter({ selectedState }: ProvinceFilterProps) {
         onChange={handleChange}
         color="warning"
         variant="bordered"
+        size="sm"
         className="w-full"
         classNames={{
-          label: 'text-gray-700 dark:text-gray-300 font-medium',
-          trigger: 'bg-white dark:bg-slate-800 border border-gray-300 dark:border-slate-600',
+          label: 'text-gray-700 dark:text-gray-300 font-medium text-xs',
+          trigger:
+            'bg-white dark:bg-slate-800 border border-gray-300 dark:border-slate-600 h-10 min-h-10',
+          popoverContent: 'text-sm',
         }}
       >
         {provinces.map((p) => (

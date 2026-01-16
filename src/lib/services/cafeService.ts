@@ -16,6 +16,39 @@ import { logger } from '@/lib/logger';
 import { DatabaseError } from '@/lib/errors';
 
 /**
+ * Get cities for a specific state/province
+ * @param state - The state/province name to filter by
+ * @returns Array of unique cities in that state
+ */
+export const getCitiesByState = cache(async (state: string): Promise<string[]> => {
+  try {
+    await connectMongo();
+
+    if (!state || state.toLowerCase() === 'all') {
+      // Return all cities
+      const cities = await CafeModel.find().select('city').distinct('city').lean();
+      return (cities as string[]).sort();
+    }
+
+    // Return cities for specific state
+    const cities = await CafeModel.find({
+      state: {
+        $regex: `^${state.trim()}$`,
+        $options: 'i',
+      },
+    })
+      .select('city')
+      .distinct('city')
+      .lean();
+
+    return (cities as string[]).sort();
+  } catch (error) {
+    logger.error(`Error fetching cities by state: ${state}`, error);
+    return [];
+  }
+});
+
+/**
  * Get a single cafe by slug
  * @param slug - The cafe slug identifier
  * @returns The cafe object or null if not found
@@ -230,6 +263,153 @@ export const searchCafesByName = cache(async (query: string): Promise<Cafe[]> =>
     return [];
   }
 });
+
+/**
+ * Search and filter cafes with advanced options
+ * Optimized for performance with a single MongoDB query
+ * @param options - Search and filter options
+ * @returns Object containing filtered cafes and total count
+ */
+export const searchAndFilterCafes = cache(
+  async (options: {
+    search?: string;
+    state?: string;
+    city?: string;
+    filters?: string[]; // Quick filter keys: 'open_now', 'pet_friendly', 'wifi', 'vegan', 'outdoor', 'breakfast', 'workspace', 'roastery'
+  }): Promise<{ cafes: Cafe[]; total: number; filtered: number }> => {
+    try {
+      await connectMongo();
+
+      // Build the MongoDB query
+      const query: Record<string, unknown> = {};
+
+      // Search query (name, city, state)
+      if (options.search && options.search.trim().length > 0) {
+        const searchTerm = options.search.trim();
+        query.$or = [
+          { 'i18n.es.name': { $regex: searchTerm, $options: 'i' } },
+          { 'i18n.en.name': { $regex: searchTerm, $options: 'i' } },
+          { city: { $regex: searchTerm, $options: 'i' } },
+          { state: { $regex: searchTerm, $options: 'i' } },
+        ];
+      }
+
+      // State/Province filter
+      if (options.state && options.state.toLowerCase() !== 'all') {
+        query.state = {
+          $regex: `^${options.state.trim()}$`,
+          $options: 'i',
+        };
+      }
+
+      // City filter
+      if (options.city && options.city.toLowerCase() !== 'all') {
+        query.city = options.city;
+      }
+
+      // Build quick filters (combine as AND)
+      const quickFilterConditions: Record<string, unknown>[] = [];
+      let hasOpenNowFilter = false;
+
+      if (options.filters && options.filters.length > 0) {
+        for (const filter of options.filters) {
+          switch (filter) {
+            case 'pet_friendly':
+              quickFilterConditions.push({ 'specialty_features.services': 'dog_friendly' });
+              break;
+            case 'wifi':
+              quickFilterConditions.push({ 'specialty_features.services': 'free_wifi' });
+              break;
+            case 'vegan':
+              quickFilterConditions.push({ 'specialty_features.services': 'vegan_options' });
+              break;
+            case 'outdoor':
+              quickFilterConditions.push({ 'specialty_features.services': 'outdoor_seating' });
+              break;
+            case 'breakfast':
+              quickFilterConditions.push({ 'specialty_features.serving': 'breakfast' });
+              break;
+            case 'workspace':
+              quickFilterConditions.push({ 'specialty_features.services': 'laptop_friendly' });
+              break;
+            case 'roastery':
+              quickFilterConditions.push({ 'specialty_features.roastery': true });
+              break;
+            case 'open_now':
+              // Will be handled after fetching - need to check current time
+              hasOpenNowFilter = true;
+              break;
+          }
+        }
+
+        // Combine all quick filters with $and (cafe must match all)
+        if (quickFilterConditions.length > 0) {
+          const andConditions: Record<string, unknown>[] = [];
+
+          if (query.$or) {
+            // Keep search $or grouped, then AND with each quick filter
+            andConditions.push({ $or: query.$or });
+            delete query.$or;
+          }
+
+          andConditions.push(...quickFilterConditions);
+
+          if (query.$and) {
+            query.$and = [...(query.$and as Record<string, unknown>[]), ...andConditions];
+          } else {
+            query.$and = andConditions;
+          }
+        }
+      }
+
+      // Execute the query with sorting
+      let cafes = await CafeModel.find(query).sort({ rating: -1, slug: 1 }).limit(100).lean();
+      const total = await CafeModel.countDocuments();
+
+      // If open_now filter is active, filter results by current opening hours
+      if (hasOpenNowFilter) {
+        const now = new Date();
+        const dayOfWeek = now.getDay();
+        const dayMap: Record<number, string> = {
+          0: 'sun',
+          1: 'mon',
+          2: 'tue',
+          3: 'wed',
+          4: 'thu',
+          5: 'fri',
+          6: 'sat',
+        };
+        const currentDay = dayMap[dayOfWeek];
+        const currentHours =
+          String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+
+        cafes = cafes.filter((cafe) => {
+          const hours = cafe.specialty_features?.opening_hours?.[currentDay];
+          if (!hours) return false;
+
+          const [start, end] = hours.split('-').map((h: string) => h.trim());
+          return currentHours >= start && currentHours < end;
+        });
+      }
+
+      // Count filtered results
+      const filtered = await CafeModel.countDocuments(query);
+
+      logger.debug(
+        `Search/Filter query: search="${options.search}", state="${options.state}", city="${options.city}", filters="${options.filters?.join(',')}". Results: ${cafes.length}`
+      );
+
+      return {
+        cafes: serializeCafes(cafes),
+        total,
+        filtered,
+      };
+    } catch (error) {
+      logger.error('Error searching/filtering cafes', error);
+      return { cafes: [], total: 0, filtered: 0 };
+    }
+  }
+);
 
 /**
  * Get total cafe count

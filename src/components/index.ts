@@ -22,13 +22,6 @@ export { FeaturedCafesSection, HorizontalScroll, CardGrid } from './sections';
 export { default as CityFilter } from './filters/CityFilter';
 export { default as ProvinceFilter } from './filters/ProvinceFilter';
 export { default as EnsureStateInUrl } from './filters/EnsureStateInUrl';
-
-// UI Components (HERO UI based)
-export { default as StarRating } from './ui/StarRating';
-export { default as Switch } from './ui/Switch';
-export { default as SocialButton } from './ui/SocialButton';
-export { default as SocialLinks } from './ui/SocialLinks';
-export { default as FeatureBadge } from './ui/FeatureBadge';
-
-// Export types and utilities
-export type {} from '@heroui/react';
+export { default as SearchBar } from './filters/SearchBar';
+export { default as QuickFilters } from './filters/QuickFilters';
+export { default as SearchFiltersContainer } from './filters/SearchFiltersContainer';
