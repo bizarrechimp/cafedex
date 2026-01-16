@@ -78,8 +78,8 @@ export default function QuickFilters({ isVisible, activeFilters = [] }: QuickFil
               onClick={() => handleFilterToggle(filter.key)}
               className={`cursor-pointer transition-all text-ui-label font-ui py-0 h-8 ${
                 isActive
-                  ? 'border-brand-primary bg-brand-primary text-white'
-                  : 'bg-white border-brand-beige text-brand-ink hover:bg-brand-warm'
+                  ? 'border-transparent bg-brand-primary text-white hover:bg-brand-primary/90'
+                  : 'border-transparent bg-brand-secondary text-white hover:bg-brand-secondary/90'
               }`}
               color="default"
               variant="bordered"

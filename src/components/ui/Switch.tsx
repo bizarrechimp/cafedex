@@ -17,8 +17,8 @@ const Switch: React.FC<SwitchProps> = ({ isDarkMode, onToggle }) => {
     <HeroSwitch
       isSelected={isDarkMode}
       onChange={(e) => onToggle(e.target.checked)}
-      startContent={<Sun className="w-4 h-4" />}
-      endContent={<Moon className="w-4 h-4" />}
+      startContent={<Sun className="w-4 h-4 text-brand-ink dark:text-brand-secondary" />}
+      endContent={<Moon className="w-4 h-4 text-brand-ink dark:text-brand-secondary" />}
       color="primary"
       aria-label={t('header.theme.switchAria')}
       classNames={{

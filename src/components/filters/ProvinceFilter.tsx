@@ -36,10 +36,11 @@ export default function ProvinceFilter({ selectedState }: ProvinceFilterProps) {
         size="sm"
         className="w-full"
         classNames={{
-          label: 'text-ui-label font-ui text-brand-ink',
+          label: 'text-ui-label font-ui text-brand-ink dark:text-brand-secondary',
           trigger:
-            'bg-white border border-brand-beige h-10 min-h-10 text-brand-ink',
-          popoverContent: 'text-body-s font-ui',
+            'bg-white border border-brand-beige h-10 min-h-10 text-brand-ink dark:bg-brand-primary/20 dark:text-brand-secondary dark:border-brand-primary/30',
+          popoverContent:
+            'text-body-s font-ui bg-white dark:bg-brand-primary/95 border border-brand-beige shadow-lg',
         }}
       >
         {provinces.map((p) => (

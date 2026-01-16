@@ -75,13 +75,13 @@ const Footer = () => {
           <div className="flex gap-6">
             <Link
               href={localizePathname('/privacy', locale)}
-              className="hover:text-brand-warm transition-colors"
+              className="hover:text-brand-secondary/90 transition-colors"
             >
               {t('footer.links.privacy')}
             </Link>
             <Link
               href={localizePathname('/terms', locale)}
-              className="hover:text-brand-warm transition-colors"
+              className="hover:text-brand-secondary/90 transition-colors"
             >
               {t('footer.links.terms')}
             </Link>

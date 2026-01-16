@@ -161,7 +161,13 @@ export default function CafeCard({ cafe, number, hideMeta = false }: CafeCardPro
       {/* Footer - Link to Detail Page */}
       <CardFooter className="p-4 pt-0">
         <Link href={localizePathname(`/cafe/${slug}`, locale)} className="w-full">
-          <Button fullWidth color="primary" variant="solid" size="sm" className="text-ui-button font-ui">
+          <Button
+            fullWidth
+            color="primary"
+            variant="solid"
+            size="sm"
+            className="text-ui-button font-ui bg-brand-primary text-white hover:bg-brand-primary/90 dark:bg-brand-primary dark:text-white"
+          >
             {t('cafe.card.viewDetails')}
           </Button>
         </Link>

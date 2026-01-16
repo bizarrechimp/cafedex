@@ -98,6 +98,16 @@ const Header = () => {
     { key: 'en', flagClass: 'fi fi-gb' },
   ] as const;
 
+  const normalizePath = (path: string) => {
+    if (!path) {
+      return '/';
+    }
+    const normalized = path.replace(/\/+$/, '');
+    return normalized === '' ? '/' : normalized;
+  };
+
+  const currentPath = normalizePath(pathname?.replace(`/${locale}`, '') || '/');
+
   const handleLanguageChange = (keys: 'all' | Set<Key>) => {
     if (keys === 'all') {
       return;
@@ -136,16 +146,24 @@ const Header = () => {
 
       {/* Desktop Menu */}
       <NavbarContent className="hidden md:flex gap-4" justify="center">
-        {menuItems.map((item) => (
+        {menuItems.map((item) => {
+          const itemPath = normalizePath(item.href);
+          const isActive =
+            itemPath === '/' ? currentPath === '/' : currentPath.startsWith(itemPath);
+          return (
           <NavbarItem key={item.href}>
             <Link
               href={localizePathname(item.href, locale)}
-              className="text-body-s font-ui text-brand-beige hover:text-brand-warm transition-colors font-medium"
+              className={`text-body-s font-ui transition-colors font-medium ${
+                isActive
+                  ? 'text-brand-secondary border-b-2 border-brand-secondary'
+                  : 'text-brand-warm hover:text-brand-secondary'
+              }`}
             >
               {item.label}
             </Link>
           </NavbarItem>
-        ))}
+        )})}
       </NavbarContent>
 
       {/* Right Section */}
@@ -168,16 +186,16 @@ const Header = () => {
                 <Settings size={20} />
               </Button>
             </PopoverTrigger>
-            <PopoverContent className="card-custom p-3 js-config-panel">
+            <PopoverContent className="card-custom p-3 js-config-panel bg-white/95 dark:bg-brand-primary/95 border border-brand-beige shadow-lg text-brand-ink dark:text-brand-secondary">
               <div className="flex flex-col gap-4 min-w-[180px]">
                 <div className="flex w-full items-center justify-between gap-3">
-                  <span className="text-ui-label font-ui text-brand-ink">
+                  <span className="text-ui-label font-ui text-brand-ink dark:text-brand-secondary">
                     {t('header.settings.themeLabel')}
                   </span>
                   <Switch isDarkMode={isDarkMode} onToggle={toggleTheme} />
                 </div>
                 <div className="flex w-full items-center justify-between gap-3">
-                  <span className="text-ui-label font-ui text-brand-ink">
+                  <span className="text-ui-label font-ui text-brand-ink dark:text-brand-secondary">
                     {t('header.settings.languageLabel')}
                   </span>
                   <Select
@@ -192,9 +210,13 @@ const Header = () => {
                     className="w-[56px] min-w-0"
                     classNames={{
                       trigger:
-                        'h-7 min-h-7 rounded-full bg-brand-beige px-2 hover:bg-brand-warm',
+                        'h-7 min-h-7 rounded-full bg-brand-beige px-2 hover:bg-brand-secondary/80 border border-brand-beige dark:bg-brand-primary/20 dark:text-brand-secondary dark:border-brand-primary/30',
                       value: 'flex items-center justify-center',
-                      popoverContent: 'min-w-[84px]',
+                      popoverContent:
+                        'min-w-[84px] bg-white dark:bg-brand-primary/95 border border-brand-beige shadow-lg',
+                      listbox: 'bg-transparent',
+                      listboxItem:
+                        'text-brand-ink data-[hover=true]:bg-brand-secondary/20 data-[hover=true]:text-brand-secondary dark:text-brand-secondary',
                     }}
                     renderValue={(items) =>
                       items.map((item) => {
@@ -225,7 +247,11 @@ const Header = () => {
 
       {/* Mobile/Tablet Menu */}
       <NavbarMenu className="navbar-menu-float js-menu-panel card-custom !fixed !right-4 !left-auto !bottom-auto !h-auto !w-[min(85vw,14rem)] !max-h-none !overflow-visible !py-0 !px-0 !gap-0 !z-40">
-        {menuItems.map((item, index) => (
+        {menuItems.map((item, index) => {
+          const itemPath = normalizePath(item.href);
+          const isActive =
+            itemPath === '/' ? currentPath === '/' : currentPath.startsWith(itemPath);
+          return (
           <NavbarMenuItem
             key={`${item.href}-${index}`}
             className="border-b border-brand-beige/70 last:border-b-0 first:mt-1 last:mb-1"
@@ -233,12 +259,16 @@ const Header = () => {
             <Link
               href={localizePathname(item.href, locale)}
               onClick={() => setIsMenuOpen(false)}
-              className="block w-full rounded-md px-3 py-2 text-body-m font-ui text-brand-ink hover:text-brand-primary transition-colors font-medium"
+              className={`block w-full rounded-md px-3 py-2 text-body-m font-ui transition-colors font-medium ${
+                isActive
+                  ? 'text-brand-secondary bg-brand-secondary/20'
+                  : 'text-brand-ink hover:text-brand-primary hover:bg-brand-secondary/20'
+              }`}
             >
               {item.label}
             </Link>
           </NavbarMenuItem>
-        ))}
+        )})}
       </NavbarMenu>
     </Navbar>
   );

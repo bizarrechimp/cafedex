@@ -168,7 +168,7 @@ export default function CafesInfiniteList({
   return (
     <>
       {showResultsText && (
-        <div className="my-0 text-body-s font-ui text-brand-ink/70 text-center">
+        <div className="my-0 text-body-s font-ui text-brand-ink/70 text-center dark:text-brand-secondary/90">
           {resultsText}
         </div>
       )}

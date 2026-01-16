@@ -169,11 +169,11 @@ html.dark .btn-secondary {
 }
 
 .text-muted {
-  @apply text-brand-ink/70;
+  @apply text-brand-ink/70 dark:text-brand-secondary/80;
 }
 
 .text-muted-light {
-  @apply text-brand-ink/60;
+  @apply text-brand-ink/60 dark:text-brand-secondary/70;
 }
 
 .language-flag {
