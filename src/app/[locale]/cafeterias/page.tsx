@@ -104,7 +104,7 @@ export default async function CafeteriasPage(props: {
         <EnsureStateInUrl />
 
         {/* New unified search and filters component - centered and constrained */}
-        <section className="mb-8 flex justify-center">
+        <section className="mb-2 flex justify-center">
           <div className="w-full max-w-5xl">
             <SearchFiltersContainer
               selectedCity={selectedCity}
@@ -117,11 +117,11 @@ export default async function CafeteriasPage(props: {
         {/* Results section */}
         {filteredCafes.length > 0 ? (
           <>
-            <div className="mb-4 text-sm text-gray-600 dark:text-gray-400 text-center">
+            <div className="my-0 text-sm text-gray-600 dark:text-gray-400 text-center">
               {resultsText}
             </div>
 
-            <div className="py-8 pb-12 px-2 sm:px-4 overflow-hidden flex justify-center w-full">
+            <div className="pt-3 pb-12 px-2 sm:px-4 overflow-hidden flex justify-center w-full">
               <div className="w-full max-w-5xl flex justify-center">
                 <CardGrid columns="auto" gap="medium">
                   {filteredCafes.map((cafe: Cafe) => {

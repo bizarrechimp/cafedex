@@ -34,9 +34,13 @@ export default function SearchFiltersContainer({
         <SearchBar onToggleFilters={() => setShowQuickFilters(!showQuickFilters)} />
 
         {/* Geographic Filters */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <ProvinceFilter selectedState={selectedState} />
-          <CityFilter cities={cities} selectedCity={selectedCity} />
+        <div className="flex flex-row flex-nowrap gap-2 md:grid md:grid-cols-2 md:gap-3">
+          <div className="w-1/2 min-w-0 md:w-full">
+            <ProvinceFilter selectedState={selectedState} />
+          </div>
+          <div className="w-1/2 min-w-0 md:w-full">
+            <CityFilter cities={cities} selectedCity={selectedCity} />
+          </div>
         </div>
 
         {/* Quick Filters */}
